@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<flow:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flow="http://www.obeo.fr/dsl/designer/sample/flow" xsi:schemaLocation="http://www.obeo.fr/dsl/designer/sample/flow flow.ecore">
+  <elements xsi:type="flow:Processor">
+    <outputs/>
+    <states/>
+    <states/>
+    <states/>
+  </elements>
+</flow:System>

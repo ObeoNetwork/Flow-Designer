@@ -1,0 +1,179 @@
+/**
+ * Copyright  2010 Obeo. All Rights Reserved.
+ *
+ * This file is part of Obeo Designer.
+ *
+ * This software and the attached documentation are the exclusive ownership
+ * of its authors and was conceded to the profit of Obeo SARL.
+ * This software and the attached documentation are protected under the rights
+ * of intellectual ownership, including the section "Titre II  Droits des auteurs (Articles L121-1, L123-12)"
+ * By installing this software, you acknowledge being aware of this rights and
+ * accept them, and as a consequence you must:
+ * - be in possession of a valid license of use conceded by Obeo only.
+ * - agree that you have read, understood, and will comply with the license terms and conditions.
+ * - agree not to do anything that could conflict with intellectual ownership owned by Obeo or its beneficiaries
+ * or the authors of this software
+ *
+ * Should you not agree with these terms, you must stop to use this software and give it back to its legitimate owner.
+ *
+ * Acceleo and Obeo are trademarks owned by Obeo.
+ */
+package com.sample
+
+import org.eclipse.emf.ecore.EObject;
+import fr.obeo.dsl.designer.sample.flow.DataSource;
+import fr.obeo.dsl.designer.sample.flow.ComputationResult;
+import fr.obeo.dsl.designer.sample.flow.Operation;
+import fr.obeo.dsl.designer.sample.flow.State;
+import fr.obeo.dsl.designer.sample.flow.System;
+import fr.obeo.dsl.designer.sample.flow.Fan;
+import fr.obeo.dsl.designer.sample.flow.Powered;
+import fr.obeo.dsl.designer.sample.flow.Processor;
+import fr.obeo.dsl.designer.sample.flow.StateProcessor;
+import fr.obeo.dsl.designer.sample.flow.CapacityBound;
+import fr.obeo.dsl.designer.sample.flow.DataFlow;
+import fr.obeo.dsl.designer.sample.flow.FlowTarget;
+import fr.obeo.dsl.designer.sample.flow.FlowSource;
+import fr.obeo.dsl.designer.sample.flow.FlowElementStatus;
+import fr.obeo.dsl.designer.sample.flow.simmulation.SimulationHelper;
+import fr.obeo.dsl.designer.sample.flow.FlowElementUsage;
+
+
+rule "Update Fan Consumption From speed" 
+	when	   
+	   fan : Fan( status == FlowElementStatus.ACTIVE)
+	then
+		fan.setConsumption(fan.getSpeed() / 100);
+end 
+
+rule "Update Fan Consumption when inactive" 
+	when	   
+	   fan : Fan( status == FlowElementStatus.INACTIVE)
+	then
+	   fan.setConsumption(0);
+end
+
+rule "Update Processor Consumption when inactive" 
+	when	   
+	   processor : Processor( status == FlowElementStatus.INACTIVE)
+	then
+	   processor.setConsumption(0);
+end  
+
+rule "Update Processor Consumption From volume" 
+	when	   
+	   processor : Processor( status == FlowElementStatus.ACTIVE)
+	then
+	   processor.setConsumption(processor.getCapacity()*10);
+end
+
+
+  
+rule "Update Flow Size From unactive FlowSource" 
+	when	   
+	   dataSource : FlowSource( status == FlowElementStatus.INACTIVE)
+	   flow : DataFlow(source == dataSource)	
+	then
+	  flow.setLoad(0);
+end 
+
+
+rule "Update System consumption from childs"
+	when		   
+	   system : System()
+	   powered : Powered(eContainer == system)	   
+	then	  
+	  system.setConsumption(SimulationHelper.computeConsumption(system));
+end
+
+
+rule "Update System temperature from childs"
+	when		   
+	   system : System()
+	   child : EObject(eContainer == system)	   
+	then	  
+	  system.setTemperature(SimulationHelper.computeTemperature(system));
+end
+
+rule "Update System weight from childs fan"
+	when		   
+	   system : System()
+	   eObj : EObject(eContainer == system)	   
+	then	  
+	  system.setWeight(SimulationHelper.computeWeight(system));
+end
+  
+    
+rule "Update Flow Size From Active DataSource" 
+	when	   
+	   dataSource : DataSource( status == FlowElementStatus.ACTIVE)
+	   flow : DataFlow(source == dataSource)	
+	then
+	  flow.setLoad(dataSource.getVolume());
+end 
+
+
+rule "Update Flow Size From Active Processor" 
+	when
+	   processor : Processor( status == FlowElementStatus.ACTIVE)
+	   flow : DataFlow(source == processor)	
+	then
+	  flow.setLoad(processor.getVolume());
+end 
+
+rule "Update Flow Size From  Active ComputationResult"
+	when	
+	   state : State()
+	   processor : StateProcessor( current == state )
+	   compResult : ComputationResult( status == FlowElementStatus.ACTIVE , eContainer == processor)
+	   flow : DataFlow(source == compResult)
+	   operation : Operation(output == compResult, calledBy contains state )	
+	then	  
+	  flow.setLoad(SimulationHelper.getCurrentProduction(compResult));
+end
+
+rule "Update Target from Input Flows"
+  when     
+    $target : Processor();
+    flow : DataFlow(target == $target)
+    then
+    $target.setLoad(SimulationHelper.computeLoad($target));
+end
+
+rule "Update CapacityBound usage considering normal load"
+  when 
+    $bounded : CapacityBound( load  <= capacity, load >  (capacity / 2)  , status == FlowElementStatus.ACTIVE)
+  then
+  	$bounded.setUsage(FlowElementUsage.STANDARD);
+end
+
+ 
+rule "Update CapacityBound usage considering high load"
+  when 
+    $bounded : CapacityBound( load  > capacity , load <= (capacity * 1.5), status == FlowElementStatus.ACTIVE)
+  then
+  	$bounded.setUsage(FlowElementUsage.HIGH);
+end
+
+rule "Update CapacityBound usage considering too much load"
+  when 
+    $bounded : CapacityBound( load  > (capacity * 1.5 ) , status == FlowElementStatus.ACTIVE)
+  then
+  	$bounded.setUsage(FlowElementUsage.OVER);
+end
+
+rule "Update CapacityBound usage considering idle much load"
+  when 
+    $bounded : CapacityBound( load != 0 ,load  <= (capacity / 2),  status == FlowElementStatus.ACTIVE )
+  then
+  	$bounded.setUsage(FlowElementUsage.LOW);
+end
+
+rule "Update CapacityBound usage considering no load"
+  when 
+    $bounded : CapacityBound( load  == 0 , status == FlowElementStatus.ACTIVE )
+  then
+  	$bounded.setUsage(FlowElementUsage.UNUSED);
+end
+ 
+
