@@ -1,12 +1,14 @@
 Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
 Bundle-Name: Flow Designer
 Bundle-SymbolicName: fr.obeo.dsl.designer.sample.flow.design;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: fr.obeo.dsl.designer.sample.flow.design.Activator
-Require-Bundle: fr.obeo.acceleo.gen,
- org.eclipse.ui,
+Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
- fr.obeo.dsl.viewpoint
-Eclipse-LazyStart: true
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+ org.eclipse.core.resources,
+ org.eclipse.sirius,
+ org.eclipse.sirius.common.acceleo.mtl
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-Vendor: Obeo
