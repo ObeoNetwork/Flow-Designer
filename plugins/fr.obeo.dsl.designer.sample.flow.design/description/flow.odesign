@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="Flow" version="8.1.0">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="Flow" version="10.1.0.201507271600">
   <ownedViewpoints name="Exchanges" modelFileExtension="flow">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Topography" domainClass="System" enablePopupBars="true">
       <metamodel href="http://www.obeo.fr/dsl/designer/sample/flow#/"/>
@@ -11,19 +11,19 @@
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='chocolate']"/>
           </style>
           <conditionnalStyles predicateExpression="[name.contains('Camera')/]">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[name+' : '+volume/]" sizeComputationExpression="[volume / 2/]" resizeKind="NSEW" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/camera.png">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[name+' : '+volume/]" sizeComputationExpression="[volume / 2/]" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/camera.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </conditionnalStyles>
           <conditionnalStyles predicateExpression="[name.contains('Radar')/]">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[name+' : '+volume/]" sizeComputationExpression="[volume / 2/]" resizeKind="NSEW" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/radar.png">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[name+' : '+volume/]" sizeComputationExpression="[volume / 2/]" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/radar.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </conditionnalStyles>
           <conditionnalStyles predicateExpression="[name.contains('Wifi')/]">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[name+' : '+volume/]" sizeComputationExpression="[volume / 2/]" resizeKind="NSEW" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/irkick.png">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[name+' : '+volume/]" sizeComputationExpression="[volume / 2/]" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/irkick.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
@@ -53,20 +53,22 @@
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
             </style>
             <conditionnalStyles predicateExpression="[name.contains('Engine')/]">
-              <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="[capacity/]" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu.svg">
+              <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="[capacity/]" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu.svg">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="[name.contains('DSP')/]">
-              <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="[capacity/]" resizeKind="NSEW" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/dsp.svg">
+              <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="[capacity/]" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/dsp.svg">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
           </subNodeMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="2" labelSize="10" labelFormat="bold_italic" labelExpression="[name/]" backgroundStyle="GradientTopToBottom">
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="2" labelSize="10" labelExpression="[name/]" backgroundStyle="GradientTopToBottom">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <labelFormat>italic</labelFormat>
+            <labelFormat>bold</labelFormat>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -213,7 +215,7 @@
       <additionalLayers name="Temperature">
         <containerMappings xsi:type="description_1:ContainerMappingImport" name="importSystem" domainClass="flow.System" reusedNodeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@containerMappings[name='importSystem']/@subNodeMappings[name='Fan'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']" importedMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']">
           <subNodeMappings name="Fan" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@toolSections.0/@ownedTools[name='Edit%20Speed']" semanticCandidatesExpression="[eAllContents()/]" domainClass="flow.Fan">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[speed/]" resizeKind="NSEW" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/fan.svg">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[speed/]" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/fan.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
@@ -270,35 +272,40 @@
       <ownedLineMappings name="lineProcessor" domainClass="flow.Processor" semanticCandidatesExpression="[eAllContents()/]" headerLabelExpression="feature:name"/>
       <ownedColumnMappings name="colCapacity" headerLabelExpression="capacity" featureName="capacity">
         <foregroundConditionalStyle predicateExpression="[status.toString()='inactive'/]">
-          <style labelSize="8" labelFormat="italic">
+          <style labelSize="8">
+            <labelFormat>italic</labelFormat>
             <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </foregroundConditionalStyle>
       </ownedColumnMappings>
       <ownedColumnMappings name="colConsumption" headerLabelExpression="consumption" featureName="consumption">
         <foregroundConditionalStyle predicateExpression="[status.toString()='inactive'/]">
-          <style labelSize="8" labelFormat="italic">
+          <style labelSize="8">
+            <labelFormat>italic</labelFormat>
             <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </foregroundConditionalStyle>
       </ownedColumnMappings>
       <ownedColumnMappings name="colLoad" headerLabelExpression="load" featureName="load">
         <foregroundConditionalStyle predicateExpression="[status.toString()='inactive'/]">
-          <style labelSize="8" labelFormat="italic">
+          <style labelSize="8">
+            <labelFormat>italic</labelFormat>
             <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </foregroundConditionalStyle>
       </ownedColumnMappings>
       <ownedColumnMappings name="colStatus" headerLabelExpression="status" featureName="status">
         <foregroundConditionalStyle predicateExpression="[status.toString()='inactive'/]">
-          <style labelSize="8" labelFormat="italic">
+          <style labelSize="8">
+            <labelFormat>italic</labelFormat>
             <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </foregroundConditionalStyle>
       </ownedColumnMappings>
       <ownedColumnMappings name="colUsage" headerLabelExpression="usage" featureName="usage">
         <foregroundConditionalStyle predicateExpression="[status.toString()='inactive'/]">
-          <style labelSize="8" labelFormat="italic">
+          <style labelSize="8">
+            <labelFormat>italic</labelFormat>
             <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </foregroundConditionalStyle>
