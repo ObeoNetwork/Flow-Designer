@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<flow:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flow="http://www.obeo.fr/dsl/designer/sample/flow" consumption="372">
-  <elements xsi:type="flow:CompositeProcessor" consumption="132" name="Robot Central Unit" temperature="24" weight="26">
+<flow:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flow="http://www.obeo.fr/dsl/designer/sample/flow" consumption="390">
+  <elements xsi:type="flow:CompositeProcessor" consumption="150" name="Robot Central Unit" temperature="6" weight="23">
     <elements xsi:type="flow:Processor" usage="standard" incomingFlows="//@elements.2/@outgoingFlows.0" capacity="4" load="4" consumption="40" name="DSP">
       <outgoingFlows usage="low" load="2" target="//@elements.0/@elements.1"/>
     </elements>
-    <elements xsi:type="flow:Processor" usage="standard" incomingFlows="//@elements.1/@elements.0/@outgoingFlows.0 //@elements.0/@elements.0/@outgoingFlows.0 //@elements.1/@elements.1/@outgoingFlows.0" capacity="9" load="9" consumption="90" name="Move Engine">
+    <elements xsi:type="flow:Processor" usage="standard" incomingFlows="//@elements.1/@elements.0/@outgoingFlows.0 //@elements.0/@elements.0/@outgoingFlows.0 //@elements.1/@elements.1/@outgoingFlows.0" capacity="9" load="9" consumption="90" name="Motion Engine">
       <outgoingFlows usage="low" load="2"/>
     </elements>
-    <elements xsi:type="flow:Fan" consumption="2" speed="200" weight="6"/>
-    <powerOutputs power="230">
+    <elements xsi:type="flow:Fan" consumption="20" speed="2000"/>
+    <powerOutputs>
       <links target="//@elements.1/@powerInputs.0"/>
     </powerOutputs>
   </elements>
-  <elements xsi:type="flow:CompositeProcessor" consumption="150" name="Sensor Unit" temperature="30" weight="16">
-    <elements xsi:type="flow:Processor" usage="standard" incomingFlows="//@elements.1/@elements.3/@outgoingFlows.0 //@elements.1/@elements.2/@outgoingFlows.0" capacity="9" load="8" consumption="90" name="Camera Capture" weight="6">
-      <outgoingFlows usage="low" capacity="6" load="2" target="//@elements.0/@elements.1"/>
+  <elements xsi:type="flow:CompositeProcessor" consumption="240" name="Sensor Unit" temperature="-12" weight="19">
+    <elements xsi:type="flow:Processor" usage="standard" incomingFlows="//@elements.1/@elements.3/@outgoingFlows.0 //@elements.1/@elements.2/@outgoingFlows.0" capacity="13" load="12" consumption="130" name="Camera Capture" weight="6">
+      <outgoingFlows usage="low" capacity="8" load="2" target="//@elements.0/@elements.1"/>
+      <outgoingFlows usage="low" capacity="6" load="2"/>
     </elements>
     <elements xsi:type="flow:Processor" usage="standard" incomingFlows="//@elements.1/@elements.4/@outgoingFlows.0" capacity="6" load="6" consumption="60" name="Radar Capture" volume="5">
       <outgoingFlows usage="standard" capacity="6" load="5" target="//@elements.0/@elements.1"/>
+      <outgoingFlows usage="standard" capacity="6" load="5"/>
     </elements>
-    <elements xsi:type="flow:DataSource" volume="6" name="Front Camera">
-      <outgoingFlows usage="high" capacity="5" load="6" target="//@elements.1/@elements.0"/>
+    <elements xsi:type="flow:DataSource" volume="4" name="Front Camera">
+      <outgoingFlows usage="standard" capacity="5" load="4" target="//@elements.1/@elements.0"/>
     </elements>
-    <elements xsi:type="flow:DataSource" usage="standard" name="Back Camera">
-      <outgoingFlows usage="low" capacity="8" load="2" target="//@elements.1/@elements.0"/>
+    <elements xsi:type="flow:DataSource" usage="standard" volume="8" name="Back Camera">
+      <outgoingFlows usage="standard" capacity="8" load="8" target="//@elements.1/@elements.0"/>
     </elements>
     <elements xsi:type="flow:DataSource" volume="6" name="Radar">
       <outgoingFlows usage="standard" capacity="6" load="6" target="//@elements.1/@elements.1"/>
     </elements>
+    <elements xsi:type="flow:Fan" consumption="50" speed="5000"/>
     <powerInputs/>
   </elements>
   <elements xsi:type="flow:DataSource" usage="standard" volume="4" name="Wifi">
