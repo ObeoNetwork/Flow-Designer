@@ -1319,7 +1319,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_MAZokLgjEeStT-4j1n5FHw" name="volume : EInt = " tooltipText="">
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_MAZokLgjEeStT-4j1n5FHw" name="volume : EInt" tooltipText="">
           <target xmi:type="ecore:EAttribute" href="model/flow.ecore#//Operation/volume"/>
           <semanticElements xmi:type="ecore:EAttribute" href="model/flow.ecore#//Operation/volume"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_MAbdwLgjEeStT-4j1n5FHw" labelAlignment="LEFT" description="_L_7ug7gjEeStT-4j1n5FHw">
@@ -1489,7 +1489,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_L-du4LgjEeStT-4j1n5FHw" name="System" tooltipText="&#xA;ERROR : A containment reference of a type with a container feature org.eclipse.emf.ecore.impl.EReferenceImpl@4512fedc{platform:/resource/fr.obeo.dsl.designer.sample.flow/model/flow.ecore#//DataFlow/source} that requires instances to be contained elsewhere cannot be populated" outgoingEdges="_MBRLQLgjEeStT-4j1n5FHw _MBWq0LgjEeStT-4j1n5FHw _MBZuILgjEeStT-4j1n5FHw _MBcKYLgjEeStT-4j1n5FHw _MCnPELgjEeStT-4j1n5FHw" incomingEdges="_MCD1cLgjEeStT-4j1n5FHw" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_L-du4LgjEeStT-4j1n5FHw" name="System" tooltipText="&#xA;ERROR : A containment reference of a type with a container feature org.eclipse.emf.ecore.impl.EReferenceImpl@f57ced1{platform:/resource/fr.obeo.dsl.designer.sample.flow/model/flow.ecore#//DataFlow/source} that requires instances to be contained elsewhere cannot be populated" outgoingEdges="_MBRLQLgjEeStT-4j1n5FHw _MBWq0LgjEeStT-4j1n5FHw _MBZuILgjEeStT-4j1n5FHw _MBcKYLgjEeStT-4j1n5FHw _MCnPELgjEeStT-4j1n5FHw" incomingEdges="_MCD1cLgjEeStT-4j1n5FHw" width="12" height="10">
         <target xmi:type="ecore:EClass" href="model/flow.ecore#//System"/>
         <semanticElements xmi:type="ecore:EClass" href="model/flow.ecore#//System"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_F8afgH4pEeWxh_dA3WnlHQ" labelColor="239,41,41" description="_F8YqUH4pEeWxh_dA3WnlHQ" borderSize="1" borderSizeComputationExpression="1" borderColor="239,41,41" backgroundStyle="Liquid" foregroundColor="255,252,216"/>
@@ -2532,7 +2532,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_jTAPQLv7EeSwd9XWwTtkkQ" name="System" tooltipText="&#xA;ERROR : A containment reference of a type with a container feature org.eclipse.emf.ecore.impl.EReferenceImpl@4512fedc{platform:/resource/fr.obeo.dsl.designer.sample.flow/model/flow.ecore#//DataFlow/source} that requires instances to be contained elsewhere cannot be populated" outgoingEdges="_pshWELv7EeSwd9XWwTtkkQ _bRwyoBAvEeWQTcu6FgJmTw _dfaV8BAvEeWQTcu6FgJmTw" incomingEdges="_jThMoLv7EeSwd9XWwTtkkQ" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_jTAPQLv7EeSwd9XWwTtkkQ" name="System" tooltipText="&#xA;ERROR : A containment reference of a type with a container feature org.eclipse.emf.ecore.impl.EReferenceImpl@f57ced1{platform:/resource/fr.obeo.dsl.designer.sample.flow/model/flow.ecore#//DataFlow/source} that requires instances to be contained elsewhere cannot be populated" outgoingEdges="_pshWELv7EeSwd9XWwTtkkQ _bRwyoBAvEeWQTcu6FgJmTw _dfaV8BAvEeWQTcu6FgJmTw" incomingEdges="_jThMoLv7EeSwd9XWwTtkkQ" width="12" height="10">
         <target xmi:type="ecore:EClass" href="model/flow.ecore#//System"/>
         <semanticElements xmi:type="ecore:EClass" href="model/flow.ecore#//System"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

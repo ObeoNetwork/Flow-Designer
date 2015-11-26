@@ -65,12 +65,6 @@
               </style>
             </conditionnalStyles>
           </subNodeMappings>
-          <subNodeMappings name="a fan" semanticCandidatesExpression="feature:eAllContents" domainClass="flow.Fan">
-            <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/fan.svg">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </style>
-          </subNodeMappings>
           <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="2" labelSize="10" labelExpression="[name/]" backgroundStyle="GradientTopToBottom">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <labelFormat>italic</labelFormat>
@@ -172,11 +166,6 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="fan">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation/>
-          </ownedTools>
         </toolSections>
         <customization>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[oclAsType(flow::Processor).usage.toString()='standard'/]">
@@ -233,7 +222,7 @@
       <additionalLayers name="Temperature">
         <containerMappings xsi:type="description_1:ContainerMappingImport" name="importSystem" domainClass="flow.System" reusedNodeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@containerMappings[name='importSystem']/@subNodeMappings[name='Fan'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']" importedMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']">
           <subNodeMappings name="Fan" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@toolSections.0/@ownedTools[name='Edit%20Speed']" semanticCandidatesExpression="aql:self.eAllContents(flow::Fan)" domainClass="flow.Fan">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[speed/]" sizeComputationExpression="6" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="flow.design/images/cpu_fan.png">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:speed" sizeComputationExpression="6" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/fan.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
@@ -273,7 +262,7 @@
             </featureCustomizations>
           </vsmElementCustomizations>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclIsTypeOf(flow::CompositeProcessor)">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style" attributeName="labelExpression" value="aql:self.name +' ('+ self.temperature +'&#xb0;C)'"/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style" attributeName="labelExpression" value="aql:self.oclAsType(flow::CompositeProcessor).name +' ('+ self.oclAsType(flow::CompositeProcessor).temperature +'&#xb0;C)'"/>
           </vsmElementCustomizations>
         </customization>
       </additionalLayers>
@@ -375,10 +364,10 @@
         </backgroundConditionalStyle>
       </ownedColumnMappings>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" dropDescriptions="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']/@defaultLayer/@toolSections.0/@ownedTools[name='drop%20pack']" name="Package dep" domainClass="flow.System" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" dropDescriptions="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@toolSections.0/@ownedTools[name='Drop%20Component']" name="Dependencies Control" domainClass="flow.System" enablePopupBars="true">
       <metamodel href="http://www.obeo.fr/dsl/designer/sample/flow#/"/>
       <defaultLayer name="Default">
-        <edgeMappings name="Dependency" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']/@defaultLayer/@containerMappings[name='package']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']/@defaultLayer/@containerMappings[name='package']" targetFinderExpression="aql:self.elements.oclAsType(flow::Processor).outgoingFlows.target.eContainer()->asOrderedSet()->excluding(self)">
+        <edgeMappings name="Dependency" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@containerMappings[name='Component']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@containerMappings[name='Component']" targetFinderExpression="aql:self.elements.oclAsType(flow::Processor).outgoingFlows.target.eContainer()->asOrderedSet()->excluding(self)">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -386,7 +375,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <containerMappings name="package" createElements="false" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']/@defaultLayer/@toolSections.0/@ownedTools[name='dbl%20pqck']" domainClass="flow.CompositeProcessor">
+        <containerMappings name="Component" deletionDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@toolSections.0/@ownedTools[name='Component%20Delete']" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name']" semanticCandidatesExpression="feature:elements" createElements="false" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@toolSections.0/@ownedTools[name='Component%20DblClick']" domainClass="flow.CompositeProcessor">
           <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -394,49 +383,66 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </containerMappings>
-        <toolSections name="bla">
-          <ownedTools xsi:type="tool:ContainerDropDescription" name="drop pack" mappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']/@defaultLayer/@containerMappings[name='package']" dragSource="BOTH">
+        <toolSections name="Interactive Control">
+          <ownedTools xsi:type="tool:ContainerDropDescription" name="Drop Component" mappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@containerMappings[name='Component']" dragSource="BOTH">
             <oldContainer name="oldSemanticContainer"/>
             <newContainer name="newSemanticContainer"/>
             <element name="element"/>
             <newViewContainer name="newContainerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
-                <subModelOperations xsi:type="tool:CreateView" mapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']/@defaultLayer/@containerMappings[name='package']" containerViewExpression="var:newContainerView"/>
+                <subModelOperations xsi:type="tool:CreateView" mapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@containerMappings[name='Component']" containerViewExpression="var:newContainerView"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:DoubleClickDescription" name="dbl pqck" mappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']/@defaultLayer/@containerMappings[name='package']">
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Component DblClick" mappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@containerMappings[name='Component']">
             <element name="element">
               <subVariables xsi:type="tool_1:SelectModelElementVariable" name="toCreate" candidatesExpression="aql:self.elements.oclAsType(flow::Processor).outgoingFlows.target.eContainer()->asOrderedSet()->excluding(self)" multiple="true" message="Import ?"/>
             </element>
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:For" expression="var:toCreate">
-                <subModelOperations xsi:type="tool:CreateView" mapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']/@defaultLayer/@containerMappings[name='package']" containerViewExpression="aql:elementView.eContainer(diagram::DDiagram)"/>
+                <subModelOperations xsi:type="tool:CreateView" mapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@containerMappings[name='Component']" containerViewExpression="aql:elementView.eContainer(diagram::DDiagram)"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="indirect dep" edgeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']/@defaultLayer/@edgeMappings[name='Dependency']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Indirect Dependencies" edgeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@edgeMappings[name='Dependency']">
             <sourceVariable name="source">
-              <subVariables xsi:type="tool_1:SelectModelElementVariable" name="q" candidatesExpression="aql:self.elements"/>
-              <subVariables xsi:type="tool_1:SelectModelElementVariable" name="b" candidatesExpression="aql:self.elements"/>
+              <subVariables xsi:type="tool_1:SelectModelElementVariable" name="srcElement" candidatesExpression="aql:self.elements" message="Select Source Dependency"/>
             </sourceVariable>
-            <targetVariable name="target"/>
+            <targetVariable name="target">
+              <subVariables xsi:type="tool_1:SelectModelElementVariable" name="targetElement" candidatesExpression="aql:self.elements" message="Select Targetted Dependency"/>
+            </targetVariable>
             <sourceViewVariable name="sourceView"/>
             <targetViewVariable name="targetView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:srcElement">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="flow.DataFlow" referenceName="outgoingFlows">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:srcElement"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:targetElement"/>
+                </subModelOperations>
+              </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:SelectionWizardDescription" name="fff" candidatesExpression="aql:self.oclAsType(flow::CompositeProcessor).elements">
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="Component Delete">
             <element name="element"/>
+            <elementView name="elementView"/>
             <containerView name="containerView"/>
-            <container name="container"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="flows" valueExpression="var:element"/>
-              </firstModelOperations>
+              <firstModelOperations xsi:type="tool_1:DeleteView"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create Component" containerMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@containerMappings[name='Component']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="flow.CompositeProcessor" referenceName="elements"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="Edit Name">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:0"/>
             </initialOperation>
           </ownedTools>
         </toolSections>
