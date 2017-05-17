@@ -28,11 +28,11 @@ package fr.obeo.dsl.designer.sample.flow;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.CapacityBound#getCapacity <em>Capacity</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.CapacityBound#getLoad <em>Load</em>}</li>
  * </ul>
- * </p>
  *
  * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getCapacityBound()
  * @model
@@ -40,57 +40,57 @@ package fr.obeo.dsl.designer.sample.flow;
  */
 public interface CapacityBound extends FlowElement {
 	/**
-     * Returns the value of the '<em><b>Capacity</b></em>' attribute.
-     * The default value is <code>"10"</code>.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Capacity</b></em>' attribute.
+	 * The default value is <code>"10"</code>.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Capacity</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-     * @return the value of the '<em>Capacity</em>' attribute.
-     * @see #setCapacity(int)
-     * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getCapacityBound_Capacity()
-     * @model default="10" required="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Capacity</em>' attribute.
+	 * @see #setCapacity(int)
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getCapacityBound_Capacity()
+	 * @model default="10" required="true"
+	 * @generated
+	 */
 	int getCapacity();
 
 	/**
-     * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.CapacityBound#getCapacity <em>Capacity</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.CapacityBound#getCapacity <em>Capacity</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Capacity</em>' attribute.
-     * @see #getCapacity()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Capacity</em>' attribute.
+	 * @see #getCapacity()
+	 * @generated
+	 */
 	void setCapacity(int value);
 
 	/**
-     * Returns the value of the '<em><b>Load</b></em>' attribute.
-     * The default value is <code>"0"</code>.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Load</b></em>' attribute.
+	 * The default value is <code>"0"</code>.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Load</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-     * @return the value of the '<em>Load</em>' attribute.
-     * @see #setLoad(int)
-     * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getCapacityBound_Load()
-     * @model default="0" required="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Load</em>' attribute.
+	 * @see #setLoad(int)
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getCapacityBound_Load()
+	 * @model default="0" required="true"
+	 * @generated
+	 */
 	int getLoad();
 
 	/**
-     * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.CapacityBound#getLoad <em>Load</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.CapacityBound#getLoad <em>Load</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Load</em>' attribute.
-     * @see #getLoad()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Load</em>' attribute.
+	 * @see #getLoad()
+	 * @generated
+	 */
 	void setLoad(int value);
 
 } // CapacityBound

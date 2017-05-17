@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.DataFlow#getTarget <em>Target</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.DataFlow#getSource <em>Source</em>}</li>
  * </ul>
- * </p>
  *
  * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getDataFlow()
  * @model
@@ -41,59 +41,59 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface DataFlow extends CapacityBound {
 	/**
-     * Returns the value of the '<em><b>Target</b></em>' reference.
-     * It is bidirectional and its opposite is '{@link fr.obeo.dsl.designer.sample.flow.FlowTarget#getIncomingFlows <em>Incoming Flows</em>}'.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Target</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link fr.obeo.dsl.designer.sample.flow.FlowTarget#getIncomingFlows <em>Incoming Flows</em>}'.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Target</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-     * @return the value of the '<em>Target</em>' reference.
-     * @see #setTarget(FlowTarget)
-     * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getDataFlow_Target()
-     * @see fr.obeo.dsl.designer.sample.flow.FlowTarget#getIncomingFlows
-     * @model opposite="incomingFlows" required="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Target</em>' reference.
+	 * @see #setTarget(FlowTarget)
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getDataFlow_Target()
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowTarget#getIncomingFlows
+	 * @model opposite="incomingFlows" required="true"
+	 * @generated
+	 */
 	FlowTarget getTarget();
 
 	/**
-     * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.DataFlow#getTarget <em>Target</em>}' reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.DataFlow#getTarget <em>Target</em>}' reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Target</em>' reference.
-     * @see #getTarget()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Target</em>' reference.
+	 * @see #getTarget()
+	 * @generated
+	 */
 	void setTarget(FlowTarget value);
 
 	/**
-     * Returns the value of the '<em><b>Source</b></em>' container reference.
-     * It is bidirectional and its opposite is '{@link fr.obeo.dsl.designer.sample.flow.FlowSource#getOutgoingFlows <em>Outgoing Flows</em>}'.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Source</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link fr.obeo.dsl.designer.sample.flow.FlowSource#getOutgoingFlows <em>Outgoing Flows</em>}'.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Source</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-     * @return the value of the '<em>Source</em>' container reference.
-     * @see #setSource(FlowSource)
-     * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getDataFlow_Source()
-     * @see fr.obeo.dsl.designer.sample.flow.FlowSource#getOutgoingFlows
-     * @model opposite="outgoingFlows" required="true" transient="false"
-     * @generated
-     */
+	 * @return the value of the '<em>Source</em>' container reference.
+	 * @see #setSource(FlowSource)
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getDataFlow_Source()
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowSource#getOutgoingFlows
+	 * @model opposite="outgoingFlows" required="true" transient="false"
+	 * @generated
+	 */
 	FlowSource getSource();
 
 	/**
-     * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.DataFlow#getSource <em>Source</em>}' container reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.DataFlow#getSource <em>Source</em>}' container reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Source</em>' container reference.
-     * @see #getSource()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Source</em>' container reference.
+	 * @see #getSource()
+	 * @generated
+	 */
 	void setSource(FlowSource value);
 
 } // DataFlow

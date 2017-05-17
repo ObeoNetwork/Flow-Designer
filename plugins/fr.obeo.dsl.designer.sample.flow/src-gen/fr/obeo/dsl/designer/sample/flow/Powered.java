@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.Powered#getConsumption <em>Consumption</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.Powered#getPowerStatus <em>Power Status</em>}</li>
  * </ul>
- * </p>
  *
  * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getPowered()
  * @model abstract="true"
@@ -41,59 +41,59 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Powered extends EObject {
     /**
-     * Returns the value of the '<em><b>Consumption</b></em>' attribute.
-     * The default value is <code>"0"</code>.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Consumption</b></em>' attribute.
+	 * The default value is <code>"0"</code>.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Consumption</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Consumption</em>' attribute.
-     * @see #setConsumption(int)
-     * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getPowered_Consumption()
-     * @model default="0"
-     * @generated
-     */
+	 * @return the value of the '<em>Consumption</em>' attribute.
+	 * @see #setConsumption(int)
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getPowered_Consumption()
+	 * @model default="0"
+	 * @generated
+	 */
     int getConsumption();
 
     /**
-     * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.Powered#getConsumption <em>Consumption</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.Powered#getConsumption <em>Consumption</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Consumption</em>' attribute.
-     * @see #getConsumption()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Consumption</em>' attribute.
+	 * @see #getConsumption()
+	 * @generated
+	 */
     void setConsumption(int value);
 
     /**
-     * Returns the value of the '<em><b>Power Status</b></em>' attribute.
-     * The literals are from the enumeration {@link fr.obeo.dsl.designer.sample.flow.PoweredStatus}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Power Status</b></em>' attribute.
+	 * The literals are from the enumeration {@link fr.obeo.dsl.designer.sample.flow.PoweredStatus}.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Power Status</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Power Status</em>' attribute.
-     * @see fr.obeo.dsl.designer.sample.flow.PoweredStatus
-     * @see #setPowerStatus(PoweredStatus)
-     * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getPowered_PowerStatus()
-     * @model required="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Power Status</em>' attribute.
+	 * @see fr.obeo.dsl.designer.sample.flow.PoweredStatus
+	 * @see #setPowerStatus(PoweredStatus)
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getPowered_PowerStatus()
+	 * @model required="true"
+	 * @generated
+	 */
     PoweredStatus getPowerStatus();
 
     /**
-     * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.Powered#getPowerStatus <em>Power Status</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.Powered#getPowerStatus <em>Power Status</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Power Status</em>' attribute.
-     * @see fr.obeo.dsl.designer.sample.flow.PoweredStatus
-     * @see #getPowerStatus()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Power Status</em>' attribute.
+	 * @see fr.obeo.dsl.designer.sample.flow.PoweredStatus
+	 * @see #getPowerStatus()
+	 * @generated
+	 */
     void setPowerStatus(PoweredStatus value);
 
 } // Powered

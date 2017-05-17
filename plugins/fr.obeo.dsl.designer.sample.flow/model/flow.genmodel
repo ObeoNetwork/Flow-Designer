@@ -23,14 +23,6 @@
       <genEnumLiterals ecoreEnumLiteral="flow.ecore#//FlowElementUsage/high"/>
       <genEnumLiterals ecoreEnumLiteral="flow.ecore#//FlowElementUsage/over"/>
     </genEnums>
-    <genClasses ecoreClass="flow.ecore#//StateProcessor">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference flow.ecore#//StateProcessor/outputs"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference flow.ecore#//StateProcessor/states"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference flow.ecore#//StateProcessor/current"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference flow.ecore#//StateProcessor/first"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference flow.ecore#//StateProcessor/events"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference flow.ecore#//StateProcessor/operations"/>
-    </genClasses>
     <genClasses ecoreClass="flow.ecore#//Processor">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//Processor/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//Processor/volume"/>
@@ -51,7 +43,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//CapacityBound/load"/>
     </genClasses>
     <genClasses ecoreClass="flow.ecore#//System">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference flow.ecore#//System/flows"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference flow.ecore#//System/elements"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//System/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//System/temperature"/>
@@ -81,23 +72,6 @@
     <genClasses ecoreClass="flow.ecore#//DataSource">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//DataSource/volume"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//DataSource/name"/>
-    </genClasses>
-    <genClasses ecoreClass="flow.ecore#//State">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference flow.ecore#//State/catches"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//State/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference flow.ecore#//State/execute"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference flow.ecore#//State/next"/>
-    </genClasses>
-    <genClasses ecoreClass="flow.ecore#//ComputationResult"/>
-    <genClasses ecoreClass="flow.ecore#//Event">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference flow.ecore#//Event/next"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//Event/name"/>
-    </genClasses>
-    <genClasses ecoreClass="flow.ecore#//Operation">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference flow.ecore#//Operation/output"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//Operation/volume"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//Operation/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference flow.ecore#//Operation/calledBy"/>
     </genClasses>
     <genClasses image="false" ecoreClass="flow.ecore#//FlowElement">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//FlowElement/status"/>

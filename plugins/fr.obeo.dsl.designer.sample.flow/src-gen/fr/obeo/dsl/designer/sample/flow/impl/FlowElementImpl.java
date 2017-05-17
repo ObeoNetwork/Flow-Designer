@@ -38,200 +38,200 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.FlowElementImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.FlowElementImpl#getUsage <em>Usage</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public abstract class FlowElementImpl extends EObjectImpl implements FlowElement {
 	/**
-     * The default value of the '{@link #getStatus() <em>Status</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getStatus() <em>Status</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getStatus()
-     * @generated
-     * @ordered
-     */
+	 * @see #getStatus()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final FlowElementStatus STATUS_EDEFAULT = FlowElementStatus.ACTIVE;
 
 	/**
-     * The cached value of the '{@link #getStatus() <em>Status</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getStatus() <em>Status</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getStatus()
-     * @generated
-     * @ordered
-     */
+	 * @see #getStatus()
+	 * @generated
+	 * @ordered
+	 */
 	protected FlowElementStatus status = STATUS_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getUsage() <em>Usage</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getUsage() <em>Usage</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getUsage()
-     * @generated
-     * @ordered
-     */
+	 * @see #getUsage()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final FlowElementUsage USAGE_EDEFAULT = FlowElementUsage.UNUSED;
 
 	/**
-     * The cached value of the '{@link #getUsage() <em>Usage</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getUsage() <em>Usage</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getUsage()
-     * @generated
-     * @ordered
-     */
+	 * @see #getUsage()
+	 * @generated
+	 * @ordered
+	 */
 	protected FlowElementUsage usage = USAGE_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected FlowElementImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return FlowPackage.Literals.FLOW_ELEMENT;
-    }
+		return FlowPackage.Literals.FLOW_ELEMENT;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public FlowElementStatus getStatus() {
-        return status;
-    }
+		return status;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setStatus(FlowElementStatus newStatus) {
-        FlowElementStatus oldStatus = status;
-        status = newStatus == null ? STATUS_EDEFAULT : newStatus;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.FLOW_ELEMENT__STATUS, oldStatus, status));
-    }
+		FlowElementStatus oldStatus = status;
+		status = newStatus == null ? STATUS_EDEFAULT : newStatus;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.FLOW_ELEMENT__STATUS, oldStatus, status));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public FlowElementUsage getUsage() {
-        return usage;
-    }
+		return usage;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setUsage(FlowElementUsage newUsage) {
-        FlowElementUsage oldUsage = usage;
-        usage = newUsage == null ? USAGE_EDEFAULT : newUsage;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.FLOW_ELEMENT__USAGE, oldUsage, usage));
-    }
+		FlowElementUsage oldUsage = usage;
+		usage = newUsage == null ? USAGE_EDEFAULT : newUsage;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.FLOW_ELEMENT__USAGE, oldUsage, usage));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case FlowPackage.FLOW_ELEMENT__STATUS:
-                return getStatus();
-            case FlowPackage.FLOW_ELEMENT__USAGE:
-                return getUsage();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case FlowPackage.FLOW_ELEMENT__STATUS:
+				return getStatus();
+			case FlowPackage.FLOW_ELEMENT__USAGE:
+				return getUsage();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case FlowPackage.FLOW_ELEMENT__STATUS:
-                setStatus((FlowElementStatus)newValue);
-                return;
-            case FlowPackage.FLOW_ELEMENT__USAGE:
-                setUsage((FlowElementUsage)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case FlowPackage.FLOW_ELEMENT__STATUS:
+				setStatus((FlowElementStatus)newValue);
+				return;
+			case FlowPackage.FLOW_ELEMENT__USAGE:
+				setUsage((FlowElementUsage)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case FlowPackage.FLOW_ELEMENT__STATUS:
-                setStatus(STATUS_EDEFAULT);
-                return;
-            case FlowPackage.FLOW_ELEMENT__USAGE:
-                setUsage(USAGE_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case FlowPackage.FLOW_ELEMENT__STATUS:
+				setStatus(STATUS_EDEFAULT);
+				return;
+			case FlowPackage.FLOW_ELEMENT__USAGE:
+				setUsage(USAGE_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case FlowPackage.FLOW_ELEMENT__STATUS:
-                return status != STATUS_EDEFAULT;
-            case FlowPackage.FLOW_ELEMENT__USAGE:
-                return usage != USAGE_EDEFAULT;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case FlowPackage.FLOW_ELEMENT__STATUS:
+				return status != STATUS_EDEFAULT;
+			case FlowPackage.FLOW_ELEMENT__USAGE:
+				return usage != USAGE_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (status: ");
-        result.append(status);
-        result.append(", usage: ");
-        result.append(usage);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (status: ");
+		result.append(status);
+		result.append(", usage: ");
+		result.append(usage);
+		result.append(')');
+		return result.toString();
+	}
 
 } //FlowElementImpl

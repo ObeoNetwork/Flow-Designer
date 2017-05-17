@@ -22,14 +22,10 @@ package com.sample
 
 import org.eclipse.emf.ecore.EObject;
 import fr.obeo.dsl.designer.sample.flow.DataSource;
-import fr.obeo.dsl.designer.sample.flow.ComputationResult;
-import fr.obeo.dsl.designer.sample.flow.Operation;
-import fr.obeo.dsl.designer.sample.flow.State;
 import fr.obeo.dsl.designer.sample.flow.System;
 import fr.obeo.dsl.designer.sample.flow.Fan;
 import fr.obeo.dsl.designer.sample.flow.Powered;
 import fr.obeo.dsl.designer.sample.flow.Processor;
-import fr.obeo.dsl.designer.sample.flow.StateProcessor;
 import fr.obeo.dsl.designer.sample.flow.CapacityBound;
 import fr.obeo.dsl.designer.sample.flow.DataFlow;
 import fr.obeo.dsl.designer.sample.flow.FlowTarget;
@@ -121,16 +117,6 @@ rule "Update Flow Size From Active Processor"
 	  flow.setLoad(processor.getVolume());
 end 
 
-rule "Update Flow Size From  Active ComputationResult"
-	when	
-	   state : State()
-	   processor : StateProcessor( current == state )
-	   compResult : ComputationResult( status == FlowElementStatus.ACTIVE , eContainer == processor)
-	   flow : DataFlow(source == compResult)
-	   operation : Operation(output == compResult, calledBy contains state )	
-	then	  
-	  flow.setLoad(SimulationHelper.getCurrentProduction(compResult));
-end
 
 rule "Update Target from Input Flows"
   when     

@@ -42,262 +42,262 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.DataFlowImpl#getTarget <em>Target</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.DataFlowImpl#getSource <em>Source</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class DataFlowImpl extends CapacityBoundImpl implements DataFlow {
 	/**
-     * The cached value of the '{@link #getTarget() <em>Target</em>}' reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTarget() <em>Target</em>}' reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getTarget()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTarget()
+	 * @generated
+	 * @ordered
+	 */
 	protected FlowTarget target;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected DataFlowImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return FlowPackage.Literals.DATA_FLOW;
-    }
+		return FlowPackage.Literals.DATA_FLOW;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public FlowTarget getTarget() {
-        if (target != null && target.eIsProxy()) {
-            InternalEObject oldTarget = (InternalEObject)target;
-            target = (FlowTarget)eResolveProxy(oldTarget);
-            if (target != oldTarget) {
-                if (eNotificationRequired())
-                    eNotify(new ENotificationImpl(this, Notification.RESOLVE, FlowPackage.DATA_FLOW__TARGET, oldTarget, target));
-            }
-        }
-        return target;
-    }
+		if (target != null && target.eIsProxy()) {
+			InternalEObject oldTarget = (InternalEObject)target;
+			target = (FlowTarget)eResolveProxy(oldTarget);
+			if (target != oldTarget) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FlowPackage.DATA_FLOW__TARGET, oldTarget, target));
+			}
+		}
+		return target;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public FlowTarget basicGetTarget() {
-        return target;
-    }
+		return target;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public NotificationChain basicSetTarget(FlowTarget newTarget, NotificationChain msgs) {
-        FlowTarget oldTarget = target;
-        target = newTarget;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FlowPackage.DATA_FLOW__TARGET, oldTarget, newTarget);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		FlowTarget oldTarget = target;
+		target = newTarget;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FlowPackage.DATA_FLOW__TARGET, oldTarget, newTarget);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setTarget(FlowTarget newTarget) {
-        if (newTarget != target) {
-            NotificationChain msgs = null;
-            if (target != null)
-                msgs = ((InternalEObject)target).eInverseRemove(this, FlowPackage.FLOW_TARGET__INCOMING_FLOWS, FlowTarget.class, msgs);
-            if (newTarget != null)
-                msgs = ((InternalEObject)newTarget).eInverseAdd(this, FlowPackage.FLOW_TARGET__INCOMING_FLOWS, FlowTarget.class, msgs);
-            msgs = basicSetTarget(newTarget, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.DATA_FLOW__TARGET, newTarget, newTarget));
-    }
+		if (newTarget != target) {
+			NotificationChain msgs = null;
+			if (target != null)
+				msgs = ((InternalEObject)target).eInverseRemove(this, FlowPackage.FLOW_TARGET__INCOMING_FLOWS, FlowTarget.class, msgs);
+			if (newTarget != null)
+				msgs = ((InternalEObject)newTarget).eInverseAdd(this, FlowPackage.FLOW_TARGET__INCOMING_FLOWS, FlowTarget.class, msgs);
+			msgs = basicSetTarget(newTarget, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.DATA_FLOW__TARGET, newTarget, newTarget));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public FlowSource getSource() {
-        if (eContainerFeatureID != FlowPackage.DATA_FLOW__SOURCE) return null;
-        return (FlowSource)eContainer();
-    }
+		if (eContainerFeatureID() != FlowPackage.DATA_FLOW__SOURCE) return null;
+		return (FlowSource)eInternalContainer();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public NotificationChain basicSetSource(FlowSource newSource, NotificationChain msgs) {
-        msgs = eBasicSetContainer((InternalEObject)newSource, FlowPackage.DATA_FLOW__SOURCE, msgs);
-        return msgs;
-    }
+		msgs = eBasicSetContainer((InternalEObject)newSource, FlowPackage.DATA_FLOW__SOURCE, msgs);
+		return msgs;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setSource(FlowSource newSource) {
-        if (newSource != eInternalContainer() || (eContainerFeatureID != FlowPackage.DATA_FLOW__SOURCE && newSource != null)) {
-            if (EcoreUtil.isAncestor(this, newSource))
-                throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
-            NotificationChain msgs = null;
-            if (eInternalContainer() != null)
-                msgs = eBasicRemoveFromContainer(msgs);
-            if (newSource != null)
-                msgs = ((InternalEObject)newSource).eInverseAdd(this, FlowPackage.FLOW_SOURCE__OUTGOING_FLOWS, FlowSource.class, msgs);
-            msgs = basicSetSource(newSource, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.DATA_FLOW__SOURCE, newSource, newSource));
-    }
+		if (newSource != eInternalContainer() || (eContainerFeatureID() != FlowPackage.DATA_FLOW__SOURCE && newSource != null)) {
+			if (EcoreUtil.isAncestor(this, newSource))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newSource != null)
+				msgs = ((InternalEObject)newSource).eInverseAdd(this, FlowPackage.FLOW_SOURCE__OUTGOING_FLOWS, FlowSource.class, msgs);
+			msgs = basicSetSource(newSource, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.DATA_FLOW__SOURCE, newSource, newSource));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case FlowPackage.DATA_FLOW__TARGET:
-                if (target != null)
-                    msgs = ((InternalEObject)target).eInverseRemove(this, FlowPackage.FLOW_TARGET__INCOMING_FLOWS, FlowTarget.class, msgs);
-                return basicSetTarget((FlowTarget)otherEnd, msgs);
-            case FlowPackage.DATA_FLOW__SOURCE:
-                if (eInternalContainer() != null)
-                    msgs = eBasicRemoveFromContainer(msgs);
-                return basicSetSource((FlowSource)otherEnd, msgs);
-        }
-        return super.eInverseAdd(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case FlowPackage.DATA_FLOW__TARGET:
+				if (target != null)
+					msgs = ((InternalEObject)target).eInverseRemove(this, FlowPackage.FLOW_TARGET__INCOMING_FLOWS, FlowTarget.class, msgs);
+				return basicSetTarget((FlowTarget)otherEnd, msgs);
+			case FlowPackage.DATA_FLOW__SOURCE:
+				if (eInternalContainer() != null)
+					msgs = eBasicRemoveFromContainer(msgs);
+				return basicSetSource((FlowSource)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case FlowPackage.DATA_FLOW__TARGET:
-                return basicSetTarget(null, msgs);
-            case FlowPackage.DATA_FLOW__SOURCE:
-                return basicSetSource(null, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case FlowPackage.DATA_FLOW__TARGET:
+				return basicSetTarget(null, msgs);
+			case FlowPackage.DATA_FLOW__SOURCE:
+				return basicSetSource(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
-        switch (eContainerFeatureID) {
-            case FlowPackage.DATA_FLOW__SOURCE:
-                return eInternalContainer().eInverseRemove(this, FlowPackage.FLOW_SOURCE__OUTGOING_FLOWS, FlowSource.class, msgs);
-        }
-        return super.eBasicRemoveFromContainerFeature(msgs);
-    }
+		switch (eContainerFeatureID()) {
+			case FlowPackage.DATA_FLOW__SOURCE:
+				return eInternalContainer().eInverseRemove(this, FlowPackage.FLOW_SOURCE__OUTGOING_FLOWS, FlowSource.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case FlowPackage.DATA_FLOW__TARGET:
-                if (resolve) return getTarget();
-                return basicGetTarget();
-            case FlowPackage.DATA_FLOW__SOURCE:
-                return getSource();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case FlowPackage.DATA_FLOW__TARGET:
+				if (resolve) return getTarget();
+				return basicGetTarget();
+			case FlowPackage.DATA_FLOW__SOURCE:
+				return getSource();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case FlowPackage.DATA_FLOW__TARGET:
-                setTarget((FlowTarget)newValue);
-                return;
-            case FlowPackage.DATA_FLOW__SOURCE:
-                setSource((FlowSource)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case FlowPackage.DATA_FLOW__TARGET:
+				setTarget((FlowTarget)newValue);
+				return;
+			case FlowPackage.DATA_FLOW__SOURCE:
+				setSource((FlowSource)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case FlowPackage.DATA_FLOW__TARGET:
-                setTarget((FlowTarget)null);
-                return;
-            case FlowPackage.DATA_FLOW__SOURCE:
-                setSource((FlowSource)null);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case FlowPackage.DATA_FLOW__TARGET:
+				setTarget((FlowTarget)null);
+				return;
+			case FlowPackage.DATA_FLOW__SOURCE:
+				setSource((FlowSource)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case FlowPackage.DATA_FLOW__TARGET:
-                return target != null;
-            case FlowPackage.DATA_FLOW__SOURCE:
-                return getSource() != null;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case FlowPackage.DATA_FLOW__TARGET:
+				return target != null;
+			case FlowPackage.DATA_FLOW__SOURCE:
+				return getSource() != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //DataFlowImpl

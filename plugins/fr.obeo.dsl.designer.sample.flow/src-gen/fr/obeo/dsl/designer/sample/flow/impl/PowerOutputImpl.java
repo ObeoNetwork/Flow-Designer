@@ -20,25 +20,21 @@
  */
 package fr.obeo.dsl.designer.sample.flow.impl;
 
-import fr.obeo.dsl.designer.sample.flow.FlowPackage;
-import fr.obeo.dsl.designer.sample.flow.PowerLink;
-import fr.obeo.dsl.designer.sample.flow.PowerOutput;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.InternalEList;
+
+import fr.obeo.dsl.designer.sample.flow.FlowPackage;
+import fr.obeo.dsl.designer.sample.flow.PowerLink;
+import fr.obeo.dsl.designer.sample.flow.PowerOutput;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,210 +42,210 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.PowerOutputImpl#getPower <em>Power</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.PowerOutputImpl#getLinks <em>Links</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class PowerOutputImpl extends EObjectImpl implements PowerOutput {
     /**
-     * The default value of the '{@link #getPower() <em>Power</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getPower() <em>Power</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getPower()
-     * @generated
-     * @ordered
-     */
+	 * @see #getPower()
+	 * @generated
+	 * @ordered
+	 */
     protected static final int POWER_EDEFAULT = 1000;
 
     /**
-     * The cached value of the '{@link #getPower() <em>Power</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getPower() <em>Power</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getPower()
-     * @generated
-     * @ordered
-     */
+	 * @see #getPower()
+	 * @generated
+	 * @ordered
+	 */
     protected int power = POWER_EDEFAULT;
 
     /**
-     * The cached value of the '{@link #getLinks() <em>Links</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getLinks() <em>Links</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getLinks()
-     * @generated
-     * @ordered
-     */
+	 * @see #getLinks()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<PowerLink> links;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected PowerOutputImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return FlowPackage.Literals.POWER_OUTPUT;
-    }
+		return FlowPackage.Literals.POWER_OUTPUT;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public int getPower() {
-        return power;
-    }
+		return power;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setPower(int newPower) {
-        int oldPower = power;
-        power = newPower;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.POWER_OUTPUT__POWER, oldPower, power));
-    }
+		int oldPower = power;
+		power = newPower;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.POWER_OUTPUT__POWER, oldPower, power));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EList<PowerLink> getLinks() {
-        if (links == null) {
-            links = new EObjectContainmentWithInverseEList<PowerLink>(PowerLink.class, this, FlowPackage.POWER_OUTPUT__LINKS, FlowPackage.POWER_LINK__SOURCE);
-        }
-        return links;
-    }
+		if (links == null) {
+			links = new EObjectContainmentWithInverseEList<PowerLink>(PowerLink.class, this, FlowPackage.POWER_OUTPUT__LINKS, FlowPackage.POWER_LINK__SOURCE);
+		}
+		return links;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
     public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case FlowPackage.POWER_OUTPUT__LINKS:
-                return ((InternalEList<InternalEObject>)(InternalEList<?>)getLinks()).basicAdd(otherEnd, msgs);
-        }
-        return super.eInverseAdd(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case FlowPackage.POWER_OUTPUT__LINKS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getLinks()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case FlowPackage.POWER_OUTPUT__LINKS:
-                return ((InternalEList<?>)getLinks()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case FlowPackage.POWER_OUTPUT__LINKS:
+				return ((InternalEList<?>)getLinks()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case FlowPackage.POWER_OUTPUT__POWER:
-                return new Integer(getPower());
-            case FlowPackage.POWER_OUTPUT__LINKS:
-                return getLinks();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case FlowPackage.POWER_OUTPUT__POWER:
+				return getPower();
+			case FlowPackage.POWER_OUTPUT__LINKS:
+				return getLinks();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case FlowPackage.POWER_OUTPUT__POWER:
-                setPower(((Integer)newValue).intValue());
-                return;
-            case FlowPackage.POWER_OUTPUT__LINKS:
-                getLinks().clear();
-                getLinks().addAll((Collection<? extends PowerLink>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case FlowPackage.POWER_OUTPUT__POWER:
+				setPower((Integer)newValue);
+				return;
+			case FlowPackage.POWER_OUTPUT__LINKS:
+				getLinks().clear();
+				getLinks().addAll((Collection<? extends PowerLink>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case FlowPackage.POWER_OUTPUT__POWER:
-                setPower(POWER_EDEFAULT);
-                return;
-            case FlowPackage.POWER_OUTPUT__LINKS:
-                getLinks().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case FlowPackage.POWER_OUTPUT__POWER:
+				setPower(POWER_EDEFAULT);
+				return;
+			case FlowPackage.POWER_OUTPUT__LINKS:
+				getLinks().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case FlowPackage.POWER_OUTPUT__POWER:
-                return power != POWER_EDEFAULT;
-            case FlowPackage.POWER_OUTPUT__LINKS:
-                return links != null && !links.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case FlowPackage.POWER_OUTPUT__POWER:
+				return power != POWER_EDEFAULT;
+			case FlowPackage.POWER_OUTPUT__LINKS:
+				return links != null && !links.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (power: ");
-        result.append(power);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (power: ");
+		result.append(power);
+		result.append(')');
+		return result.toString();
+	}
 
 } //PowerOutputImpl

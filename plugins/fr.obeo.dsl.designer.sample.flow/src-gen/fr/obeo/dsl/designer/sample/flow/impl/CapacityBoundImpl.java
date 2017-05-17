@@ -35,200 +35,200 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.CapacityBoundImpl#getCapacity <em>Capacity</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.CapacityBoundImpl#getLoad <em>Load</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class CapacityBoundImpl extends FlowElementImpl implements CapacityBound {
 	/**
-     * The default value of the '{@link #getCapacity() <em>Capacity</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getCapacity() <em>Capacity</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getCapacity()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCapacity()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final int CAPACITY_EDEFAULT = 10;
 
 	/**
-     * The cached value of the '{@link #getCapacity() <em>Capacity</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getCapacity() <em>Capacity</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getCapacity()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCapacity()
+	 * @generated
+	 * @ordered
+	 */
 	protected int capacity = CAPACITY_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getLoad() <em>Load</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getLoad() <em>Load</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getLoad()
-     * @generated
-     * @ordered
-     */
+	 * @see #getLoad()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final int LOAD_EDEFAULT = 0;
 
 	/**
-     * The cached value of the '{@link #getLoad() <em>Load</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getLoad() <em>Load</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getLoad()
-     * @generated
-     * @ordered
-     */
+	 * @see #getLoad()
+	 * @generated
+	 * @ordered
+	 */
 	protected int load = LOAD_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected CapacityBoundImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return FlowPackage.Literals.CAPACITY_BOUND;
-    }
+		return FlowPackage.Literals.CAPACITY_BOUND;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public int getCapacity() {
-        return capacity;
-    }
+		return capacity;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setCapacity(int newCapacity) {
-        int oldCapacity = capacity;
-        capacity = newCapacity;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.CAPACITY_BOUND__CAPACITY, oldCapacity, capacity));
-    }
+		int oldCapacity = capacity;
+		capacity = newCapacity;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.CAPACITY_BOUND__CAPACITY, oldCapacity, capacity));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public int getLoad() {
-        return load;
-    }
+		return load;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setLoad(int newLoad) {
-        int oldLoad = load;
-        load = newLoad;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.CAPACITY_BOUND__LOAD, oldLoad, load));
-    }
+		int oldLoad = load;
+		load = newLoad;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.CAPACITY_BOUND__LOAD, oldLoad, load));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case FlowPackage.CAPACITY_BOUND__CAPACITY:
-                return new Integer(getCapacity());
-            case FlowPackage.CAPACITY_BOUND__LOAD:
-                return new Integer(getLoad());
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case FlowPackage.CAPACITY_BOUND__CAPACITY:
+				return getCapacity();
+			case FlowPackage.CAPACITY_BOUND__LOAD:
+				return getLoad();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case FlowPackage.CAPACITY_BOUND__CAPACITY:
-                setCapacity(((Integer)newValue).intValue());
-                return;
-            case FlowPackage.CAPACITY_BOUND__LOAD:
-                setLoad(((Integer)newValue).intValue());
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case FlowPackage.CAPACITY_BOUND__CAPACITY:
+				setCapacity((Integer)newValue);
+				return;
+			case FlowPackage.CAPACITY_BOUND__LOAD:
+				setLoad((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case FlowPackage.CAPACITY_BOUND__CAPACITY:
-                setCapacity(CAPACITY_EDEFAULT);
-                return;
-            case FlowPackage.CAPACITY_BOUND__LOAD:
-                setLoad(LOAD_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case FlowPackage.CAPACITY_BOUND__CAPACITY:
+				setCapacity(CAPACITY_EDEFAULT);
+				return;
+			case FlowPackage.CAPACITY_BOUND__LOAD:
+				setLoad(LOAD_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case FlowPackage.CAPACITY_BOUND__CAPACITY:
-                return capacity != CAPACITY_EDEFAULT;
-            case FlowPackage.CAPACITY_BOUND__LOAD:
-                return load != LOAD_EDEFAULT;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case FlowPackage.CAPACITY_BOUND__CAPACITY:
+				return capacity != CAPACITY_EDEFAULT;
+			case FlowPackage.CAPACITY_BOUND__LOAD:
+				return load != LOAD_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (capacity: ");
-        result.append(capacity);
-        result.append(", load: ");
-        result.append(load);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (capacity: ");
+		result.append(capacity);
+		result.append(", load: ");
+		result.append(load);
+		result.append(')');
+		return result.toString();
+	}
 
 } //CapacityBoundImpl

@@ -28,11 +28,11 @@ package fr.obeo.dsl.designer.sample.flow;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.DataSource#getVolume <em>Volume</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.DataSource#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getDataSource()
  * @model
@@ -40,56 +40,56 @@ package fr.obeo.dsl.designer.sample.flow;
  */
 public interface DataSource extends FlowSource {
 	/**
-     * Returns the value of the '<em><b>Volume</b></em>' attribute.
-     * The default value is <code>"2"</code>.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Volume</b></em>' attribute.
+	 * The default value is <code>"2"</code>.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Volume</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-     * @return the value of the '<em>Volume</em>' attribute.
-     * @see #setVolume(int)
-     * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getDataSource_Volume()
-     * @model default="2" required="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Volume</em>' attribute.
+	 * @see #setVolume(int)
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getDataSource_Volume()
+	 * @model default="2" required="true"
+	 * @generated
+	 */
 	int getVolume();
 
 	/**
-     * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.DataSource#getVolume <em>Volume</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.DataSource#getVolume <em>Volume</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Volume</em>' attribute.
-     * @see #getVolume()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Volume</em>' attribute.
+	 * @see #getVolume()
+	 * @generated
+	 */
 	void setVolume(int value);
 
 	/**
-     * Returns the value of the '<em><b>Name</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-     * @return the value of the '<em>Name</em>' attribute.
-     * @see #setName(String)
-     * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getDataSource_Name()
-     * @model required="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getDataSource_Name()
+	 * @model required="true"
+	 * @generated
+	 */
 	String getName();
 
 	/**
-     * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.DataSource#getName <em>Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.DataSource#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Name</em>' attribute.
-     * @see #getName()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
 	void setName(String value);
 
 } // DataSource

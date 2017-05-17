@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.PowerLink#getTarget <em>Target</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.PowerLink#getSource <em>Source</em>}</li>
  * </ul>
- * </p>
  *
  * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getPowerLink()
  * @model
@@ -41,57 +41,57 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface PowerLink extends EObject {
     /**
-     * Returns the value of the '<em><b>Target</b></em>' reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Target</em>' reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Target</em>' reference.
-     * @see #setTarget(PowerInput)
-     * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getPowerLink_Target()
-     * @model
-     * @generated
-     */
+	 * @return the value of the '<em>Target</em>' reference.
+	 * @see #setTarget(PowerInput)
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getPowerLink_Target()
+	 * @model
+	 * @generated
+	 */
     PowerInput getTarget();
 
     /**
-     * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.PowerLink#getTarget <em>Target</em>}' reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.PowerLink#getTarget <em>Target</em>}' reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Target</em>' reference.
-     * @see #getTarget()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Target</em>' reference.
+	 * @see #getTarget()
+	 * @generated
+	 */
     void setTarget(PowerInput value);
 
     /**
-     * Returns the value of the '<em><b>Source</b></em>' container reference.
-     * It is bidirectional and its opposite is '{@link fr.obeo.dsl.designer.sample.flow.PowerOutput#getLinks <em>Links</em>}'.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Source</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link fr.obeo.dsl.designer.sample.flow.PowerOutput#getLinks <em>Links</em>}'.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Source</em>' container reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Source</em>' container reference.
-     * @see #setSource(PowerOutput)
-     * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getPowerLink_Source()
-     * @see fr.obeo.dsl.designer.sample.flow.PowerOutput#getLinks
-     * @model opposite="links" transient="false"
-     * @generated
-     */
+	 * @return the value of the '<em>Source</em>' container reference.
+	 * @see #setSource(PowerOutput)
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getPowerLink_Source()
+	 * @see fr.obeo.dsl.designer.sample.flow.PowerOutput#getLinks
+	 * @model opposite="links" transient="false"
+	 * @generated
+	 */
     PowerOutput getSource();
 
     /**
-     * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.PowerLink#getSource <em>Source</em>}' container reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.PowerLink#getSource <em>Source</em>}' container reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Source</em>' container reference.
-     * @see #getSource()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Source</em>' container reference.
+	 * @see #getSource()
+	 * @generated
+	 */
     void setSource(PowerOutput value);
 
 } // PowerLink

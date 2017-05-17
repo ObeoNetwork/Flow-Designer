@@ -35,200 +35,200 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.DataSourceImpl#getVolume <em>Volume</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.DataSourceImpl#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class DataSourceImpl extends FlowSourceImpl implements DataSource {
 	/**
-     * The default value of the '{@link #getVolume() <em>Volume</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getVolume() <em>Volume</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getVolume()
-     * @generated
-     * @ordered
-     */
+	 * @see #getVolume()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final int VOLUME_EDEFAULT = 2;
 
 	/**
-     * The cached value of the '{@link #getVolume() <em>Volume</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getVolume() <em>Volume</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getVolume()
-     * @generated
-     * @ordered
-     */
+	 * @see #getVolume()
+	 * @generated
+	 * @ordered
+	 */
 	protected int volume = VOLUME_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
 	protected String name = NAME_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected DataSourceImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return FlowPackage.Literals.DATA_SOURCE;
-    }
+		return FlowPackage.Literals.DATA_SOURCE;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public int getVolume() {
-        return volume;
-    }
+		return volume;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setVolume(int newVolume) {
-        int oldVolume = volume;
-        volume = newVolume;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.DATA_SOURCE__VOLUME, oldVolume, volume));
-    }
+		int oldVolume = volume;
+		volume = newVolume;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.DATA_SOURCE__VOLUME, oldVolume, volume));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String getName() {
-        return name;
-    }
+		return name;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setName(String newName) {
-        String oldName = name;
-        name = newName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.DATA_SOURCE__NAME, oldName, name));
-    }
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.DATA_SOURCE__NAME, oldName, name));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case FlowPackage.DATA_SOURCE__VOLUME:
-                return new Integer(getVolume());
-            case FlowPackage.DATA_SOURCE__NAME:
-                return getName();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case FlowPackage.DATA_SOURCE__VOLUME:
+				return getVolume();
+			case FlowPackage.DATA_SOURCE__NAME:
+				return getName();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case FlowPackage.DATA_SOURCE__VOLUME:
-                setVolume(((Integer)newValue).intValue());
-                return;
-            case FlowPackage.DATA_SOURCE__NAME:
-                setName((String)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case FlowPackage.DATA_SOURCE__VOLUME:
+				setVolume((Integer)newValue);
+				return;
+			case FlowPackage.DATA_SOURCE__NAME:
+				setName((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case FlowPackage.DATA_SOURCE__VOLUME:
-                setVolume(VOLUME_EDEFAULT);
-                return;
-            case FlowPackage.DATA_SOURCE__NAME:
-                setName(NAME_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case FlowPackage.DATA_SOURCE__VOLUME:
+				setVolume(VOLUME_EDEFAULT);
+				return;
+			case FlowPackage.DATA_SOURCE__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case FlowPackage.DATA_SOURCE__VOLUME:
-                return volume != VOLUME_EDEFAULT;
-            case FlowPackage.DATA_SOURCE__NAME:
-                return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case FlowPackage.DATA_SOURCE__VOLUME:
+				return volume != VOLUME_EDEFAULT;
+			case FlowPackage.DATA_SOURCE__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (volume: ");
-        result.append(volume);
-        result.append(", name: ");
-        result.append(name);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (volume: ");
+		result.append(volume);
+		result.append(", name: ");
+		result.append(name);
+		result.append(')');
+		return result.toString();
+	}
 
 } //DataSourceImpl

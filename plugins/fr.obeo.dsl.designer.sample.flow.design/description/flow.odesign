@@ -94,16 +94,6 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="State Processor" nodeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="flow::StateProcessor" referenceName="elements">
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="new Processor"/>
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="status" valueExpression="active"/>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
           <ownedTools xsi:type="tool:NodeCreationDescription" name="Data Source" nodeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']">
             <variable name="container"/>
             <viewVariable name="containerView"/>

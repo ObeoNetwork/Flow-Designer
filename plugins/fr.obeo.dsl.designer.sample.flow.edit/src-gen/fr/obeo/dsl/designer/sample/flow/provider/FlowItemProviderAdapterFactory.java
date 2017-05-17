@@ -52,526 +52,406 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
  */
 public class FlowItemProviderAdapterFactory extends FlowAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
 	/**
-     * This keeps track of the root adapter factory that delegates to this adapter factory.
-     * <!-- begin-user-doc -->
+	 * This keeps track of the root adapter factory that delegates to this adapter factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected ComposedAdapterFactory parentAdapterFactory;
 
 	/**
-     * This is used to implement {@link org.eclipse.emf.edit.provider.IChangeNotifier}.
-     * <!-- begin-user-doc -->
+	 * This is used to implement {@link org.eclipse.emf.edit.provider.IChangeNotifier}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected IChangeNotifier changeNotifier = new ChangeNotifier();
 
 	/**
-     * This keeps track of all the supported types checked by {@link #isFactoryForType isFactoryForType}.
-     * <!-- begin-user-doc -->
+	 * This keeps track of all the supported types checked by {@link #isFactoryForType isFactoryForType}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected Collection<Object> supportedTypes = new ArrayList<Object>();
 
 	/**
-     * This constructs an instance.
-     * <!-- begin-user-doc -->
+	 * This constructs an instance.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public FlowItemProviderAdapterFactory() {
-        supportedTypes.add(IEditingDomainItemProvider.class);
-        supportedTypes.add(IStructuredItemContentProvider.class);
-        supportedTypes.add(ITreeItemContentProvider.class);
-        supportedTypes.add(IItemLabelProvider.class);
-        supportedTypes.add(IItemPropertySource.class);
-    }
+		supportedTypes.add(IEditingDomainItemProvider.class);
+		supportedTypes.add(IStructuredItemContentProvider.class);
+		supportedTypes.add(ITreeItemContentProvider.class);
+		supportedTypes.add(IItemLabelProvider.class);
+		supportedTypes.add(IItemPropertySource.class);
+	}
 
 	/**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.StateProcessor} instances.
-     * <!-- begin-user-doc -->
+	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.Processor} instances.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
-	protected StateProcessorItemProvider stateProcessorItemProvider;
-
-	/**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.StateProcessor}.
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @generated
-     */
-	@Override
-	public Adapter createStateProcessorAdapter() {
-        if (stateProcessorItemProvider == null) {
-            stateProcessorItemProvider = new StateProcessorItemProvider(this);
-        }
-
-        return stateProcessorItemProvider;
-    }
-
-	/**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.Processor} instances.
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected ProcessorItemProvider processorItemProvider;
 
 	/**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.Processor}.
-     * <!-- begin-user-doc -->
+	 * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.Processor}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Adapter createProcessorAdapter() {
-        if (processorItemProvider == null) {
-            processorItemProvider = new ProcessorItemProvider(this);
-        }
+		if (processorItemProvider == null) {
+			processorItemProvider = new ProcessorItemProvider(this);
+		}
 
-        return processorItemProvider;
-    }
+		return processorItemProvider;
+	}
 
 	/**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.Fan} instances.
-     * <!-- begin-user-doc -->
+	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.Fan} instances.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected FanItemProvider fanItemProvider;
 
     /**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.Fan}.
-     * <!-- begin-user-doc -->
+	 * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.Fan}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Adapter createFanAdapter() {
-        if (fanItemProvider == null) {
-            fanItemProvider = new FanItemProvider(this);
-        }
+		if (fanItemProvider == null) {
+			fanItemProvider = new FanItemProvider(this);
+		}
 
-        return fanItemProvider;
-    }
+		return fanItemProvider;
+	}
 
     /**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.Physical} instances.
-     * <!-- begin-user-doc -->
+	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.Physical} instances.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected PhysicalItemProvider physicalItemProvider;
 
     /**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.Physical}.
-     * <!-- begin-user-doc -->
+	 * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.Physical}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Adapter createPhysicalAdapter() {
-        if (physicalItemProvider == null) {
-            physicalItemProvider = new PhysicalItemProvider(this);
-        }
+		if (physicalItemProvider == null) {
+			physicalItemProvider = new PhysicalItemProvider(this);
+		}
 
-        return physicalItemProvider;
-    }
+		return physicalItemProvider;
+	}
 
     /**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.CompositeProcessor} instances.
-     * <!-- begin-user-doc -->
+	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.CompositeProcessor} instances.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected CompositeProcessorItemProvider compositeProcessorItemProvider;
 
     /**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.CompositeProcessor}.
-     * <!-- begin-user-doc -->
+	 * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.CompositeProcessor}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Adapter createCompositeProcessorAdapter() {
-        if (compositeProcessorItemProvider == null) {
-            compositeProcessorItemProvider = new CompositeProcessorItemProvider(this);
-        }
+		if (compositeProcessorItemProvider == null) {
+			compositeProcessorItemProvider = new CompositeProcessorItemProvider(this);
+		}
 
-        return compositeProcessorItemProvider;
-    }
+		return compositeProcessorItemProvider;
+	}
 
     /**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.DataFlow} instances.
-     * <!-- begin-user-doc -->
+	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.DataFlow} instances.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected DataFlowItemProvider dataFlowItemProvider;
 
 	/**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.DataFlow}.
-     * <!-- begin-user-doc -->
+	 * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.DataFlow}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Adapter createDataFlowAdapter() {
-        if (dataFlowItemProvider == null) {
-            dataFlowItemProvider = new DataFlowItemProvider(this);
-        }
+		if (dataFlowItemProvider == null) {
+			dataFlowItemProvider = new DataFlowItemProvider(this);
+		}
 
-        return dataFlowItemProvider;
-    }
+		return dataFlowItemProvider;
+	}
 
 	/**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.CapacityBound} instances.
-     * <!-- begin-user-doc -->
+	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.CapacityBound} instances.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected CapacityBoundItemProvider capacityBoundItemProvider;
 
 	/**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.CapacityBound}.
-     * <!-- begin-user-doc -->
+	 * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.CapacityBound}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Adapter createCapacityBoundAdapter() {
-        if (capacityBoundItemProvider == null) {
-            capacityBoundItemProvider = new CapacityBoundItemProvider(this);
-        }
+		if (capacityBoundItemProvider == null) {
+			capacityBoundItemProvider = new CapacityBoundItemProvider(this);
+		}
 
-        return capacityBoundItemProvider;
-    }
+		return capacityBoundItemProvider;
+	}
 
 	/**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.System} instances.
-     * <!-- begin-user-doc -->
+	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.System} instances.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected SystemItemProvider systemItemProvider;
 
 	/**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.System}.
-     * <!-- begin-user-doc -->
+	 * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.System}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Adapter createSystemAdapter() {
-        if (systemItemProvider == null) {
-            systemItemProvider = new SystemItemProvider(this);
-        }
+		if (systemItemProvider == null) {
+			systemItemProvider = new SystemItemProvider(this);
+		}
 
-        return systemItemProvider;
-    }
+		return systemItemProvider;
+	}
 
 	/**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.PowerOutput} instances.
-     * <!-- begin-user-doc -->
+	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.PowerOutput} instances.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected PowerOutputItemProvider powerOutputItemProvider;
 
     /**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.PowerOutput}.
-     * <!-- begin-user-doc -->
+	 * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.PowerOutput}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Adapter createPowerOutputAdapter() {
-        if (powerOutputItemProvider == null) {
-            powerOutputItemProvider = new PowerOutputItemProvider(this);
-        }
+		if (powerOutputItemProvider == null) {
+			powerOutputItemProvider = new PowerOutputItemProvider(this);
+		}
 
-        return powerOutputItemProvider;
-    }
+		return powerOutputItemProvider;
+	}
 
     /**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.PowerInput} instances.
-     * <!-- begin-user-doc -->
+	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.PowerInput} instances.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected PowerInputItemProvider powerInputItemProvider;
 
     /**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.PowerInput}.
-     * <!-- begin-user-doc -->
+	 * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.PowerInput}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Adapter createPowerInputAdapter() {
-        if (powerInputItemProvider == null) {
-            powerInputItemProvider = new PowerInputItemProvider(this);
-        }
+		if (powerInputItemProvider == null) {
+			powerInputItemProvider = new PowerInputItemProvider(this);
+		}
 
-        return powerInputItemProvider;
-    }
+		return powerInputItemProvider;
+	}
 
     /**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.PowerLink} instances.
-     * <!-- begin-user-doc -->
+	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.PowerLink} instances.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected PowerLinkItemProvider powerLinkItemProvider;
 
     /**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.PowerLink}.
-     * <!-- begin-user-doc -->
+	 * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.PowerLink}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Adapter createPowerLinkAdapter() {
-        if (powerLinkItemProvider == null) {
-            powerLinkItemProvider = new PowerLinkItemProvider(this);
-        }
+		if (powerLinkItemProvider == null) {
+			powerLinkItemProvider = new PowerLinkItemProvider(this);
+		}
 
-        return powerLinkItemProvider;
-    }
+		return powerLinkItemProvider;
+	}
 
     /**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.DataSource} instances.
-     * <!-- begin-user-doc -->
+	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.DataSource} instances.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected DataSourceItemProvider dataSourceItemProvider;
 
 	/**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.DataSource}.
-     * <!-- begin-user-doc -->
+	 * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.DataSource}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Adapter createDataSourceAdapter() {
-        if (dataSourceItemProvider == null) {
-            dataSourceItemProvider = new DataSourceItemProvider(this);
-        }
+		if (dataSourceItemProvider == null) {
+			dataSourceItemProvider = new DataSourceItemProvider(this);
+		}
 
-        return dataSourceItemProvider;
-    }
-
-	/**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.State} instances.
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @generated
-     */
-	protected StateItemProvider stateItemProvider;
+		return dataSourceItemProvider;
+	}
 
 	/**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.State}.
-     * <!-- begin-user-doc -->
+	 * This returns the root adapter factory that contains this factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
-	@Override
-	public Adapter createStateAdapter() {
-        if (stateItemProvider == null) {
-            stateItemProvider = new StateItemProvider(this);
-        }
-
-        return stateItemProvider;
-    }
-
-	/**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.ComputationResult} instances.
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @generated
-     */
-	protected ComputationResultItemProvider computationResultItemProvider;
-
-	/**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.ComputationResult}.
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @generated
-     */
-	@Override
-	public Adapter createComputationResultAdapter() {
-        if (computationResultItemProvider == null) {
-            computationResultItemProvider = new ComputationResultItemProvider(this);
-        }
-
-        return computationResultItemProvider;
-    }
-
-	/**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.Event} instances.
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @generated
-     */
-	protected EventItemProvider eventItemProvider;
-
-	/**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.Event}.
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @generated
-     */
-	@Override
-	public Adapter createEventAdapter() {
-        if (eventItemProvider == null) {
-            eventItemProvider = new EventItemProvider(this);
-        }
-
-        return eventItemProvider;
-    }
-
-	/**
-     * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.Operation} instances.
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @generated
-     */
-	protected OperationItemProvider operationItemProvider;
-
-	/**
-     * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.Operation}.
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @generated
-     */
-	@Override
-	public Adapter createOperationAdapter() {
-        if (operationItemProvider == null) {
-            operationItemProvider = new OperationItemProvider(this);
-        }
-
-        return operationItemProvider;
-    }
-
-	/**
-     * This returns the root adapter factory that contains this factory.
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ComposeableAdapterFactory getRootAdapterFactory() {
-        return parentAdapterFactory == null ? this : parentAdapterFactory.getRootAdapterFactory();
-    }
+		return parentAdapterFactory == null ? this : parentAdapterFactory.getRootAdapterFactory();
+	}
 
 	/**
-     * This sets the composed adapter factory that contains this factory.
-     * <!-- begin-user-doc -->
+	 * This sets the composed adapter factory that contains this factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setParentAdapterFactory(ComposedAdapterFactory parentAdapterFactory) {
-        this.parentAdapterFactory = parentAdapterFactory;
-    }
+		this.parentAdapterFactory = parentAdapterFactory;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean isFactoryForType(Object type) {
-        return supportedTypes.contains(type) || super.isFactoryForType(type);
-    }
+		return supportedTypes.contains(type) || super.isFactoryForType(type);
+	}
 
 	/**
-     * This implementation substitutes the factory itself as the key for the adapter.
-     * <!-- begin-user-doc -->
+	 * This implementation substitutes the factory itself as the key for the adapter.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Adapter adapt(Notifier notifier, Object type) {
-        return super.adapt(notifier, this);
-    }
+		return super.adapt(notifier, this);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object adapt(Object object, Object type) {
-        if (isFactoryForType(type)) {
-            Object adapter = super.adapt(object, type);
-            if (!(type instanceof Class) || (((Class<?>)type).isInstance(adapter))) {
-                return adapter;
-            }
-        }
+		if (isFactoryForType(type)) {
+			Object adapter = super.adapt(object, type);
+			if (!(type instanceof Class<?>) || (((Class<?>)type).isInstance(adapter))) {
+				return adapter;
+			}
+		}
 
-        return null;
-    }
+		return null;
+	}
 
 	/**
-     * This adds a listener.
-     * <!-- begin-user-doc -->
+	 * This adds a listener.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void addListener(INotifyChangedListener notifyChangedListener) {
-        changeNotifier.addListener(notifyChangedListener);
-    }
+		changeNotifier.addListener(notifyChangedListener);
+	}
 
 	/**
-     * This removes a listener.
-     * <!-- begin-user-doc -->
+	 * This removes a listener.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void removeListener(INotifyChangedListener notifyChangedListener) {
-        changeNotifier.removeListener(notifyChangedListener);
-    }
+		changeNotifier.removeListener(notifyChangedListener);
+	}
 
 	/**
-     * This delegates to {@link #changeNotifier} and to {@link #parentAdapterFactory}.
-     * <!-- begin-user-doc -->
+	 * This delegates to {@link #changeNotifier} and to {@link #parentAdapterFactory}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void fireNotifyChanged(Notification notification) {
-        changeNotifier.fireNotifyChanged(notification);
+		changeNotifier.fireNotifyChanged(notification);
 
-        if (parentAdapterFactory != null) {
-            parentAdapterFactory.fireNotifyChanged(notification);
-        }
-    }
+		if (parentAdapterFactory != null) {
+			parentAdapterFactory.fireNotifyChanged(notification);
+		}
+	}
 
 	/**
-     * This disposes all of the item providers created by this factory. 
-     * <!-- begin-user-doc -->
+	 * This disposes all of the item providers created by this factory. 
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void dispose() {
-        if (stateProcessorItemProvider != null) stateProcessorItemProvider.dispose();
-        if (processorItemProvider != null) processorItemProvider.dispose();
-        if (fanItemProvider != null) fanItemProvider.dispose();
-        if (physicalItemProvider != null) physicalItemProvider.dispose();
-        if (compositeProcessorItemProvider != null) compositeProcessorItemProvider.dispose();
-        if (dataFlowItemProvider != null) dataFlowItemProvider.dispose();
-        if (capacityBoundItemProvider != null) capacityBoundItemProvider.dispose();
-        if (systemItemProvider != null) systemItemProvider.dispose();
-        if (powerOutputItemProvider != null) powerOutputItemProvider.dispose();
-        if (powerInputItemProvider != null) powerInputItemProvider.dispose();
-        if (powerLinkItemProvider != null) powerLinkItemProvider.dispose();
-        if (dataSourceItemProvider != null) dataSourceItemProvider.dispose();
-        if (stateItemProvider != null) stateItemProvider.dispose();
-        if (computationResultItemProvider != null) computationResultItemProvider.dispose();
-        if (eventItemProvider != null) eventItemProvider.dispose();
-        if (operationItemProvider != null) operationItemProvider.dispose();
-    }
+		if (processorItemProvider != null) processorItemProvider.dispose();
+		if (fanItemProvider != null) fanItemProvider.dispose();
+		if (physicalItemProvider != null) physicalItemProvider.dispose();
+		if (compositeProcessorItemProvider != null) compositeProcessorItemProvider.dispose();
+		if (dataFlowItemProvider != null) dataFlowItemProvider.dispose();
+		if (capacityBoundItemProvider != null) capacityBoundItemProvider.dispose();
+		if (systemItemProvider != null) systemItemProvider.dispose();
+		if (powerOutputItemProvider != null) powerOutputItemProvider.dispose();
+		if (powerInputItemProvider != null) powerInputItemProvider.dispose();
+		if (powerLinkItemProvider != null) powerLinkItemProvider.dispose();
+		if (dataSourceItemProvider != null) dataSourceItemProvider.dispose();
+	}
 
 }

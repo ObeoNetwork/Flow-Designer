@@ -29,10 +29,10 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.FlowTarget#getIncomingFlows <em>Incoming Flows</em>}</li>
  * </ul>
- * </p>
  *
  * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getFlowTarget()
  * @model abstract="true"
@@ -40,21 +40,21 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface FlowTarget extends FlowElement {
 	/**
-     * Returns the value of the '<em><b>Incoming Flows</b></em>' reference list.
-     * The list contents are of type {@link fr.obeo.dsl.designer.sample.flow.DataFlow}.
-     * It is bidirectional and its opposite is '{@link fr.obeo.dsl.designer.sample.flow.DataFlow#getTarget <em>Target</em>}'.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Incoming Flows</b></em>' reference list.
+	 * The list contents are of type {@link fr.obeo.dsl.designer.sample.flow.DataFlow}.
+	 * It is bidirectional and its opposite is '{@link fr.obeo.dsl.designer.sample.flow.DataFlow#getTarget <em>Target</em>}'.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Incoming Flows</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-     * @return the value of the '<em>Incoming Flows</em>' reference list.
-     * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getFlowTarget_IncomingFlows()
-     * @see fr.obeo.dsl.designer.sample.flow.DataFlow#getTarget
-     * @model opposite="target"
-     * @generated
-     */
+	 * @return the value of the '<em>Incoming Flows</em>' reference list.
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getFlowTarget_IncomingFlows()
+	 * @see fr.obeo.dsl.designer.sample.flow.DataFlow#getTarget
+	 * @model opposite="target"
+	 * @generated
+	 */
 	EList<DataFlow> getIncomingFlows();
 
 } // FlowTarget
