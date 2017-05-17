@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="ASCII"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="Flow" version="11.1.1.201610211630">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="Flow" version="12.0.0.2017041100">
   <ownedViewpoints name="Exchanges" modelFileExtension="flow">
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Topography" domainClass="System" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Topography" domainClass="flow::System" enablePopupBars="true">
       <metamodel href="http://www.obeo.fr/dsl/designer/sample/flow#/"/>
       <defaultLayer name="Main">
-        <nodeMappings name="Data Source" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Volume']" semanticCandidatesExpression="feature:elements" domainClass="flow.DataSource">
-          <style xsi:type="style:BundledImageDescription" borderSizeComputationExpression="4" showIcon="false" labelExpression="[name+' : '+volume/]" sizeComputationExpression="[volume / 2/]" resizeKind="NSEW" shape="dot">
+        <nodeMappings name="Data Source" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Volume']" semanticCandidatesExpression="feature:elements" domainClass="flow::DataSource">
+          <style xsi:type="style:BundledImageDescription" borderSizeComputationExpression="4" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" sizeComputationExpression="aql:self.volume / 2" resizeKind="NSEW" shape="dot">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_chocolate']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='chocolate']"/>
           </style>
-          <conditionnalStyles predicateExpression="[name.contains('Camera')/]">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[name+' : '+volume/]" sizeComputationExpression="[volume / 2/]" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/camera.png">
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Camera')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" sizeComputationExpression="aql:self.volume / 2" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/camera.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </conditionnalStyles>
-          <conditionnalStyles predicateExpression="[name.contains('Radar')/]">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[name+' : '+volume/]" sizeComputationExpression="[volume / 2/]" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/radar.png">
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Radar')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" sizeComputationExpression="aql:self.volume / 2" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/radar.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </conditionnalStyles>
-          <conditionnalStyles predicateExpression="[name.contains('Wifi')/]">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="[name+' : '+volume/]" sizeComputationExpression="[volume / 2/]" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/irkick.png">
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Wifi')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" sizeComputationExpression="aql:self.volume / 2" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/irkick.png">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </conditionnalStyles>
         </nodeMappings>
-        <edgeMappings name="Data Source to Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Load%20and%20Capacity']" semanticCandidatesExpression="aql:self.elements.eAllContents(flow::DataFlow)" semanticElements="&lt;%self%>" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="flow.DataFlow" useDomainElement="true">
-          <style lineStyle="dash" targetArrow="InputClosedArrow" sizeComputationExpression="[capacity/]">
+        <edgeMappings name="Data Source to Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Load%20and%20Capacity']" semanticCandidatesExpression="aql:self.elements.eAllContents(flow::DataFlow)" semanticElements="var:self" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="flow::DataFlow" useDomainElement="true">
+          <style lineStyle="dash" targetArrow="InputClosedArrow" sizeComputationExpression="aql:self.capacity">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription showIcon="false" labelExpression="[(load / capacity).toString().substring(1, 3)/]">
+            <centerLabelStyleDescription showIcon="false" labelExpression="aql:(self.load / self.capacity).toString()">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="Processor  to Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Load%20and%20Capacity']" semanticCandidatesExpression="aql:self.elements.eAllContents(flow::DataFlow)" semanticElements="&lt;%self%>" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="flow.DataFlow" useDomainElement="true">
-          <style sizeComputationExpression="[capacity / 2/]">
+        <edgeMappings name="Processor  to Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Load%20and%20Capacity']" semanticCandidatesExpression="aql:self.elements.eAllContents(flow::DataFlow)" semanticElements="var:self" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="flow::DataFlow" useDomainElement="true">
+          <style sizeComputationExpression="aql:self.capacity / 2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription showIcon="false" labelExpression="[(load / capacity).toString().substring(1, 3)/]">
+            <centerLabelStyleDescription showIcon="false" labelExpression="aql:(self.load / self.capacity).toString()">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <containerMappings name="System" detailDescriptions="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Sub%20Topography']" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name']" semanticCandidatesExpression="feature:elements" domainClass="flow.System" reusedNodeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']">
-          <subNodeMappings name="Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Capacity']" semanticCandidatesExpression="aql:self.elements" domainClass="flow.Processor">
-            <style xsi:type="style:BundledImageDescription" labelExpression="[name+' : '+capacity/]" sizeComputationExpression="[capacity/]">
+        <containerMappings name="System" detailDescriptions="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Sub%20Topography']" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name']" semanticCandidatesExpression="feature:elements" domainClass="flow::System" reusedNodeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']">
+          <subNodeMappings name="Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Capacity']" semanticCandidatesExpression="aql:self.elements" domainClass="flow::Processor">
+            <style xsi:type="style:BundledImageDescription" labelExpression="aql:self.name+' : '+self.capacity" sizeComputationExpression="aql:self.capacity">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             </style>
-            <conditionnalStyles predicateExpression="[name.contains('Engine')/]">
-              <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="[capacity/]" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu.svg">
+            <conditionnalStyles predicateExpression="aql:self.name.contains('Engine')">
+              <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="aql:self.capacity" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu.svg">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
-            <conditionnalStyles predicateExpression="[name.contains('DSP')/]">
-              <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="[capacity/]" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/dsp.svg">
+            <conditionnalStyles predicateExpression="aql:self.name.contains('DSP')">
+              <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="aql:self.capacity" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/dsp.svg">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
           </subNodeMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="2" labelSize="10" labelExpression="[name/]" backgroundStyle="GradientTopToBottom">
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="2" labelSize="10" labelExpression="aql:self.name" backgroundStyle="GradientTopToBottom">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <labelFormat>italic</labelFormat>
             <labelFormat>bold</labelFormat>
@@ -79,7 +79,7 @@
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="CompositeProcessor" referenceName="elements">
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="flow::CompositeProcessor" referenceName="elements">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="status" valueExpression="active"/>
               </firstModelOperations>
             </initialOperation>
@@ -88,7 +88,7 @@
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="Processor" referenceName="elements">
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="flow::Processor" referenceName="elements">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="new Processor"/>
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="status" valueExpression="active"/>
               </firstModelOperations>
@@ -98,7 +98,7 @@
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="StateProcessor" referenceName="elements">
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="flow::StateProcessor" referenceName="elements">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="new Processor"/>
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="status" valueExpression="active"/>
               </firstModelOperations>
@@ -108,7 +108,7 @@
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="DataSource" referenceName="elements">
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="flow::DataSource" referenceName="elements">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="New DataSource"/>
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="status" valueExpression="active"/>
               </firstModelOperations>
@@ -128,7 +128,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:DirectEditLabel" name="Edit Name and Capacity" inputLabelExpression="[name+' : '+capacity/]">
+          <ownedTools xsi:type="tool:DirectEditLabel" name="Edit Name and Capacity" inputLabelExpression="aql:self.name+' : '+self.capacity">
             <mask mask="{0} : {1}"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:0">
@@ -143,7 +143,7 @@
             <targetViewVariable name="targetView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="DataFlow" referenceName="outgoingFlows">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="flow::DataFlow" referenceName="outgoingFlows">
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="capacity" valueExpression="6"/>
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="load" valueExpression="6"/>
@@ -168,7 +168,7 @@
           </ownedTools>
         </toolSections>
         <customization>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[oclAsType(flow::Processor).usage.toString()='standard'/]">
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(flow::DataFlow).usage = flow::FlowElementUsage::standard">
             <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Data%20Source%20to%20Processor']/@style //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Processor%20%20to%20Processor']/@style" referenceName="strokeColor">
               <value href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
             </featureCustomizations>
@@ -179,7 +179,7 @@
               <value href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
             </featureCustomizations>
           </vsmElementCustomizations>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[oclAsType(flow::Processor).usage.toString()='over'/]">
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(flow::DataFlow).usage = flow::FlowElementUsage::over">
             <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']/@style" referenceName="color">
               <value href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
             </featureCustomizations>
@@ -190,7 +190,7 @@
               <value href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
             </featureCustomizations>
           </vsmElementCustomizations>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[oclAsType(flow::Processor).usage.toString()='high'/]">
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(flow::DataFlow).usage = flow::FlowElementUsage::high">
             <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']/@style" referenceName="color">
               <value href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
             </featureCustomizations>
@@ -201,7 +201,7 @@
               <value href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
             </featureCustomizations>
           </vsmElementCustomizations>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[oclAsType(flow::Processor).usage.toString()='low'/]">
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(flow::DataFlow).usage = flow::FlowElementUsage::low">
             <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']/@style" referenceName="color">
               <value href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
             </featureCustomizations>
@@ -212,7 +212,7 @@
               <value href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
             </featureCustomizations>
           </vsmElementCustomizations>
-          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[oclAsType(flow::DataFlow).usage.toString()='over'/]">
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(flow::DataFlow).usage = flow::FlowElementUsage::over">
             <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Data%20Source%20to%20Processor']/@style //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Processor%20%20to%20Processor']/@style" referenceName="strokeColor">
               <value href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
             </featureCustomizations>
@@ -233,7 +233,7 @@
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="flow.Fan" referenceName="elements">
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="flow::Fan" referenceName="elements">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="speed" valueExpression="500"/>
               </firstModelOperations>
             </initialOperation>
@@ -267,7 +267,7 @@
         </customization>
       </additionalLayers>
       <additionalLayers name="Power">
-        <edgeMappings name="Link" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Power']/@containerMappings[name='importSystem']/@borderedNodeMappings[name='PowerOutputNode']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Power']/@containerMappings[name='importSystem']/@borderedNodeMappings[name='PowerInputNode']" targetFinderExpression="[links.target/]">
+        <edgeMappings name="Link" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Power']/@containerMappings[name='importSystem']/@borderedNodeMappings[name='PowerOutputNode']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Power']/@containerMappings[name='importSystem']/@borderedNodeMappings[name='PowerInputNode']" targetFinderExpression="aql:self.links.target">
           <style lineStyle="dash" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -275,16 +275,16 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <containerMappings xsi:type="description_1:ContainerMappingImport" name="importSystem" domainClass="flow.System" reusedNodeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']" importedMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']">
-          <borderedNodeMappings name="PowerOutputNode" semanticCandidatesExpression="feature:powerOutputs" domainClass="flow.PowerOutput">
+        <containerMappings xsi:type="description_1:ContainerMappingImport" name="importSystem" domainClass="flow::System" reusedNodeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']" importedMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']">
+          <borderedNodeMappings name="PowerOutputNode" semanticCandidatesExpression="feature:powerOutputs" domainClass="flow::PowerOutput">
             <style xsi:type="style:BundledImageDescription" labelExpression="feature:power" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
             </style>
           </borderedNodeMappings>
-          <borderedNodeMappings name="PowerInputNode" semanticCandidatesExpression="feature:powerInputs" domainClass="flow.PowerInput">
-            <style xsi:type="style:BundledImageDescription" labelExpression="[''/]" resizeKind="NSEW">
+          <borderedNodeMappings name="PowerInputNode" semanticCandidatesExpression="feature:powerInputs" domainClass="flow::PowerInput">
+            <style xsi:type="style:BundledImageDescription" labelExpression="aql:''" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
@@ -293,18 +293,18 @@
         </containerMappings>
       </additionalLayers>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:CrossTableDescription" name="matrix" domainClass="flow.System">
+    <ownedRepresentations xsi:type="description_2:CrossTableDescription" name="matrix" domainClass="flow::System">
       <metamodel href="http://www.obeo.fr/dsl/designer/sample/flow#/"/>
-      <ownedLineMappings name="lineProcessor" domainClass="flow.Processor" semanticCandidatesExpression="[eAllContents()/]" headerLabelExpression="feature:name"/>
-      <ownedLineMappings name="lineDataSource" domainClass="flow.DataSource" semanticCandidatesExpression="[eAllContents()/]" headerLabelExpression="feature:name"/>
-      <ownedColumnMappings name="colProcessor" domainClass="flow.Processor" semanticCandidatesExpression="[eAllContents()/]"/>
-      <intersection name="cellFlow" lineMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineProcessor'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineDataSource']" columnMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedColumnMappings.0" labelExpression="X" columnFinderExpression="[outgoingFlows.target/]"/>
+      <ownedLineMappings name="lineProcessor" domainClass="flow::Processor" semanticCandidatesExpression="aql:self.eAllContents()" headerLabelExpression="feature:name"/>
+      <ownedLineMappings name="lineDataSource" domainClass="flow::DataSource" semanticCandidatesExpression="aql:self.eAllContents()" headerLabelExpression="feature:name"/>
+      <ownedColumnMappings name="colProcessor" domainClass="flow::Processor" semanticCandidatesExpression="aql:self.eAllContents()"/>
+      <intersection name="cellFlow" lineMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineProcessor'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineDataSource']" columnMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedColumnMappings.0" labelExpression="X" columnFinderExpression="aql:self.outgoingFlows.target"/>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_2:EditionTableDescription" name="table" domainClass="flow.System">
+    <ownedRepresentations xsi:type="description_2:EditionTableDescription" name="table" domainClass="flow::System">
       <metamodel href="http://www.obeo.fr/dsl/designer/sample/flow#/"/>
-      <ownedLineMappings name="lineProcessor" domainClass="flow.Processor" semanticCandidatesExpression="[eAllContents()/]" headerLabelExpression="feature:name"/>
+      <ownedLineMappings name="lineProcessor" domainClass="flow.Processor" semanticCandidatesExpression="aql:self.eAllContents()" headerLabelExpression="feature:name"/>
       <ownedColumnMappings name="colCapacity" headerLabelExpression="capacity" featureName="capacity">
-        <foregroundConditionalStyle predicateExpression="[status.toString()='inactive'/]">
+        <foregroundConditionalStyle predicateExpression="aql:self.status =  flow::FlowElementStatus::inactive">
           <style labelSize="8">
             <labelFormat>italic</labelFormat>
             <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -312,7 +312,7 @@
         </foregroundConditionalStyle>
       </ownedColumnMappings>
       <ownedColumnMappings name="colConsumption" headerLabelExpression="consumption" featureName="consumption">
-        <foregroundConditionalStyle predicateExpression="[status.toString()='inactive'/]">
+        <foregroundConditionalStyle predicateExpression="aql:self.status =  flow::FlowElementStatus::inactive">
           <style labelSize="8">
             <labelFormat>italic</labelFormat>
             <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -320,7 +320,7 @@
         </foregroundConditionalStyle>
       </ownedColumnMappings>
       <ownedColumnMappings name="colLoad" headerLabelExpression="load" featureName="load">
-        <foregroundConditionalStyle predicateExpression="[status.toString()='inactive'/]">
+        <foregroundConditionalStyle predicateExpression="aql:self.status =  flow::FlowElementStatus::inactive">
           <style labelSize="8">
             <labelFormat>italic</labelFormat>
             <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -328,7 +328,7 @@
         </foregroundConditionalStyle>
       </ownedColumnMappings>
       <ownedColumnMappings name="colStatus" headerLabelExpression="status" featureName="status">
-        <foregroundConditionalStyle predicateExpression="[status.toString()='inactive'/]">
+        <foregroundConditionalStyle predicateExpression="aql:self.status =  flow::FlowElementStatus::inactive">
           <style labelSize="8">
             <labelFormat>italic</labelFormat>
             <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -336,35 +336,35 @@
         </foregroundConditionalStyle>
       </ownedColumnMappings>
       <ownedColumnMappings name="colUsage" headerLabelExpression="usage" featureName="usage">
-        <foregroundConditionalStyle predicateExpression="[status.toString()='inactive'/]">
+        <foregroundConditionalStyle predicateExpression="aql:self.status =  flow::FlowElementStatus::inactive">
           <style labelSize="8">
             <labelFormat>italic</labelFormat>
             <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </foregroundConditionalStyle>
-        <backgroundConditionalStyle predicateExpression="[usage.toString()='over'/]">
+        <backgroundConditionalStyle predicateExpression="aql:self.usage = flow::FlowElementUsage::over">
           <style>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
           </style>
         </backgroundConditionalStyle>
-        <backgroundConditionalStyle predicateExpression="[usage.toString()='high'/]">
+        <backgroundConditionalStyle predicateExpression="aql:self.usage = flow::FlowElementUsage::high">
           <style>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
           </style>
         </backgroundConditionalStyle>
-        <backgroundConditionalStyle predicateExpression="[usage.toString()='unused'/]">
+        <backgroundConditionalStyle predicateExpression="aql:self.usage = flow::FlowElementUsage::unused">
           <style>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </backgroundConditionalStyle>
-        <backgroundConditionalStyle predicateExpression="[usage.toString()='standard'/]">
+        <backgroundConditionalStyle predicateExpression="aql:self.usage = flow::FlowElementUsage::standard">
           <style>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
           </style>
         </backgroundConditionalStyle>
       </ownedColumnMappings>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" dropDescriptions="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@toolSections.0/@ownedTools[name='Drop%20Component']" name="Dependencies Control" domainClass="flow.System" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" dropDescriptions="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@toolSections.0/@ownedTools[name='Drop%20Component']" name="Dependencies Control" domainClass="flow::System" enablePopupBars="true">
       <metamodel href="http://www.obeo.fr/dsl/designer/sample/flow#/"/>
       <defaultLayer name="Default">
         <edgeMappings name="Dependency" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@containerMappings[name='Component']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@containerMappings[name='Component']" targetFinderExpression="aql:self.elements.oclAsType(flow::Processor).outgoingFlows.target.eContainer()->asOrderedSet()->excluding(self)">
