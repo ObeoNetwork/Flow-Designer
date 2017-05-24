@@ -1,3 +1,5 @@
+package fr.obeo.dsl.designer.sample.flow.util;
+
 /**
  * Copyright  2010 Obeo. All Rights Reserved.
  *
@@ -18,7 +20,7 @@
  *
  * Acceleo and Obeo are trademarks owned by Obeo.
  */
-package fr.obeo.dsl.designer.sample.flow.simmulation;
+
 
 import fr.obeo.dsl.designer.sample.flow.DataFlow;
 import fr.obeo.dsl.designer.sample.flow.Fan;
@@ -61,9 +63,9 @@ public class SimulationHelper {
 		return result;
 	}
 
-	public static float DEGREE_PER_WATT = 0.2f;
+	public static float DEGREE_PER_WATT = 0.1f;
 
-	public static float DEGREE_PER_RPM = 0.01f;
+	public static float DEGREE_PER_RPM = 0.1f;
 
 	public static int computeTemperature(fr.obeo.dsl.designer.sample.flow.System system) {
 
@@ -85,11 +87,14 @@ public class SimulationHelper {
 			}
 		}
 		if (nbFans > 0) {
-			int medFan = Math.round(windTotal / nbFans);
-			int temperatureRemoval = Math.round(medFan * DEGREE_PER_RPM);
+			
+			int temperatureRemoval = Math.round(windTotal * DEGREE_PER_RPM);
 			temperature -= temperatureRemoval;
 		}
 
+		if (temperature <= 25) {
+			temperature = 25;
+		}
 		return temperature;
 	}
 
