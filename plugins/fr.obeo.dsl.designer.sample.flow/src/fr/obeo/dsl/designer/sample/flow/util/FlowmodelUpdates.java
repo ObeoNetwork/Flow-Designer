@@ -12,7 +12,6 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
 import fr.obeo.dsl.designer.sample.flow.CapacityBound;
-import fr.obeo.dsl.designer.sample.flow.CompositeProcessor;
 import fr.obeo.dsl.designer.sample.flow.DataFlow;
 import fr.obeo.dsl.designer.sample.flow.DataSource;
 import fr.obeo.dsl.designer.sample.flow.Fan;
@@ -28,19 +27,16 @@ public class FlowmodelUpdates {
 	public void updateModelState(fr.obeo.dsl.designer.sample.flow.System s) {
 
 		for (FlowElement todo : sortInTopologicalOrder(s)) {
-			updateFlowBasedOnSource((FlowElement) todo, allElements(s));
+			updateFlowBasedOnSource((FlowElement) todo, getAllElements(s));
 		}
-
-		updateFanConsumption(s);
-		updateUsageAttribute(s);
+		updateFan(s);
+		updateCapacityBound(s);
 		updateProcessors(s);
 
-
-		
 		s.setWeight(SimulationHelper.computeWeight(s));
 	}
 
-	private void updateFanConsumption(fr.obeo.dsl.designer.sample.flow.System s) {
+	private void updateFan(fr.obeo.dsl.designer.sample.flow.System s) {
 		Iterator<Fan> it = Iterators.filter(s.eAllContents(), Fan.class);
 		while (it.hasNext()) {
 			Fan f = it.next();
@@ -52,7 +48,7 @@ public class FlowmodelUpdates {
 		}
 	}
 
-	private Set<FlowElement> allElements(System s) {
+	private Set<FlowElement> getAllElements(System s) {
 		Set<FlowElement> r = Sets.newLinkedHashSet();
 		Iterator<FlowElement> it = Iterators.filter(s.eAllContents(), FlowElement.class);
 		while (it.hasNext()) {
@@ -105,7 +101,7 @@ public class FlowmodelUpdates {
 
 	}
 
-	private void updateUsageAttribute(System s) {
+	private void updateCapacityBound(System s) {
 		Iterator<CapacityBound> it = Iterators.filter(s.eAllContents(), CapacityBound.class);
 		while (it.hasNext()) {
 			CapacityBound bounded = it.next();

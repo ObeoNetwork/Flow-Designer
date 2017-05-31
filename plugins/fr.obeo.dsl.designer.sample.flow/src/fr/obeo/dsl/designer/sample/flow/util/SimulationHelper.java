@@ -21,7 +21,6 @@ package fr.obeo.dsl.designer.sample.flow.util;
  * Acceleo and Obeo are trademarks owned by Obeo.
  */
 
-
 import fr.obeo.dsl.designer.sample.flow.DataFlow;
 import fr.obeo.dsl.designer.sample.flow.Fan;
 import fr.obeo.dsl.designer.sample.flow.FlowElement;
@@ -30,6 +29,7 @@ import fr.obeo.dsl.designer.sample.flow.FlowElementUsage;
 import fr.obeo.dsl.designer.sample.flow.FlowTarget;
 import fr.obeo.dsl.designer.sample.flow.Powered;
 import fr.obeo.dsl.designer.sample.flow.Processor;
+import fr.obeo.dsl.designer.sample.flow.System;
 
 public class SimulationHelper {
 
@@ -54,6 +54,9 @@ public class SimulationHelper {
 	public static int computeWeight(fr.obeo.dsl.designer.sample.flow.System system) {
 		int result = 0;
 		for (FlowElement element : system.getElements()) {
+			if (element instanceof fr.obeo.dsl.designer.sample.flow.System) {
+				((System) element).setWeight(computeWeight((System) element));
+			}
 			if (element instanceof Processor) {
 				result += ((Processor) element).getWeight();
 			} else if (element instanceof Fan) {
@@ -87,7 +90,7 @@ public class SimulationHelper {
 			}
 		}
 		if (nbFans > 0) {
-			
+
 			int temperatureRemoval = Math.round(windTotal * DEGREE_PER_RPM);
 			temperature -= temperatureRemoval;
 		}

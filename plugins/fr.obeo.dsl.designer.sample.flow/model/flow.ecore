@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="flow" nsURI="http://www.obeo.fr/dsl/designer/sample/flow" nsPrefix="flow">
-  <eClassifiers xsi:type="ecore:EClass" name="Processor" eSuperTypes="#//FlowTarget #//CapacityBound #//FlowSource #//Powered">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="volume" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="2"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="weight" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="10"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Fan" eSuperTypes="#//FlowElement #//Powered">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="speed" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
         defaultValueLiteral="1000"/>
@@ -28,11 +21,9 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="load" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
         defaultValueLiteral="0"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="System" eSuperTypes="#//Powered #//FlowSource">
+  <eClassifiers xsi:type="ecore:EClass" name="System" eSuperTypes="#//Powered #//FlowSource #//Named">
     <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
         eType="#//FlowElement" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral=""/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="temperature" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
         defaultValueLiteral="0"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="weight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
@@ -41,6 +32,7 @@
         eType="#//PowerOutput" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="powerInputs" upperBound="-1"
         eType="#//PowerInput" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="routingRules" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PowerOutput">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="power" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
@@ -69,14 +61,19 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="outgoingFlows" upperBound="-1"
         eType="#//DataFlow" containment="true" eOpposite="#//DataFlow/source"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Processor" eSuperTypes="#//FlowTarget #//CapacityBound #//FlowSource #//Powered #//Named">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="volume" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="2"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="weight" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="10"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FlowTarget" abstract="true" eSuperTypes="#//FlowElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="incomingFlows" upperBound="-1"
         eType="#//DataFlow" eOpposite="#//DataFlow/target"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DataSource" eSuperTypes="#//FlowSource">
+  <eClassifiers xsi:type="ecore:EClass" name="DataSource" eSuperTypes="#//FlowSource #//Named">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="volume" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="2"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FlowElement" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" lowerBound="1"
@@ -93,5 +90,8 @@
     <eLiterals name="standard" value="2" literal="standard"/>
     <eLiterals name="high" value="3" literal="high"/>
     <eLiterals name="over" value="4" literal="over"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Named">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
 </ecore:EPackage>

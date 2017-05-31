@@ -34,6 +34,7 @@ import fr.obeo.dsl.designer.sample.flow.FlowElement;
 import fr.obeo.dsl.designer.sample.flow.FlowPackage;
 import fr.obeo.dsl.designer.sample.flow.FlowSource;
 import fr.obeo.dsl.designer.sample.flow.FlowTarget;
+import fr.obeo.dsl.designer.sample.flow.Named;
 import fr.obeo.dsl.designer.sample.flow.Physical;
 import fr.obeo.dsl.designer.sample.flow.PowerInput;
 import fr.obeo.dsl.designer.sample.flow.PowerLink;
@@ -98,10 +99,6 @@ public class FlowAdapterFactory extends AdapterFactoryImpl {
 	protected FlowSwitch<Adapter> modelSwitch =
 		new FlowSwitch<Adapter>() {
 			@Override
-			public Adapter caseProcessor(Processor object) {
-				return createProcessorAdapter();
-			}
-			@Override
 			public Adapter caseFan(Fan object) {
 				return createFanAdapter();
 			}
@@ -146,6 +143,10 @@ public class FlowAdapterFactory extends AdapterFactoryImpl {
 				return createFlowSourceAdapter();
 			}
 			@Override
+			public Adapter caseProcessor(Processor object) {
+				return createProcessorAdapter();
+			}
+			@Override
 			public Adapter caseFlowTarget(FlowTarget object) {
 				return createFlowTargetAdapter();
 			}
@@ -156,6 +157,10 @@ public class FlowAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseFlowElement(FlowElement object) {
 				return createFlowElementAdapter();
+			}
+			@Override
+			public Adapter caseNamed(Named object) {
+				return createNamedAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -384,6 +389,20 @@ public class FlowAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFlowElementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link fr.obeo.dsl.designer.sample.flow.Named <em>Named</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see fr.obeo.dsl.designer.sample.flow.Named
+	 * @generated
+	 */
+	public Adapter createNamedAdapter() {
 		return null;
 	}
 

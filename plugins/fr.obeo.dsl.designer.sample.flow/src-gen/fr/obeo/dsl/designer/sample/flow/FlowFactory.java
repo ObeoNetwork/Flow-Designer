@@ -139,6 +139,15 @@ public interface FlowFactory extends EFactory {
 	DataSource createDataSource();
 
 	/**
+	 * Returns a new object of class '<em>Named</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Named</em>'.
+	 * @generated
+	 */
+	Named createNamed();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

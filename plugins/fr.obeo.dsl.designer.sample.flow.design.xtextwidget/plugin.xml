@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.eef.ide.ui.eefLifecycleManagerProvider">
+      <descriptor
+            class="fr.obeo.dsl.designer.sample.flow.design.xtextwidget.XtextPartialViewerLifecycleManagerProvider"
+            description="Xtext partial viewer"
+            id="fr.obeo.dsl.designer.sample.flow.design.xtextwidgetViewer"
+            label="Xtext widget property Viewer">
+      </descriptor>
+   </extension>
+
+</plugin>

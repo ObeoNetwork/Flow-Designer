@@ -23,11 +23,6 @@
       <genEnumLiterals ecoreEnumLiteral="flow.ecore#//FlowElementUsage/high"/>
       <genEnumLiterals ecoreEnumLiteral="flow.ecore#//FlowElementUsage/over"/>
     </genEnums>
-    <genClasses ecoreClass="flow.ecore#//Processor">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//Processor/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//Processor/volume"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//Processor/weight"/>
-    </genClasses>
     <genClasses ecoreClass="flow.ecore#//Fan">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//Fan/speed"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//Fan/weight"/>
@@ -44,11 +39,11 @@
     </genClasses>
     <genClasses ecoreClass="flow.ecore#//System">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference flow.ecore#//System/elements"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//System/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//System/temperature"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//System/weight"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference flow.ecore#//System/powerOutputs"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference flow.ecore#//System/powerInputs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//System/routingRules"/>
     </genClasses>
     <genClasses ecoreClass="flow.ecore#//PowerOutput">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//PowerOutput/power"/>
@@ -66,16 +61,22 @@
     <genClasses image="false" ecoreClass="flow.ecore#//FlowSource">
       <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference flow.ecore#//FlowSource/outgoingFlows"/>
     </genClasses>
+    <genClasses ecoreClass="flow.ecore#//Processor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//Processor/volume"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//Processor/weight"/>
+    </genClasses>
     <genClasses image="false" ecoreClass="flow.ecore#//FlowTarget">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference flow.ecore#//FlowTarget/incomingFlows"/>
     </genClasses>
     <genClasses ecoreClass="flow.ecore#//DataSource">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//DataSource/volume"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//DataSource/name"/>
     </genClasses>
     <genClasses image="false" ecoreClass="flow.ecore#//FlowElement">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//FlowElement/status"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//FlowElement/usage"/>
+    </genClasses>
+    <genClasses ecoreClass="flow.ecore#//Named">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute flow.ecore#//Named/name"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

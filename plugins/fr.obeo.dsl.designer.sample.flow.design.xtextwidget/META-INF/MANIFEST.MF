@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Routing rules properties editor
+Bundle-SymbolicName: fr.obeo.dsl.designer.sample.flow.design.xtextwidget;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.eef.core,
+ org.eclipse.eef,
+ org.eclipse.sirius.common.interpreter,
+ org.eclipse.equinox.registry,
+ org.eclipse.eef.ide.ui,
+ org.eclipse.swt,
+ org.eclipse.emf.mwe.core,
+ org.eclipse.eef.common.ui,
+ com.google.inject,
+ org.eclipse.xtext.ui,
+ org.eclipse.eef.common;bundle-version="1.9.0",
+ org.eclipse.ui.forms;bundle-version="3.7.0",
+ fr.obeo.dsl.designer.sample.flow.design;bundle-version="1.0.0",
+ fr.obeo.dsl.designer.sample.flow.routerdsl;bundle-version="1.0.0",
+ fr.obeo.dsl.designer.sample.flow.routerdsl.ide;bundle-version="1.0.0",
+ fr.obeo.dsl.designer.sample.flow.routerdsl.ui;bundle-version="1.0.0",
+ fr.obeo.dsl.designer.sample.flow;bundle-version="1.0.0"

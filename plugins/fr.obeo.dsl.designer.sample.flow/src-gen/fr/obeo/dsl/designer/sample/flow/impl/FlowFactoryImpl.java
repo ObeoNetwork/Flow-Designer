@@ -36,6 +36,7 @@ import fr.obeo.dsl.designer.sample.flow.FlowElementStatus;
 import fr.obeo.dsl.designer.sample.flow.FlowElementUsage;
 import fr.obeo.dsl.designer.sample.flow.FlowFactory;
 import fr.obeo.dsl.designer.sample.flow.FlowPackage;
+import fr.obeo.dsl.designer.sample.flow.Named;
 import fr.obeo.dsl.designer.sample.flow.Physical;
 import fr.obeo.dsl.designer.sample.flow.PowerInput;
 import fr.obeo.dsl.designer.sample.flow.PowerLink;
@@ -87,7 +88,6 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case FlowPackage.PROCESSOR: return createProcessor();
 			case FlowPackage.FAN: return createFan();
 			case FlowPackage.PHYSICAL: return createPhysical();
 			case FlowPackage.COMPOSITE_PROCESSOR: return createCompositeProcessor();
@@ -97,7 +97,9 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
 			case FlowPackage.POWER_OUTPUT: return createPowerOutput();
 			case FlowPackage.POWER_INPUT: return createPowerInput();
 			case FlowPackage.POWER_LINK: return createPowerLink();
+			case FlowPackage.PROCESSOR: return createProcessor();
 			case FlowPackage.DATA_SOURCE: return createDataSource();
+			case FlowPackage.NAMED: return createNamed();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -249,6 +251,16 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
 	public DataSource createDataSource() {
 		DataSourceImpl dataSource = new DataSourceImpl();
 		return dataSource;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Named createNamed() {
+		NamedImpl named = new NamedImpl();
+		return named;
 	}
 
 	/**

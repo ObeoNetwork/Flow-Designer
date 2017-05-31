@@ -39,6 +39,7 @@ import fr.obeo.dsl.designer.sample.flow.FlowFactory;
 import fr.obeo.dsl.designer.sample.flow.FlowPackage;
 import fr.obeo.dsl.designer.sample.flow.FlowSource;
 import fr.obeo.dsl.designer.sample.flow.FlowTarget;
+import fr.obeo.dsl.designer.sample.flow.Named;
 import fr.obeo.dsl.designer.sample.flow.Physical;
 import fr.obeo.dsl.designer.sample.flow.PowerInput;
 import fr.obeo.dsl.designer.sample.flow.PowerLink;
@@ -161,6 +162,13 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass namedEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -255,17 +263,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getProcessor_Name() {
-		return (EAttribute)processorEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getProcessor_Volume() {
-		return (EAttribute)processorEClass.getEStructuralFeatures().get(1);
+		return (EAttribute)processorEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -274,7 +273,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * @generated
 	 */
     public EAttribute getProcessor_Weight() {
-		return (EAttribute)processorEClass.getEStructuralFeatures().get(2);
+		return (EAttribute)processorEClass.getEStructuralFeatures().get(1);
 	}
 
     /**
@@ -399,7 +398,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EAttribute getSystem_Name() {
+    public EAttribute getSystem_Temperature() {
 		return (EAttribute)systemEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -408,7 +407,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EAttribute getSystem_Temperature() {
+    public EAttribute getSystem_Weight() {
 		return (EAttribute)systemEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -417,17 +416,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EAttribute getSystem_Weight() {
-		return (EAttribute)systemEClass.getEStructuralFeatures().get(3);
-	}
-
-    /**
-	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @generated
-	 */
     public EReference getSystem_PowerOutputs() {
-		return (EReference)systemEClass.getEStructuralFeatures().get(4);
+		return (EReference)systemEClass.getEStructuralFeatures().get(3);
 	}
 
     /**
@@ -436,10 +426,19 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * @generated
 	 */
     public EReference getSystem_PowerInputs() {
-		return (EReference)systemEClass.getEStructuralFeatures().get(5);
+		return (EReference)systemEClass.getEStructuralFeatures().get(4);
 	}
 
     /**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSystem_RoutingRules() {
+		return (EAttribute)systemEClass.getEStructuralFeatures().get(5);
+	}
+
+				/**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
 	 * @generated
@@ -588,15 +587,6 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDataSource_Name() {
-		return (EAttribute)dataSourceEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getFlowElement() {
 		return flowElementEClass;
 	}
@@ -617,6 +607,24 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 */
 	public EAttribute getFlowElement_Usage() {
 		return (EAttribute)flowElementEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getNamed() {
+		return namedEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getNamed_Name() {
+		return (EAttribute)namedEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -674,11 +682,6 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 		isCreated = true;
 
 		// Create classes and their features
-		processorEClass = createEClass(PROCESSOR);
-		createEAttribute(processorEClass, PROCESSOR__NAME);
-		createEAttribute(processorEClass, PROCESSOR__VOLUME);
-		createEAttribute(processorEClass, PROCESSOR__WEIGHT);
-
 		fanEClass = createEClass(FAN);
 		createEAttribute(fanEClass, FAN__SPEED);
 		createEAttribute(fanEClass, FAN__WEIGHT);
@@ -697,11 +700,11 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 
 		systemEClass = createEClass(SYSTEM);
 		createEReference(systemEClass, SYSTEM__ELEMENTS);
-		createEAttribute(systemEClass, SYSTEM__NAME);
 		createEAttribute(systemEClass, SYSTEM__TEMPERATURE);
 		createEAttribute(systemEClass, SYSTEM__WEIGHT);
 		createEReference(systemEClass, SYSTEM__POWER_OUTPUTS);
 		createEReference(systemEClass, SYSTEM__POWER_INPUTS);
+		createEAttribute(systemEClass, SYSTEM__ROUTING_RULES);
 
 		powerOutputEClass = createEClass(POWER_OUTPUT);
 		createEAttribute(powerOutputEClass, POWER_OUTPUT__POWER);
@@ -720,16 +723,22 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 		flowSourceEClass = createEClass(FLOW_SOURCE);
 		createEReference(flowSourceEClass, FLOW_SOURCE__OUTGOING_FLOWS);
 
+		processorEClass = createEClass(PROCESSOR);
+		createEAttribute(processorEClass, PROCESSOR__VOLUME);
+		createEAttribute(processorEClass, PROCESSOR__WEIGHT);
+
 		flowTargetEClass = createEClass(FLOW_TARGET);
 		createEReference(flowTargetEClass, FLOW_TARGET__INCOMING_FLOWS);
 
 		dataSourceEClass = createEClass(DATA_SOURCE);
 		createEAttribute(dataSourceEClass, DATA_SOURCE__VOLUME);
-		createEAttribute(dataSourceEClass, DATA_SOURCE__NAME);
 
 		flowElementEClass = createEClass(FLOW_ELEMENT);
 		createEAttribute(flowElementEClass, FLOW_ELEMENT__STATUS);
 		createEAttribute(flowElementEClass, FLOW_ELEMENT__USAGE);
+
+		namedEClass = createEClass(NAMED);
+		createEAttribute(namedEClass, NAMED__NAME);
 
 		// Create enums
 		poweredStatusEEnum = createEEnum(POWERED_STATUS);
@@ -765,10 +774,6 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		processorEClass.getESuperTypes().add(this.getFlowTarget());
-		processorEClass.getESuperTypes().add(this.getCapacityBound());
-		processorEClass.getESuperTypes().add(this.getFlowSource());
-		processorEClass.getESuperTypes().add(this.getPowered());
 		fanEClass.getESuperTypes().add(this.getFlowElement());
 		fanEClass.getESuperTypes().add(this.getPowered());
 		compositeProcessorEClass.getESuperTypes().add(this.getSystem());
@@ -779,16 +784,18 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 		capacityBoundEClass.getESuperTypes().add(this.getFlowElement());
 		systemEClass.getESuperTypes().add(this.getPowered());
 		systemEClass.getESuperTypes().add(this.getFlowSource());
+		systemEClass.getESuperTypes().add(this.getNamed());
 		flowSourceEClass.getESuperTypes().add(this.getFlowElement());
+		processorEClass.getESuperTypes().add(this.getFlowTarget());
+		processorEClass.getESuperTypes().add(this.getCapacityBound());
+		processorEClass.getESuperTypes().add(this.getFlowSource());
+		processorEClass.getESuperTypes().add(this.getPowered());
+		processorEClass.getESuperTypes().add(this.getNamed());
 		flowTargetEClass.getESuperTypes().add(this.getFlowElement());
 		dataSourceEClass.getESuperTypes().add(this.getFlowSource());
+		dataSourceEClass.getESuperTypes().add(this.getNamed());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(processorEClass, Processor.class, "Processor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getProcessor_Name(), ecorePackage.getEString(), "name", null, 1, 1, Processor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getProcessor_Volume(), ecorePackage.getEInt(), "volume", "2", 1, 1, Processor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getProcessor_Weight(), ecorePackage.getEInt(), "weight", "10", 1, 1, Processor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
 		initEClass(fanEClass, Fan.class, "Fan", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getFan_Speed(), ecorePackage.getEInt(), "speed", "1000", 1, 1, Fan.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFan_Weight(), ecorePackage.getEInt(), "weight", "3", 1, 1, Fan.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -807,11 +814,11 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 
 		initEClass(systemEClass, fr.obeo.dsl.designer.sample.flow.System.class, "System", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSystem_Elements(), this.getFlowElement(), null, "elements", null, 0, -1, fr.obeo.dsl.designer.sample.flow.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getSystem_Name(), ecorePackage.getEString(), "name", "", 1, 1, fr.obeo.dsl.designer.sample.flow.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSystem_Temperature(), ecorePackage.getEInt(), "temperature", "0", 0, 1, fr.obeo.dsl.designer.sample.flow.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSystem_Weight(), ecorePackage.getEInt(), "weight", "0", 0, 1, fr.obeo.dsl.designer.sample.flow.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSystem_PowerOutputs(), this.getPowerOutput(), null, "powerOutputs", null, 0, -1, fr.obeo.dsl.designer.sample.flow.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSystem_PowerInputs(), this.getPowerInput(), null, "powerInputs", null, 0, -1, fr.obeo.dsl.designer.sample.flow.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSystem_RoutingRules(), ecorePackage.getEString(), "routingRules", null, 0, 1, fr.obeo.dsl.designer.sample.flow.System.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(powerOutputEClass, PowerOutput.class, "PowerOutput", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPowerOutput_Power(), ecorePackage.getEInt(), "power", "1000", 1, 1, PowerOutput.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -830,16 +837,22 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 		initEClass(flowSourceEClass, FlowSource.class, "FlowSource", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFlowSource_OutgoingFlows(), this.getDataFlow(), this.getDataFlow_Source(), "outgoingFlows", null, 0, -1, FlowSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(processorEClass, Processor.class, "Processor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getProcessor_Volume(), ecorePackage.getEInt(), "volume", "2", 1, 1, Processor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProcessor_Weight(), ecorePackage.getEInt(), "weight", "10", 1, 1, Processor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(flowTargetEClass, FlowTarget.class, "FlowTarget", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFlowTarget_IncomingFlows(), this.getDataFlow(), this.getDataFlow_Target(), "incomingFlows", null, 0, -1, FlowTarget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(dataSourceEClass, DataSource.class, "DataSource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDataSource_Volume(), ecorePackage.getEInt(), "volume", "2", 1, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getDataSource_Name(), ecorePackage.getEString(), "name", null, 1, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(flowElementEClass, FlowElement.class, "FlowElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getFlowElement_Status(), this.getFlowElementStatus(), "status", "active", 1, 1, FlowElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFlowElement_Usage(), this.getFlowElementUsage(), "usage", null, 1, 1, FlowElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(namedEClass, Named.class, "Named", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getNamed_Name(), ecorePackage.getEString(), "name", null, 1, 1, Named.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(poweredStatusEEnum, PoweredStatus.class, "PoweredStatus");

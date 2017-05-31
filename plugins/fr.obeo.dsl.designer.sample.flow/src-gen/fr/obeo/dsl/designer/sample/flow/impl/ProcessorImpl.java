@@ -35,6 +35,7 @@ import fr.obeo.dsl.designer.sample.flow.CapacityBound;
 import fr.obeo.dsl.designer.sample.flow.DataFlow;
 import fr.obeo.dsl.designer.sample.flow.FlowPackage;
 import fr.obeo.dsl.designer.sample.flow.FlowSource;
+import fr.obeo.dsl.designer.sample.flow.Named;
 import fr.obeo.dsl.designer.sample.flow.Powered;
 import fr.obeo.dsl.designer.sample.flow.PoweredStatus;
 import fr.obeo.dsl.designer.sample.flow.Processor;
@@ -574,6 +575,12 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
 				default: return -1;
 			}
 		}
+		if (baseClass == Named.class) {
+			switch (derivedFeatureID) {
+				case FlowPackage.PROCESSOR__NAME: return FlowPackage.NAMED__NAME;
+				default: return -1;
+			}
+		}
 		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
 	}
 
@@ -601,6 +608,12 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
 			switch (baseFeatureID) {
 				case FlowPackage.POWERED__CONSUMPTION: return FlowPackage.PROCESSOR__CONSUMPTION;
 				case FlowPackage.POWERED__POWER_STATUS: return FlowPackage.PROCESSOR__POWER_STATUS;
+				default: return -1;
+			}
+		}
+		if (baseClass == Named.class) {
+			switch (baseFeatureID) {
+				case FlowPackage.NAMED__NAME: return FlowPackage.PROCESSOR__NAME;
 				default: return -1;
 			}
 		}

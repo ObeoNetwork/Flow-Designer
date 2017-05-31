@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="routerDsl" nsURI="http://www.obeo.fr/dsl/designer/sample/flow/routerdsl/RouterDsl"
+    nsPrefix="routerDsl">
+  <eClassifiers xsi:type="ecore:EClass" name="RoutingRules"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DataSourceDeclaration">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProcessorDeclaration">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemDeclaration">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CaseRule">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="condition" eType="#//Conditional"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="decisions" upperBound="-1"
+        eType="#//Decision" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Decision"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MessageDecision" eSuperTypes="#//Decision"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RouteTo" eSuperTypes="#//Decision">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="destination" eType="#//ProcessorDeclaration"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DropMessage" eSuperTypes="#//MessageDecision"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Alert" eSuperTypes="#//MessageDecision">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="level" eType="#//AlertLevel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Conditional">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="left" eType="#//ObjectAccessOrValue"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="op" eType="#//Comparison"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="right" eType="#//ObjectAccessOrValue"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ObjectAccessOrValue"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LiteralValue" eSuperTypes="#//ObjectAccessOrValue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Throughtput" eSuperTypes="#//ObjectAccessOrValue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" eType="#//TimeUnit"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Temperature" eSuperTypes="#//ObjectAccessOrValue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" eType="#//TemperatureUnit"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ObjectAccess" eSuperTypes="#//ObjectAccessOrValue"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ProcessorAccess" eSuperTypes="#//ObjectAccess">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="processor" eType="#//ProcessorDeclaration"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute" eType="#//ProcessorAttribute"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SensorAccess" eSuperTypes="#//ObjectAccess">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sensor" eType="#//DataSourceDeclaration"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemAccess" eSuperTypes="#//ObjectAccess">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="system" eType="#//SystemDeclaration"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SensorAttribute">
+    <eLiterals name="volume" literal="volume"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ProcessorAttribute">
+    <eLiterals name="capacity" literal="capacity"/>
+    <eLiterals name="load" value="1" literal="load"/>
+    <eLiterals name="consumption" value="2" literal="consumption"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Comparison">
+    <eLiterals name="LOWER" literal="&lt;"/>
+    <eLiterals name="LOWER_EQ" value="1" literal="&lt;="/>
+    <eLiterals name="EQ" value="2" literal="="/>
+    <eLiterals name="HIGHER" value="3" literal=">"/>
+    <eLiterals name="HIGHER_EQ" value="4" literal=">="/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TimeUnit">
+    <eLiterals name="seconds" literal="sec"/>
+    <eLiterals name="milliseconds" value="1" literal="msec"/>
+    <eLiterals name="microseconds" value="2" literal="usec"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TemperatureUnit">
+    <eLiterals name="celsius" literal="°C"/>
+    <eLiterals name="fahrenheit" value="1" literal="°F"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AlertLevel">
+    <eLiterals name="critical" literal="critical"/>
+    <eLiterals name="major" value="1" literal="major"/>
+    <eLiterals name="error" value="2" literal="error"/>
+    <eLiterals name="warning" value="3" literal="warning"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RoutingRule" eSuperTypes="#//RoutingRules">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="processors" upperBound="-1"
+        eType="#//ProcessorDeclaration" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sensors" upperBound="-1"
+        eType="#//DataSourceDeclaration" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="systems" upperBound="-1"
+        eType="#//SystemDeclaration" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rules" upperBound="-1"
+        eType="#//CaseRule" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

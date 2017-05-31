@@ -33,6 +33,7 @@ import fr.obeo.dsl.designer.sample.flow.FlowElement;
 import fr.obeo.dsl.designer.sample.flow.FlowPackage;
 import fr.obeo.dsl.designer.sample.flow.FlowSource;
 import fr.obeo.dsl.designer.sample.flow.FlowTarget;
+import fr.obeo.dsl.designer.sample.flow.Named;
 import fr.obeo.dsl.designer.sample.flow.Physical;
 import fr.obeo.dsl.designer.sample.flow.PowerInput;
 import fr.obeo.dsl.designer.sample.flow.PowerLink;
@@ -97,17 +98,6 @@ public class FlowSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case FlowPackage.PROCESSOR: {
-				Processor processor = (Processor)theEObject;
-				T result = caseProcessor(processor);
-				if (result == null) result = caseFlowTarget(processor);
-				if (result == null) result = caseCapacityBound(processor);
-				if (result == null) result = caseFlowSource(processor);
-				if (result == null) result = casePowered(processor);
-				if (result == null) result = caseFlowElement(processor);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case FlowPackage.FAN: {
 				Fan fan = (Fan)theEObject;
 				T result = caseFan(fan);
@@ -130,6 +120,7 @@ public class FlowSwitch<T> extends Switch<T> {
 				if (result == null) result = caseCapacityBound(compositeProcessor);
 				if (result == null) result = casePowered(compositeProcessor);
 				if (result == null) result = caseFlowSource(compositeProcessor);
+				if (result == null) result = caseNamed(compositeProcessor);
 				if (result == null) result = caseFlowElement(compositeProcessor);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -154,6 +145,7 @@ public class FlowSwitch<T> extends Switch<T> {
 				T result = caseSystem(system);
 				if (result == null) result = casePowered(system);
 				if (result == null) result = caseFlowSource(system);
+				if (result == null) result = caseNamed(system);
 				if (result == null) result = caseFlowElement(system);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -189,6 +181,18 @@ public class FlowSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case FlowPackage.PROCESSOR: {
+				Processor processor = (Processor)theEObject;
+				T result = caseProcessor(processor);
+				if (result == null) result = caseFlowTarget(processor);
+				if (result == null) result = caseCapacityBound(processor);
+				if (result == null) result = caseFlowSource(processor);
+				if (result == null) result = casePowered(processor);
+				if (result == null) result = caseNamed(processor);
+				if (result == null) result = caseFlowElement(processor);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case FlowPackage.FLOW_TARGET: {
 				FlowTarget flowTarget = (FlowTarget)theEObject;
 				T result = caseFlowTarget(flowTarget);
@@ -200,6 +204,7 @@ public class FlowSwitch<T> extends Switch<T> {
 				DataSource dataSource = (DataSource)theEObject;
 				T result = caseDataSource(dataSource);
 				if (result == null) result = caseFlowSource(dataSource);
+				if (result == null) result = caseNamed(dataSource);
 				if (result == null) result = caseFlowElement(dataSource);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -207,6 +212,12 @@ public class FlowSwitch<T> extends Switch<T> {
 			case FlowPackage.FLOW_ELEMENT: {
 				FlowElement flowElement = (FlowElement)theEObject;
 				T result = caseFlowElement(flowElement);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FlowPackage.NAMED: {
+				Named named = (Named)theEObject;
+				T result = caseNamed(named);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -436,6 +447,21 @@ public class FlowSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseFlowElement(FlowElement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Named</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Named</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNamed(Named object) {
 		return null;
 	}
 

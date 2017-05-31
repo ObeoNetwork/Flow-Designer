@@ -34,18 +34,18 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.System#getElements <em>Elements</em>}</li>
- *   <li>{@link fr.obeo.dsl.designer.sample.flow.System#getName <em>Name</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.System#getTemperature <em>Temperature</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.System#getWeight <em>Weight</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.System#getPowerOutputs <em>Power Outputs</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.System#getPowerInputs <em>Power Inputs</em>}</li>
+ *   <li>{@link fr.obeo.dsl.designer.sample.flow.System#getRoutingRules <em>Routing Rules</em>}</li>
  * </ul>
  *
  * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getSystem()
  * @model
  * @generated
  */
-public interface System extends Powered, FlowSource {
+public interface System extends Powered, FlowSource, Named {
 	/**
 	 * Returns the value of the '<em><b>Elements</b></em>' containment reference list.
 	 * The list contents are of type {@link fr.obeo.dsl.designer.sample.flow.FlowElement}.
@@ -61,33 +61,6 @@ public interface System extends Powered, FlowSource {
 	 * @generated
 	 */
 	EList<FlowElement> getElements();
-
-    /**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * The default value is <code>""</code>.
-	 * <!-- begin-user-doc -->
-     * <p>
-     * If the meaning of the '<em>Name</em>' attribute isn't clear,
-     * there really should be more of a description here...
-     * </p>
-     * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getSystem_Name()
-	 * @model default="" required="true"
-	 * @generated
-	 */
-    String getName();
-
-    /**
-	 * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.System#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-    void setName(String value);
 
     /**
 	 * Returns the value of the '<em><b>Temperature</b></em>' attribute.
@@ -174,5 +147,31 @@ public interface System extends Powered, FlowSource {
 	 * @generated
 	 */
     EList<PowerInput> getPowerInputs();
+
+				/**
+	 * Returns the value of the '<em><b>Routing Rules</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Routing Rules</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Routing Rules</em>' attribute.
+	 * @see #setRoutingRules(String)
+	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getSystem_RoutingRules()
+	 * @model
+	 * @generated
+	 */
+	String getRoutingRules();
+
+				/**
+	 * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.System#getRoutingRules <em>Routing Rules</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Routing Rules</em>' attribute.
+	 * @see #getRoutingRules()
+	 * @generated
+	 */
+	void setRoutingRules(String value);
 
 } // System

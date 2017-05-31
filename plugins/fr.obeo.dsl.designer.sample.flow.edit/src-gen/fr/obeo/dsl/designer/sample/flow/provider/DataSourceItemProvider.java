@@ -72,8 +72,8 @@ public class DataSourceItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addVolumePropertyDescriptor(object);
 			addNamePropertyDescriptor(object);
+			addVolumePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -111,9 +111,9 @@ public class DataSourceItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_DataSource_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_DataSource_name_feature", "_UI_DataSource_type"),
-				 FlowPackage.Literals.DATA_SOURCE__NAME,
+				 getString("_UI_Named_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Named_name_feature", "_UI_Named_type"),
+				 FlowPackage.Literals.NAMED__NAME,
 				 true,
 				 false,
 				 false,
@@ -159,8 +159,8 @@ public class DataSourceItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DataSource.class)) {
-			case FlowPackage.DATA_SOURCE__VOLUME:
 			case FlowPackage.DATA_SOURCE__NAME:
+			case FlowPackage.DATA_SOURCE__VOLUME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

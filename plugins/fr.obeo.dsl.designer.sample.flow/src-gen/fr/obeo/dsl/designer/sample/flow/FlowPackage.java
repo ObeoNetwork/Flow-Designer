@@ -122,42 +122,6 @@ public interface FlowPackage extends EPackage {
 	int FLOW_TARGET = 12;
 
 	/**
-	 * The feature id for the '<em><b>Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW_TARGET__STATUS = FLOW_ELEMENT__STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Usage</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW_TARGET__USAGE = FLOW_ELEMENT__USAGE;
-
-	/**
-	 * The feature id for the '<em><b>Incoming Flows</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW_TARGET__INCOMING_FLOWS = FLOW_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Target</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW_TARGET_FEATURE_COUNT = FLOW_ELEMENT_FEATURE_COUNT + 1;
-
-	/**
 	 * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.impl.ProcessorImpl <em>Processor</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -165,117 +129,9 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getProcessor()
 	 * @generated
 	 */
-	int PROCESSOR = 0;
+	int PROCESSOR = 11;
 
 	/**
-	 * The feature id for the '<em><b>Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESSOR__STATUS = FLOW_TARGET__STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Usage</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESSOR__USAGE = FLOW_TARGET__USAGE;
-
-	/**
-	 * The feature id for the '<em><b>Incoming Flows</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESSOR__INCOMING_FLOWS = FLOW_TARGET__INCOMING_FLOWS;
-
-	/**
-	 * The feature id for the '<em><b>Capacity</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESSOR__CAPACITY = FLOW_TARGET_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Load</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESSOR__LOAD = FLOW_TARGET_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Outgoing Flows</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESSOR__OUTGOING_FLOWS = FLOW_TARGET_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Consumption</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-    int PROCESSOR__CONSUMPTION = FLOW_TARGET_FEATURE_COUNT + 3;
-
-    /**
-	 * The feature id for the '<em><b>Power Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-    int PROCESSOR__POWER_STATUS = FLOW_TARGET_FEATURE_COUNT + 4;
-
-    /**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESSOR__NAME = FLOW_TARGET_FEATURE_COUNT + 5;
-
-    /**
-	 * The feature id for the '<em><b>Volume</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESSOR__VOLUME = FLOW_TARGET_FEATURE_COUNT + 6;
-
-    /**
-	 * The feature id for the '<em><b>Weight</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-    int PROCESSOR__WEIGHT = FLOW_TARGET_FEATURE_COUNT + 7;
-
-    /**
-	 * The number of structural features of the '<em>Processor</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESSOR_FEATURE_COUNT = FLOW_TARGET_FEATURE_COUNT + 8;
-
-    /**
 	 * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.impl.FanImpl <em>Fan</em>}' class.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -283,7 +139,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getFan()
 	 * @generated
 	 */
-    int FAN = 1;
+    int FAN = 0;
 
     /**
 	 * The feature id for the '<em><b>Status</b></em>' attribute.
@@ -356,7 +212,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getPhysical()
 	 * @generated
 	 */
-    int PHYSICAL = 2;
+    int PHYSICAL = 1;
 
     /**
 	 * The number of structural features of the '<em>Physical</em>' class.
@@ -375,7 +231,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getPowered()
 	 * @generated
 	 */
-    int POWERED = 8;
+    int POWERED = 7;
 
     /**
 	 * The feature id for the '<em><b>Consumption</b></em>' attribute.
@@ -412,7 +268,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getDataFlow()
 	 * @generated
 	 */
-	int DATA_FLOW = 4;
+	int DATA_FLOW = 3;
 
 	/**
 	 * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.impl.CapacityBoundImpl <em>Capacity Bound</em>}' class.
@@ -422,7 +278,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getCapacityBound()
 	 * @generated
 	 */
-	int CAPACITY_BOUND = 5;
+	int CAPACITY_BOUND = 4;
 
 	/**
 	 * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.impl.SystemImpl <em>System</em>}' class.
@@ -432,7 +288,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getSystem()
 	 * @generated
 	 */
-	int SYSTEM = 6;
+	int SYSTEM = 5;
 
 	/**
 	 * The feature id for the '<em><b>Consumption</b></em>' attribute.
@@ -480,22 +336,22 @@ public interface FlowPackage extends EPackage {
 	int SYSTEM__OUTGOING_FLOWS = POWERED_FEATURE_COUNT + 2;
 
 				/**
-	 * The feature id for the '<em><b>Elements</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM__ELEMENTS = POWERED_FEATURE_COUNT + 3;
-
-    /**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-    int SYSTEM__NAME = POWERED_FEATURE_COUNT + 4;
+    int SYSTEM__NAME = POWERED_FEATURE_COUNT + 3;
+
+				/**
+	 * The feature id for the '<em><b>Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__ELEMENTS = POWERED_FEATURE_COUNT + 4;
 
     /**
 	 * The feature id for the '<em><b>Temperature</b></em>' attribute.
@@ -534,13 +390,22 @@ public interface FlowPackage extends EPackage {
     int SYSTEM__POWER_INPUTS = POWERED_FEATURE_COUNT + 8;
 
     /**
+	 * The feature id for the '<em><b>Routing Rules</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM__ROUTING_RULES = POWERED_FEATURE_COUNT + 9;
+
+				/**
 	 * The number of structural features of the '<em>System</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_FEATURE_COUNT = POWERED_FEATURE_COUNT + 9;
+	int SYSTEM_FEATURE_COUNT = POWERED_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.impl.CompositeProcessorImpl <em>Composite Processor</em>}' class.
@@ -550,7 +415,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getCompositeProcessor()
 	 * @generated
 	 */
-    int COMPOSITE_PROCESSOR = 3;
+    int COMPOSITE_PROCESSOR = 2;
 
     /**
 	 * The feature id for the '<em><b>Consumption</b></em>' attribute.
@@ -598,15 +463,6 @@ public interface FlowPackage extends EPackage {
     int COMPOSITE_PROCESSOR__OUTGOING_FLOWS = SYSTEM__OUTGOING_FLOWS;
 
 				/**
-	 * The feature id for the '<em><b>Elements</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-    int COMPOSITE_PROCESSOR__ELEMENTS = SYSTEM__ELEMENTS;
-
-				/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -614,6 +470,15 @@ public interface FlowPackage extends EPackage {
 	 * @ordered
 	 */
     int COMPOSITE_PROCESSOR__NAME = SYSTEM__NAME;
+
+				/**
+	 * The feature id for the '<em><b>Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+    int COMPOSITE_PROCESSOR__ELEMENTS = SYSTEM__ELEMENTS;
 
 				/**
 	 * The feature id for the '<em><b>Temperature</b></em>' attribute.
@@ -650,6 +515,15 @@ public interface FlowPackage extends EPackage {
 	 * @ordered
 	 */
     int COMPOSITE_PROCESSOR__POWER_INPUTS = SYSTEM__POWER_INPUTS;
+
+				/**
+	 * The feature id for the '<em><b>Routing Rules</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMPOSITE_PROCESSOR__ROUTING_RULES = SYSTEM__ROUTING_RULES;
 
 				/**
 	 * The feature id for the '<em><b>Incoming Flows</b></em>' reference list.
@@ -803,7 +677,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getPowerOutput()
 	 * @generated
 	 */
-    int POWER_OUTPUT = 7;
+    int POWER_OUTPUT = 6;
 
     /**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -840,7 +714,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getPowerInput()
 	 * @generated
 	 */
-    int POWER_INPUT = 9;
+    int POWER_INPUT = 8;
 
     /**
 	 * The number of structural features of the '<em>Power Input</em>' class.
@@ -859,7 +733,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getPowerLink()
 	 * @generated
 	 */
-    int POWER_LINK = 10;
+    int POWER_LINK = 9;
 
     /**
 	 * The feature id for the '<em><b>Target</b></em>' reference.
@@ -896,7 +770,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getFlowSource()
 	 * @generated
 	 */
-	int FLOW_SOURCE = 11;
+	int FLOW_SOURCE = 10;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' attribute.
@@ -933,6 +807,150 @@ public interface FlowPackage extends EPackage {
 	 * @ordered
 	 */
 	int FLOW_SOURCE_FEATURE_COUNT = FLOW_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW_TARGET__STATUS = FLOW_ELEMENT__STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Usage</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW_TARGET__USAGE = FLOW_ELEMENT__USAGE;
+
+	/**
+	 * The feature id for the '<em><b>Incoming Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW_TARGET__INCOMING_FLOWS = FLOW_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Target</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW_TARGET_FEATURE_COUNT = FLOW_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR__STATUS = FLOW_TARGET__STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Usage</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR__USAGE = FLOW_TARGET__USAGE;
+
+	/**
+	 * The feature id for the '<em><b>Incoming Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR__INCOMING_FLOWS = FLOW_TARGET__INCOMING_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Capacity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR__CAPACITY = FLOW_TARGET_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Load</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR__LOAD = FLOW_TARGET_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR__OUTGOING_FLOWS = FLOW_TARGET_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Consumption</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+    int PROCESSOR__CONSUMPTION = FLOW_TARGET_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Power Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR__POWER_STATUS = FLOW_TARGET_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+* <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+int PROCESSOR__NAME = FLOW_TARGET_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Volume</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+* <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+int PROCESSOR__VOLUME = FLOW_TARGET_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Weight</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR__WEIGHT = FLOW_TARGET_FEATURE_COUNT + 7;
+
+	/**
+	 * The number of structural features of the '<em>Processor</em>' class.
+	 * <!-- begin-user-doc -->
+* <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+int PROCESSOR_FEATURE_COUNT = FLOW_TARGET_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.impl.DataSourceImpl <em>Data Source</em>}' class.
@@ -972,22 +990,22 @@ public interface FlowPackage extends EPackage {
 	int DATA_SOURCE__OUTGOING_FLOWS = FLOW_SOURCE__OUTGOING_FLOWS;
 
 	/**
-	 * The feature id for the '<em><b>Volume</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATA_SOURCE__VOLUME = FLOW_SOURCE_FEATURE_COUNT + 0;
-
-	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE__NAME = FLOW_SOURCE_FEATURE_COUNT + 1;
+	int DATA_SOURCE__NAME = FLOW_SOURCE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Volume</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_SOURCE__VOLUME = FLOW_SOURCE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Data Source</em>' class.
@@ -999,6 +1017,34 @@ public interface FlowPackage extends EPackage {
 	int DATA_SOURCE_FEATURE_COUNT = FLOW_SOURCE_FEATURE_COUNT + 2;
 
 	/**
+	 * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.impl.NamedImpl <em>Named</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see fr.obeo.dsl.designer.sample.flow.impl.NamedImpl
+	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getNamed()
+	 * @generated
+	 */
+	int NAMED = 15;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED__NAME = 0;
+
+	/**
+	 * The number of structural features of the '<em>Named</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_FEATURE_COUNT = 1;
+
+	/**
 	 * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.PoweredStatus <em>Powered Status</em>}' enum.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1006,7 +1052,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getPoweredStatus()
 	 * @generated
 	 */
-    int POWERED_STATUS = 15;
+    int POWERED_STATUS = 16;
 
     /**
 	 * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.FlowElementStatus <em>Element Status</em>}' enum.
@@ -1016,7 +1062,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getFlowElementStatus()
 	 * @generated
 	 */
-	int FLOW_ELEMENT_STATUS = 16;
+	int FLOW_ELEMENT_STATUS = 17;
 
 	/**
 	 * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.FlowElementUsage <em>Element Usage</em>}' enum.
@@ -1026,7 +1072,7 @@ public interface FlowPackage extends EPackage {
 	 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getFlowElementUsage()
 	 * @generated
 	 */
-	int FLOW_ELEMENT_USAGE = 17;
+	int FLOW_ELEMENT_USAGE = 18;
 
 
 	/**
@@ -1038,17 +1084,6 @@ public interface FlowPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getProcessor();
-
-	/**
-	 * Returns the meta object for the attribute '{@link fr.obeo.dsl.designer.sample.flow.Processor#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see fr.obeo.dsl.designer.sample.flow.Processor#getName()
-	 * @see #getProcessor()
-	 * @generated
-	 */
-	EAttribute getProcessor_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link fr.obeo.dsl.designer.sample.flow.Processor#getVolume <em>Volume</em>}'.
@@ -1210,17 +1245,6 @@ public interface FlowPackage extends EPackage {
 	EReference getSystem_Elements();
 
 	/**
-	 * Returns the meta object for the attribute '{@link fr.obeo.dsl.designer.sample.flow.System#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see fr.obeo.dsl.designer.sample.flow.System#getName()
-	 * @see #getSystem()
-	 * @generated
-	 */
-    EAttribute getSystem_Name();
-
-    /**
 	 * Returns the meta object for the attribute '{@link fr.obeo.dsl.designer.sample.flow.System#getTemperature <em>Temperature</em>}'.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1265,6 +1289,17 @@ public interface FlowPackage extends EPackage {
     EReference getSystem_PowerInputs();
 
     /**
+	 * Returns the meta object for the attribute '{@link fr.obeo.dsl.designer.sample.flow.System#getRoutingRules <em>Routing Rules</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Routing Rules</em>'.
+	 * @see fr.obeo.dsl.designer.sample.flow.System#getRoutingRules()
+	 * @see #getSystem()
+	 * @generated
+	 */
+	EAttribute getSystem_RoutingRules();
+
+				/**
 	 * Returns the meta object for class '{@link fr.obeo.dsl.designer.sample.flow.PowerOutput <em>Power Output</em>}'.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1434,17 +1469,6 @@ public interface FlowPackage extends EPackage {
 	EAttribute getDataSource_Volume();
 
 	/**
-	 * Returns the meta object for the attribute '{@link fr.obeo.dsl.designer.sample.flow.DataSource#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see fr.obeo.dsl.designer.sample.flow.DataSource#getName()
-	 * @see #getDataSource()
-	 * @generated
-	 */
-	EAttribute getDataSource_Name();
-
-	/**
 	 * Returns the meta object for class '{@link fr.obeo.dsl.designer.sample.flow.FlowElement <em>Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1475,6 +1499,27 @@ public interface FlowPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getFlowElement_Usage();
+
+	/**
+	 * Returns the meta object for class '{@link fr.obeo.dsl.designer.sample.flow.Named <em>Named</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Named</em>'.
+	 * @see fr.obeo.dsl.designer.sample.flow.Named
+	 * @generated
+	 */
+	EClass getNamed();
+
+	/**
+	 * Returns the meta object for the attribute '{@link fr.obeo.dsl.designer.sample.flow.Named#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see fr.obeo.dsl.designer.sample.flow.Named#getName()
+	 * @see #getNamed()
+	 * @generated
+	 */
+	EAttribute getNamed_Name();
 
 	/**
 	 * Returns the meta object for enum '{@link fr.obeo.dsl.designer.sample.flow.PoweredStatus <em>Powered Status</em>}'.
@@ -1537,14 +1582,6 @@ public interface FlowPackage extends EPackage {
 		 * @generated
 		 */
 		EClass PROCESSOR = eINSTANCE.getProcessor();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PROCESSOR__NAME = eINSTANCE.getProcessor_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Volume</b></em>' attribute feature.
@@ -1679,14 +1716,6 @@ public interface FlowPackage extends EPackage {
 		EReference SYSTEM__ELEMENTS = eINSTANCE.getSystem_Elements();
 
 		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-         * <!-- end-user-doc -->
-		 * @generated
-		 */
-        EAttribute SYSTEM__NAME = eINSTANCE.getSystem_Name();
-
-        /**
 		 * The meta object literal for the '<em><b>Temperature</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
@@ -1719,6 +1748,14 @@ public interface FlowPackage extends EPackage {
         EReference SYSTEM__POWER_INPUTS = eINSTANCE.getSystem_PowerInputs();
 
         /**
+		 * The meta object literal for the '<em><b>Routing Rules</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SYSTEM__ROUTING_RULES = eINSTANCE.getSystem_RoutingRules();
+
+								/**
 		 * The meta object literal for the '{@link fr.obeo.dsl.designer.sample.flow.impl.PowerOutputImpl <em>Power Output</em>}' class.
 		 * <!-- begin-user-doc -->
          * <!-- end-user-doc -->
@@ -1861,14 +1898,6 @@ public interface FlowPackage extends EPackage {
 		EAttribute DATA_SOURCE__VOLUME = eINSTANCE.getDataSource_Volume();
 
 		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute DATA_SOURCE__NAME = eINSTANCE.getDataSource_Name();
-
-		/**
 		 * The meta object literal for the '{@link fr.obeo.dsl.designer.sample.flow.impl.FlowElementImpl <em>Element</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1893,6 +1922,24 @@ public interface FlowPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute FLOW_ELEMENT__USAGE = eINSTANCE.getFlowElement_Usage();
+
+		/**
+		 * The meta object literal for the '{@link fr.obeo.dsl.designer.sample.flow.impl.NamedImpl <em>Named</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see fr.obeo.dsl.designer.sample.flow.impl.NamedImpl
+		 * @see fr.obeo.dsl.designer.sample.flow.impl.FlowPackageImpl#getNamed()
+		 * @generated
+		 */
+		EClass NAMED = eINSTANCE.getNamed();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NAMED__NAME = eINSTANCE.getNamed_Name();
 
 		/**
 		 * The meta object literal for the '{@link fr.obeo.dsl.designer.sample.flow.PoweredStatus <em>Powered Status</em>}' enum.

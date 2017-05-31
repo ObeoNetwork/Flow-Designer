@@ -119,9 +119,9 @@ public class ProcessorItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Processor_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Processor_name_feature", "_UI_Processor_type"),
-				 FlowPackage.Literals.PROCESSOR__NAME,
+				 getString("_UI_Named_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Named_name_feature", "_UI_Named_type"),
+				 FlowPackage.Literals.NAMED__NAME,
 				 true,
 				 false,
 				 false,

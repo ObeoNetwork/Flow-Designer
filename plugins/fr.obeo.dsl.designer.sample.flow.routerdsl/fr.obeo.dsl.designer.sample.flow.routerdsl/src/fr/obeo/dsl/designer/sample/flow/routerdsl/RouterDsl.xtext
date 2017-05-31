@@ -1,0 +1,87 @@
+grammar fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl with org.eclipse.xtext.common.Terminals
+
+import "http://www.obeo.fr/dsl/designer/sample/flow" as flow
+generate routerDsl "http://www.obeo.fr/dsl/designer/sample/flow/routerdsl/RouterDsl"
+
+RoutingRules:
+	{RoutingRule}
+	processors+=ProcessorDeclaration*
+	sensors+=DataSourceDeclaration*
+	systems+=SystemDeclaration* '#'
+	rules+=CaseRule*;
+
+	/*
+ *  These declaration are temporary workarounds, I'd rather refer directly to the Processor or DataSource instances.
+ */
+DataSourceDeclaration:
+	'sensor' '(' name=ID ')';
+
+ProcessorDeclaration:
+	'processor' '(' name=ID ')';
+
+SystemDeclaration:
+	'system' '(' name=ID ')';
+
+CaseRule:
+	'Case' condition=Conditional ':' (decisions+=Decision)+;
+
+Decision:
+	(RouteTo | MessageDecision) ';';
+
+MessageDecision:
+	DropMessage | Alert;
+
+RouteTo:
+	'->' destination=[ProcessorDeclaration];
+
+DropMessage:
+	{DropMessage}
+	'X';
+
+Alert:
+	'/!\\' level=AlertLevel '/!\\';
+
+Conditional:
+	left=ObjectAccessOrValue op=Comparison right=ObjectAccessOrValue;
+
+ObjectAccessOrValue:
+	ObjectAccess | LiteralValue | Throughtput | Temperature;
+
+LiteralValue:
+	value=INT;
+
+Throughtput:
+	value=INT '/' unit=TimeUnit;
+
+Temperature:
+	value=INT unit=TemperatureUnit;
+
+ObjectAccess:
+	ProcessorAccess | SensorAccess | SystemAccess;
+
+ProcessorAccess:
+	processor=[ProcessorDeclaration] "." attribute=ProcessorAttribute;
+
+SensorAccess:
+	sensor=[DataSourceDeclaration] ".volume";
+
+SystemAccess:
+	system=[SystemDeclaration] ".temperature";
+
+enum SensorAttribute:
+	volume;
+
+enum ProcessorAttribute:
+	capacity | load | consumption;
+
+enum Comparison:
+	LOWER='<' | LOWER_EQ='<=' | EQ='=' | HIGHER='>' | HIGHER_EQ='>=';
+
+enum TimeUnit:
+	seconds='sec' | milliseconds='msec' | microseconds='usec';
+
+enum TemperatureUnit:
+	celsius='°C' | fahrenheit='°F';
+
+enum AlertLevel:
+	critical | major | error | warning;

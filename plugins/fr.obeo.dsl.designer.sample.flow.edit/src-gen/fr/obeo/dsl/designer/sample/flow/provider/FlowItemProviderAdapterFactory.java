@@ -343,6 +343,29 @@ public class FlowItemProviderAdapterFactory extends FlowAdapterFactory implement
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.Named} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected NamedItemProvider namedItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.Named}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createNamedAdapter() {
+		if (namedItemProvider == null) {
+			namedItemProvider = new NamedItemProvider(this);
+		}
+
+		return namedItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -441,7 +464,6 @@ public class FlowItemProviderAdapterFactory extends FlowAdapterFactory implement
 	 * @generated
 	 */
 	public void dispose() {
-		if (processorItemProvider != null) processorItemProvider.dispose();
 		if (fanItemProvider != null) fanItemProvider.dispose();
 		if (physicalItemProvider != null) physicalItemProvider.dispose();
 		if (compositeProcessorItemProvider != null) compositeProcessorItemProvider.dispose();
@@ -451,7 +473,9 @@ public class FlowItemProviderAdapterFactory extends FlowAdapterFactory implement
 		if (powerOutputItemProvider != null) powerOutputItemProvider.dispose();
 		if (powerInputItemProvider != null) powerInputItemProvider.dispose();
 		if (powerLinkItemProvider != null) powerLinkItemProvider.dispose();
+		if (processorItemProvider != null) processorItemProvider.dispose();
 		if (dataSourceItemProvider != null) dataSourceItemProvider.dispose();
+		if (namedItemProvider != null) namedItemProvider.dispose();
 	}
 
 }

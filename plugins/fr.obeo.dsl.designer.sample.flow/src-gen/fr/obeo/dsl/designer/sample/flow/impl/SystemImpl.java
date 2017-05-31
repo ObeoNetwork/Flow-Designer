@@ -27,6 +27,7 @@ import fr.obeo.dsl.designer.sample.flow.FlowElementUsage;
 import fr.obeo.dsl.designer.sample.flow.FlowPackage;
 
 import fr.obeo.dsl.designer.sample.flow.FlowSource;
+import fr.obeo.dsl.designer.sample.flow.Named;
 import fr.obeo.dsl.designer.sample.flow.PowerInput;
 import fr.obeo.dsl.designer.sample.flow.PowerOutput;
 import fr.obeo.dsl.designer.sample.flow.PowerPlug;
@@ -58,12 +59,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.SystemImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.SystemImpl#getUsage <em>Usage</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.SystemImpl#getOutgoingFlows <em>Outgoing Flows</em>}</li>
- *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.SystemImpl#getElements <em>Elements</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.SystemImpl#getName <em>Name</em>}</li>
+ *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.SystemImpl#getElements <em>Elements</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.SystemImpl#getTemperature <em>Temperature</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.SystemImpl#getWeight <em>Weight</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.SystemImpl#getPowerOutputs <em>Power Outputs</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.SystemImpl#getPowerInputs <em>Power Inputs</em>}</li>
+ *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.SystemImpl#getRoutingRules <em>Routing Rules</em>}</li>
  * </ul>
  *
  * @generated
@@ -120,16 +122,6 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 	protected EList<DataFlow> outgoingFlows;
 
 	/**
-	 * The cached value of the '{@link #getElements() <em>Elements</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getElements()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<FlowElement> elements;
-
-	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -137,7 +129,7 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String NAME_EDEFAULT = "";
+    protected static final String NAME_EDEFAULT = null;
 
     /**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -148,6 +140,16 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 	 * @ordered
 	 */
     protected String name = NAME_EDEFAULT;
+
+				/**
+	 * The cached value of the '{@link #getElements() <em>Elements</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+				 * <!-- end-user-doc -->
+	 * @see #getElements()
+	 * @generated
+	 * @ordered
+	 */
+				protected EList<FlowElement> elements;
 
     /**
 	 * The default value of the '{@link #getTemperature() <em>Temperature</em>}' attribute.
@@ -210,6 +212,26 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
     protected EList<PowerInput> powerInputs;
 
     /**
+	 * The default value of the '{@link #getRoutingRules() <em>Routing Rules</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRoutingRules()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ROUTING_RULES_EDEFAULT = null;
+
+				/**
+	 * The cached value of the '{@link #getRoutingRules() <em>Routing Rules</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRoutingRules()
+	 * @generated
+	 * @ordered
+	 */
+	protected String routingRules = ROUTING_RULES_EDEFAULT;
+
+				/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -386,6 +408,27 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getRoutingRules() {
+		return routingRules;
+	}
+
+				/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRoutingRules(String newRoutingRules) {
+		String oldRoutingRules = routingRules;
+		routingRules = newRoutingRules;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, FlowPackage.SYSTEM__ROUTING_RULES, oldRoutingRules, routingRules));
+	}
+
+				/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -430,10 +473,10 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 				return getUsage();
 			case FlowPackage.SYSTEM__OUTGOING_FLOWS:
 				return getOutgoingFlows();
-			case FlowPackage.SYSTEM__ELEMENTS:
-				return getElements();
 			case FlowPackage.SYSTEM__NAME:
 				return getName();
+			case FlowPackage.SYSTEM__ELEMENTS:
+				return getElements();
 			case FlowPackage.SYSTEM__TEMPERATURE:
 				return getTemperature();
 			case FlowPackage.SYSTEM__WEIGHT:
@@ -442,6 +485,8 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 				return getPowerOutputs();
 			case FlowPackage.SYSTEM__POWER_INPUTS:
 				return getPowerInputs();
+			case FlowPackage.SYSTEM__ROUTING_RULES:
+				return getRoutingRules();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -465,12 +510,12 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 				getOutgoingFlows().clear();
 				getOutgoingFlows().addAll((Collection<? extends DataFlow>)newValue);
 				return;
+			case FlowPackage.SYSTEM__NAME:
+				setName((String)newValue);
+				return;
 			case FlowPackage.SYSTEM__ELEMENTS:
 				getElements().clear();
 				getElements().addAll((Collection<? extends FlowElement>)newValue);
-				return;
-			case FlowPackage.SYSTEM__NAME:
-				setName((String)newValue);
 				return;
 			case FlowPackage.SYSTEM__TEMPERATURE:
 				setTemperature((Integer)newValue);
@@ -485,6 +530,9 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 			case FlowPackage.SYSTEM__POWER_INPUTS:
 				getPowerInputs().clear();
 				getPowerInputs().addAll((Collection<? extends PowerInput>)newValue);
+				return;
+			case FlowPackage.SYSTEM__ROUTING_RULES:
+				setRoutingRules((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -507,11 +555,11 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 			case FlowPackage.SYSTEM__OUTGOING_FLOWS:
 				getOutgoingFlows().clear();
 				return;
-			case FlowPackage.SYSTEM__ELEMENTS:
-				getElements().clear();
-				return;
 			case FlowPackage.SYSTEM__NAME:
 				setName(NAME_EDEFAULT);
+				return;
+			case FlowPackage.SYSTEM__ELEMENTS:
+				getElements().clear();
 				return;
 			case FlowPackage.SYSTEM__TEMPERATURE:
 				setTemperature(TEMPERATURE_EDEFAULT);
@@ -524,6 +572,9 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 				return;
 			case FlowPackage.SYSTEM__POWER_INPUTS:
 				getPowerInputs().clear();
+				return;
+			case FlowPackage.SYSTEM__ROUTING_RULES:
+				setRoutingRules(ROUTING_RULES_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -543,10 +594,10 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 				return usage != USAGE_EDEFAULT;
 			case FlowPackage.SYSTEM__OUTGOING_FLOWS:
 				return outgoingFlows != null && !outgoingFlows.isEmpty();
-			case FlowPackage.SYSTEM__ELEMENTS:
-				return elements != null && !elements.isEmpty();
 			case FlowPackage.SYSTEM__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case FlowPackage.SYSTEM__ELEMENTS:
+				return elements != null && !elements.isEmpty();
 			case FlowPackage.SYSTEM__TEMPERATURE:
 				return temperature != TEMPERATURE_EDEFAULT;
 			case FlowPackage.SYSTEM__WEIGHT:
@@ -555,6 +606,8 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 				return powerOutputs != null && !powerOutputs.isEmpty();
 			case FlowPackage.SYSTEM__POWER_INPUTS:
 				return powerInputs != null && !powerInputs.isEmpty();
+			case FlowPackage.SYSTEM__ROUTING_RULES:
+				return ROUTING_RULES_EDEFAULT == null ? routingRules != null : !ROUTING_RULES_EDEFAULT.equals(routingRules);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -576,6 +629,12 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 		if (baseClass == FlowSource.class) {
 			switch (derivedFeatureID) {
 				case FlowPackage.SYSTEM__OUTGOING_FLOWS: return FlowPackage.FLOW_SOURCE__OUTGOING_FLOWS;
+				default: return -1;
+			}
+		}
+		if (baseClass == Named.class) {
+			switch (derivedFeatureID) {
+				case FlowPackage.SYSTEM__NAME: return FlowPackage.NAMED__NAME;
 				default: return -1;
 			}
 		}
@@ -602,6 +661,12 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 				default: return -1;
 			}
 		}
+		if (baseClass == Named.class) {
+			switch (baseFeatureID) {
+				case FlowPackage.NAMED__NAME: return FlowPackage.SYSTEM__NAME;
+				default: return -1;
+			}
+		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
@@ -625,6 +690,8 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 		result.append(temperature);
 		result.append(", weight: ");
 		result.append(weight);
+		result.append(", routingRules: ");
+		result.append(routingRules);
 		result.append(')');
 		return result.toString();
 	}

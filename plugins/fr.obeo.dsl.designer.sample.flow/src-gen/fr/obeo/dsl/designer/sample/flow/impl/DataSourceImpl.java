@@ -23,6 +23,7 @@ package fr.obeo.dsl.designer.sample.flow.impl;
 import fr.obeo.dsl.designer.sample.flow.DataSource;
 import fr.obeo.dsl.designer.sample.flow.FlowPackage;
 
+import fr.obeo.dsl.designer.sample.flow.Named;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -37,33 +38,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.DataSourceImpl#getVolume <em>Volume</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.DataSourceImpl#getName <em>Name</em>}</li>
+ *   <li>{@link fr.obeo.dsl.designer.sample.flow.impl.DataSourceImpl#getVolume <em>Volume</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class DataSourceImpl extends FlowSourceImpl implements DataSource {
-	/**
-	 * The default value of the '{@link #getVolume() <em>Volume</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getVolume()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final int VOLUME_EDEFAULT = 2;
-
-	/**
-	 * The cached value of the '{@link #getVolume() <em>Volume</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getVolume()
-	 * @generated
-	 * @ordered
-	 */
-	protected int volume = VOLUME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -83,6 +64,26 @@ public class DataSourceImpl extends FlowSourceImpl implements DataSource {
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getVolume() <em>Volume</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVolume()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int VOLUME_EDEFAULT = 2;
+
+	/**
+	 * The cached value of the '{@link #getVolume() <em>Volume</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVolume()
+	 * @generated
+	 * @ordered
+	 */
+	protected int volume = VOLUME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -153,10 +154,10 @@ public class DataSourceImpl extends FlowSourceImpl implements DataSource {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FlowPackage.DATA_SOURCE__VOLUME:
-				return getVolume();
 			case FlowPackage.DATA_SOURCE__NAME:
 				return getName();
+			case FlowPackage.DATA_SOURCE__VOLUME:
+				return getVolume();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -169,11 +170,11 @@ public class DataSourceImpl extends FlowSourceImpl implements DataSource {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FlowPackage.DATA_SOURCE__VOLUME:
-				setVolume((Integer)newValue);
-				return;
 			case FlowPackage.DATA_SOURCE__NAME:
 				setName((String)newValue);
+				return;
+			case FlowPackage.DATA_SOURCE__VOLUME:
+				setVolume((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -187,11 +188,11 @@ public class DataSourceImpl extends FlowSourceImpl implements DataSource {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FlowPackage.DATA_SOURCE__VOLUME:
-				setVolume(VOLUME_EDEFAULT);
-				return;
 			case FlowPackage.DATA_SOURCE__NAME:
 				setName(NAME_EDEFAULT);
+				return;
+			case FlowPackage.DATA_SOURCE__VOLUME:
+				setVolume(VOLUME_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -205,12 +206,44 @@ public class DataSourceImpl extends FlowSourceImpl implements DataSource {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FlowPackage.DATA_SOURCE__VOLUME:
-				return volume != VOLUME_EDEFAULT;
 			case FlowPackage.DATA_SOURCE__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case FlowPackage.DATA_SOURCE__VOLUME:
+				return volume != VOLUME_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == Named.class) {
+			switch (derivedFeatureID) {
+				case FlowPackage.DATA_SOURCE__NAME: return FlowPackage.NAMED__NAME;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == Named.class) {
+			switch (baseFeatureID) {
+				case FlowPackage.NAMED__NAME: return FlowPackage.DATA_SOURCE__NAME;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 	/**
@@ -223,10 +256,10 @@ public class DataSourceImpl extends FlowSourceImpl implements DataSource {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (volume: ");
-		result.append(volume);
-		result.append(", name: ");
+		result.append(" (name: ");
 		result.append(name);
+		result.append(", volume: ");
+		result.append(volume);
 		result.append(')');
 		return result.toString();
 	}

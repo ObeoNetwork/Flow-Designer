@@ -80,6 +80,7 @@ public class SystemItemProvider
 			addNamePropertyDescriptor(object);
 			addTemperaturePropertyDescriptor(object);
 			addWeightPropertyDescriptor(object);
+			addRoutingRulesPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -161,9 +162,9 @@ public class SystemItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_System_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_System_name_feature", "_UI_System_type"),
-				 FlowPackage.Literals.SYSTEM__NAME,
+				 getString("_UI_Named_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Named_name_feature", "_UI_Named_type"),
+				 FlowPackage.Literals.NAMED__NAME,
 				 true,
 				 false,
 				 false,
@@ -217,6 +218,28 @@ public class SystemItemProvider
 	}
 
     /**
+	 * This adds a property descriptor for the Routing Rules feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addRoutingRulesPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_System_routingRules_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_System_routingRules_feature", "_UI_System_type"),
+				 FlowPackage.Literals.SYSTEM__ROUTING_RULES,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+				/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -291,6 +314,7 @@ public class SystemItemProvider
 			case FlowPackage.SYSTEM__NAME:
 			case FlowPackage.SYSTEM__TEMPERATURE:
 			case FlowPackage.SYSTEM__WEIGHT:
+			case FlowPackage.SYSTEM__ROUTING_RULES:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case FlowPackage.SYSTEM__OUTGOING_FLOWS:
@@ -322,11 +346,6 @@ public class SystemItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(FlowPackage.Literals.SYSTEM__ELEMENTS,
-				 FlowFactory.eINSTANCE.createProcessor()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FlowPackage.Literals.SYSTEM__ELEMENTS,
 				 FlowFactory.eINSTANCE.createFan()));
 
 		newChildDescriptors.add
@@ -348,6 +367,11 @@ public class SystemItemProvider
 			(createChildParameter
 				(FlowPackage.Literals.SYSTEM__ELEMENTS,
 				 FlowFactory.eINSTANCE.createDataFlow()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FlowPackage.Literals.SYSTEM__ELEMENTS,
+				 FlowFactory.eINSTANCE.createProcessor()));
 
 		newChildDescriptors.add
 			(createChildParameter

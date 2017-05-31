@@ -31,7 +31,6 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link fr.obeo.dsl.designer.sample.flow.Processor#getName <em>Name</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.Processor#getVolume <em>Volume</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.Processor#getWeight <em>Weight</em>}</li>
  * </ul>
@@ -40,33 +39,7 @@ import org.eclipse.emf.common.util.EList;
  * @model
  * @generated
  */
-public interface Processor extends FlowTarget, CapacityBound, FlowSource, Powered {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getProcessor_Name()
-	 * @model required="true"
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.Processor#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
+public interface Processor extends FlowTarget, CapacityBound, FlowSource, Powered, Named {
 	/**
 	 * Returns the value of the '<em><b>Volume</b></em>' attribute.
 	 * The default value is <code>"2"</code>.
