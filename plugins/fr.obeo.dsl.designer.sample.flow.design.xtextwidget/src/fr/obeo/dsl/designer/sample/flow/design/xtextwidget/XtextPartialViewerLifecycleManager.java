@@ -99,7 +99,9 @@ public class XtextPartialViewerLifecycleManager extends AbstractEEFWidgetLifecyc
 	@Override
 	public void aboutToBeHidden() {
 		super.aboutToBeHidden();
-		editor.getViewer().getTextWidget().removeModifyListener(this.modifyListener);
+		if (this.modifyListener !=null && editor != null && editor.getViewer() != null && editor.getViewer().getTextWidget() != null) {
+			editor.getViewer().getTextWidget().removeModifyListener(this.modifyListener);
+		}
 	}
 
 	@Override
