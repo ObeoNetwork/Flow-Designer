@@ -5,24 +5,24 @@
       <metamodel href="http://www.obeo.fr/dsl/designer/sample/flow#/"/>
       <defaultLayer name="Main">
         <nodeMappings name="Data Source" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Volume']" semanticCandidatesExpression="feature:elements" domainClass="flow::DataSource">
-          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" sizeComputationExpression="aql:self.volume" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/sensor.svg">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/sensor.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
           <conditionnalStyles predicateExpression="aql:self.name.contains('Camera')">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" sizeComputationExpression="aql:self.volume" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/camera.svg">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/camera.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </conditionnalStyles>
           <conditionnalStyles predicateExpression="aql:self.name.contains('Radar')">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" sizeComputationExpression="aql:self.volume" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/radar.svg">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/radar.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </conditionnalStyles>
           <conditionnalStyles predicateExpression="aql:self.name.contains('Wifi')">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" sizeComputationExpression="aql:self.volume" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/antenna.svg">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/antenna.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
