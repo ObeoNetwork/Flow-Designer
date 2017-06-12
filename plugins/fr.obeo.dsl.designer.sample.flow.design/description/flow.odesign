@@ -46,18 +46,18 @@
         </edgeMappings>
         <containerMappings name="System" detailDescriptions="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Sub%20Topography']" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name']" semanticCandidatesExpression="feature:elements" domainClass="flow::System" reusedNodeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']">
           <subNodeMappings name="Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Capacity']" semanticCandidatesExpression="aql:self.elements" domainClass="flow::Processor">
-            <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="aql:self.sizeFromCapacity()" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu.svg">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="aql:self.sizeFromCapacity()" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
             <conditionnalStyles predicateExpression="aql:self.name.contains('Engine')">
-              <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="aql:self.sizeFromCapacity()" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset.svg">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="aql:self.sizeFromCapacity()" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset.svg">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.name.contains('DSP')">
-              <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="aql:self.sizeFromCapacity()" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset2.svg">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="aql:self.sizeFromCapacity()" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset2.svg">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
