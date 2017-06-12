@@ -20,4 +20,5 @@ Require-Bundle: org.eclipse.eef.core,
  fr.obeo.dsl.designer.sample.flow.routerdsl;bundle-version="1.0.0",
  fr.obeo.dsl.designer.sample.flow.routerdsl.ide;bundle-version="1.0.0",
  fr.obeo.dsl.designer.sample.flow.routerdsl.ui;bundle-version="1.0.0",
- fr.obeo.dsl.designer.sample.flow;bundle-version="1.0.0"
+ fr.obeo.dsl.designer.sample.flow;bundle-version="1.0.0",
+ org.eclipse.sirius.properties;bundle-version="5.0.0"

@@ -12,7 +12,8 @@ Require-Bundle: org.eclipse.ui,
  fr.obeo.dsl.designer.sample.flow;bundle-version="1.0.0",
  org.eclipse.sirius.common.acceleo.aql;bundle-version="5.0.0",
  org.eclipse.sirius.table;bundle-version="5.0.0",
- org.eclipse.sirius.diagram;bundle-version="5.0.0"
+ org.eclipse.sirius.diagram;bundle-version="5.0.0",
+ org.eclipse.sirius.properties;bundle-version="5.0.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-Vendor: Obeo
