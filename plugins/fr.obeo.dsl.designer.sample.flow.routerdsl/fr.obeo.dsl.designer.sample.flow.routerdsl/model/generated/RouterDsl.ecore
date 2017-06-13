@@ -3,15 +3,6 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="routerDsl" nsURI="http://www.obeo.fr/dsl/designer/sample/flow/routerdsl/RouterDsl"
     nsPrefix="routerDsl">
   <eClassifiers xsi:type="ecore:EClass" name="RoutingRules"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DataSourceDeclaration">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProcessorDeclaration">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SystemDeclaration">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CaseRule">
     <eStructuralFeatures xsi:type="ecore:EReference" name="condition" eType="#//Conditional"
         containment="true"/>
@@ -21,7 +12,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Decision"/>
   <eClassifiers xsi:type="ecore:EClass" name="MessageDecision" eSuperTypes="#//Decision"/>
   <eClassifiers xsi:type="ecore:EClass" name="RouteTo" eSuperTypes="#//Decision">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="destination" eType="#//ProcessorDeclaration"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="destination" eType="ecore:EClass platform:/resource/fr.obeo.dsl.designer.sample.flow/model/flow.ecore#//Processor"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DropMessage" eSuperTypes="#//MessageDecision"/>
   <eClassifiers xsi:type="ecore:EClass" name="Alert" eSuperTypes="#//MessageDecision">
@@ -48,14 +39,14 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ObjectAccess" eSuperTypes="#//ObjectAccessOrValue"/>
   <eClassifiers xsi:type="ecore:EClass" name="ProcessorAccess" eSuperTypes="#//ObjectAccess">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="processor" eType="#//ProcessorDeclaration"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="processor" eType="ecore:EClass platform:/resource/fr.obeo.dsl.designer.sample.flow/model/flow.ecore#//Processor"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute" eType="#//ProcessorAttribute"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SensorAccess" eSuperTypes="#//ObjectAccess">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sensor" eType="#//DataSourceDeclaration"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sensor" eType="ecore:EClass platform:/resource/fr.obeo.dsl.designer.sample.flow/model/flow.ecore#//DataSource"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SystemAccess" eSuperTypes="#//ObjectAccess">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="system" eType="#//SystemDeclaration"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="system" eType="ecore:EClass platform:/resource/fr.obeo.dsl.designer.sample.flow/model/flow.ecore#//System"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="SensorAttribute">
     <eLiterals name="volume" literal="volume"/>
@@ -88,12 +79,6 @@
     <eLiterals name="warning" value="3" literal="warning"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="RoutingRule" eSuperTypes="#//RoutingRules">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="processors" upperBound="-1"
-        eType="#//ProcessorDeclaration" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sensors" upperBound="-1"
-        eType="#//DataSourceDeclaration" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="systems" upperBound="-1"
-        eType="#//SystemDeclaration" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rules" upperBound="-1"
         eType="#//CaseRule" containment="true"/>
   </eClassifiers>

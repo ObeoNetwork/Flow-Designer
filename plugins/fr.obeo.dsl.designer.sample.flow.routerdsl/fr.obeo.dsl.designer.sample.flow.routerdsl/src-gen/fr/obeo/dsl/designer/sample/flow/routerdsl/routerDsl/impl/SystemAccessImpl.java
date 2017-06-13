@@ -5,7 +5,6 @@ package fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl;
 
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemAccess;
-import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemDeclaration;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -37,7 +36,7 @@ public class SystemAccessImpl extends ObjectAccessImpl implements SystemAccess
    * @generated
    * @ordered
    */
-  protected SystemDeclaration system;
+  protected fr.obeo.dsl.designer.sample.flow.System system;
 
   /**
    * <!-- begin-user-doc -->
@@ -65,12 +64,12 @@ public class SystemAccessImpl extends ObjectAccessImpl implements SystemAccess
    * <!-- end-user-doc -->
    * @generated
    */
-  public SystemDeclaration getSystem()
+  public fr.obeo.dsl.designer.sample.flow.System getSystem()
   {
     if (system != null && system.eIsProxy())
     {
       InternalEObject oldSystem = (InternalEObject)system;
-      system = (SystemDeclaration)eResolveProxy(oldSystem);
+      system = (fr.obeo.dsl.designer.sample.flow.System)eResolveProxy(oldSystem);
       if (system != oldSystem)
       {
         if (eNotificationRequired())
@@ -85,7 +84,7 @@ public class SystemAccessImpl extends ObjectAccessImpl implements SystemAccess
    * <!-- end-user-doc -->
    * @generated
    */
-  public SystemDeclaration basicGetSystem()
+  public fr.obeo.dsl.designer.sample.flow.System basicGetSystem()
   {
     return system;
   }
@@ -95,9 +94,9 @@ public class SystemAccessImpl extends ObjectAccessImpl implements SystemAccess
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setSystem(SystemDeclaration newSystem)
+  public void setSystem(fr.obeo.dsl.designer.sample.flow.System newSystem)
   {
-    SystemDeclaration oldSystem = system;
+    fr.obeo.dsl.designer.sample.flow.System oldSystem = system;
     system = newSystem;
     if (eNotificationRequired())
       eNotify(new ENotificationImpl(this, Notification.SET, RouterDslPackage.SYSTEM_ACCESS__SYSTEM, oldSystem, system));
@@ -131,7 +130,7 @@ public class SystemAccessImpl extends ObjectAccessImpl implements SystemAccess
     switch (featureID)
     {
       case RouterDslPackage.SYSTEM_ACCESS__SYSTEM:
-        setSystem((SystemDeclaration)newValue);
+        setSystem((fr.obeo.dsl.designer.sample.flow.System)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -148,7 +147,7 @@ public class SystemAccessImpl extends ObjectAccessImpl implements SystemAccess
     switch (featureID)
     {
       case RouterDslPackage.SYSTEM_ACCESS__SYSTEM:
-        setSystem((SystemDeclaration)null);
+        setSystem((fr.obeo.dsl.designer.sample.flow.System)null);
         return;
     }
     super.eUnset(featureID);

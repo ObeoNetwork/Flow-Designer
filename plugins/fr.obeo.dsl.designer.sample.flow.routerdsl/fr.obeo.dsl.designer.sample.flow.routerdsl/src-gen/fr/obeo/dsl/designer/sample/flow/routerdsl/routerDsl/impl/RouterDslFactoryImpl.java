@@ -67,9 +67,6 @@ public class RouterDslFactoryImpl extends EFactoryImpl implements RouterDslFacto
     switch (eClass.getClassifierID())
     {
       case RouterDslPackage.ROUTING_RULES: return createRoutingRules();
-      case RouterDslPackage.DATA_SOURCE_DECLARATION: return createDataSourceDeclaration();
-      case RouterDslPackage.PROCESSOR_DECLARATION: return createProcessorDeclaration();
-      case RouterDslPackage.SYSTEM_DECLARATION: return createSystemDeclaration();
       case RouterDslPackage.CASE_RULE: return createCaseRule();
       case RouterDslPackage.DECISION: return createDecision();
       case RouterDslPackage.MESSAGE_DECISION: return createMessageDecision();
@@ -154,39 +151,6 @@ public class RouterDslFactoryImpl extends EFactoryImpl implements RouterDslFacto
   {
     RoutingRulesImpl routingRules = new RoutingRulesImpl();
     return routingRules;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public DataSourceDeclaration createDataSourceDeclaration()
-  {
-    DataSourceDeclarationImpl dataSourceDeclaration = new DataSourceDeclarationImpl();
-    return dataSourceDeclaration;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public ProcessorDeclaration createProcessorDeclaration()
-  {
-    ProcessorDeclarationImpl processorDeclaration = new ProcessorDeclarationImpl();
-    return processorDeclaration;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public SystemDeclaration createSystemDeclaration()
-  {
-    SystemDeclarationImpl systemDeclaration = new SystemDeclarationImpl();
-    return systemDeclaration;
   }
 
   /**

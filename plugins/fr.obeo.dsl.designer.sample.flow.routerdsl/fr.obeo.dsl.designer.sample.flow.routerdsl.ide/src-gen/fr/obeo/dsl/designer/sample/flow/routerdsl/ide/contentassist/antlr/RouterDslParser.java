@@ -41,9 +41,6 @@ public class RouterDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getTemperatureUnitAccess().getAlternatives(), "rule__TemperatureUnit__Alternatives");
 					put(grammarAccess.getAlertLevelAccess().getAlternatives(), "rule__AlertLevel__Alternatives");
 					put(grammarAccess.getRoutingRulesAccess().getGroup(), "rule__RoutingRules__Group__0");
-					put(grammarAccess.getDataSourceDeclarationAccess().getGroup(), "rule__DataSourceDeclaration__Group__0");
-					put(grammarAccess.getProcessorDeclarationAccess().getGroup(), "rule__ProcessorDeclaration__Group__0");
-					put(grammarAccess.getSystemDeclarationAccess().getGroup(), "rule__SystemDeclaration__Group__0");
 					put(grammarAccess.getCaseRuleAccess().getGroup(), "rule__CaseRule__Group__0");
 					put(grammarAccess.getDecisionAccess().getGroup(), "rule__Decision__Group__0");
 					put(grammarAccess.getRouteToAccess().getGroup(), "rule__RouteTo__Group__0");
@@ -55,13 +52,7 @@ public class RouterDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getProcessorAccessAccess().getGroup(), "rule__ProcessorAccess__Group__0");
 					put(grammarAccess.getSensorAccessAccess().getGroup(), "rule__SensorAccess__Group__0");
 					put(grammarAccess.getSystemAccessAccess().getGroup(), "rule__SystemAccess__Group__0");
-					put(grammarAccess.getRoutingRulesAccess().getProcessorsAssignment_1(), "rule__RoutingRules__ProcessorsAssignment_1");
-					put(grammarAccess.getRoutingRulesAccess().getSensorsAssignment_2(), "rule__RoutingRules__SensorsAssignment_2");
-					put(grammarAccess.getRoutingRulesAccess().getSystemsAssignment_3(), "rule__RoutingRules__SystemsAssignment_3");
-					put(grammarAccess.getRoutingRulesAccess().getRulesAssignment_5(), "rule__RoutingRules__RulesAssignment_5");
-					put(grammarAccess.getDataSourceDeclarationAccess().getNameAssignment_2(), "rule__DataSourceDeclaration__NameAssignment_2");
-					put(grammarAccess.getProcessorDeclarationAccess().getNameAssignment_2(), "rule__ProcessorDeclaration__NameAssignment_2");
-					put(grammarAccess.getSystemDeclarationAccess().getNameAssignment_2(), "rule__SystemDeclaration__NameAssignment_2");
+					put(grammarAccess.getRoutingRulesAccess().getRulesAssignment_2(), "rule__RoutingRules__RulesAssignment_2");
 					put(grammarAccess.getCaseRuleAccess().getConditionAssignment_1(), "rule__CaseRule__ConditionAssignment_1");
 					put(grammarAccess.getCaseRuleAccess().getDecisionsAssignment_3(), "rule__CaseRule__DecisionsAssignment_3");
 					put(grammarAccess.getRouteToAccess().getDestinationAssignment_1(), "rule__RouteTo__DestinationAssignment_1");

@@ -3,6 +3,7 @@
  */
 package fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl;
 
+import fr.obeo.dsl.designer.sample.flow.Processor;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,12 +33,12 @@ public interface ProcessorAccess extends ObjectAccess
    * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Processor</em>' reference.
-   * @see #setProcessor(ProcessorDeclaration)
+   * @see #setProcessor(Processor)
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage#getProcessorAccess_Processor()
    * @model
    * @generated
    */
-  ProcessorDeclaration getProcessor();
+  Processor getProcessor();
 
   /**
    * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorAccess#getProcessor <em>Processor</em>}' reference.
@@ -47,7 +48,7 @@ public interface ProcessorAccess extends ObjectAccess
    * @see #getProcessor()
    * @generated
    */
-  void setProcessor(ProcessorDeclaration value);
+  void setProcessor(Processor value);
 
   /**
    * Returns the value of the '<em><b>Attribute</b></em>' attribute.

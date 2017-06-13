@@ -14,9 +14,6 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRule#getProcessors <em>Processors</em>}</li>
- *   <li>{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRule#getSensors <em>Sensors</em>}</li>
- *   <li>{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRule#getSystems <em>Systems</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRule#getRules <em>Rules</em>}</li>
  * </ul>
  *
@@ -26,54 +23,6 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface RoutingRule extends RoutingRules
 {
-  /**
-   * Returns the value of the '<em><b>Processors</b></em>' containment reference list.
-   * The list contents are of type {@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorDeclaration}.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Processors</em>' containment reference list isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Processors</em>' containment reference list.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage#getRoutingRule_Processors()
-   * @model containment="true"
-   * @generated
-   */
-  EList<ProcessorDeclaration> getProcessors();
-
-  /**
-   * Returns the value of the '<em><b>Sensors</b></em>' containment reference list.
-   * The list contents are of type {@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.DataSourceDeclaration}.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Sensors</em>' containment reference list isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Sensors</em>' containment reference list.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage#getRoutingRule_Sensors()
-   * @model containment="true"
-   * @generated
-   */
-  EList<DataSourceDeclaration> getSensors();
-
-  /**
-   * Returns the value of the '<em><b>Systems</b></em>' containment reference list.
-   * The list contents are of type {@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemDeclaration}.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Systems</em>' containment reference list isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Systems</em>' containment reference list.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage#getRoutingRule_Systems()
-   * @model containment="true"
-   * @generated
-   */
-  EList<SystemDeclaration> getSystems();
-
   /**
    * Returns the value of the '<em><b>Rules</b></em>' containment reference list.
    * The list contents are of type {@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.CaseRule}.

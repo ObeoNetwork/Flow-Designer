@@ -3,9 +3,10 @@
  */
 package fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl;
 
+import fr.obeo.dsl.designer.sample.flow.Processor;
+
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorAccess;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorAttribute;
-import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorDeclaration;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -39,7 +40,7 @@ public class ProcessorAccessImpl extends ObjectAccessImpl implements ProcessorAc
    * @generated
    * @ordered
    */
-  protected ProcessorDeclaration processor;
+  protected Processor processor;
 
   /**
    * The default value of the '{@link #getAttribute() <em>Attribute</em>}' attribute.
@@ -87,12 +88,12 @@ public class ProcessorAccessImpl extends ObjectAccessImpl implements ProcessorAc
    * <!-- end-user-doc -->
    * @generated
    */
-  public ProcessorDeclaration getProcessor()
+  public Processor getProcessor()
   {
     if (processor != null && processor.eIsProxy())
     {
       InternalEObject oldProcessor = (InternalEObject)processor;
-      processor = (ProcessorDeclaration)eResolveProxy(oldProcessor);
+      processor = (Processor)eResolveProxy(oldProcessor);
       if (processor != oldProcessor)
       {
         if (eNotificationRequired())
@@ -107,7 +108,7 @@ public class ProcessorAccessImpl extends ObjectAccessImpl implements ProcessorAc
    * <!-- end-user-doc -->
    * @generated
    */
-  public ProcessorDeclaration basicGetProcessor()
+  public Processor basicGetProcessor()
   {
     return processor;
   }
@@ -117,9 +118,9 @@ public class ProcessorAccessImpl extends ObjectAccessImpl implements ProcessorAc
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setProcessor(ProcessorDeclaration newProcessor)
+  public void setProcessor(Processor newProcessor)
   {
-    ProcessorDeclaration oldProcessor = processor;
+    Processor oldProcessor = processor;
     processor = newProcessor;
     if (eNotificationRequired())
       eNotify(new ENotificationImpl(this, Notification.SET, RouterDslPackage.PROCESSOR_ACCESS__PROCESSOR, oldProcessor, processor));
@@ -178,7 +179,7 @@ public class ProcessorAccessImpl extends ObjectAccessImpl implements ProcessorAc
     switch (featureID)
     {
       case RouterDslPackage.PROCESSOR_ACCESS__PROCESSOR:
-        setProcessor((ProcessorDeclaration)newValue);
+        setProcessor((Processor)newValue);
         return;
       case RouterDslPackage.PROCESSOR_ACCESS__ATTRIBUTE:
         setAttribute((ProcessorAttribute)newValue);
@@ -198,7 +199,7 @@ public class ProcessorAccessImpl extends ObjectAccessImpl implements ProcessorAc
     switch (featureID)
     {
       case RouterDslPackage.PROCESSOR_ACCESS__PROCESSOR:
-        setProcessor((ProcessorDeclaration)null);
+        setProcessor((Processor)null);
         return;
       case RouterDslPackage.PROCESSOR_ACCESS__ATTRIBUTE:
         setAttribute(ATTRIBUTE_EDEFAULT);

@@ -31,151 +31,30 @@ public class RouterDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl.RoutingRules");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cRoutingRuleAction_0 = (Action)cGroup.eContents().get(0);
-		private final Assignment cProcessorsAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cProcessorsProcessorDeclarationParserRuleCall_1_0 = (RuleCall)cProcessorsAssignment_1.eContents().get(0);
-		private final Assignment cSensorsAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cSensorsDataSourceDeclarationParserRuleCall_2_0 = (RuleCall)cSensorsAssignment_2.eContents().get(0);
-		private final Assignment cSystemsAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cSystemsSystemDeclarationParserRuleCall_3_0 = (RuleCall)cSystemsAssignment_3.eContents().get(0);
-		private final Keyword cNumberSignKeyword_4 = (Keyword)cGroup.eContents().get(4);
-		private final Assignment cRulesAssignment_5 = (Assignment)cGroup.eContents().get(5);
-		private final RuleCall cRulesCaseRuleParserRuleCall_5_0 = (RuleCall)cRulesAssignment_5.eContents().get(0);
+		private final Keyword cNumberSignKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cRulesAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cRulesCaseRuleParserRuleCall_2_0 = (RuleCall)cRulesAssignment_2.eContents().get(0);
 		
 		//RoutingRules:
-		//	{RoutingRule} processors+=ProcessorDeclaration*
-		//	sensors+=DataSourceDeclaration*
-		//	systems+=SystemDeclaration* '#'
+		//	{RoutingRule}
+		//	'#'
 		//	rules+=CaseRule*;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//{RoutingRule} processors+=ProcessorDeclaration* sensors+=DataSourceDeclaration* systems+=SystemDeclaration* '#'
-		//rules+=CaseRule*
+		//{RoutingRule} '#' rules+=CaseRule*
 		public Group getGroup() { return cGroup; }
 		
 		//{RoutingRule}
 		public Action getRoutingRuleAction_0() { return cRoutingRuleAction_0; }
 		
-		//processors+=ProcessorDeclaration*
-		public Assignment getProcessorsAssignment_1() { return cProcessorsAssignment_1; }
-		
-		//ProcessorDeclaration
-		public RuleCall getProcessorsProcessorDeclarationParserRuleCall_1_0() { return cProcessorsProcessorDeclarationParserRuleCall_1_0; }
-		
-		//sensors+=DataSourceDeclaration*
-		public Assignment getSensorsAssignment_2() { return cSensorsAssignment_2; }
-		
-		//DataSourceDeclaration
-		public RuleCall getSensorsDataSourceDeclarationParserRuleCall_2_0() { return cSensorsDataSourceDeclarationParserRuleCall_2_0; }
-		
-		//systems+=SystemDeclaration*
-		public Assignment getSystemsAssignment_3() { return cSystemsAssignment_3; }
-		
-		//SystemDeclaration
-		public RuleCall getSystemsSystemDeclarationParserRuleCall_3_0() { return cSystemsSystemDeclarationParserRuleCall_3_0; }
-		
 		//'#'
-		public Keyword getNumberSignKeyword_4() { return cNumberSignKeyword_4; }
+		public Keyword getNumberSignKeyword_1() { return cNumberSignKeyword_1; }
 		
 		//rules+=CaseRule*
-		public Assignment getRulesAssignment_5() { return cRulesAssignment_5; }
+		public Assignment getRulesAssignment_2() { return cRulesAssignment_2; }
 		
 		//CaseRule
-		public RuleCall getRulesCaseRuleParserRuleCall_5_0() { return cRulesCaseRuleParserRuleCall_5_0; }
-	}
-	public class DataSourceDeclarationElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl.DataSourceDeclaration");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cSensorKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cNameIDTerminalRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		
-		///*
-		// *  These declaration are temporary workarounds, I'd rather refer directly to the Processor or DataSource instances.
-		// */ DataSourceDeclaration:
-		//	'sensor' '(' name=ID ')';
-		@Override public ParserRule getRule() { return rule; }
-		
-		//'sensor' '(' name=ID ')'
-		public Group getGroup() { return cGroup; }
-		
-		//'sensor'
-		public Keyword getSensorKeyword_0() { return cSensorKeyword_0; }
-		
-		//'('
-		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
-		
-		//name=ID
-		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
-		
-		//ID
-		public RuleCall getNameIDTerminalRuleCall_2_0() { return cNameIDTerminalRuleCall_2_0; }
-		
-		//')'
-		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
-	}
-	public class ProcessorDeclarationElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl.ProcessorDeclaration");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cProcessorKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cNameIDTerminalRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		
-		//ProcessorDeclaration:
-		//	'processor' '(' name=ID ')';
-		@Override public ParserRule getRule() { return rule; }
-		
-		//'processor' '(' name=ID ')'
-		public Group getGroup() { return cGroup; }
-		
-		//'processor'
-		public Keyword getProcessorKeyword_0() { return cProcessorKeyword_0; }
-		
-		//'('
-		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
-		
-		//name=ID
-		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
-		
-		//ID
-		public RuleCall getNameIDTerminalRuleCall_2_0() { return cNameIDTerminalRuleCall_2_0; }
-		
-		//')'
-		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
-	}
-	public class SystemDeclarationElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl.SystemDeclaration");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cSystemKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cNameIDTerminalRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		
-		//SystemDeclaration:
-		//	'system' '(' name=ID ')';
-		@Override public ParserRule getRule() { return rule; }
-		
-		//'system' '(' name=ID ')'
-		public Group getGroup() { return cGroup; }
-		
-		//'system'
-		public Keyword getSystemKeyword_0() { return cSystemKeyword_0; }
-		
-		//'('
-		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
-		
-		//name=ID
-		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
-		
-		//ID
-		public RuleCall getNameIDTerminalRuleCall_2_0() { return cNameIDTerminalRuleCall_2_0; }
-		
-		//')'
-		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
+		public RuleCall getRulesCaseRuleParserRuleCall_2_0() { return cRulesCaseRuleParserRuleCall_2_0; }
 	}
 	public class CaseRuleElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl.CaseRule");
@@ -263,27 +142,27 @@ public class RouterDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cHyphenMinusGreaterThanSignKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cDestinationAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final CrossReference cDestinationProcessorDeclarationCrossReference_1_0 = (CrossReference)cDestinationAssignment_1.eContents().get(0);
-		private final RuleCall cDestinationProcessorDeclarationIDTerminalRuleCall_1_0_1 = (RuleCall)cDestinationProcessorDeclarationCrossReference_1_0.eContents().get(1);
+		private final CrossReference cDestinationProcessorCrossReference_1_0 = (CrossReference)cDestinationAssignment_1.eContents().get(0);
+		private final RuleCall cDestinationProcessorIDTerminalRuleCall_1_0_1 = (RuleCall)cDestinationProcessorCrossReference_1_0.eContents().get(1);
 		
 		//RouteTo:
-		//	'->' destination=[ProcessorDeclaration];
+		//	'->' destination=[flow::Processor];
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'->' destination=[ProcessorDeclaration]
+		//'->' destination=[flow::Processor]
 		public Group getGroup() { return cGroup; }
 		
 		//'->'
 		public Keyword getHyphenMinusGreaterThanSignKeyword_0() { return cHyphenMinusGreaterThanSignKeyword_0; }
 		
-		//destination=[ProcessorDeclaration]
+		//destination=[flow::Processor]
 		public Assignment getDestinationAssignment_1() { return cDestinationAssignment_1; }
 		
-		//[ProcessorDeclaration]
-		public CrossReference getDestinationProcessorDeclarationCrossReference_1_0() { return cDestinationProcessorDeclarationCrossReference_1_0; }
+		//[flow::Processor]
+		public CrossReference getDestinationProcessorCrossReference_1_0() { return cDestinationProcessorCrossReference_1_0; }
 		
 		//ID
-		public RuleCall getDestinationProcessorDeclarationIDTerminalRuleCall_1_0_1() { return cDestinationProcessorDeclarationIDTerminalRuleCall_1_0_1; }
+		public RuleCall getDestinationProcessorIDTerminalRuleCall_1_0_1() { return cDestinationProcessorIDTerminalRuleCall_1_0_1; }
 	}
 	public class DropMessageElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl.DropMessage");
@@ -494,27 +373,27 @@ public class RouterDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl.ProcessorAccess");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cProcessorAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final CrossReference cProcessorProcessorDeclarationCrossReference_0_0 = (CrossReference)cProcessorAssignment_0.eContents().get(0);
-		private final RuleCall cProcessorProcessorDeclarationIDTerminalRuleCall_0_0_1 = (RuleCall)cProcessorProcessorDeclarationCrossReference_0_0.eContents().get(1);
+		private final CrossReference cProcessorProcessorCrossReference_0_0 = (CrossReference)cProcessorAssignment_0.eContents().get(0);
+		private final RuleCall cProcessorProcessorIDTerminalRuleCall_0_0_1 = (RuleCall)cProcessorProcessorCrossReference_0_0.eContents().get(1);
 		private final Keyword cFullStopKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final Assignment cAttributeAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cAttributeProcessorAttributeEnumRuleCall_2_0 = (RuleCall)cAttributeAssignment_2.eContents().get(0);
 		
 		//ProcessorAccess:
-		//	processor=[ProcessorDeclaration] "." attribute=ProcessorAttribute;
+		//	processor=[flow::Processor] "." attribute=ProcessorAttribute;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//processor=[ProcessorDeclaration] "." attribute=ProcessorAttribute
+		//processor=[flow::Processor] "." attribute=ProcessorAttribute
 		public Group getGroup() { return cGroup; }
 		
-		//processor=[ProcessorDeclaration]
+		//processor=[flow::Processor]
 		public Assignment getProcessorAssignment_0() { return cProcessorAssignment_0; }
 		
-		//[ProcessorDeclaration]
-		public CrossReference getProcessorProcessorDeclarationCrossReference_0_0() { return cProcessorProcessorDeclarationCrossReference_0_0; }
+		//[flow::Processor]
+		public CrossReference getProcessorProcessorCrossReference_0_0() { return cProcessorProcessorCrossReference_0_0; }
 		
 		//ID
-		public RuleCall getProcessorProcessorDeclarationIDTerminalRuleCall_0_0_1() { return cProcessorProcessorDeclarationIDTerminalRuleCall_0_0_1; }
+		public RuleCall getProcessorProcessorIDTerminalRuleCall_0_0_1() { return cProcessorProcessorIDTerminalRuleCall_0_0_1; }
 		
 		//"."
 		public Keyword getFullStopKeyword_1() { return cFullStopKeyword_1; }
@@ -529,25 +408,25 @@ public class RouterDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl.SensorAccess");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cSensorAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final CrossReference cSensorDataSourceDeclarationCrossReference_0_0 = (CrossReference)cSensorAssignment_0.eContents().get(0);
-		private final RuleCall cSensorDataSourceDeclarationIDTerminalRuleCall_0_0_1 = (RuleCall)cSensorDataSourceDeclarationCrossReference_0_0.eContents().get(1);
+		private final CrossReference cSensorDataSourceCrossReference_0_0 = (CrossReference)cSensorAssignment_0.eContents().get(0);
+		private final RuleCall cSensorDataSourceIDTerminalRuleCall_0_0_1 = (RuleCall)cSensorDataSourceCrossReference_0_0.eContents().get(1);
 		private final Keyword cVolumeKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		
 		//SensorAccess:
-		//	sensor=[DataSourceDeclaration] ".volume";
+		//	sensor=[flow::DataSource] ".volume";
 		@Override public ParserRule getRule() { return rule; }
 		
-		//sensor=[DataSourceDeclaration] ".volume"
+		//sensor=[flow::DataSource] ".volume"
 		public Group getGroup() { return cGroup; }
 		
-		//sensor=[DataSourceDeclaration]
+		//sensor=[flow::DataSource]
 		public Assignment getSensorAssignment_0() { return cSensorAssignment_0; }
 		
-		//[DataSourceDeclaration]
-		public CrossReference getSensorDataSourceDeclarationCrossReference_0_0() { return cSensorDataSourceDeclarationCrossReference_0_0; }
+		//[flow::DataSource]
+		public CrossReference getSensorDataSourceCrossReference_0_0() { return cSensorDataSourceCrossReference_0_0; }
 		
 		//ID
-		public RuleCall getSensorDataSourceDeclarationIDTerminalRuleCall_0_0_1() { return cSensorDataSourceDeclarationIDTerminalRuleCall_0_0_1; }
+		public RuleCall getSensorDataSourceIDTerminalRuleCall_0_0_1() { return cSensorDataSourceIDTerminalRuleCall_0_0_1; }
 		
 		//".volume"
 		public Keyword getVolumeKeyword_1() { return cVolumeKeyword_1; }
@@ -556,25 +435,25 @@ public class RouterDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl.SystemAccess");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cSystemAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final CrossReference cSystemSystemDeclarationCrossReference_0_0 = (CrossReference)cSystemAssignment_0.eContents().get(0);
-		private final RuleCall cSystemSystemDeclarationIDTerminalRuleCall_0_0_1 = (RuleCall)cSystemSystemDeclarationCrossReference_0_0.eContents().get(1);
+		private final CrossReference cSystemSystemCrossReference_0_0 = (CrossReference)cSystemAssignment_0.eContents().get(0);
+		private final RuleCall cSystemSystemIDTerminalRuleCall_0_0_1 = (RuleCall)cSystemSystemCrossReference_0_0.eContents().get(1);
 		private final Keyword cTemperatureKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		
 		//SystemAccess:
-		//	system=[SystemDeclaration] ".temperature";
+		//	system=[flow::System] ".temperature";
 		@Override public ParserRule getRule() { return rule; }
 		
-		//system=[SystemDeclaration] ".temperature"
+		//system=[flow::System] ".temperature"
 		public Group getGroup() { return cGroup; }
 		
-		//system=[SystemDeclaration]
+		//system=[flow::System]
 		public Assignment getSystemAssignment_0() { return cSystemAssignment_0; }
 		
-		//[SystemDeclaration]
-		public CrossReference getSystemSystemDeclarationCrossReference_0_0() { return cSystemSystemDeclarationCrossReference_0_0; }
+		//[flow::System]
+		public CrossReference getSystemSystemCrossReference_0_0() { return cSystemSystemCrossReference_0_0; }
 		
 		//ID
-		public RuleCall getSystemSystemDeclarationIDTerminalRuleCall_0_0_1() { return cSystemSystemDeclarationIDTerminalRuleCall_0_0_1; }
+		public RuleCall getSystemSystemIDTerminalRuleCall_0_0_1() { return cSystemSystemIDTerminalRuleCall_0_0_1; }
 		
 		//".temperature"
 		public Keyword getTemperatureKeyword_1() { return cTemperatureKeyword_1; }
@@ -788,9 +667,6 @@ public class RouterDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	private final RoutingRulesElements pRoutingRules;
-	private final DataSourceDeclarationElements pDataSourceDeclaration;
-	private final ProcessorDeclarationElements pProcessorDeclaration;
-	private final SystemDeclarationElements pSystemDeclaration;
 	private final CaseRuleElements pCaseRule;
 	private final DecisionElements pDecision;
 	private final MessageDecisionElements pMessageDecision;
@@ -823,9 +699,6 @@ public class RouterDslGrammarAccess extends AbstractGrammarElementFinder {
 		this.grammar = internalFindGrammar(grammarProvider);
 		this.gaTerminals = gaTerminals;
 		this.pRoutingRules = new RoutingRulesElements();
-		this.pDataSourceDeclaration = new DataSourceDeclarationElements();
-		this.pProcessorDeclaration = new ProcessorDeclarationElements();
-		this.pSystemDeclaration = new SystemDeclarationElements();
 		this.pCaseRule = new CaseRuleElements();
 		this.pDecision = new DecisionElements();
 		this.pMessageDecision = new MessageDecisionElements();
@@ -877,9 +750,8 @@ public class RouterDslGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//RoutingRules:
-	//	{RoutingRule} processors+=ProcessorDeclaration*
-	//	sensors+=DataSourceDeclaration*
-	//	systems+=SystemDeclaration* '#'
+	//	{RoutingRule}
+	//	'#'
 	//	rules+=CaseRule*;
 	public RoutingRulesElements getRoutingRulesAccess() {
 		return pRoutingRules;
@@ -887,38 +759,6 @@ public class RouterDslGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public ParserRule getRoutingRulesRule() {
 		return getRoutingRulesAccess().getRule();
-	}
-	
-	///*
-	// *  These declaration are temporary workarounds, I'd rather refer directly to the Processor or DataSource instances.
-	// */ DataSourceDeclaration:
-	//	'sensor' '(' name=ID ')';
-	public DataSourceDeclarationElements getDataSourceDeclarationAccess() {
-		return pDataSourceDeclaration;
-	}
-	
-	public ParserRule getDataSourceDeclarationRule() {
-		return getDataSourceDeclarationAccess().getRule();
-	}
-	
-	//ProcessorDeclaration:
-	//	'processor' '(' name=ID ')';
-	public ProcessorDeclarationElements getProcessorDeclarationAccess() {
-		return pProcessorDeclaration;
-	}
-	
-	public ParserRule getProcessorDeclarationRule() {
-		return getProcessorDeclarationAccess().getRule();
-	}
-	
-	//SystemDeclaration:
-	//	'system' '(' name=ID ')';
-	public SystemDeclarationElements getSystemDeclarationAccess() {
-		return pSystemDeclaration;
-	}
-	
-	public ParserRule getSystemDeclarationRule() {
-		return getSystemDeclarationAccess().getRule();
 	}
 	
 	//CaseRule:
@@ -952,7 +792,7 @@ public class RouterDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//RouteTo:
-	//	'->' destination=[ProcessorDeclaration];
+	//	'->' destination=[flow::Processor];
 	public RouteToElements getRouteToAccess() {
 		return pRouteTo;
 	}
@@ -1043,7 +883,7 @@ public class RouterDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//ProcessorAccess:
-	//	processor=[ProcessorDeclaration] "." attribute=ProcessorAttribute;
+	//	processor=[flow::Processor] "." attribute=ProcessorAttribute;
 	public ProcessorAccessElements getProcessorAccessAccess() {
 		return pProcessorAccess;
 	}
@@ -1053,7 +893,7 @@ public class RouterDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//SensorAccess:
-	//	sensor=[DataSourceDeclaration] ".volume";
+	//	sensor=[flow::DataSource] ".volume";
 	public SensorAccessElements getSensorAccessAccess() {
 		return pSensorAccess;
 	}
@@ -1063,7 +903,7 @@ public class RouterDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//SystemAccess:
-	//	system=[SystemDeclaration] ".temperature";
+	//	system=[flow::System] ".temperature";
 	public SystemAccessElements getSystemAccessAccess() {
 		return pSystemAccess;
 	}

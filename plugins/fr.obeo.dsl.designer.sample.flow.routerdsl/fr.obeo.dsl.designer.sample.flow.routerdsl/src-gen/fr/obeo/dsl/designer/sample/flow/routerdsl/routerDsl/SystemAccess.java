@@ -31,12 +31,12 @@ public interface SystemAccess extends ObjectAccess
    * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>System</em>' reference.
-   * @see #setSystem(SystemDeclaration)
+   * @see #setSystem(fr.obeo.dsl.designer.sample.flow.System)
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage#getSystemAccess_System()
    * @model
    * @generated
    */
-  SystemDeclaration getSystem();
+  fr.obeo.dsl.designer.sample.flow.System getSystem();
 
   /**
    * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemAccess#getSystem <em>System</em>}' reference.
@@ -46,6 +46,6 @@ public interface SystemAccess extends ObjectAccess
    * @see #getSystem()
    * @generated
    */
-  void setSystem(SystemDeclaration value);
+  void setSystem(fr.obeo.dsl.designer.sample.flow.System value);
 
 } // SystemAccess

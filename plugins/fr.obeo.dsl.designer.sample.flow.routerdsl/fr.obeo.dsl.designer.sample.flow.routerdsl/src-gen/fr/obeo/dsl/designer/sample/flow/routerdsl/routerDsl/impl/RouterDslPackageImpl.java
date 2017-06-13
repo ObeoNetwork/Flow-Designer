@@ -3,12 +3,13 @@
  */
 package fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl;
 
+import fr.obeo.dsl.designer.sample.flow.FlowPackage;
+
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.Alert;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.AlertLevel;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.CaseRule;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.Comparison;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.Conditional;
-import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.DataSourceDeclaration;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.Decision;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.DropMessage;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.LiteralValue;
@@ -17,7 +18,6 @@ import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ObjectAccess;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ObjectAccessOrValue;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorAccess;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorAttribute;
-import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorDeclaration;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouteTo;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslFactory;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage;
@@ -26,7 +26,6 @@ import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRules;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SensorAccess;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SensorAttribute;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemAccess;
-import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemDeclaration;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.Temperature;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.TemperatureUnit;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.Throughtput;
@@ -54,27 +53,6 @@ public class RouterDslPackageImpl extends EPackageImpl implements RouterDslPacka
    * @generated
    */
   private EClass routingRulesEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass dataSourceDeclarationEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass processorDeclarationEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass systemDeclarationEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -278,6 +256,9 @@ public class RouterDslPackageImpl extends EPackageImpl implements RouterDslPacka
 
     isInited = true;
 
+    // Initialize simple dependencies
+    FlowPackage.eINSTANCE.eClass();
+
     // Create package meta-data objects
     theRouterDslPackage.createPackageContents();
 
@@ -301,66 +282,6 @@ public class RouterDslPackageImpl extends EPackageImpl implements RouterDslPacka
   public EClass getRoutingRules()
   {
     return routingRulesEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getDataSourceDeclaration()
-  {
-    return dataSourceDeclarationEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getDataSourceDeclaration_Name()
-  {
-    return (EAttribute)dataSourceDeclarationEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getProcessorDeclaration()
-  {
-    return processorDeclarationEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getProcessorDeclaration_Name()
-  {
-    return (EAttribute)processorDeclarationEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getSystemDeclaration()
-  {
-    return systemDeclarationEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getSystemDeclaration_Name()
-  {
-    return (EAttribute)systemDeclarationEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -688,39 +609,9 @@ public class RouterDslPackageImpl extends EPackageImpl implements RouterDslPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getRoutingRule_Processors()
-  {
-    return (EReference)routingRuleEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getRoutingRule_Sensors()
-  {
-    return (EReference)routingRuleEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getRoutingRule_Systems()
-  {
-    return (EReference)routingRuleEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EReference getRoutingRule_Rules()
   {
-    return (EReference)routingRuleEClass.getEStructuralFeatures().get(3);
+    return (EReference)routingRuleEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -815,15 +706,6 @@ public class RouterDslPackageImpl extends EPackageImpl implements RouterDslPacka
     // Create classes and their features
     routingRulesEClass = createEClass(ROUTING_RULES);
 
-    dataSourceDeclarationEClass = createEClass(DATA_SOURCE_DECLARATION);
-    createEAttribute(dataSourceDeclarationEClass, DATA_SOURCE_DECLARATION__NAME);
-
-    processorDeclarationEClass = createEClass(PROCESSOR_DECLARATION);
-    createEAttribute(processorDeclarationEClass, PROCESSOR_DECLARATION__NAME);
-
-    systemDeclarationEClass = createEClass(SYSTEM_DECLARATION);
-    createEAttribute(systemDeclarationEClass, SYSTEM_DECLARATION__NAME);
-
     caseRuleEClass = createEClass(CASE_RULE);
     createEReference(caseRuleEClass, CASE_RULE__CONDITION);
     createEReference(caseRuleEClass, CASE_RULE__DECISIONS);
@@ -871,9 +753,6 @@ public class RouterDslPackageImpl extends EPackageImpl implements RouterDslPacka
     createEReference(systemAccessEClass, SYSTEM_ACCESS__SYSTEM);
 
     routingRuleEClass = createEClass(ROUTING_RULE);
-    createEReference(routingRuleEClass, ROUTING_RULE__PROCESSORS);
-    createEReference(routingRuleEClass, ROUTING_RULE__SENSORS);
-    createEReference(routingRuleEClass, ROUTING_RULE__SYSTEMS);
     createEReference(routingRuleEClass, ROUTING_RULE__RULES);
 
     // Create enums
@@ -909,6 +788,9 @@ public class RouterDslPackageImpl extends EPackageImpl implements RouterDslPacka
     setNsPrefix(eNS_PREFIX);
     setNsURI(eNS_URI);
 
+    // Obtain other dependent packages
+    FlowPackage theFlowPackage = (FlowPackage)EPackage.Registry.INSTANCE.getEPackage(FlowPackage.eNS_URI);
+
     // Create type parameters
 
     // Set bounds for type parameters
@@ -930,15 +812,6 @@ public class RouterDslPackageImpl extends EPackageImpl implements RouterDslPacka
     // Initialize classes and features; add operations and parameters
     initEClass(routingRulesEClass, RoutingRules.class, "RoutingRules", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-    initEClass(dataSourceDeclarationEClass, DataSourceDeclaration.class, "DataSourceDeclaration", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getDataSourceDeclaration_Name(), ecorePackage.getEString(), "name", null, 0, 1, DataSourceDeclaration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(processorDeclarationEClass, ProcessorDeclaration.class, "ProcessorDeclaration", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getProcessorDeclaration_Name(), ecorePackage.getEString(), "name", null, 0, 1, ProcessorDeclaration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(systemDeclarationEClass, SystemDeclaration.class, "SystemDeclaration", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getSystemDeclaration_Name(), ecorePackage.getEString(), "name", null, 0, 1, SystemDeclaration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
     initEClass(caseRuleEClass, CaseRule.class, "CaseRule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getCaseRule_Condition(), this.getConditional(), null, "condition", null, 0, 1, CaseRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getCaseRule_Decisions(), this.getDecision(), null, "decisions", null, 0, -1, CaseRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -948,7 +821,7 @@ public class RouterDslPackageImpl extends EPackageImpl implements RouterDslPacka
     initEClass(messageDecisionEClass, MessageDecision.class, "MessageDecision", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(routeToEClass, RouteTo.class, "RouteTo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getRouteTo_Destination(), this.getProcessorDeclaration(), null, "destination", null, 0, 1, RouteTo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getRouteTo_Destination(), theFlowPackage.getProcessor(), null, "destination", null, 0, 1, RouteTo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(dropMessageEClass, DropMessage.class, "DropMessage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -976,19 +849,16 @@ public class RouterDslPackageImpl extends EPackageImpl implements RouterDslPacka
     initEClass(objectAccessEClass, ObjectAccess.class, "ObjectAccess", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(processorAccessEClass, ProcessorAccess.class, "ProcessorAccess", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getProcessorAccess_Processor(), this.getProcessorDeclaration(), null, "processor", null, 0, 1, ProcessorAccess.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getProcessorAccess_Processor(), theFlowPackage.getProcessor(), null, "processor", null, 0, 1, ProcessorAccess.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getProcessorAccess_Attribute(), this.getProcessorAttribute(), "attribute", null, 0, 1, ProcessorAccess.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(sensorAccessEClass, SensorAccess.class, "SensorAccess", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getSensorAccess_Sensor(), this.getDataSourceDeclaration(), null, "sensor", null, 0, 1, SensorAccess.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getSensorAccess_Sensor(), theFlowPackage.getDataSource(), null, "sensor", null, 0, 1, SensorAccess.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(systemAccessEClass, SystemAccess.class, "SystemAccess", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getSystemAccess_System(), this.getSystemDeclaration(), null, "system", null, 0, 1, SystemAccess.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getSystemAccess_System(), theFlowPackage.getSystem(), null, "system", null, 0, 1, SystemAccess.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(routingRuleEClass, RoutingRule.class, "RoutingRule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getRoutingRule_Processors(), this.getProcessorDeclaration(), null, "processors", null, 0, -1, RoutingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getRoutingRule_Sensors(), this.getDataSourceDeclaration(), null, "sensors", null, 0, -1, RoutingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getRoutingRule_Systems(), this.getSystemDeclaration(), null, "systems", null, 0, -1, RoutingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getRoutingRule_Rules(), this.getCaseRule(), null, "rules", null, 0, -1, RoutingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Initialize enums and add enum literals

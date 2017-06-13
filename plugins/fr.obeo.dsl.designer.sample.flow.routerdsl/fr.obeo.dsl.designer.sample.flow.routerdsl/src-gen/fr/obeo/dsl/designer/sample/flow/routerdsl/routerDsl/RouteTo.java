@@ -3,6 +3,7 @@
  */
 package fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl;
 
+import fr.obeo.dsl.designer.sample.flow.Processor;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,12 +32,12 @@ public interface RouteTo extends Decision
    * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Destination</em>' reference.
-   * @see #setDestination(ProcessorDeclaration)
+   * @see #setDestination(Processor)
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage#getRouteTo_Destination()
    * @model
    * @generated
    */
-  ProcessorDeclaration getDestination();
+  Processor getDestination();
 
   /**
    * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouteTo#getDestination <em>Destination</em>}' reference.
@@ -46,6 +47,6 @@ public interface RouteTo extends Decision
    * @see #getDestination()
    * @generated
    */
-  void setDestination(ProcessorDeclaration value);
+  void setDestination(Processor value);
 
 } // RouteTo
