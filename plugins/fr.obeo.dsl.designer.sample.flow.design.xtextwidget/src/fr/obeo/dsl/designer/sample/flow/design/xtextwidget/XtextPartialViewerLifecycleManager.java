@@ -16,6 +16,8 @@ import org.eclipse.eef.common.ui.api.IEEFFormContainer;
 import org.eclipse.eef.core.api.EditingContextAdapter;
 import org.eclipse.eef.core.api.controllers.IEEFWidgetController;
 import org.eclipse.eef.ide.ui.api.widgets.AbstractEEFWidgetLifecycleManager;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.sirius.common.interpreter.api.IInterpreter;
 import org.eclipse.sirius.common.interpreter.api.IVariableManager;
 import org.eclipse.swt.SWT;
@@ -24,6 +26,8 @@ import org.eclipse.swt.events.ModifyListener;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
+import org.eclipse.xtext.resource.ResourceSetReferencingResourceSet;
+import org.eclipse.xtext.resource.ResourceSetReferencingResourceSetImpl;
 import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditor;
 import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditorFactory;
 import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditorModelAccess;
@@ -45,7 +49,7 @@ public class XtextPartialViewerLifecycleManager extends AbstractEEFWidgetLifecyc
 	private EmbeddedEditorModelAccess access;
 
 	private EmbeddedEditor editor;
-
+	
 	public XtextPartialViewerLifecycleManager(EEFCustomWidgetDescription controlDescription,
 			IVariableManager variableManager, IInterpreter interpreter, EditingContextAdapter contextAdapter) {
 		super(variableManager, interpreter, contextAdapter);
@@ -60,7 +64,7 @@ public class XtextPartialViewerLifecycleManager extends AbstractEEFWidgetLifecyc
 		xtextInjector.injectMembers(this);
 
 		EmbeddedResourceProvider resProvider = xtextInjector.getInstance(EmbeddedResourceProvider.class);
-
+		resProvider.setSiriusResourceSet(getSiriusResourceSet());
 		EmbeddedEditorFactory factory = xtextInjector.getInstance(EmbeddedEditorFactory.class);
 		this.editor = factory.newEditor(resProvider).showErrorAndWarningAnnotations().withParent(parent);
 		this.access = editor.createPartialEditor();
@@ -75,6 +79,17 @@ public class XtextPartialViewerLifecycleManager extends AbstractEEFWidgetLifecyc
 		this.controller = new XtextPartialViewerController(description, variableManager, interpreter,
 				editingContextAdapter, access);
 	}
+	
+	protected ResourceSet getSiriusResourceSet() {
+		Object self = variableManager.getVariables().get("self");
+		if(self instanceof EObject) {
+			ResourceSetReferencingResourceSet resourceSet = new ResourceSetReferencingResourceSetImpl();
+			resourceSet.getReferencedResourceSets().add(((EObject) self).eResource().getResourceSet());
+			return resourceSet;
+		} else {
+			return null;
+		}
+	}
 
 	@Override
 	public void aboutToBeShown() {
@@ -87,7 +102,6 @@ public class XtextPartialViewerLifecycleManager extends AbstractEEFWidgetLifecyc
 			}
 		};
 		editor.getViewer().getTextWidget().addModifyListener(this.modifyListener);
-
 	}
 
 	@Override

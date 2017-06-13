@@ -17,24 +17,27 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.xtext.resource.FileExtensionProvider;
 import org.eclipse.xtext.resource.XtextResource;
 import org.eclipse.xtext.ui.editor.embedded.IEditedResourceProvider;
-import org.eclipse.xtext.ui.resource.IResourceSetProvider;
 
 public class EmbeddedResourceProvider implements IEditedResourceProvider {
 
 	@Inject
-	private IResourceSetProvider resourceSetProvider;
-
-	@Inject
 	private FileExtensionProvider fileExtensionProvider;
+
+	private ResourceSet siriusResourceSet;
+	
+	public ResourceSet getSiriusResourceSet() {
+		return siriusResourceSet;
+	}
+
+	public void setSiriusResourceSet(ResourceSet resourceSet) {
+		this.siriusResourceSet = resourceSet;
+	}
 
 	@Override
 	public XtextResource createResource() {
-		ResourceSet resourceSet = resourceSetProvider.get(null);
-
 		URI uri = URI.createURI("_synthetic." + fileExtensionProvider.getPrimaryFileExtension());
-		XtextResource xtextVirtualResource = (XtextResource) resourceSet.createResource(uri);
-		resourceSet.getResources().add(xtextVirtualResource);
+		XtextResource xtextVirtualResource = (XtextResource) siriusResourceSet.createResource(uri);
+		siriusResourceSet.getResources().add(xtextVirtualResource);
 		return xtextVirtualResource;
 	}
-
 }

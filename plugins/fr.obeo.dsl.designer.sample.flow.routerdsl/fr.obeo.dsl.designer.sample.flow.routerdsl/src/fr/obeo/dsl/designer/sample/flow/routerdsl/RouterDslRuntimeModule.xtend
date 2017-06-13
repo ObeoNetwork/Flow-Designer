@@ -3,9 +3,14 @@
  */
 package fr.obeo.dsl.designer.sample.flow.routerdsl
 
+import fr.obeo.dsl.designer.sample.flow.routerdsl.scoping.RouterGlobalScopeProvider
 
 /**
  * Use this class to register components to be used at runtime / without the Equinox extension registry.
  */
 class RouterDslRuntimeModule extends AbstractRouterDslRuntimeModule {
+	
+	override bindIGlobalScopeProvider() {
+		RouterGlobalScopeProvider
+	}
 }
