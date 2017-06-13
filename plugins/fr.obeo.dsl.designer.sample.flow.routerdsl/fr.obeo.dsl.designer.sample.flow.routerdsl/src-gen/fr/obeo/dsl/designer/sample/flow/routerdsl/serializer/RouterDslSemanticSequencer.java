@@ -7,17 +7,14 @@ import com.google.inject.Inject;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.Alert;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.CaseRule;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.Conditional;
-import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.DataSourceDeclaration;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.DropMessage;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.LiteralValue;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorAccess;
-import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorDeclaration;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouteTo;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRule;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SensorAccess;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemAccess;
-import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemDeclaration;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.Temperature;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.Throughtput;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.services.RouterDslGrammarAccess;
@@ -55,9 +52,6 @@ public class RouterDslSemanticSequencer extends AbstractDelegatingSemanticSequen
 			case RouterDslPackage.CONDITIONAL:
 				sequence_Conditional(context, (Conditional) semanticObject); 
 				return; 
-			case RouterDslPackage.DATA_SOURCE_DECLARATION:
-				sequence_DataSourceDeclaration(context, (DataSourceDeclaration) semanticObject); 
-				return; 
 			case RouterDslPackage.DROP_MESSAGE:
 				sequence_DropMessage(context, (DropMessage) semanticObject); 
 				return; 
@@ -66,9 +60,6 @@ public class RouterDslSemanticSequencer extends AbstractDelegatingSemanticSequen
 				return; 
 			case RouterDslPackage.PROCESSOR_ACCESS:
 				sequence_ProcessorAccess(context, (ProcessorAccess) semanticObject); 
-				return; 
-			case RouterDslPackage.PROCESSOR_DECLARATION:
-				sequence_ProcessorDeclaration(context, (ProcessorDeclaration) semanticObject); 
 				return; 
 			case RouterDslPackage.ROUTE_TO:
 				sequence_RouteTo(context, (RouteTo) semanticObject); 
@@ -81,9 +72,6 @@ public class RouterDslSemanticSequencer extends AbstractDelegatingSemanticSequen
 				return; 
 			case RouterDslPackage.SYSTEM_ACCESS:
 				sequence_SystemAccess(context, (SystemAccess) semanticObject); 
-				return; 
-			case RouterDslPackage.SYSTEM_DECLARATION:
-				sequence_SystemDeclaration(context, (SystemDeclaration) semanticObject); 
 				return; 
 			case RouterDslPackage.TEMPERATURE:
 				sequence_Temperature(context, (Temperature) semanticObject); 
@@ -154,24 +142,6 @@ public class RouterDslSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Contexts:
-	 *     DataSourceDeclaration returns DataSourceDeclaration
-	 *
-	 * Constraint:
-	 *     name=ID
-	 */
-	protected void sequence_DataSourceDeclaration(ISerializationContext context, DataSourceDeclaration semanticObject) {
-		if (errorAcceptor != null) {
-			if (transientValues.isValueTransient(semanticObject, RouterDslPackage.Literals.DATA_SOURCE_DECLARATION__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, RouterDslPackage.Literals.DATA_SOURCE_DECLARATION__NAME));
-		}
-		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getDataSourceDeclarationAccess().getNameIDTerminalRuleCall_2_0(), semanticObject.getName());
-		feeder.finish();
-	}
-	
-	
-	/**
-	 * Contexts:
 	 *     Decision returns DropMessage
 	 *     MessageDecision returns DropMessage
 	 *     DropMessage returns DropMessage
@@ -210,7 +180,7 @@ public class RouterDslSemanticSequencer extends AbstractDelegatingSemanticSequen
 	 *     ProcessorAccess returns ProcessorAccess
 	 *
 	 * Constraint:
-	 *     (processor=[ProcessorDeclaration|ID] attribute=ProcessorAttribute)
+	 *     (processor=[Processor|ID] attribute=ProcessorAttribute)
 	 */
 	protected void sequence_ProcessorAccess(ISerializationContext context, ProcessorAccess semanticObject) {
 		if (errorAcceptor != null) {
@@ -220,26 +190,8 @@ public class RouterDslSemanticSequencer extends AbstractDelegatingSemanticSequen
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, RouterDslPackage.Literals.PROCESSOR_ACCESS__ATTRIBUTE));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getProcessorAccessAccess().getProcessorProcessorDeclarationIDTerminalRuleCall_0_0_1(), semanticObject.eGet(RouterDslPackage.Literals.PROCESSOR_ACCESS__PROCESSOR, false));
+		feeder.accept(grammarAccess.getProcessorAccessAccess().getProcessorProcessorIDTerminalRuleCall_0_0_1(), semanticObject.eGet(RouterDslPackage.Literals.PROCESSOR_ACCESS__PROCESSOR, false));
 		feeder.accept(grammarAccess.getProcessorAccessAccess().getAttributeProcessorAttributeEnumRuleCall_2_0(), semanticObject.getAttribute());
-		feeder.finish();
-	}
-	
-	
-	/**
-	 * Contexts:
-	 *     ProcessorDeclaration returns ProcessorDeclaration
-	 *
-	 * Constraint:
-	 *     name=ID
-	 */
-	protected void sequence_ProcessorDeclaration(ISerializationContext context, ProcessorDeclaration semanticObject) {
-		if (errorAcceptor != null) {
-			if (transientValues.isValueTransient(semanticObject, RouterDslPackage.Literals.PROCESSOR_DECLARATION__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, RouterDslPackage.Literals.PROCESSOR_DECLARATION__NAME));
-		}
-		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getProcessorDeclarationAccess().getNameIDTerminalRuleCall_2_0(), semanticObject.getName());
 		feeder.finish();
 	}
 	
@@ -250,7 +202,7 @@ public class RouterDslSemanticSequencer extends AbstractDelegatingSemanticSequen
 	 *     RouteTo returns RouteTo
 	 *
 	 * Constraint:
-	 *     destination=[ProcessorDeclaration|ID]
+	 *     destination=[Processor|ID]
 	 */
 	protected void sequence_RouteTo(ISerializationContext context, RouteTo semanticObject) {
 		if (errorAcceptor != null) {
@@ -258,7 +210,7 @@ public class RouterDslSemanticSequencer extends AbstractDelegatingSemanticSequen
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, RouterDslPackage.Literals.ROUTE_TO__DESTINATION));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getRouteToAccess().getDestinationProcessorDeclarationIDTerminalRuleCall_1_0_1(), semanticObject.eGet(RouterDslPackage.Literals.ROUTE_TO__DESTINATION, false));
+		feeder.accept(grammarAccess.getRouteToAccess().getDestinationProcessorIDTerminalRuleCall_1_0_1(), semanticObject.eGet(RouterDslPackage.Literals.ROUTE_TO__DESTINATION, false));
 		feeder.finish();
 	}
 	
@@ -268,7 +220,7 @@ public class RouterDslSemanticSequencer extends AbstractDelegatingSemanticSequen
 	 *     RoutingRules returns RoutingRule
 	 *
 	 * Constraint:
-	 *     (processors+=ProcessorDeclaration* sensors+=DataSourceDeclaration* systems+=SystemDeclaration* rules+=CaseRule*)
+	 *     rules+=CaseRule*
 	 */
 	protected void sequence_RoutingRules(ISerializationContext context, RoutingRule semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -282,7 +234,7 @@ public class RouterDslSemanticSequencer extends AbstractDelegatingSemanticSequen
 	 *     SensorAccess returns SensorAccess
 	 *
 	 * Constraint:
-	 *     sensor=[DataSourceDeclaration|ID]
+	 *     sensor=[DataSource|ID]
 	 */
 	protected void sequence_SensorAccess(ISerializationContext context, SensorAccess semanticObject) {
 		if (errorAcceptor != null) {
@@ -290,7 +242,7 @@ public class RouterDslSemanticSequencer extends AbstractDelegatingSemanticSequen
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, RouterDslPackage.Literals.SENSOR_ACCESS__SENSOR));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getSensorAccessAccess().getSensorDataSourceDeclarationIDTerminalRuleCall_0_0_1(), semanticObject.eGet(RouterDslPackage.Literals.SENSOR_ACCESS__SENSOR, false));
+		feeder.accept(grammarAccess.getSensorAccessAccess().getSensorDataSourceIDTerminalRuleCall_0_0_1(), semanticObject.eGet(RouterDslPackage.Literals.SENSOR_ACCESS__SENSOR, false));
 		feeder.finish();
 	}
 	
@@ -302,7 +254,7 @@ public class RouterDslSemanticSequencer extends AbstractDelegatingSemanticSequen
 	 *     SystemAccess returns SystemAccess
 	 *
 	 * Constraint:
-	 *     system=[SystemDeclaration|ID]
+	 *     system=[System|ID]
 	 */
 	protected void sequence_SystemAccess(ISerializationContext context, SystemAccess semanticObject) {
 		if (errorAcceptor != null) {
@@ -310,25 +262,7 @@ public class RouterDslSemanticSequencer extends AbstractDelegatingSemanticSequen
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, RouterDslPackage.Literals.SYSTEM_ACCESS__SYSTEM));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getSystemAccessAccess().getSystemSystemDeclarationIDTerminalRuleCall_0_0_1(), semanticObject.eGet(RouterDslPackage.Literals.SYSTEM_ACCESS__SYSTEM, false));
-		feeder.finish();
-	}
-	
-	
-	/**
-	 * Contexts:
-	 *     SystemDeclaration returns SystemDeclaration
-	 *
-	 * Constraint:
-	 *     name=ID
-	 */
-	protected void sequence_SystemDeclaration(ISerializationContext context, SystemDeclaration semanticObject) {
-		if (errorAcceptor != null) {
-			if (transientValues.isValueTransient(semanticObject, RouterDslPackage.Literals.SYSTEM_DECLARATION__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, RouterDslPackage.Literals.SYSTEM_DECLARATION__NAME));
-		}
-		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getSystemDeclarationAccess().getNameIDTerminalRuleCall_2_0(), semanticObject.getName());
+		feeder.accept(grammarAccess.getSystemAccessAccess().getSystemSystemIDTerminalRuleCall_0_0_1(), semanticObject.eGet(RouterDslPackage.Literals.SYSTEM_ACCESS__SYSTEM, false));
 		feeder.finish();
 	}
 	

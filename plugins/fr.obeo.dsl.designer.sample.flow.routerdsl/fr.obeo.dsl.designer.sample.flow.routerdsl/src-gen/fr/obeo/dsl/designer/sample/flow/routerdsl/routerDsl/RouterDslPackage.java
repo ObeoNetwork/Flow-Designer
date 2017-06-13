@@ -78,90 +78,6 @@ public interface RouterDslPackage extends EPackage
   int ROUTING_RULES_FEATURE_COUNT = 0;
 
   /**
-   * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.DataSourceDeclarationImpl <em>Data Source Declaration</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.DataSourceDeclarationImpl
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getDataSourceDeclaration()
-   * @generated
-   */
-  int DATA_SOURCE_DECLARATION = 1;
-
-  /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int DATA_SOURCE_DECLARATION__NAME = 0;
-
-  /**
-   * The number of structural features of the '<em>Data Source Declaration</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int DATA_SOURCE_DECLARATION_FEATURE_COUNT = 1;
-
-  /**
-   * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.ProcessorDeclarationImpl <em>Processor Declaration</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.ProcessorDeclarationImpl
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getProcessorDeclaration()
-   * @generated
-   */
-  int PROCESSOR_DECLARATION = 2;
-
-  /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PROCESSOR_DECLARATION__NAME = 0;
-
-  /**
-   * The number of structural features of the '<em>Processor Declaration</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PROCESSOR_DECLARATION_FEATURE_COUNT = 1;
-
-  /**
-   * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.SystemDeclarationImpl <em>System Declaration</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.SystemDeclarationImpl
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getSystemDeclaration()
-   * @generated
-   */
-  int SYSTEM_DECLARATION = 3;
-
-  /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int SYSTEM_DECLARATION__NAME = 0;
-
-  /**
-   * The number of structural features of the '<em>System Declaration</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int SYSTEM_DECLARATION_FEATURE_COUNT = 1;
-
-  /**
    * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.CaseRuleImpl <em>Case Rule</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -169,7 +85,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getCaseRule()
    * @generated
    */
-  int CASE_RULE = 4;
+  int CASE_RULE = 1;
 
   /**
    * The feature id for the '<em><b>Condition</b></em>' containment reference.
@@ -206,7 +122,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getDecision()
    * @generated
    */
-  int DECISION = 5;
+  int DECISION = 2;
 
   /**
    * The number of structural features of the '<em>Decision</em>' class.
@@ -225,7 +141,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getMessageDecision()
    * @generated
    */
-  int MESSAGE_DECISION = 6;
+  int MESSAGE_DECISION = 3;
 
   /**
    * The number of structural features of the '<em>Message Decision</em>' class.
@@ -244,7 +160,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getRouteTo()
    * @generated
    */
-  int ROUTE_TO = 7;
+  int ROUTE_TO = 4;
 
   /**
    * The feature id for the '<em><b>Destination</b></em>' reference.
@@ -272,7 +188,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getDropMessage()
    * @generated
    */
-  int DROP_MESSAGE = 8;
+  int DROP_MESSAGE = 5;
 
   /**
    * The number of structural features of the '<em>Drop Message</em>' class.
@@ -291,7 +207,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getAlert()
    * @generated
    */
-  int ALERT = 9;
+  int ALERT = 6;
 
   /**
    * The feature id for the '<em><b>Level</b></em>' attribute.
@@ -319,7 +235,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getConditional()
    * @generated
    */
-  int CONDITIONAL = 10;
+  int CONDITIONAL = 7;
 
   /**
    * The feature id for the '<em><b>Left</b></em>' containment reference.
@@ -365,7 +281,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getObjectAccessOrValue()
    * @generated
    */
-  int OBJECT_ACCESS_OR_VALUE = 11;
+  int OBJECT_ACCESS_OR_VALUE = 8;
 
   /**
    * The number of structural features of the '<em>Object Access Or Value</em>' class.
@@ -384,7 +300,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getLiteralValue()
    * @generated
    */
-  int LITERAL_VALUE = 12;
+  int LITERAL_VALUE = 9;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -412,7 +328,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getThroughtput()
    * @generated
    */
-  int THROUGHTPUT = 13;
+  int THROUGHTPUT = 10;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -449,7 +365,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getTemperature()
    * @generated
    */
-  int TEMPERATURE = 14;
+  int TEMPERATURE = 11;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -486,7 +402,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getObjectAccess()
    * @generated
    */
-  int OBJECT_ACCESS = 15;
+  int OBJECT_ACCESS = 12;
 
   /**
    * The number of structural features of the '<em>Object Access</em>' class.
@@ -505,7 +421,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getProcessorAccess()
    * @generated
    */
-  int PROCESSOR_ACCESS = 16;
+  int PROCESSOR_ACCESS = 13;
 
   /**
    * The feature id for the '<em><b>Processor</b></em>' reference.
@@ -542,7 +458,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getSensorAccess()
    * @generated
    */
-  int SENSOR_ACCESS = 17;
+  int SENSOR_ACCESS = 14;
 
   /**
    * The feature id for the '<em><b>Sensor</b></em>' reference.
@@ -570,7 +486,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getSystemAccess()
    * @generated
    */
-  int SYSTEM_ACCESS = 18;
+  int SYSTEM_ACCESS = 15;
 
   /**
    * The feature id for the '<em><b>System</b></em>' reference.
@@ -598,34 +514,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getRoutingRule()
    * @generated
    */
-  int ROUTING_RULE = 19;
-
-  /**
-   * The feature id for the '<em><b>Processors</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int ROUTING_RULE__PROCESSORS = ROUTING_RULES_FEATURE_COUNT + 0;
-
-  /**
-   * The feature id for the '<em><b>Sensors</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int ROUTING_RULE__SENSORS = ROUTING_RULES_FEATURE_COUNT + 1;
-
-  /**
-   * The feature id for the '<em><b>Systems</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int ROUTING_RULE__SYSTEMS = ROUTING_RULES_FEATURE_COUNT + 2;
+  int ROUTING_RULE = 16;
 
   /**
    * The feature id for the '<em><b>Rules</b></em>' containment reference list.
@@ -634,7 +523,7 @@ public interface RouterDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int ROUTING_RULE__RULES = ROUTING_RULES_FEATURE_COUNT + 3;
+  int ROUTING_RULE__RULES = ROUTING_RULES_FEATURE_COUNT + 0;
 
   /**
    * The number of structural features of the '<em>Routing Rule</em>' class.
@@ -643,7 +532,7 @@ public interface RouterDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int ROUTING_RULE_FEATURE_COUNT = ROUTING_RULES_FEATURE_COUNT + 4;
+  int ROUTING_RULE_FEATURE_COUNT = ROUTING_RULES_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SensorAttribute <em>Sensor Attribute</em>}' enum.
@@ -653,7 +542,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getSensorAttribute()
    * @generated
    */
-  int SENSOR_ATTRIBUTE = 20;
+  int SENSOR_ATTRIBUTE = 17;
 
   /**
    * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorAttribute <em>Processor Attribute</em>}' enum.
@@ -663,7 +552,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getProcessorAttribute()
    * @generated
    */
-  int PROCESSOR_ATTRIBUTE = 21;
+  int PROCESSOR_ATTRIBUTE = 18;
 
   /**
    * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.Comparison <em>Comparison</em>}' enum.
@@ -673,7 +562,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getComparison()
    * @generated
    */
-  int COMPARISON = 22;
+  int COMPARISON = 19;
 
   /**
    * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.TimeUnit <em>Time Unit</em>}' enum.
@@ -683,7 +572,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getTimeUnit()
    * @generated
    */
-  int TIME_UNIT = 23;
+  int TIME_UNIT = 20;
 
   /**
    * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.TemperatureUnit <em>Temperature Unit</em>}' enum.
@@ -693,7 +582,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getTemperatureUnit()
    * @generated
    */
-  int TEMPERATURE_UNIT = 24;
+  int TEMPERATURE_UNIT = 21;
 
   /**
    * The meta object id for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.AlertLevel <em>Alert Level</em>}' enum.
@@ -703,7 +592,7 @@ public interface RouterDslPackage extends EPackage
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getAlertLevel()
    * @generated
    */
-  int ALERT_LEVEL = 25;
+  int ALERT_LEVEL = 22;
 
 
   /**
@@ -715,69 +604,6 @@ public interface RouterDslPackage extends EPackage
    * @generated
    */
   EClass getRoutingRules();
-
-  /**
-   * Returns the meta object for class '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.DataSourceDeclaration <em>Data Source Declaration</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Data Source Declaration</em>'.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.DataSourceDeclaration
-   * @generated
-   */
-  EClass getDataSourceDeclaration();
-
-  /**
-   * Returns the meta object for the attribute '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.DataSourceDeclaration#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.DataSourceDeclaration#getName()
-   * @see #getDataSourceDeclaration()
-   * @generated
-   */
-  EAttribute getDataSourceDeclaration_Name();
-
-  /**
-   * Returns the meta object for class '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorDeclaration <em>Processor Declaration</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Processor Declaration</em>'.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorDeclaration
-   * @generated
-   */
-  EClass getProcessorDeclaration();
-
-  /**
-   * Returns the meta object for the attribute '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorDeclaration#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorDeclaration#getName()
-   * @see #getProcessorDeclaration()
-   * @generated
-   */
-  EAttribute getProcessorDeclaration_Name();
-
-  /**
-   * Returns the meta object for class '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemDeclaration <em>System Declaration</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>System Declaration</em>'.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemDeclaration
-   * @generated
-   */
-  EClass getSystemDeclaration();
-
-  /**
-   * Returns the meta object for the attribute '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemDeclaration#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemDeclaration#getName()
-   * @see #getSystemDeclaration()
-   * @generated
-   */
-  EAttribute getSystemDeclaration_Name();
 
   /**
    * Returns the meta object for class '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.CaseRule <em>Case Rule</em>}'.
@@ -1116,39 +942,6 @@ public interface RouterDslPackage extends EPackage
   EClass getRoutingRule();
 
   /**
-   * Returns the meta object for the containment reference list '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRule#getProcessors <em>Processors</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Processors</em>'.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRule#getProcessors()
-   * @see #getRoutingRule()
-   * @generated
-   */
-  EReference getRoutingRule_Processors();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRule#getSensors <em>Sensors</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Sensors</em>'.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRule#getSensors()
-   * @see #getRoutingRule()
-   * @generated
-   */
-  EReference getRoutingRule_Sensors();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRule#getSystems <em>Systems</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Systems</em>'.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRule#getSystems()
-   * @see #getRoutingRule()
-   * @generated
-   */
-  EReference getRoutingRule_Systems();
-
-  /**
    * Returns the meta object for the containment reference list '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRule#getRules <em>Rules</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1251,60 +1044,6 @@ public interface RouterDslPackage extends EPackage
      * @generated
      */
     EClass ROUTING_RULES = eINSTANCE.getRoutingRules();
-
-    /**
-     * The meta object literal for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.DataSourceDeclarationImpl <em>Data Source Declaration</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.DataSourceDeclarationImpl
-     * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getDataSourceDeclaration()
-     * @generated
-     */
-    EClass DATA_SOURCE_DECLARATION = eINSTANCE.getDataSourceDeclaration();
-
-    /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute DATA_SOURCE_DECLARATION__NAME = eINSTANCE.getDataSourceDeclaration_Name();
-
-    /**
-     * The meta object literal for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.ProcessorDeclarationImpl <em>Processor Declaration</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.ProcessorDeclarationImpl
-     * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getProcessorDeclaration()
-     * @generated
-     */
-    EClass PROCESSOR_DECLARATION = eINSTANCE.getProcessorDeclaration();
-
-    /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute PROCESSOR_DECLARATION__NAME = eINSTANCE.getProcessorDeclaration_Name();
-
-    /**
-     * The meta object literal for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.SystemDeclarationImpl <em>System Declaration</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.SystemDeclarationImpl
-     * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RouterDslPackageImpl#getSystemDeclaration()
-     * @generated
-     */
-    EClass SYSTEM_DECLARATION = eINSTANCE.getSystemDeclaration();
-
-    /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute SYSTEM_DECLARATION__NAME = eINSTANCE.getSystemDeclaration_Name();
 
     /**
      * The meta object literal for the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.CaseRuleImpl <em>Case Rule</em>}' class.
@@ -1593,30 +1332,6 @@ public interface RouterDslPackage extends EPackage
      * @generated
      */
     EClass ROUTING_RULE = eINSTANCE.getRoutingRule();
-
-    /**
-     * The meta object literal for the '<em><b>Processors</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference ROUTING_RULE__PROCESSORS = eINSTANCE.getRoutingRule_Processors();
-
-    /**
-     * The meta object literal for the '<em><b>Sensors</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference ROUTING_RULE__SENSORS = eINSTANCE.getRoutingRule_Sensors();
-
-    /**
-     * The meta object literal for the '<em><b>Systems</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference ROUTING_RULE__SYSTEMS = eINSTANCE.getRoutingRule_Systems();
 
     /**
      * The meta object literal for the '<em><b>Rules</b></em>' containment reference list feature.

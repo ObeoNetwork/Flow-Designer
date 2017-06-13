@@ -4,11 +4,8 @@
 package fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl;
 
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.CaseRule;
-import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.DataSourceDeclaration;
-import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorDeclaration;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RoutingRule;
-import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemDeclaration;
 
 import java.util.Collection;
 
@@ -30,9 +27,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RoutingRuleImpl#getProcessors <em>Processors</em>}</li>
- *   <li>{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RoutingRuleImpl#getSensors <em>Sensors</em>}</li>
- *   <li>{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RoutingRuleImpl#getSystems <em>Systems</em>}</li>
  *   <li>{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl.RoutingRuleImpl#getRules <em>Rules</em>}</li>
  * </ul>
  *
@@ -40,36 +34,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class RoutingRuleImpl extends RoutingRulesImpl implements RoutingRule
 {
-  /**
-   * The cached value of the '{@link #getProcessors() <em>Processors</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getProcessors()
-   * @generated
-   * @ordered
-   */
-  protected EList<ProcessorDeclaration> processors;
-
-  /**
-   * The cached value of the '{@link #getSensors() <em>Sensors</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getSensors()
-   * @generated
-   * @ordered
-   */
-  protected EList<DataSourceDeclaration> sensors;
-
-  /**
-   * The cached value of the '{@link #getSystems() <em>Systems</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getSystems()
-   * @generated
-   * @ordered
-   */
-  protected EList<SystemDeclaration> systems;
-
   /**
    * The cached value of the '{@link #getRules() <em>Rules</em>}' containment reference list.
    * <!-- begin-user-doc -->
@@ -106,48 +70,6 @@ public class RoutingRuleImpl extends RoutingRulesImpl implements RoutingRule
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<ProcessorDeclaration> getProcessors()
-  {
-    if (processors == null)
-    {
-      processors = new EObjectContainmentEList<ProcessorDeclaration>(ProcessorDeclaration.class, this, RouterDslPackage.ROUTING_RULE__PROCESSORS);
-    }
-    return processors;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EList<DataSourceDeclaration> getSensors()
-  {
-    if (sensors == null)
-    {
-      sensors = new EObjectContainmentEList<DataSourceDeclaration>(DataSourceDeclaration.class, this, RouterDslPackage.ROUTING_RULE__SENSORS);
-    }
-    return sensors;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EList<SystemDeclaration> getSystems()
-  {
-    if (systems == null)
-    {
-      systems = new EObjectContainmentEList<SystemDeclaration>(SystemDeclaration.class, this, RouterDslPackage.ROUTING_RULE__SYSTEMS);
-    }
-    return systems;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EList<CaseRule> getRules()
   {
     if (rules == null)
@@ -167,12 +89,6 @@ public class RoutingRuleImpl extends RoutingRulesImpl implements RoutingRule
   {
     switch (featureID)
     {
-      case RouterDslPackage.ROUTING_RULE__PROCESSORS:
-        return ((InternalEList<?>)getProcessors()).basicRemove(otherEnd, msgs);
-      case RouterDslPackage.ROUTING_RULE__SENSORS:
-        return ((InternalEList<?>)getSensors()).basicRemove(otherEnd, msgs);
-      case RouterDslPackage.ROUTING_RULE__SYSTEMS:
-        return ((InternalEList<?>)getSystems()).basicRemove(otherEnd, msgs);
       case RouterDslPackage.ROUTING_RULE__RULES:
         return ((InternalEList<?>)getRules()).basicRemove(otherEnd, msgs);
     }
@@ -189,12 +105,6 @@ public class RoutingRuleImpl extends RoutingRulesImpl implements RoutingRule
   {
     switch (featureID)
     {
-      case RouterDslPackage.ROUTING_RULE__PROCESSORS:
-        return getProcessors();
-      case RouterDslPackage.ROUTING_RULE__SENSORS:
-        return getSensors();
-      case RouterDslPackage.ROUTING_RULE__SYSTEMS:
-        return getSystems();
       case RouterDslPackage.ROUTING_RULE__RULES:
         return getRules();
     }
@@ -212,18 +122,6 @@ public class RoutingRuleImpl extends RoutingRulesImpl implements RoutingRule
   {
     switch (featureID)
     {
-      case RouterDslPackage.ROUTING_RULE__PROCESSORS:
-        getProcessors().clear();
-        getProcessors().addAll((Collection<? extends ProcessorDeclaration>)newValue);
-        return;
-      case RouterDslPackage.ROUTING_RULE__SENSORS:
-        getSensors().clear();
-        getSensors().addAll((Collection<? extends DataSourceDeclaration>)newValue);
-        return;
-      case RouterDslPackage.ROUTING_RULE__SYSTEMS:
-        getSystems().clear();
-        getSystems().addAll((Collection<? extends SystemDeclaration>)newValue);
-        return;
       case RouterDslPackage.ROUTING_RULE__RULES:
         getRules().clear();
         getRules().addAll((Collection<? extends CaseRule>)newValue);
@@ -242,15 +140,6 @@ public class RoutingRuleImpl extends RoutingRulesImpl implements RoutingRule
   {
     switch (featureID)
     {
-      case RouterDslPackage.ROUTING_RULE__PROCESSORS:
-        getProcessors().clear();
-        return;
-      case RouterDslPackage.ROUTING_RULE__SENSORS:
-        getSensors().clear();
-        return;
-      case RouterDslPackage.ROUTING_RULE__SYSTEMS:
-        getSystems().clear();
-        return;
       case RouterDslPackage.ROUTING_RULE__RULES:
         getRules().clear();
         return;
@@ -268,12 +157,6 @@ public class RoutingRuleImpl extends RoutingRulesImpl implements RoutingRule
   {
     switch (featureID)
     {
-      case RouterDslPackage.ROUTING_RULE__PROCESSORS:
-        return processors != null && !processors.isEmpty();
-      case RouterDslPackage.ROUTING_RULE__SENSORS:
-        return sensors != null && !sensors.isEmpty();
-      case RouterDslPackage.ROUTING_RULE__SYSTEMS:
-        return systems != null && !systems.isEmpty();
       case RouterDslPackage.ROUTING_RULE__RULES:
         return rules != null && !rules.isEmpty();
     }

@@ -3,6 +3,7 @@
  */
 package fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl;
 
+import fr.obeo.dsl.designer.sample.flow.DataSource;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,12 +32,12 @@ public interface SensorAccess extends ObjectAccess
    * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Sensor</em>' reference.
-   * @see #setSensor(DataSourceDeclaration)
+   * @see #setSensor(DataSource)
    * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage#getSensorAccess_Sensor()
    * @model
    * @generated
    */
-  DataSourceDeclaration getSensor();
+  DataSource getSensor();
 
   /**
    * Sets the value of the '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SensorAccess#getSensor <em>Sensor</em>}' reference.
@@ -46,6 +47,6 @@ public interface SensorAccess extends ObjectAccess
    * @see #getSensor()
    * @generated
    */
-  void setSensor(DataSourceDeclaration value);
+  void setSensor(DataSource value);
 
 } // SensorAccess

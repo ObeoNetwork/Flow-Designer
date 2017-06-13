@@ -3,7 +3,8 @@
  */
 package fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl;
 
-import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorDeclaration;
+import fr.obeo.dsl.designer.sample.flow.Processor;
+
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouteTo;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage;
 
@@ -37,7 +38,7 @@ public class RouteToImpl extends DecisionImpl implements RouteTo
    * @generated
    * @ordered
    */
-  protected ProcessorDeclaration destination;
+  protected Processor destination;
 
   /**
    * <!-- begin-user-doc -->
@@ -65,12 +66,12 @@ public class RouteToImpl extends DecisionImpl implements RouteTo
    * <!-- end-user-doc -->
    * @generated
    */
-  public ProcessorDeclaration getDestination()
+  public Processor getDestination()
   {
     if (destination != null && destination.eIsProxy())
     {
       InternalEObject oldDestination = (InternalEObject)destination;
-      destination = (ProcessorDeclaration)eResolveProxy(oldDestination);
+      destination = (Processor)eResolveProxy(oldDestination);
       if (destination != oldDestination)
       {
         if (eNotificationRequired())
@@ -85,7 +86,7 @@ public class RouteToImpl extends DecisionImpl implements RouteTo
    * <!-- end-user-doc -->
    * @generated
    */
-  public ProcessorDeclaration basicGetDestination()
+  public Processor basicGetDestination()
   {
     return destination;
   }
@@ -95,9 +96,9 @@ public class RouteToImpl extends DecisionImpl implements RouteTo
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setDestination(ProcessorDeclaration newDestination)
+  public void setDestination(Processor newDestination)
   {
-    ProcessorDeclaration oldDestination = destination;
+    Processor oldDestination = destination;
     destination = newDestination;
     if (eNotificationRequired())
       eNotify(new ENotificationImpl(this, Notification.SET, RouterDslPackage.ROUTE_TO__DESTINATION, oldDestination, destination));
@@ -131,7 +132,7 @@ public class RouteToImpl extends DecisionImpl implements RouteTo
     switch (featureID)
     {
       case RouterDslPackage.ROUTE_TO__DESTINATION:
-        setDestination((ProcessorDeclaration)newValue);
+        setDestination((Processor)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -148,7 +149,7 @@ public class RouteToImpl extends DecisionImpl implements RouteTo
     switch (featureID)
     {
       case RouterDslPackage.ROUTE_TO__DESTINATION:
-        setDestination((ProcessorDeclaration)null);
+        setDestination((Processor)null);
         return;
     }
     super.eUnset(featureID);

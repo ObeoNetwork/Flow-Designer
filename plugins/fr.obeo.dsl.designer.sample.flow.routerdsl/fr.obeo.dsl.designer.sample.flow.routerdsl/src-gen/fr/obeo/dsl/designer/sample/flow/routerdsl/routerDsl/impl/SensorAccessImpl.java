@@ -3,7 +3,8 @@
  */
 package fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.impl;
 
-import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.DataSourceDeclaration;
+import fr.obeo.dsl.designer.sample.flow.DataSource;
+
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.RouterDslPackage;
 import fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SensorAccess;
 
@@ -37,7 +38,7 @@ public class SensorAccessImpl extends ObjectAccessImpl implements SensorAccess
    * @generated
    * @ordered
    */
-  protected DataSourceDeclaration sensor;
+  protected DataSource sensor;
 
   /**
    * <!-- begin-user-doc -->
@@ -65,12 +66,12 @@ public class SensorAccessImpl extends ObjectAccessImpl implements SensorAccess
    * <!-- end-user-doc -->
    * @generated
    */
-  public DataSourceDeclaration getSensor()
+  public DataSource getSensor()
   {
     if (sensor != null && sensor.eIsProxy())
     {
       InternalEObject oldSensor = (InternalEObject)sensor;
-      sensor = (DataSourceDeclaration)eResolveProxy(oldSensor);
+      sensor = (DataSource)eResolveProxy(oldSensor);
       if (sensor != oldSensor)
       {
         if (eNotificationRequired())
@@ -85,7 +86,7 @@ public class SensorAccessImpl extends ObjectAccessImpl implements SensorAccess
    * <!-- end-user-doc -->
    * @generated
    */
-  public DataSourceDeclaration basicGetSensor()
+  public DataSource basicGetSensor()
   {
     return sensor;
   }
@@ -95,9 +96,9 @@ public class SensorAccessImpl extends ObjectAccessImpl implements SensorAccess
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setSensor(DataSourceDeclaration newSensor)
+  public void setSensor(DataSource newSensor)
   {
-    DataSourceDeclaration oldSensor = sensor;
+    DataSource oldSensor = sensor;
     sensor = newSensor;
     if (eNotificationRequired())
       eNotify(new ENotificationImpl(this, Notification.SET, RouterDslPackage.SENSOR_ACCESS__SENSOR, oldSensor, sensor));
@@ -131,7 +132,7 @@ public class SensorAccessImpl extends ObjectAccessImpl implements SensorAccess
     switch (featureID)
     {
       case RouterDslPackage.SENSOR_ACCESS__SENSOR:
-        setSensor((DataSourceDeclaration)newValue);
+        setSensor((DataSource)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -148,7 +149,7 @@ public class SensorAccessImpl extends ObjectAccessImpl implements SensorAccess
     switch (featureID)
     {
       case RouterDslPackage.SENSOR_ACCESS__SENSOR:
-        setSensor((DataSourceDeclaration)null);
+        setSensor((DataSource)null);
         return;
     }
     super.eUnset(featureID);

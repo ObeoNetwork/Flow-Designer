@@ -5,22 +5,8 @@ generate routerDsl "http://www.obeo.fr/dsl/designer/sample/flow/routerdsl/Router
 
 RoutingRules:
 	{RoutingRule}
-	processors+=ProcessorDeclaration*
-	sensors+=DataSourceDeclaration*
-	systems+=SystemDeclaration* '#'
+	'#'
 	rules+=CaseRule*;
-
-	/*
- *  These declaration are temporary workarounds, I'd rather refer directly to the Processor or DataSource instances.
- */
-DataSourceDeclaration:
-	'sensor' '(' name=ID ')';
-
-ProcessorDeclaration:
-	'processor' '(' name=ID ')';
-
-SystemDeclaration:
-	'system' '(' name=ID ')';
 
 CaseRule:
 	'Case' condition=Conditional ':' (decisions+=Decision)+;
@@ -32,7 +18,7 @@ MessageDecision:
 	DropMessage | Alert;
 
 RouteTo:
-	'->' destination=[ProcessorDeclaration];
+	'->' destination=[flow::Processor];
 
 DropMessage:
 	{DropMessage}
@@ -60,13 +46,13 @@ ObjectAccess:
 	ProcessorAccess | SensorAccess | SystemAccess;
 
 ProcessorAccess:
-	processor=[ProcessorDeclaration] "." attribute=ProcessorAttribute;
+	processor=[flow::Processor] "." attribute=ProcessorAttribute;
 
 SensorAccess:
-	sensor=[DataSourceDeclaration] ".volume";
+	sensor=[flow::DataSource] ".volume";
 
 SystemAccess:
-	system=[SystemDeclaration] ".temperature";
+	system=[flow::System] ".temperature";
 
 enum SensorAttribute:
 	volume;

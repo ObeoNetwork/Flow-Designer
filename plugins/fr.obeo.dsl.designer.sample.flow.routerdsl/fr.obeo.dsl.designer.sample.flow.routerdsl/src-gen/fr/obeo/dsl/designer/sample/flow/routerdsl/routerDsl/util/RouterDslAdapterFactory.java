@@ -81,21 +81,6 @@ public class RouterDslAdapterFactory extends AdapterFactoryImpl
         return createRoutingRulesAdapter();
       }
       @Override
-      public Adapter caseDataSourceDeclaration(DataSourceDeclaration object)
-      {
-        return createDataSourceDeclarationAdapter();
-      }
-      @Override
-      public Adapter caseProcessorDeclaration(ProcessorDeclaration object)
-      {
-        return createProcessorDeclarationAdapter();
-      }
-      @Override
-      public Adapter caseSystemDeclaration(SystemDeclaration object)
-      {
-        return createSystemDeclarationAdapter();
-      }
-      @Override
       public Adapter caseCaseRule(CaseRule object)
       {
         return createCaseRuleAdapter();
@@ -208,51 +193,6 @@ public class RouterDslAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createRoutingRulesAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.DataSourceDeclaration <em>Data Source Declaration</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.DataSourceDeclaration
-   * @generated
-   */
-  public Adapter createDataSourceDeclarationAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorDeclaration <em>Processor Declaration</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.ProcessorDeclaration
-   * @generated
-   */
-  public Adapter createProcessorDeclarationAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemDeclaration <em>System Declaration</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.obeo.dsl.designer.sample.flow.routerdsl.routerDsl.SystemDeclaration
-   * @generated
-   */
-  public Adapter createSystemDeclarationAdapter()
   {
     return null;
   }

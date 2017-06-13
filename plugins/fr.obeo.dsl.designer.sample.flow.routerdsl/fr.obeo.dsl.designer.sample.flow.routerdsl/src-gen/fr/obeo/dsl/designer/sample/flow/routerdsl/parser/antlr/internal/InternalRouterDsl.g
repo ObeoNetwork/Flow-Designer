@@ -84,73 +84,16 @@ ruleRoutingRules returns [EObject current=null]
 					$current);
 			}
 		)
-		(
-			(
-				{
-					newCompositeNode(grammarAccess.getRoutingRulesAccess().getProcessorsProcessorDeclarationParserRuleCall_1_0());
-				}
-				lv_processors_1_0=ruleProcessorDeclaration
-				{
-					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getRoutingRulesRule());
-					}
-					add(
-						$current,
-						"processors",
-						lv_processors_1_0,
-						"fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl.ProcessorDeclaration");
-					afterParserOrEnumRuleCall();
-				}
-			)
-		)*
-		(
-			(
-				{
-					newCompositeNode(grammarAccess.getRoutingRulesAccess().getSensorsDataSourceDeclarationParserRuleCall_2_0());
-				}
-				lv_sensors_2_0=ruleDataSourceDeclaration
-				{
-					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getRoutingRulesRule());
-					}
-					add(
-						$current,
-						"sensors",
-						lv_sensors_2_0,
-						"fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl.DataSourceDeclaration");
-					afterParserOrEnumRuleCall();
-				}
-			)
-		)*
-		(
-			(
-				{
-					newCompositeNode(grammarAccess.getRoutingRulesAccess().getSystemsSystemDeclarationParserRuleCall_3_0());
-				}
-				lv_systems_3_0=ruleSystemDeclaration
-				{
-					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getRoutingRulesRule());
-					}
-					add(
-						$current,
-						"systems",
-						lv_systems_3_0,
-						"fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl.SystemDeclaration");
-					afterParserOrEnumRuleCall();
-				}
-			)
-		)*
-		otherlv_4='#'
+		otherlv_1='#'
 		{
-			newLeafNode(otherlv_4, grammarAccess.getRoutingRulesAccess().getNumberSignKeyword_4());
+			newLeafNode(otherlv_1, grammarAccess.getRoutingRulesAccess().getNumberSignKeyword_1());
 		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getRoutingRulesAccess().getRulesCaseRuleParserRuleCall_5_0());
+					newCompositeNode(grammarAccess.getRoutingRulesAccess().getRulesCaseRuleParserRuleCall_2_0());
 				}
-				lv_rules_5_0=ruleCaseRule
+				lv_rules_2_0=ruleCaseRule
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getRoutingRulesRule());
@@ -158,159 +101,12 @@ ruleRoutingRules returns [EObject current=null]
 					add(
 						$current,
 						"rules",
-						lv_rules_5_0,
+						lv_rules_2_0,
 						"fr.obeo.dsl.designer.sample.flow.routerdsl.RouterDsl.CaseRule");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-	)
-;
-
-// Entry rule entryRuleDataSourceDeclaration
-entryRuleDataSourceDeclaration returns [EObject current=null]:
-	{ newCompositeNode(grammarAccess.getDataSourceDeclarationRule()); }
-	iv_ruleDataSourceDeclaration=ruleDataSourceDeclaration
-	{ $current=$iv_ruleDataSourceDeclaration.current; }
-	EOF;
-
-// Rule DataSourceDeclaration
-ruleDataSourceDeclaration returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	(
-		otherlv_0='sensor'
-		{
-			newLeafNode(otherlv_0, grammarAccess.getDataSourceDeclarationAccess().getSensorKeyword_0());
-		}
-		otherlv_1='('
-		{
-			newLeafNode(otherlv_1, grammarAccess.getDataSourceDeclarationAccess().getLeftParenthesisKeyword_1());
-		}
-		(
-			(
-				lv_name_2_0=RULE_ID
-				{
-					newLeafNode(lv_name_2_0, grammarAccess.getDataSourceDeclarationAccess().getNameIDTerminalRuleCall_2_0());
-				}
-				{
-					if ($current==null) {
-						$current = createModelElement(grammarAccess.getDataSourceDeclarationRule());
-					}
-					setWithLastConsumed(
-						$current,
-						"name",
-						lv_name_2_0,
-						"org.eclipse.xtext.common.Terminals.ID");
-				}
-			)
-		)
-		otherlv_3=')'
-		{
-			newLeafNode(otherlv_3, grammarAccess.getDataSourceDeclarationAccess().getRightParenthesisKeyword_3());
-		}
-	)
-;
-
-// Entry rule entryRuleProcessorDeclaration
-entryRuleProcessorDeclaration returns [EObject current=null]:
-	{ newCompositeNode(grammarAccess.getProcessorDeclarationRule()); }
-	iv_ruleProcessorDeclaration=ruleProcessorDeclaration
-	{ $current=$iv_ruleProcessorDeclaration.current; }
-	EOF;
-
-// Rule ProcessorDeclaration
-ruleProcessorDeclaration returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	(
-		otherlv_0='processor'
-		{
-			newLeafNode(otherlv_0, grammarAccess.getProcessorDeclarationAccess().getProcessorKeyword_0());
-		}
-		otherlv_1='('
-		{
-			newLeafNode(otherlv_1, grammarAccess.getProcessorDeclarationAccess().getLeftParenthesisKeyword_1());
-		}
-		(
-			(
-				lv_name_2_0=RULE_ID
-				{
-					newLeafNode(lv_name_2_0, grammarAccess.getProcessorDeclarationAccess().getNameIDTerminalRuleCall_2_0());
-				}
-				{
-					if ($current==null) {
-						$current = createModelElement(grammarAccess.getProcessorDeclarationRule());
-					}
-					setWithLastConsumed(
-						$current,
-						"name",
-						lv_name_2_0,
-						"org.eclipse.xtext.common.Terminals.ID");
-				}
-			)
-		)
-		otherlv_3=')'
-		{
-			newLeafNode(otherlv_3, grammarAccess.getProcessorDeclarationAccess().getRightParenthesisKeyword_3());
-		}
-	)
-;
-
-// Entry rule entryRuleSystemDeclaration
-entryRuleSystemDeclaration returns [EObject current=null]:
-	{ newCompositeNode(grammarAccess.getSystemDeclarationRule()); }
-	iv_ruleSystemDeclaration=ruleSystemDeclaration
-	{ $current=$iv_ruleSystemDeclaration.current; }
-	EOF;
-
-// Rule SystemDeclaration
-ruleSystemDeclaration returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	(
-		otherlv_0='system'
-		{
-			newLeafNode(otherlv_0, grammarAccess.getSystemDeclarationAccess().getSystemKeyword_0());
-		}
-		otherlv_1='('
-		{
-			newLeafNode(otherlv_1, grammarAccess.getSystemDeclarationAccess().getLeftParenthesisKeyword_1());
-		}
-		(
-			(
-				lv_name_2_0=RULE_ID
-				{
-					newLeafNode(lv_name_2_0, grammarAccess.getSystemDeclarationAccess().getNameIDTerminalRuleCall_2_0());
-				}
-				{
-					if ($current==null) {
-						$current = createModelElement(grammarAccess.getSystemDeclarationRule());
-					}
-					setWithLastConsumed(
-						$current,
-						"name",
-						lv_name_2_0,
-						"org.eclipse.xtext.common.Terminals.ID");
-				}
-			)
-		)
-		otherlv_3=')'
-		{
-			newLeafNode(otherlv_3, grammarAccess.getSystemDeclarationAccess().getRightParenthesisKeyword_3());
-		}
 	)
 ;
 
@@ -486,7 +282,7 @@ ruleRouteTo returns [EObject current=null]
 				}
 				otherlv_1=RULE_ID
 				{
-					newLeafNode(otherlv_1, grammarAccess.getRouteToAccess().getDestinationProcessorDeclarationCrossReference_1_0());
+					newLeafNode(otherlv_1, grammarAccess.getRouteToAccess().getDestinationProcessorCrossReference_1_0());
 				}
 			)
 		)
@@ -920,7 +716,7 @@ ruleProcessorAccess returns [EObject current=null]
 				}
 				otherlv_0=RULE_ID
 				{
-					newLeafNode(otherlv_0, grammarAccess.getProcessorAccessAccess().getProcessorProcessorDeclarationCrossReference_0_0());
+					newLeafNode(otherlv_0, grammarAccess.getProcessorAccessAccess().getProcessorProcessorCrossReference_0_0());
 				}
 			)
 		)
@@ -975,7 +771,7 @@ ruleSensorAccess returns [EObject current=null]
 				}
 				otherlv_0=RULE_ID
 				{
-					newLeafNode(otherlv_0, grammarAccess.getSensorAccessAccess().getSensorDataSourceDeclarationCrossReference_0_0());
+					newLeafNode(otherlv_0, grammarAccess.getSensorAccessAccess().getSensorDataSourceCrossReference_0_0());
 				}
 			)
 		)
@@ -1011,7 +807,7 @@ ruleSystemAccess returns [EObject current=null]
 				}
 				otherlv_0=RULE_ID
 				{
-					newLeafNode(otherlv_0, grammarAccess.getSystemAccessAccess().getSystemSystemDeclarationCrossReference_0_0());
+					newLeafNode(otherlv_0, grammarAccess.getSystemAccessAccess().getSystemSystemCrossReference_0_0());
 				}
 			)
 		)

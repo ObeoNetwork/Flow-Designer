@@ -80,27 +80,6 @@ public class RouterDslSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case RouterDslPackage.DATA_SOURCE_DECLARATION:
-      {
-        DataSourceDeclaration dataSourceDeclaration = (DataSourceDeclaration)theEObject;
-        T result = caseDataSourceDeclaration(dataSourceDeclaration);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case RouterDslPackage.PROCESSOR_DECLARATION:
-      {
-        ProcessorDeclaration processorDeclaration = (ProcessorDeclaration)theEObject;
-        T result = caseProcessorDeclaration(processorDeclaration);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case RouterDslPackage.SYSTEM_DECLARATION:
-      {
-        SystemDeclaration systemDeclaration = (SystemDeclaration)theEObject;
-        T result = caseSystemDeclaration(systemDeclaration);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
       case RouterDslPackage.CASE_RULE:
       {
         CaseRule caseRule = (CaseRule)theEObject;
@@ -246,54 +225,6 @@ public class RouterDslSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseRoutingRules(RoutingRules object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>Data Source Declaration</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Data Source Declaration</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseDataSourceDeclaration(DataSourceDeclaration object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>Processor Declaration</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Processor Declaration</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseProcessorDeclaration(ProcessorDeclaration object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>System Declaration</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>System Declaration</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseSystemDeclaration(SystemDeclaration object)
   {
     return null;
   }

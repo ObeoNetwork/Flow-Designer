@@ -33,33 +33,6 @@ public interface RouterDslFactory extends EFactory
   RoutingRules createRoutingRules();
 
   /**
-   * Returns a new object of class '<em>Data Source Declaration</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Data Source Declaration</em>'.
-   * @generated
-   */
-  DataSourceDeclaration createDataSourceDeclaration();
-
-  /**
-   * Returns a new object of class '<em>Processor Declaration</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Processor Declaration</em>'.
-   * @generated
-   */
-  ProcessorDeclaration createProcessorDeclaration();
-
-  /**
-   * Returns a new object of class '<em>System Declaration</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>System Declaration</em>'.
-   * @generated
-   */
-  SystemDeclaration createSystemDeclaration();
-
-  /**
    * Returns a new object of class '<em>Case Rule</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
