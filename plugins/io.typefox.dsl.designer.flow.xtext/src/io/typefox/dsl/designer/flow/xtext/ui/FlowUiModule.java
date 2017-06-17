@@ -18,6 +18,6 @@ public class FlowUiModule extends EmfUiModule {
 	
 	@Override
 	public void configureLanguageSpecificURIEditorOpener(com.google.inject.Binder binder) {
-		binder.bind(IURIEditorOpener.class).annotatedWith(LanguageSpecific.class).to(EcoreEditorOpener.class);
+		binder.bind(IURIEditorOpener.class).annotatedWith(LanguageSpecific.class).to(SiriusEditorOpener.class);
 	}
 }
