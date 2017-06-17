@@ -9,7 +9,10 @@ Require-Bundle: org.eclipse.xtext,
  org.eclipse.core.runtime,
  org.eclipse.xtext.ui,
  org.eclipse.emf.ecore.editor,
- org.eclipse.xtext.ui.shared
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.sirius,
+ org.eclipse.emf.transaction,
+ org.eclipse.sirius.ui
 Import-Package: org.apache.log4j
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: io.typefox.dsl.designer.flow.xtext.ui.Activator
