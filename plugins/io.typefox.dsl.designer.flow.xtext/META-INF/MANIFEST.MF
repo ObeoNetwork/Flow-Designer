@@ -12,7 +12,8 @@ Require-Bundle: org.eclipse.xtext,
  org.eclipse.xtext.ui.shared,
  org.eclipse.sirius,
  org.eclipse.emf.transaction,
- org.eclipse.sirius.ui
+ org.eclipse.sirius.ui,
+ org.eclipse.sirius.common.ui;bundle-version="5.0.0"
 Import-Package: org.apache.log4j
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: io.typefox.dsl.designer.flow.xtext.ui.Activator
