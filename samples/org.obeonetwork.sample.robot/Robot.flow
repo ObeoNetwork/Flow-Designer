@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<flow:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flow="http://www.obeo.fr/dsl/designer/sample/flow" consumption="502" temperature="50" routingRules="">
+<flow:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flow="http://www.obeo.fr/dsl/designer/sample/flow" consumption="482" name="Robot" temperature="48" routingRules="">
   <elements xsi:type="flow:CompositeProcessor" consumption="200" usage="standard" name="Robot_Central_Unit" temperature="25" weight="23" routingRules="Case Robot_Central_Unit.temperature >= 70 °C:&#xA;  /!\ critical /!\;&#xA;">
     <elements xsi:type="flow:Processor" usage="standard" incomingFlows="//@elements.2/@outgoingFlows.0" capacity="4" load="4" consumption="40" name="DSP" volume="4">
       <outgoingFlows usage="standard" load="4" target="//@elements.0/@elements.1"/>
     </elements>
-    <elements xsi:type="flow:Processor" usage="high" incomingFlows="//@elements.0/@elements.0/@outgoingFlows.0 //@elements.1/@elements.0/@outgoingFlows.0 //@elements.1/@elements.5/@outgoingFlows.0" capacity="15" load="18" consumption="150" name="Motion Engine" volume="18">
-      <outgoingFlows usage="over" load="18"/>
-    </elements>
+    <elements xsi:type="flow:Processor" usage="standard" incomingFlows="//@elements.0/@elements.0/@outgoingFlows.0 //@elements.1/@elements.0/@outgoingFlows.0 //@elements.1/@elements.5/@outgoingFlows.0" capacity="15" load="17" consumption="150" name="Motion_Engine" volume="17"/>
     <elements xsi:type="flow:Fan" consumption="10"/>
     <powerOutputs>
       <links target="//@elements.1/@powerInputs.0"/>
     </powerOutputs>
   </elements>
-  <elements xsi:type="flow:CompositeProcessor" consumption="302" usage="standard" name="MySubSystem" temperature="25" weight="33" routingRules="Case Robot_Central_Unit.temperature>= 60 °C :&#xA;/!\ critical /!\;&#xA;&#xA;">
+  <elements xsi:type="flow:CompositeProcessor" consumption="282" usage="standard" name="MySubSystem" temperature="25" weight="33" routingRules="Case Processor4.consumption > 123:&#xA;-> Motion_Engine;&#xA; ">
     <elements xsi:type="flow:Processor" usage="standard" incomingFlows="//@elements.1/@elements.2/@outgoingFlows.0" load="8" consumption="100" name="Radar_Capture" volume="8">
       <outgoingFlows usage="high" capacity="6" load="8" target="//@elements.0/@elements.1"/>
-      <outgoingFlows usage="high" capacity="6" load="8"/>
-      <outgoingFlows usage="standard" load="8"/>
       <outgoingFlows usage="high" capacity="6" load="8" target="//@elements.1/@elements.3"/>
     </elements>
-    <elements xsi:type="flow:DataSource" usage="standard" name="Back Camera" volume="6">
-      <outgoingFlows usage="standard" capacity="8" load="6"/>
-      <outgoingFlows usage="standard" capacity="6" load="6" target="//@elements.1/@elements.5"/>
+    <elements xsi:type="flow:DataSource" usage="standard" name="Back_Camera" volume="5">
+      <outgoingFlows usage="standard" capacity="6" load="5" target="//@elements.1/@elements.5"/>
     </elements>
     <elements xsi:type="flow:DataSource" name="Radar" volume="8">
       <outgoingFlows usage="high" capacity="6" load="8" target="//@elements.1/@elements.0"/>
     </elements>
-    <elements xsi:type="flow:Processor" usage="standard" incomingFlows="//@elements.1/@elements.0/@outgoingFlows.3" load="8" consumption="100" name="Engine" volume="8"/>
+    <elements xsi:type="flow:Processor" usage="standard" incomingFlows="//@elements.1/@elements.0/@outgoingFlows.1" load="8" consumption="100" name="Engine" volume="8"/>
     <elements xsi:type="flow:Fan" consumption="2" speed="200"/>
-    <elements xsi:type="flow:Processor" usage="standard" incomingFlows="//@elements.1/@elements.1/@outgoingFlows.1" load="6" consumption="100" name="Processor4" volume="6">
-      <outgoingFlows usage="standard" capacity="6" load="6" target="//@elements.0/@elements.1"/>
+    <elements xsi:type="flow:Processor" usage="standard" incomingFlows="//@elements.1/@elements.1/@outgoingFlows.0" capacity="8" load="5" consumption="80" name="Processor4" volume="5">
+      <outgoingFlows usage="standard" capacity="6" load="5" target="//@elements.0/@elements.1"/>
     </elements>
     <powerInputs/>
   </elements>
