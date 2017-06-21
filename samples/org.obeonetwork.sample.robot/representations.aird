@@ -1,831 +1,2418 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:flow="http://www.obeo.fr/dsl/designer/sample/flow" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis xmi:id="_44Bz0LBkEeGaLc01A8ddGg" selectedViews="_j4uugPKPEeaTM5lTgIAE1w _j4uugfKPEeaTM5lTgIAE1w _OxlmcLB4EeG06LGzBbJLsw" version="12.0.0.201704271200">
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:description="http://www.eclipse.org/sirius/description/1.1.0"
+    xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0"
+    xmlns:description_2="http://www.eclipse.org/sirius/diagram/description/1.1.0"
+    xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0"
+    xmlns:flow="http://www.obeo.fr/dsl/designer/sample/flow"
+    xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation"
+    xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0"
+    xmlns:table="http://www.eclipse.org/sirius/table/1.1.0"
+    xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0"
+    xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis
+      xmi:id="_44Bz0LBkEeGaLc01A8ddGg"
+      selectedViews="_j4uugPKPEeaTM5lTgIAE1w _j4uugfKPEeaTM5lTgIAE1w _OxlmcLB4EeG06LGzBbJLsw"
+      version="12.0.0.201704271200">
     <semanticResources>Robot.flow</semanticResources>
-    <ownedViews xmi:type="viewpoint:DView" xmi:id="_OxlmcLB4EeG06LGzBbJLsw">
-      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_iaGNUPKPEeaTM5lTgIAE1w" name="Flow matrix" repPath="#_D88DMDJZEeO7iqsmL-jrBA">
-        <description xmi:type="description_1:CrossTableDescription" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']"/>
-        <target xmi:type="flow:System" href="Robot.flow#/"/>
+    <ownedViews
+        xmi:type="viewpoint:DView"
+        xmi:id="_OxlmcLB4EeG06LGzBbJLsw">
+      <viewpoint
+          xmi:type="description:Viewpoint"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']"/>
+      <ownedRepresentationDescriptors
+          xmi:type="viewpoint:DRepresentationDescriptor"
+          xmi:id="_iaGNUPKPEeaTM5lTgIAE1w"
+          name="Flow matrix"
+          repPath="#_D88DMDJZEeO7iqsmL-jrBA">
+        <description
+            xmi:type="description_1:CrossTableDescription"
+            href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']"/>
+        <target
+            xmi:type="flow:System"
+            href="Robot.flow#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_iaGNUfKPEeaTM5lTgIAE1w" name="Processors table" repPath="#_jar8IDJcEeO7iqsmL-jrBA">
-        <description xmi:type="description_1:EditionTableDescription" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']"/>
-        <target xmi:type="flow:System" href="Robot.flow#/"/>
-      </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_iaGNU_KPEeaTM5lTgIAE1w" name="new Package dep" repPath="#_w8QSwII2EeWWPeqWzDxWOA">
-        <description xmi:type="description_2:DiagramDescription" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']"/>
-        <target xmi:type="flow:System" href="Robot.flow#/"/>
-      </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_iaGNVPKPEeaTM5lTgIAE1w" name="Dependencies Control" repPath="#_K_mjYJRgEeWqz9QSLLDNXg">
-        <description xmi:type="description_2:DiagramDescription" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']"/>
-        <target xmi:type="flow:System" href="Robot.flow#/"/>
+      <ownedRepresentationDescriptors
+          xmi:type="viewpoint:DRepresentationDescriptor"
+          xmi:id="_iaGNUfKPEeaTM5lTgIAE1w"
+          name="Processors table"
+          repPath="#_jar8IDJcEeO7iqsmL-jrBA">
+        <description
+            xmi:type="description_1:EditionTableDescription"
+            href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']"/>
+        <target
+            xmi:type="flow:System"
+            href="Robot.flow#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
-    <ownedViews xmi:type="viewpoint:DView" xmi:id="_j4uugPKPEeaTM5lTgIAE1w">
-      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Performance']"/>
+    <ownedViews
+        xmi:type="viewpoint:DView"
+        xmi:id="_j4uugPKPEeaTM5lTgIAE1w">
+      <viewpoint
+          xmi:type="description:Viewpoint"
+          href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Performance']"/>
     </ownedViews>
-    <ownedViews xmi:type="viewpoint:DView" xmi:id="_j4uugfKPEeaTM5lTgIAE1w">
-      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_mDPeQPKPEeaTM5lTgIAE1w" name="Topography Diagram" repPath="#_mDPeQfKPEeaTM5lTgIAE1w">
-        <description xmi:type="description_2:DiagramDescription" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']"/>
-        <target xmi:type="flow:System" href="Robot.flow#/"/>
+    <ownedViews
+        xmi:type="viewpoint:DView"
+        xmi:id="_j4uugfKPEeaTM5lTgIAE1w">
+      <viewpoint
+          xmi:type="description:Viewpoint"
+          href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']"/>
+      <ownedRepresentationDescriptors
+          xmi:type="viewpoint:DRepresentationDescriptor"
+          xmi:id="_mDPeQPKPEeaTM5lTgIAE1w"
+          name="Topography Diagram"
+          repPath="#_mDPeQfKPEeaTM5lTgIAE1w">
+        <description
+            xmi:type="description_2:DiagramDescription"
+            href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']"/>
+        <target
+            xmi:type="flow:System"
+            href="Robot.flow#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
-  <table:DTable xmi:id="_D88DMDJZEeO7iqsmL-jrBA" name="Flow matrix" headerColumnWidth="160">
-    <target xmi:type="flow:System" href="Robot.flow#/"/>
-    <lines xmi:type="table:DLine" xmi:id="_dSp40DJaEeO7iqsmL-jrBA" label="DSP">
-      <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-      <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineProcessor']"/>
-      <cells xmi:type="table:DCell" xmi:id="_9Qob4DJbEeO7iqsmL-jrBA" label="X" column="_JhHoATJaEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-        <intersectionMapping xmi:type="description_1:IntersectionMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
+  <table:DTable
+      xmi:id="_D88DMDJZEeO7iqsmL-jrBA"
+      name="Flow matrix"
+      headerColumnWidth="160">
+    <target
+        xmi:type="flow:System"
+        href="Robot.flow#/"/>
+    <lines xmi:type="table:DLine"
+        xmi:id="_dSp40DJaEeO7iqsmL-jrBA"
+        label="DSP">
+      <target
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.0/@elements.0"/>
+      <semanticElements
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.0/@elements.0"/>
+      <originMapping
+          xmi:type="description_1:LineMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineProcessor']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_9Qob4DJbEeO7iqsmL-jrBA"
+          label="X"
+          column="_JhHoATJaEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
+        <intersectionMapping
+            xmi:type="description_1:IntersectionMapping"
+            href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
       </cells>
     </lines>
-    <lines xmi:type="table:DLine" xmi:id="_dSqf4DJaEeO7iqsmL-jrBA" label="Motion Engine">
-      <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-      <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineProcessor']"/>
+    <lines xmi:type="table:DLine"
+        xmi:id="_dSqf4DJaEeO7iqsmL-jrBA"
+        label="Motion Engine">
+      <target
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.0/@elements.1"/>
+      <semanticElements
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.0/@elements.1"/>
+      <originMapping
+          xmi:type="description_1:LineMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineProcessor']"/>
     </lines>
-    <lines xmi:type="table:DLine" xmi:id="_dSqf4TJaEeO7iqsmL-jrBA" label="Camera Capture">
-      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineProcessor']"/>
-      <cells xmi:type="table:DCell" xmi:id="_9Qob4TJbEeO7iqsmL-jrBA" label="X" column="_JhHoATJaEeO7iqsmL-jrBA">
-        <intersectionMapping xmi:type="description_1:IntersectionMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
+    <lines xmi:type="table:DLine"
+        xmi:id="_dSqf4TJaEeO7iqsmL-jrBA"
+        label="Camera Capture">
+      <originMapping
+          xmi:type="description_1:LineMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineProcessor']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_9Qob4TJbEeO7iqsmL-jrBA"
+          label="X"
+          column="_JhHoATJaEeO7iqsmL-jrBA">
+        <intersectionMapping
+            xmi:type="description_1:IntersectionMapping"
+            href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
       </cells>
     </lines>
-    <lines xmi:type="table:DLine" xmi:id="_dSrG8DJaEeO7iqsmL-jrBA" label="Radar Capture">
-      <target xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-      <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineProcessor']"/>
-      <cells xmi:type="table:DCell" xmi:id="_9Qob4jJbEeO7iqsmL-jrBA" label="X" column="_JhHoATJaEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-        <intersectionMapping xmi:type="description_1:IntersectionMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
+    <lines xmi:type="table:DLine"
+        xmi:id="_dSrG8DJaEeO7iqsmL-jrBA"
+        label="Radar Capture">
+      <target
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.1/@elements.0"/>
+      <semanticElements
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.1/@elements.0"/>
+      <originMapping
+          xmi:type="description_1:LineMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineProcessor']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_9Qob4jJbEeO7iqsmL-jrBA"
+          label="X"
+          column="_JhHoATJaEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
+        <intersectionMapping
+            xmi:type="description_1:IntersectionMapping"
+            href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
       </cells>
     </lines>
-    <lines xmi:type="table:DLine" xmi:id="_7ihUQDJbEeO7iqsmL-jrBA" label="Front Camera">
-      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineDataSource']"/>
-      <cells xmi:type="table:DCell" xmi:id="_9QpC8DJbEeO7iqsmL-jrBA" label="X" column="_JhHoAjJaEeO7iqsmL-jrBA">
-        <intersectionMapping xmi:type="description_1:IntersectionMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
+    <lines xmi:type="table:DLine"
+        xmi:id="_7ihUQDJbEeO7iqsmL-jrBA"
+        label="Front Camera">
+      <originMapping
+          xmi:type="description_1:LineMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineDataSource']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_9QpC8DJbEeO7iqsmL-jrBA"
+          label="X"
+          column="_JhHoAjJaEeO7iqsmL-jrBA">
+        <intersectionMapping
+            xmi:type="description_1:IntersectionMapping"
+            href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
       </cells>
     </lines>
-    <lines xmi:type="table:DLine" xmi:id="_7ih7UDJbEeO7iqsmL-jrBA" label="Back Camera">
-      <target xmi:type="flow:DataSource" href="Robot.flow#//@elements.1/@elements.1"/>
-      <semanticElements xmi:type="flow:DataSource" href="Robot.flow#//@elements.1/@elements.1"/>
-      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineDataSource']"/>
-      <cells xmi:type="table:DCell" xmi:id="_9QpC8TJbEeO7iqsmL-jrBA" label="X" column="_JhHoAjJaEeO7iqsmL-jrBA">
-        <target xmi:type="flow:DataSource" href="Robot.flow#//@elements.1/@elements.1"/>
-        <semanticElements xmi:type="flow:DataSource" href="Robot.flow#//@elements.1/@elements.1"/>
-        <intersectionMapping xmi:type="description_1:IntersectionMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
+    <lines xmi:type="table:DLine"
+        xmi:id="_7ih7UDJbEeO7iqsmL-jrBA"
+        label="Back Camera">
+      <target
+          xmi:type="flow:DataSource"
+          href="Robot.flow#//@elements.1/@elements.1"/>
+      <semanticElements
+          xmi:type="flow:DataSource"
+          href="Robot.flow#//@elements.1/@elements.1"/>
+      <originMapping
+          xmi:type="description_1:LineMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineDataSource']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_9QpC8TJbEeO7iqsmL-jrBA"
+          label="X"
+          column="_JhHoAjJaEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:DataSource"
+            href="Robot.flow#//@elements.1/@elements.1"/>
+        <semanticElements
+            xmi:type="flow:DataSource"
+            href="Robot.flow#//@elements.1/@elements.1"/>
+        <intersectionMapping
+            xmi:type="description_1:IntersectionMapping"
+            href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
       </cells>
     </lines>
-    <lines xmi:type="table:DLine" xmi:id="_v_930DyzEeOiYdTXWoHNAg" label="Radar">
-      <target xmi:type="flow:DataSource" href="Robot.flow#//@elements.1/@elements.2"/>
-      <semanticElements xmi:type="flow:DataSource" href="Robot.flow#//@elements.1/@elements.2"/>
-      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineDataSource']"/>
-      <cells xmi:type="table:DCell" xmi:id="_yH_UQDyzEeOiYdTXWoHNAg" label="X" column="_JhIPEDJaEeO7iqsmL-jrBA">
-        <target xmi:type="flow:DataSource" href="Robot.flow#//@elements.1/@elements.2"/>
-        <semanticElements xmi:type="flow:DataSource" href="Robot.flow#//@elements.1/@elements.2"/>
-        <intersectionMapping xmi:type="description_1:IntersectionMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
+    <lines xmi:type="table:DLine"
+        xmi:id="_v_930DyzEeOiYdTXWoHNAg"
+        label="Radar">
+      <target
+          xmi:type="flow:DataSource"
+          href="Robot.flow#//@elements.1/@elements.2"/>
+      <semanticElements
+          xmi:type="flow:DataSource"
+          href="Robot.flow#//@elements.1/@elements.2"/>
+      <originMapping
+          xmi:type="description_1:LineMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineDataSource']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_yH_UQDyzEeOiYdTXWoHNAg"
+          label="X"
+          column="_JhIPEDJaEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:DataSource"
+            href="Robot.flow#//@elements.1/@elements.2"/>
+        <semanticElements
+            xmi:type="flow:DataSource"
+            href="Robot.flow#//@elements.1/@elements.2"/>
+        <intersectionMapping
+            xmi:type="description_1:IntersectionMapping"
+            href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
       </cells>
     </lines>
-    <lines xmi:type="table:DLine" xmi:id="_7ih7UTJbEeO7iqsmL-jrBA" label="Wifi">
-      <target xmi:type="flow:DataSource" href="Robot.flow#//@elements.2"/>
-      <semanticElements xmi:type="flow:DataSource" href="Robot.flow#//@elements.2"/>
-      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineDataSource']"/>
-      <cells xmi:type="table:DCell" xmi:id="_9QpC8jJbEeO7iqsmL-jrBA" label="X" column="_JhHoADJaEeO7iqsmL-jrBA">
-        <target xmi:type="flow:DataSource" href="Robot.flow#//@elements.2"/>
-        <semanticElements xmi:type="flow:DataSource" href="Robot.flow#//@elements.2"/>
-        <intersectionMapping xmi:type="description_1:IntersectionMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
+    <lines xmi:type="table:DLine"
+        xmi:id="_7ih7UTJbEeO7iqsmL-jrBA"
+        label="Wifi">
+      <target
+          xmi:type="flow:DataSource"
+          href="Robot.flow#//@elements.2"/>
+      <semanticElements
+          xmi:type="flow:DataSource"
+          href="Robot.flow#//@elements.2"/>
+      <originMapping
+          xmi:type="description_1:LineMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedLineMappings[name='lineDataSource']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_9QpC8jJbEeO7iqsmL-jrBA"
+          label="X"
+          column="_JhHoADJaEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:DataSource"
+            href="Robot.flow#//@elements.2"/>
+        <semanticElements
+            xmi:type="flow:DataSource"
+            href="Robot.flow#//@elements.2"/>
+        <intersectionMapping
+            xmi:type="description_1:IntersectionMapping"
+            href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@intersection.0"/>
       </cells>
     </lines>
-    <columns xmi:type="table:DTargetColumn" xmi:id="_JhHoADJaEeO7iqsmL-jrBA" label="Processor DSP" cells="_9QpC8jJbEeO7iqsmL-jrBA" width="65">
-      <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-      <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-      <originMapping xmi:type="description_1:ElementColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedColumnMappings.0"/>
+    <columns
+        xmi:type="table:DTargetColumn"
+        xmi:id="_JhHoADJaEeO7iqsmL-jrBA"
+        label="Processor DSP"
+        cells="_9QpC8jJbEeO7iqsmL-jrBA"
+        width="65">
+      <target
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.0/@elements.0"/>
+      <semanticElements
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.0/@elements.0"/>
+      <originMapping
+          xmi:type="description_1:ElementColumnMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedColumnMappings.0"/>
     </columns>
-    <columns xmi:type="table:DTargetColumn" xmi:id="_JhHoATJaEeO7iqsmL-jrBA" label="Processor Motion Engine" cells="_9Qob4DJbEeO7iqsmL-jrBA _9Qob4TJbEeO7iqsmL-jrBA _9Qob4jJbEeO7iqsmL-jrBA" width="115">
-      <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-      <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-      <originMapping xmi:type="description_1:ElementColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedColumnMappings.0"/>
+    <columns
+        xmi:type="table:DTargetColumn"
+        xmi:id="_JhHoATJaEeO7iqsmL-jrBA"
+        label="Processor Motion Engine"
+        cells="_9Qob4DJbEeO7iqsmL-jrBA _9Qob4TJbEeO7iqsmL-jrBA _9Qob4jJbEeO7iqsmL-jrBA"
+        width="115">
+      <target
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.0/@elements.1"/>
+      <semanticElements
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.0/@elements.1"/>
+      <originMapping
+          xmi:type="description_1:ElementColumnMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedColumnMappings.0"/>
     </columns>
-    <columns xmi:type="table:DTargetColumn" xmi:id="_JhHoAjJaEeO7iqsmL-jrBA" label="Processor Camera Capture" cells="_9QpC8DJbEeO7iqsmL-jrBA _9QpC8TJbEeO7iqsmL-jrBA" width="128">
-      <originMapping xmi:type="description_1:ElementColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedColumnMappings.0"/>
+    <columns
+        xmi:type="table:DTargetColumn"
+        xmi:id="_JhHoAjJaEeO7iqsmL-jrBA"
+        label="Processor Camera Capture"
+        cells="_9QpC8DJbEeO7iqsmL-jrBA _9QpC8TJbEeO7iqsmL-jrBA"
+        width="128">
+      <originMapping
+          xmi:type="description_1:ElementColumnMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedColumnMappings.0"/>
     </columns>
-    <columns xmi:type="table:DTargetColumn" xmi:id="_JhIPEDJaEeO7iqsmL-jrBA" label="Processor Radar Capture" cells="_yH_UQDyzEeOiYdTXWoHNAg" width="116">
-      <target xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-      <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-      <originMapping xmi:type="description_1:ElementColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedColumnMappings.0"/>
+    <columns
+        xmi:type="table:DTargetColumn"
+        xmi:id="_JhIPEDJaEeO7iqsmL-jrBA"
+        label="Processor Radar Capture"
+        cells="_yH_UQDyzEeOiYdTXWoHNAg"
+        width="116">
+      <target
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.1/@elements.0"/>
+      <semanticElements
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.1/@elements.0"/>
+      <originMapping
+          xmi:type="description_1:ElementColumnMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']/@ownedColumnMappings.0"/>
     </columns>
-    <description xmi:type="description_1:CrossTableDescription" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']"/>
+    <description
+        xmi:type="description_1:CrossTableDescription"
+        href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='matrix']"/>
   </table:DTable>
-  <table:DTable xmi:id="_jar8IDJcEeO7iqsmL-jrBA" name="Processors table" headerColumnWidth="162">
-    <target xmi:type="flow:System" href="Robot.flow#/"/>
-    <lines xmi:type="table:DLine" xmi:id="_jar8ITJcEeO7iqsmL-jrBA" label="DSP">
-      <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-      <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedLineMappings[name='lineProcessor']"/>
-      <cells xmi:type="table:DCell" xmi:id="_sXhUQTJcEeO7iqsmL-jrBA" label="4" column="_sXhUQDJcEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-        <currentStyle xmi:type="table:DCellStyle" xmi:id="_pdU3MDJgEeO7iqsmL-jrBA">
-          <foregroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colCapacity']"/>
+  <table:DTable
+      xmi:id="_jar8IDJcEeO7iqsmL-jrBA"
+      name="Processors table"
+      headerColumnWidth="162">
+    <target
+        xmi:type="flow:System"
+        href="Robot.flow#/"/>
+    <lines xmi:type="table:DLine"
+        xmi:id="_jar8ITJcEeO7iqsmL-jrBA"
+        label="DSP">
+      <target
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.0/@elements.0"/>
+      <semanticElements
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.0/@elements.0"/>
+      <originMapping
+          xmi:type="description_1:LineMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedLineMappings[name='lineProcessor']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_sXhUQTJcEeO7iqsmL-jrBA"
+          label="4"
+          column="_sXhUQDJcEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
+        <currentStyle
+            xmi:type="table:DCellStyle"
+            xmi:id="_pdU3MDJgEeO7iqsmL-jrBA">
+          <foregroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colCapacity']"/>
         </currentStyle>
       </cells>
-      <cells xmi:type="table:DCell" xmi:id="_yQ5icDJcEeO7iqsmL-jrBA" label="40" column="_yQ47YDJcEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-        <currentStyle xmi:type="table:DCellStyle" xmi:id="_pdU3MjJgEeO7iqsmL-jrBA">
-          <foregroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colConsumption']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_yQ5icDJcEeO7iqsmL-jrBA"
+          label="40"
+          column="_yQ47YDJcEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
+        <currentStyle
+            xmi:type="table:DCellStyle"
+            xmi:id="_pdU3MjJgEeO7iqsmL-jrBA">
+          <foregroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colConsumption']"/>
         </currentStyle>
       </cells>
-      <cells xmi:type="table:DCell" xmi:id="_2GLx8TJcEeO7iqsmL-jrBA" label="4" column="_2GLx8DJcEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-        <currentStyle xmi:type="table:DCellStyle" xmi:id="_Ir3ToDJdEeO7iqsmL-jrBA">
-          <foregroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colLoad']"/>
-          <backgroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colLoad']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_2GLx8TJcEeO7iqsmL-jrBA"
+          label="4"
+          column="_2GLx8DJcEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
+        <currentStyle
+            xmi:type="table:DCellStyle"
+            xmi:id="_Ir3ToDJdEeO7iqsmL-jrBA">
+          <foregroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colLoad']"/>
+          <backgroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colLoad']"/>
         </currentStyle>
       </cells>
-      <cells xmi:type="table:DCell" xmi:id="_W-oOoDJdEeO7iqsmL-jrBA" label="active" column="_W-nnkDJdEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-        <currentStyle xmi:type="table:DCellStyle" xmi:id="_lBVNADJgEeO7iqsmL-jrBA">
-          <foregroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colStatus']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_W-oOoDJdEeO7iqsmL-jrBA"
+          label="active"
+          column="_W-nnkDJdEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
+        <currentStyle
+            xmi:type="table:DCellStyle"
+            xmi:id="_lBVNADJgEeO7iqsmL-jrBA">
+          <foregroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colStatus']"/>
         </currentStyle>
       </cells>
-      <cells xmi:type="table:DCell" xmi:id="_fBuiYTJdEeO7iqsmL-jrBA" label="standard" column="_fBuiYDJdEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-        <currentStyle xmi:type="table:DCellStyle" xmi:id="_fBvJcDJdEeO7iqsmL-jrBA" backgroundColor="138,226,52">
-          <foregroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colUsage']"/>
-          <backgroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colUsage']"/>
-        </currentStyle>
-      </cells>
-    </lines>
-    <lines xmi:type="table:DLine" xmi:id="_jar8IjJcEeO7iqsmL-jrBA" label="Motion Engine">
-      <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-      <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedLineMappings[name='lineProcessor']"/>
-      <cells xmi:type="table:DCell" xmi:id="_sXh7UDJcEeO7iqsmL-jrBA" label="9" column="_sXhUQDJcEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-      </cells>
-      <cells xmi:type="table:DCell" xmi:id="_yQ6JgDJcEeO7iqsmL-jrBA" label="90" column="_yQ47YDJcEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-      </cells>
-      <cells xmi:type="table:DCell" xmi:id="_2GMZADJcEeO7iqsmL-jrBA" label="9" column="_2GLx8DJcEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-      </cells>
-      <cells xmi:type="table:DCell" xmi:id="_W-o1sDJdEeO7iqsmL-jrBA" label="active" column="_W-nnkDJdEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-      </cells>
-      <cells xmi:type="table:DCell" xmi:id="_fBvwgDJdEeO7iqsmL-jrBA" label="standard" column="_fBuiYDJdEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-        <currentStyle xmi:type="table:DCellStyle" xmi:id="_mtIH0DJdEeO7iqsmL-jrBA" backgroundColor="138,226,52">
-          <backgroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colUsage']"/>
-        </currentStyle>
-      </cells>
-    </lines>
-    <lines xmi:type="table:DLine" xmi:id="_jar8IzJcEeO7iqsmL-jrBA" label="Camera Capture">
-      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedLineMappings[name='lineProcessor']"/>
-      <cells xmi:type="table:DCell" xmi:id="_sXiiYDJcEeO7iqsmL-jrBA" label="10" column="_sXhUQDJcEeO7iqsmL-jrBA"/>
-      <cells xmi:type="table:DCell" xmi:id="_yQ6wkDJcEeO7iqsmL-jrBA" label="100" column="_yQ47YDJcEeO7iqsmL-jrBA"/>
-      <cells xmi:type="table:DCell" xmi:id="_2GMZATJcEeO7iqsmL-jrBA" label="8" column="_2GLx8DJcEeO7iqsmL-jrBA">
-        <currentStyle xmi:type="table:DCellStyle" xmi:id="_CVEJoDJdEeO7iqsmL-jrBA">
-          <backgroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colLoad']"/>
-        </currentStyle>
-      </cells>
-      <cells xmi:type="table:DCell" xmi:id="_W-pcwDJdEeO7iqsmL-jrBA" label="active" column="_W-nnkDJdEeO7iqsmL-jrBA"/>
-      <cells xmi:type="table:DCell" xmi:id="_fBwXkDJdEeO7iqsmL-jrBA" label="standard" column="_fBuiYDJdEeO7iqsmL-jrBA">
-        <currentStyle xmi:type="table:DCellStyle" xmi:id="_fBwXkTJdEeO7iqsmL-jrBA" backgroundColor="138,226,52">
-          <backgroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colUsage']"/>
-        </currentStyle>
-      </cells>
-    </lines>
-    <lines xmi:type="table:DLine" xmi:id="_jar8JDJcEeO7iqsmL-jrBA" label="Radar Capture">
-      <target xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-      <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedLineMappings[name='lineProcessor']"/>
-      <cells xmi:type="table:DCell" xmi:id="_sXiiYTJcEeO7iqsmL-jrBA" label="6" column="_sXhUQDJcEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-        <currentStyle xmi:type="table:DCellStyle" xmi:id="_OUousD5WEeSdtMj-LVCEOA">
-          <foregroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colCapacity']"/>
-        </currentStyle>
-      </cells>
-      <cells xmi:type="table:DCell" xmi:id="_yQ6wkTJcEeO7iqsmL-jrBA" label="60" column="_yQ47YDJcEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-        <currentStyle xmi:type="table:DCellStyle" xmi:id="_OUousj5WEeSdtMj-LVCEOA">
-          <foregroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colConsumption']"/>
-        </currentStyle>
-      </cells>
-      <cells xmi:type="table:DCell" xmi:id="_2GNAEDJcEeO7iqsmL-jrBA" label="6" column="_2GLx8DJcEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-      </cells>
-      <cells xmi:type="table:DCell" xmi:id="_W-qD0DJdEeO7iqsmL-jrBA" label="active" column="_W-nnkDJdEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-        <currentStyle xmi:type="table:DCellStyle" xmi:id="_OUoutD5WEeSdtMj-LVCEOA">
-          <foregroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colStatus']"/>
-        </currentStyle>
-      </cells>
-      <cells xmi:type="table:DCell" xmi:id="_fBw-oDJdEeO7iqsmL-jrBA" label="standard" column="_fBuiYDJdEeO7iqsmL-jrBA">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-        <currentStyle xmi:type="table:DCellStyle" xmi:id="_mtIu4DJdEeO7iqsmL-jrBA" backgroundColor="138,226,52">
-          <backgroundStyleOrigin xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colUsage']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_fBuiYTJdEeO7iqsmL-jrBA"
+          label="standard"
+          column="_fBuiYDJdEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
+        <currentStyle
+            xmi:type="table:DCellStyle"
+            xmi:id="_fBvJcDJdEeO7iqsmL-jrBA"
+            backgroundColor="138,226,52">
+          <foregroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colUsage']"/>
+          <backgroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colUsage']"/>
         </currentStyle>
       </cells>
     </lines>
-    <columns xmi:type="table:DFeatureColumn" xmi:id="_sXhUQDJcEeO7iqsmL-jrBA" label="capacity" cells="_sXhUQTJcEeO7iqsmL-jrBA _sXh7UDJcEeO7iqsmL-jrBA _sXiiYDJcEeO7iqsmL-jrBA _sXiiYTJcEeO7iqsmL-jrBA" width="57" featureName="capacity">
-      <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colCapacity']"/>
+    <lines xmi:type="table:DLine"
+        xmi:id="_jar8IjJcEeO7iqsmL-jrBA"
+        label="Motion Engine">
+      <target
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.0/@elements.1"/>
+      <semanticElements
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.0/@elements.1"/>
+      <originMapping
+          xmi:type="description_1:LineMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedLineMappings[name='lineProcessor']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_sXh7UDJcEeO7iqsmL-jrBA"
+          label="9"
+          column="_sXhUQDJcEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.1"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.1"/>
+      </cells>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_yQ6JgDJcEeO7iqsmL-jrBA"
+          label="90"
+          column="_yQ47YDJcEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.1"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.1"/>
+      </cells>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_2GMZADJcEeO7iqsmL-jrBA"
+          label="9"
+          column="_2GLx8DJcEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.1"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.1"/>
+      </cells>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_W-o1sDJdEeO7iqsmL-jrBA"
+          label="active"
+          column="_W-nnkDJdEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.1"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.1"/>
+      </cells>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_fBvwgDJdEeO7iqsmL-jrBA"
+          label="standard"
+          column="_fBuiYDJdEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.1"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.1"/>
+        <currentStyle
+            xmi:type="table:DCellStyle"
+            xmi:id="_mtIH0DJdEeO7iqsmL-jrBA"
+            backgroundColor="138,226,52">
+          <backgroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colUsage']"/>
+        </currentStyle>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine"
+        xmi:id="_jar8IzJcEeO7iqsmL-jrBA"
+        label="Camera Capture">
+      <originMapping
+          xmi:type="description_1:LineMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedLineMappings[name='lineProcessor']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_sXiiYDJcEeO7iqsmL-jrBA"
+          label="10"
+          column="_sXhUQDJcEeO7iqsmL-jrBA"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_yQ6wkDJcEeO7iqsmL-jrBA"
+          label="100"
+          column="_yQ47YDJcEeO7iqsmL-jrBA"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_2GMZATJcEeO7iqsmL-jrBA"
+          label="8"
+          column="_2GLx8DJcEeO7iqsmL-jrBA">
+        <currentStyle
+            xmi:type="table:DCellStyle"
+            xmi:id="_CVEJoDJdEeO7iqsmL-jrBA">
+          <backgroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colLoad']"/>
+        </currentStyle>
+      </cells>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_W-pcwDJdEeO7iqsmL-jrBA"
+          label="active"
+          column="_W-nnkDJdEeO7iqsmL-jrBA"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_fBwXkDJdEeO7iqsmL-jrBA"
+          label="standard"
+          column="_fBuiYDJdEeO7iqsmL-jrBA">
+        <currentStyle
+            xmi:type="table:DCellStyle"
+            xmi:id="_fBwXkTJdEeO7iqsmL-jrBA"
+            backgroundColor="138,226,52">
+          <backgroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colUsage']"/>
+        </currentStyle>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine"
+        xmi:id="_jar8JDJcEeO7iqsmL-jrBA"
+        label="Radar Capture">
+      <target
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.1/@elements.0"/>
+      <semanticElements
+          xmi:type="flow:Processor"
+          href="Robot.flow#//@elements.1/@elements.0"/>
+      <originMapping
+          xmi:type="description_1:LineMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedLineMappings[name='lineProcessor']"/>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_sXiiYTJcEeO7iqsmL-jrBA"
+          label="6"
+          column="_sXhUQDJcEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
+        <currentStyle
+            xmi:type="table:DCellStyle"
+            xmi:id="_OUousD5WEeSdtMj-LVCEOA">
+          <foregroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colCapacity']"/>
+        </currentStyle>
+      </cells>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_yQ6wkTJcEeO7iqsmL-jrBA"
+          label="60"
+          column="_yQ47YDJcEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
+        <currentStyle
+            xmi:type="table:DCellStyle"
+            xmi:id="_OUousj5WEeSdtMj-LVCEOA">
+          <foregroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colConsumption']"/>
+        </currentStyle>
+      </cells>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_2GNAEDJcEeO7iqsmL-jrBA"
+          label="6"
+          column="_2GLx8DJcEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
+      </cells>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_W-qD0DJdEeO7iqsmL-jrBA"
+          label="active"
+          column="_W-nnkDJdEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
+        <currentStyle
+            xmi:type="table:DCellStyle"
+            xmi:id="_OUoutD5WEeSdtMj-LVCEOA">
+          <foregroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colStatus']"/>
+        </currentStyle>
+      </cells>
+      <cells
+          xmi:type="table:DCell"
+          xmi:id="_fBw-oDJdEeO7iqsmL-jrBA"
+          label="standard"
+          column="_fBuiYDJdEeO7iqsmL-jrBA">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
+        <currentStyle
+            xmi:type="table:DCellStyle"
+            xmi:id="_mtIu4DJdEeO7iqsmL-jrBA"
+            backgroundColor="138,226,52">
+          <backgroundStyleOrigin
+              xmi:type="description_1:FeatureColumnMapping"
+              href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colUsage']"/>
+        </currentStyle>
+      </cells>
+    </lines>
+    <columns
+        xmi:type="table:DFeatureColumn"
+        xmi:id="_sXhUQDJcEeO7iqsmL-jrBA"
+        label="capacity"
+        cells="_sXhUQTJcEeO7iqsmL-jrBA _sXh7UDJcEeO7iqsmL-jrBA _sXiiYDJcEeO7iqsmL-jrBA _sXiiYTJcEeO7iqsmL-jrBA"
+        width="57"
+        featureName="capacity">
+      <originMapping
+          xmi:type="description_1:FeatureColumnMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colCapacity']"/>
     </columns>
-    <columns xmi:type="table:DFeatureColumn" xmi:id="_yQ47YDJcEeO7iqsmL-jrBA" label="consumption" cells="_yQ5icDJcEeO7iqsmL-jrBA _yQ6JgDJcEeO7iqsmL-jrBA _yQ6wkDJcEeO7iqsmL-jrBA _yQ6wkTJcEeO7iqsmL-jrBA" width="83" featureName="consumption">
-      <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colConsumption']"/>
+    <columns
+        xmi:type="table:DFeatureColumn"
+        xmi:id="_yQ47YDJcEeO7iqsmL-jrBA"
+        label="consumption"
+        cells="_yQ5icDJcEeO7iqsmL-jrBA _yQ6JgDJcEeO7iqsmL-jrBA _yQ6wkDJcEeO7iqsmL-jrBA _yQ6wkTJcEeO7iqsmL-jrBA"
+        width="83"
+        featureName="consumption">
+      <originMapping
+          xmi:type="description_1:FeatureColumnMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colConsumption']"/>
     </columns>
-    <columns xmi:type="table:DFeatureColumn" xmi:id="_2GLx8DJcEeO7iqsmL-jrBA" label="load" cells="_2GLx8TJcEeO7iqsmL-jrBA _2GMZADJcEeO7iqsmL-jrBA _2GMZATJcEeO7iqsmL-jrBA _2GNAEDJcEeO7iqsmL-jrBA" width="38" featureName="load">
-      <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colLoad']"/>
+    <columns
+        xmi:type="table:DFeatureColumn"
+        xmi:id="_2GLx8DJcEeO7iqsmL-jrBA"
+        label="load"
+        cells="_2GLx8TJcEeO7iqsmL-jrBA _2GMZADJcEeO7iqsmL-jrBA _2GMZATJcEeO7iqsmL-jrBA _2GNAEDJcEeO7iqsmL-jrBA"
+        width="38"
+        featureName="load">
+      <originMapping
+          xmi:type="description_1:FeatureColumnMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colLoad']"/>
     </columns>
-    <columns xmi:type="table:DFeatureColumn" xmi:id="_W-nnkDJdEeO7iqsmL-jrBA" label="status" cells="_W-oOoDJdEeO7iqsmL-jrBA _W-o1sDJdEeO7iqsmL-jrBA _W-pcwDJdEeO7iqsmL-jrBA _W-qD0DJdEeO7iqsmL-jrBA" width="46" featureName="status">
-      <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colStatus']"/>
+    <columns
+        xmi:type="table:DFeatureColumn"
+        xmi:id="_W-nnkDJdEeO7iqsmL-jrBA"
+        label="status"
+        cells="_W-oOoDJdEeO7iqsmL-jrBA _W-o1sDJdEeO7iqsmL-jrBA _W-pcwDJdEeO7iqsmL-jrBA _W-qD0DJdEeO7iqsmL-jrBA"
+        width="46"
+        featureName="status">
+      <originMapping
+          xmi:type="description_1:FeatureColumnMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colStatus']"/>
     </columns>
-    <columns xmi:type="table:DFeatureColumn" xmi:id="_fBuiYDJdEeO7iqsmL-jrBA" label="usage" cells="_fBuiYTJdEeO7iqsmL-jrBA _fBvwgDJdEeO7iqsmL-jrBA _fBwXkDJdEeO7iqsmL-jrBA _fBw-oDJdEeO7iqsmL-jrBA" width="63" featureName="usage">
-      <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colUsage']"/>
+    <columns
+        xmi:type="table:DFeatureColumn"
+        xmi:id="_fBuiYDJdEeO7iqsmL-jrBA"
+        label="usage"
+        cells="_fBuiYTJdEeO7iqsmL-jrBA _fBvwgDJdEeO7iqsmL-jrBA _fBwXkDJdEeO7iqsmL-jrBA _fBw-oDJdEeO7iqsmL-jrBA"
+        width="63"
+        featureName="usage">
+      <originMapping
+          xmi:type="description_1:FeatureColumnMapping"
+          href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']/@ownedColumnMappings[name='colUsage']"/>
     </columns>
-    <description xmi:type="description_1:EditionTableDescription" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']"/>
+    <description
+        xmi:type="description_1:EditionTableDescription"
+        href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='table']"/>
   </table:DTable>
-  <diagram:DSemanticDiagram xmi:id="_w8QSwII2EeWWPeqWzDxWOA" name="new Package dep">
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_w8QSwYI2EeWWPeqWzDxWOA" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_w8QSwoI2EeWWPeqWzDxWOA"/>
+  <diagram:DSemanticDiagram
+      xmi:id="_w8QSwII2EeWWPeqWzDxWOA"
+      name="new Package dep">
+    <ownedAnnotationEntries
+        xmi:type="description:AnnotationEntry"
+        xmi:id="_w8QSwYI2EeWWPeqWzDxWOA"
+        source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data
+          xmi:type="diagram:ComputedStyleDescriptionRegistry"
+          xmi:id="_w8QSwoI2EeWWPeqWzDxWOA"/>
     </ownedAnnotationEntries>
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_w8otQII2EeWWPeqWzDxWOA" source="GMF_DIAGRAMS">
-      <data xmi:type="notation:Diagram" xmi:id="_w8otQYI2EeWWPeqWzDxWOA" type="Sirius" element="_w8QSwII2EeWWPeqWzDxWOA" measurementUnit="Pixel">
-        <styles xmi:type="notation:DiagramStyle" xmi:id="_w8otQoI2EeWWPeqWzDxWOA"/>
+    <ownedAnnotationEntries
+        xmi:type="description:AnnotationEntry"
+        xmi:id="_w8otQII2EeWWPeqWzDxWOA"
+        source="GMF_DIAGRAMS">
+      <data
+          xmi:type="notation:Diagram"
+          xmi:id="_w8otQYI2EeWWPeqWzDxWOA"
+          type="Sirius"
+          element="_w8QSwII2EeWWPeqWzDxWOA"
+          measurementUnit="Pixel">
+        <styles
+            xmi:type="notation:DiagramStyle"
+            xmi:id="_w8otQoI2EeWWPeqWzDxWOA"/>
       </data>
     </ownedAnnotationEntries>
-    <description xmi:type="description_2:DiagramDescription" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']"/>
-    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_w8QSw4I2EeWWPeqWzDxWOA"/>
-    <activatedLayers xmi:type="description_2:Layer" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']/@defaultLayer"/>
-    <target xmi:type="flow:System" href="Robot.flow#/"/>
+    <description
+        xmi:type="description_2:DiagramDescription"
+        href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']"/>
+    <filterVariableHistory
+        xmi:type="diagram:FilterVariableHistory"
+        xmi:id="_w8QSw4I2EeWWPeqWzDxWOA"/>
+    <activatedLayers
+        xmi:type="description_2:Layer"
+        href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Package%20dep']/@defaultLayer"/>
+    <target
+        xmi:type="flow:System"
+        href="Robot.flow#/"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram xmi:id="_K_mjYJRgEeWqz9QSLLDNXg" name="Dependencies Control">
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_K_mjYZRgEeWqz9QSLLDNXg" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_K_mjYpRgEeWqz9QSLLDNXg"/>
+  <diagram:DSemanticDiagram
+      xmi:id="_mDPeQfKPEeaTM5lTgIAE1w"
+      name="Topography Diagram">
+    <ownedAnnotationEntries
+        xmi:type="description:AnnotationEntry"
+        xmi:id="_mDPeQvKPEeaTM5lTgIAE1w"
+        source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data
+          xmi:type="diagram:ComputedStyleDescriptionRegistry"
+          xmi:id="_mDPeQ_KPEeaTM5lTgIAE1w">
+        <computedStyleDescriptions
+            xmi:type="style:EdgeStyleDescription"
+            xmi:id="_xQ_XAE9_EeeQdthcRQethQ"
+            lineStyle="dash"
+            targetArrow="InputClosedArrow">
+          <strokeColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+          <centerLabelStyleDescription
+              xmi:type="style:CenterLabelStyleDescription"
+              xmi:id="_xQ_XAU9_EeeQdthcRQethQ"
+              showIcon="false"
+              labelExpression="aql:self.load + '/' +  self.capacity">
+            <labelColor
+                xmi:type="description:SystemColor"
+                href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+          </centerLabelStyleDescription>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions
+            xmi:type="style:EdgeStyleDescription"
+            xmi:id="_xRCaVk9_EeeQdthcRQethQ">
+          <strokeColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+          <centerLabelStyleDescription
+              xmi:type="style:CenterLabelStyleDescription"
+              xmi:id="_xRCaV09_EeeQdthcRQethQ"
+              showIcon="false"
+              labelExpression="aql:self.load + '/' +  self.capacity">
+            <labelColor
+                xmi:type="description:SystemColor"
+                href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+          </centerLabelStyleDescription>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions
+            xmi:type="style:EdgeStyleDescription"
+            xmi:id="_bju5AE-CEeeeDdTayR14MQ"
+            lineStyle="dash"
+            targetArrow="InputClosedArrow">
+          <strokeColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+          <centerLabelStyleDescription
+              xmi:type="style:CenterLabelStyleDescription"
+              xmi:id="_bju5AU-CEeeeDdTayR14MQ"
+              showIcon="false"
+              labelExpression="aql:self.load + '/' +  self.capacity">
+            <labelColor
+                xmi:type="description:SystemColor"
+                href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+          </centerLabelStyleDescription>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions
+            xmi:type="style:EdgeStyleDescription"
+            xmi:id="_bjwHIE-CEeeeDdTayR14MQ">
+          <strokeColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+          <centerLabelStyleDescription
+              xmi:type="style:CenterLabelStyleDescription"
+              xmi:id="_bjwHIU-CEeeeDdTayR14MQ"
+              showIcon="false"
+              labelExpression="aql:self.load + '/' +  self.capacity">
+            <labelColor
+                xmi:type="description:SystemColor"
+                href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+          </centerLabelStyleDescription>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions
+            xmi:type="style:WorkspaceImageDescription"
+            xmi:id="_N_PNgFHYEeeZptqOXqVxBg"
+            showIcon="false"
+            sizeComputationExpression="aql:self.sizeFromCapacity()"
+            arcWidth="1"
+            arcHeight="1"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu_standard.svg">
+          <borderColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions
+            xmi:type="style:WorkspaceImageDescription"
+            xmi:id="_6Xjm0FHYEeeWuuwNQX9Okg"
+            showIcon="false"
+            sizeComputationExpression="aql:self.sizeFromCapacity()"
+            arcWidth="1"
+            arcHeight="1"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset2_standard.svg">
+          <borderColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions
+            xmi:type="style:WorkspaceImageDescription"
+            xmi:id="_6XswwFHYEeeWuuwNQX9Okg"
+            showIcon="false"
+            sizeComputationExpression="aql:self.sizeFromCapacity()"
+            arcWidth="1"
+            arcHeight="1"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset_standard.svg">
+          <borderColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions
+            xmi:type="style:WorkspaceImageDescription"
+            xmi:id="_joZEsFZhEee55OSk-vC-7w"
+            showIcon="false"
+            sizeComputationExpression="aql:self.sizeFromCapacity()"
+            arcWidth="1"
+            arcHeight="1"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset_high.svg">
+          <borderColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions
+            xmi:type="style:EdgeStyleDescription"
+            xmi:id="_ki_rwFZhEee55OSk-vC-7w"
+            lineStyle="dash"
+            targetArrow="InputClosedArrow">
+          <strokeColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+          <centerLabelStyleDescription
+              xmi:type="style:CenterLabelStyleDescription"
+              xmi:id="_ki_rwVZhEee55OSk-vC-7w"
+              showIcon="false"
+              labelExpression="aql:self.load + '/' +  self.capacity">
+            <labelColor
+                xmi:type="description:SystemColor"
+                href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+          </centerLabelStyleDescription>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions
+            xmi:type="style:EdgeStyleDescription"
+            xmi:id="_kjBg8FZhEee55OSk-vC-7w">
+          <strokeColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+          <centerLabelStyleDescription
+              xmi:type="style:CenterLabelStyleDescription"
+              xmi:id="_kjBg8VZhEee55OSk-vC-7w"
+              showIcon="false"
+              labelExpression="aql:self.load + '/' +  self.capacity">
+            <labelColor
+                xmi:type="description:SystemColor"
+                href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+          </centerLabelStyleDescription>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions
+            xmi:type="style:WorkspaceImageDescription"
+            xmi:id="_l9mokFZhEee55OSk-vC-7w"
+            showIcon="false"
+            sizeComputationExpression="aql:self.sizeFromCapacity()"
+            arcWidth="1"
+            arcHeight="1"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu_high.svg">
+          <borderColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor
+              xmi:type="description:SystemColor"
+              href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </computedStyleDescriptions>
+      </data>
     </ownedAnnotationEntries>
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_K_oYkJRgEeWqz9QSLLDNXg" source="GMF_DIAGRAMS">
-      <data xmi:type="notation:Diagram" xmi:id="_K_oYkZRgEeWqz9QSLLDNXg" type="Sirius" element="_K_mjYJRgEeWqz9QSLLDNXg" measurementUnit="Pixel">
-        <children xmi:type="notation:Node" xmi:id="_NHL68JRgEeWqz9QSLLDNXg" type="2002" element="_NHHCcJRgEeWqz9QSLLDNXg">
-          <children xmi:type="notation:Node" xmi:id="_NHMiAJRgEeWqz9QSLLDNXg" type="5006"/>
-          <children xmi:type="notation:Node" xmi:id="_NHMiAZRgEeWqz9QSLLDNXg" type="7001">
-            <styles xmi:type="notation:SortingStyle" xmi:id="_NHMiApRgEeWqz9QSLLDNXg"/>
-            <styles xmi:type="notation:FilteringStyle" xmi:id="_NHMiA5RgEeWqz9QSLLDNXg"/>
+    <ownedAnnotationEntries
+        xmi:type="description:AnnotationEntry"
+        xmi:id="_mDiZMPKPEeaTM5lTgIAE1w"
+        source="GMF_DIAGRAMS">
+      <data
+          xmi:type="notation:Diagram"
+          xmi:id="_mDiZMfKPEeaTM5lTgIAE1w"
+          type="Sirius"
+          element="_mDPeQfKPEeaTM5lTgIAE1w"
+          measurementUnit="Pixel">
+        <children
+            xmi:type="notation:Node"
+            xmi:id="_mDrjIPKPEeaTM5lTgIAE1w"
+            type="2001"
+            element="_mDPeRfKPEeaTM5lTgIAE1w">
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mD1UIPKPEeaTM5lTgIAE1w"
+              type="5002">
+            <layoutConstraint
+                xmi:type="notation:Location"
+                xmi:id="_mD1UIfKPEeaTM5lTgIAE1w"
+                x="31"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_NHL68ZRgEeWqz9QSLLDNXg" fontName="Segoe UI" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NHL68pRgEeWqz9QSLLDNXg" x="260" y="105"/>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mEIPHvKPEeaTM5lTgIAE1w"
+              type="3005"
+              element="_mDPeRvKPEeaTM5lTgIAE1w">
+            <styles
+                xmi:type="notation:ShapeStyle"
+                xmi:id="_mEIPH_KPEeaTM5lTgIAE1w"
+                fontName="Segoe UI"/>
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_mEIPIPKPEeaTM5lTgIAE1w"/>
+          </children>
+          <styles
+              xmi:type="notation:ShapeStyle"
+              xmi:id="_mDrjIfKPEeaTM5lTgIAE1w"
+              fontName="Segoe UI"
+              fontHeight="8"/>
+          <layoutConstraint
+              xmi:type="notation:Bounds"
+              xmi:id="_mDrjIvKPEeaTM5lTgIAE1w"
+              x="35"
+              y="215"
+              width="40"
+              height="40"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_P8NAQJRgEeWqz9QSLLDNXg" type="2002" element="_P8JV4JRgEeWqz9QSLLDNXg">
-          <children xmi:type="notation:Node" xmi:id="_P8NnUJRgEeWqz9QSLLDNXg" type="5006"/>
-          <children xmi:type="notation:Node" xmi:id="_P8NnUZRgEeWqz9QSLLDNXg" type="7001">
-            <styles xmi:type="notation:SortingStyle" xmi:id="_P8NnUpRgEeWqz9QSLLDNXg"/>
-            <styles xmi:type="notation:FilteringStyle" xmi:id="_P8NnU5RgEeWqz9QSLLDNXg"/>
+        <children
+            xmi:type="notation:Node"
+            xmi:id="_mEIPEPKPEeaTM5lTgIAE1w"
+            type="2002"
+            element="_mDPeR_KPEeaTM5lTgIAE1w">
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mEIPE_KPEeaTM5lTgIAE1w"
+              type="5006"/>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mEIPFPKPEeaTM5lTgIAE1w"
+              type="7001">
+            <children
+                xmi:type="notation:Node"
+                xmi:id="_mEIPIfKPEeaTM5lTgIAE1w"
+                type="3007"
+                element="_mDPeSfKPEeaTM5lTgIAE1w">
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_mEIPJPKPEeaTM5lTgIAE1w"
+                  type="5003">
+                <layoutConstraint
+                    xmi:type="notation:Location"
+                    xmi:id="_mEIPJfKPEeaTM5lTgIAE1w"
+                    x="-5"
+                    y="-21"/>
+              </children>
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_6YQKYFHYEeeWuuwNQX9Okg"
+                  type="3005"
+                  element="_6XnRMFHYEeeWuuwNQX9Okg">
+                <styles
+                    xmi:type="notation:ShapeStyle"
+                    xmi:id="_6YQKYVHYEeeWuuwNQX9Okg"
+                    fontName="Sans Serif"/>
+                <layoutConstraint
+                    xmi:type="notation:Bounds"
+                    xmi:id="_6YQKYlHYEeeWuuwNQX9Okg"/>
+              </children>
+              <styles
+                  xmi:type="notation:ShapeStyle"
+                  xmi:id="_mEIPIvKPEeaTM5lTgIAE1w"
+                  fontName="Segoe UI"
+                  fontHeight="8"/>
+              <layoutConstraint
+                  xmi:type="notation:Bounds"
+                  xmi:id="_mEIPI_KPEeaTM5lTgIAE1w"
+                  x="19"
+                  y="49"
+                  width="40"
+                  height="40"/>
+            </children>
+            <children
+                xmi:type="notation:Node"
+                xmi:id="_mHQbkPKPEeaTM5lTgIAE1w"
+                type="3007"
+                element="_mDPeS_KPEeaTM5lTgIAE1w">
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_mHQbk_KPEeaTM5lTgIAE1w"
+                  type="5003">
+                <layoutConstraint
+                    xmi:type="notation:Location"
+                    xmi:id="_mHQblPKPEeaTM5lTgIAE1w"
+                    y="-21"/>
+              </children>
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_johAgFZhEee55OSk-vC-7w"
+                  type="3005"
+                  element="_joZEsVZhEee55OSk-vC-7w">
+                <styles
+                    xmi:type="notation:ShapeStyle"
+                    xmi:id="_johAgVZhEee55OSk-vC-7w"
+                    fontName="Sans Serif"/>
+                <layoutConstraint
+                    xmi:type="notation:Bounds"
+                    xmi:id="_johAglZhEee55OSk-vC-7w"/>
+              </children>
+              <styles
+                  xmi:type="notation:ShapeStyle"
+                  xmi:id="_mHQbkfKPEeaTM5lTgIAE1w"
+                  fontName="Segoe UI"
+                  fontHeight="8"/>
+              <layoutConstraint
+                  xmi:type="notation:Bounds"
+                  xmi:id="_mHQbkvKPEeaTM5lTgIAE1w"
+                  x="125"
+                  y="39"
+                  width="100"
+                  height="100"/>
+            </children>
+            <children
+                xmi:type="notation:Node"
+                xmi:id="_UWT-IE-EEeeeZ8j7YmiDCQ"
+                visible="false"
+                type="3007"
+                element="_UV35QE-EEeeeZ8j7YmiDCQ">
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_UWb58E-EEeeeZ8j7YmiDCQ"
+                  type="5003">
+                <layoutConstraint
+                    xmi:type="notation:Location"
+                    xmi:id="_UWb58U-EEeeeZ8j7YmiDCQ"
+                    y="-21"/>
+              </children>
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_UWqjcE-EEeeeZ8j7YmiDCQ"
+                  type="3005"
+                  element="_UV35QU-EEeeeZ8j7YmiDCQ">
+                <styles
+                    xmi:type="notation:ShapeStyle"
+                    xmi:id="_UWqjcU-EEeeeZ8j7YmiDCQ"
+                    fontName="Sans Serif"/>
+                <layoutConstraint
+                    xmi:type="notation:Bounds"
+                    xmi:id="_UWqjck-EEeeeZ8j7YmiDCQ"/>
+              </children>
+              <styles
+                  xmi:type="notation:ShapeStyle"
+                  xmi:id="_UWT-IU-EEeeeZ8j7YmiDCQ"
+                  fontName="Sans Serif"
+                  fontHeight="8"/>
+              <layoutConstraint
+                  xmi:type="notation:Bounds"
+                  xmi:id="_UWT-Ik-EEeeeZ8j7YmiDCQ"
+                  x="195"
+                  y="63"
+                  width="60"
+                  height="60"/>
+            </children>
+            <styles
+                xmi:type="notation:SortingStyle"
+                xmi:id="_mEIPFfKPEeaTM5lTgIAE1w"/>
+            <styles
+                xmi:type="notation:FilteringStyle"
+                xmi:id="_mEIPFvKPEeaTM5lTgIAE1w"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_P8NAQZRgEeWqz9QSLLDNXg" fontName="Segoe UI" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P8NAQpRgEeWqz9QSLLDNXg" x="480" y="105"/>
+          <styles
+              xmi:type="notation:ShapeStyle"
+              xmi:id="_mEIPEfKPEeaTM5lTgIAE1w"
+              fontName="Segoe UI"
+              fontHeight="10"
+              bold="true"
+              italic="true"/>
+          <layoutConstraint
+              xmi:type="notation:Bounds"
+              xmi:id="_mEIPEvKPEeaTM5lTgIAE1w"
+              x="20"
+              y="20"/>
         </children>
-        <styles xmi:type="notation:DiagramStyle" xmi:id="_K_oYkpRgEeWqz9QSLLDNXg"/>
-        <edges xmi:type="notation:Edge" xmi:id="_P8OOYJRgEeWqz9QSLLDNXg" type="4001" element="_2zHKAJRhEeWqz9QSLLDNXg" source="_NHL68JRgEeWqz9QSLLDNXg" target="_P8NAQJRgEeWqz9QSLLDNXg">
-          <children xmi:type="notation:Node" xmi:id="_P8O1cJRgEeWqz9QSLLDNXg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P8O1cZRgEeWqz9QSLLDNXg" x="3" y="1"/>
+        <children
+            xmi:type="notation:Node"
+            xmi:id="_mEIPF_KPEeaTM5lTgIAE1w"
+            type="2002"
+            element="_mDPeTfKPEeaTM5lTgIAE1w">
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mEIPGvKPEeaTM5lTgIAE1w"
+              type="5006"/>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mEIPG_KPEeaTM5lTgIAE1w"
+              type="7001">
+            <children
+                xmi:type="notation:Node"
+                xmi:id="_mHj9m_KPEeaTM5lTgIAE1w"
+                type="3007"
+                element="_mDPeUfKPEeaTM5lTgIAE1w">
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_mHtHgPKPEeaTM5lTgIAE1w"
+                  type="5003">
+                <layoutConstraint
+                    xmi:type="notation:Location"
+                    xmi:id="_mHtHgfKPEeaTM5lTgIAE1w"
+                    y="-21"/>
+              </children>
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_OAMPwFHYEeeZptqOXqVxBg"
+                  type="3005"
+                  element="_N_WiQFHYEeeZptqOXqVxBg">
+                <styles
+                    xmi:type="notation:ShapeStyle"
+                    xmi:id="_OAMPwVHYEeeZptqOXqVxBg"
+                    fontName="Sans Serif"/>
+                <layoutConstraint
+                    xmi:type="notation:Bounds"
+                    xmi:id="_OAMPwlHYEeeZptqOXqVxBg"/>
+              </children>
+              <styles
+                  xmi:type="notation:ShapeStyle"
+                  xmi:id="_mHj9nPKPEeaTM5lTgIAE1w"
+                  fontName="Segoe UI"
+                  fontHeight="8"/>
+              <layoutConstraint
+                  xmi:type="notation:Bounds"
+                  xmi:id="_mHj9nfKPEeaTM5lTgIAE1w"
+                  x="130"
+                  y="29"
+                  width="60"
+                  height="60"/>
+            </children>
+            <children
+                xmi:type="notation:Node"
+                xmi:id="_mHtHh_KPEeaTM5lTgIAE1w"
+                type="3007"
+                element="_mDPeVfKPEeaTM5lTgIAE1w">
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_mHtHivKPEeaTM5lTgIAE1w"
+                  type="5003">
+                <layoutConstraint
+                    xmi:type="notation:Location"
+                    xmi:id="_mHtHi_KPEeaTM5lTgIAE1w"
+                    x="-18"
+                    y="41"/>
+              </children>
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_mHtHmvKPEeaTM5lTgIAE1w"
+                  type="3005"
+                  element="_mDPeVvKPEeaTM5lTgIAE1w">
+                <styles
+                    xmi:type="notation:ShapeStyle"
+                    xmi:id="_mHtHm_KPEeaTM5lTgIAE1w"
+                    fontName="Segoe UI"/>
+                <layoutConstraint
+                    xmi:type="notation:Bounds"
+                    xmi:id="_mHtHnPKPEeaTM5lTgIAE1w"/>
+              </children>
+              <styles
+                  xmi:type="notation:ShapeStyle"
+                  xmi:id="_mHtHiPKPEeaTM5lTgIAE1w"
+                  fontName="Segoe UI"
+                  fontHeight="8"/>
+              <layoutConstraint
+                  xmi:type="notation:Bounds"
+                  xmi:id="_mHtHifKPEeaTM5lTgIAE1w"
+                  x="100"
+                  y="234"
+                  width="100"
+                  height="100"/>
+            </children>
+            <children
+                xmi:type="notation:Node"
+                xmi:id="_mHtHjPKPEeaTM5lTgIAE1w"
+                type="3007"
+                element="_mDPeV_KPEeaTM5lTgIAE1w">
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_mHtHj_KPEeaTM5lTgIAE1w"
+                  type="5003">
+                <layoutConstraint
+                    xmi:type="notation:Location"
+                    xmi:id="_mHtHkPKPEeaTM5lTgIAE1w"
+                    x="31"/>
+              </children>
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_mHtHnfKPEeaTM5lTgIAE1w"
+                  type="3005"
+                  element="_mDPeWPKPEeaTM5lTgIAE1w">
+                <styles
+                    xmi:type="notation:ShapeStyle"
+                    xmi:id="_mHtHnvKPEeaTM5lTgIAE1w"
+                    fontName="Segoe UI"/>
+                <layoutConstraint
+                    xmi:type="notation:Bounds"
+                    xmi:id="_mHtHn_KPEeaTM5lTgIAE1w"/>
+              </children>
+              <styles
+                  xmi:type="notation:ShapeStyle"
+                  xmi:id="_mHtHjfKPEeaTM5lTgIAE1w"
+                  fontName="Segoe UI"
+                  fontHeight="8"/>
+              <layoutConstraint
+                  xmi:type="notation:Bounds"
+                  xmi:id="_mHtHjvKPEeaTM5lTgIAE1w"
+                  x="300"
+                  y="214"
+                  width="80"
+                  height="80"/>
+            </children>
+            <children
+                xmi:type="notation:Node"
+                xmi:id="_WQVa0E-EEeeeZ8j7YmiDCQ"
+                type="3007"
+                element="_WQEVEE-EEeeeZ8j7YmiDCQ">
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_WQWB4E-EEeeeZ8j7YmiDCQ"
+                  type="5003">
+                <layoutConstraint
+                    xmi:type="notation:Location"
+                    xmi:id="_WQWB4U-EEeeeZ8j7YmiDCQ"
+                    y="-21"/>
+              </children>
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_6YXfIFHYEeeWuuwNQX9Okg"
+                  type="3005"
+                  element="_6XswwVHYEeeWuuwNQX9Okg">
+                <styles
+                    xmi:type="notation:ShapeStyle"
+                    xmi:id="_6YXfIVHYEeeWuuwNQX9Okg"
+                    fontName="Sans Serif"/>
+                <layoutConstraint
+                    xmi:type="notation:Bounds"
+                    xmi:id="_6YXfIlHYEeeWuuwNQX9Okg"/>
+              </children>
+              <styles
+                  xmi:type="notation:ShapeStyle"
+                  xmi:id="_WQVa0U-EEeeeZ8j7YmiDCQ"
+                  fontName="Sans Serif"
+                  fontHeight="8"/>
+              <layoutConstraint
+                  xmi:type="notation:Bounds"
+                  xmi:id="_WQVa0k-EEeeeZ8j7YmiDCQ"
+                  x="370"
+                  y="29"
+                  width="60"
+                  height="60"/>
+            </children>
+            <children
+                xmi:type="notation:Node"
+                xmi:id="_Xh6-gE-EEeeeZ8j7YmiDCQ"
+                visible="false"
+                type="3007"
+                element="_Xhx0kE-EEeeeZ8j7YmiDCQ">
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_Xh7lkE-EEeeeZ8j7YmiDCQ"
+                  type="5003">
+                <layoutConstraint
+                    xmi:type="notation:Location"
+                    xmi:id="_Xh7lkU-EEeeeZ8j7YmiDCQ"
+                    y="-21"/>
+              </children>
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_Xh8MoE-EEeeeZ8j7YmiDCQ"
+                  type="3005"
+                  element="_Xhx0kU-EEeeeZ8j7YmiDCQ">
+                <styles
+                    xmi:type="notation:ShapeStyle"
+                    xmi:id="_Xh8MoU-EEeeeZ8j7YmiDCQ"
+                    fontName="Sans Serif"/>
+                <layoutConstraint
+                    xmi:type="notation:Bounds"
+                    xmi:id="_Xh8Mok-EEeeeZ8j7YmiDCQ"/>
+              </children>
+              <styles
+                  xmi:type="notation:ShapeStyle"
+                  xmi:id="_Xh6-gU-EEeeeZ8j7YmiDCQ"
+                  fontName="Sans Serif"
+                  fontHeight="8"/>
+              <layoutConstraint
+                  xmi:type="notation:Bounds"
+                  xmi:id="_Xh6-gk-EEeeeZ8j7YmiDCQ"
+                  x="465"
+                  y="249"
+                  width="60"
+                  height="60"/>
+            </children>
+            <children
+                xmi:type="notation:Node"
+                xmi:id="_fzr1oFHPEeeDkqQkk8TPzg"
+                type="3007"
+                element="_fzXFgFHPEeeDkqQkk8TPzg">
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_fzzxcFHPEeeDkqQkk8TPzg"
+                  type="5003">
+                <layoutConstraint
+                    xmi:type="notation:Location"
+                    xmi:id="_fzzxcVHPEeeDkqQkk8TPzg"
+                    y="-21"/>
+              </children>
+              <children
+                  xmi:type="notation:Node"
+                  xmi:id="_l9n2sFZhEee55OSk-vC-7w"
+                  type="3005"
+                  element="_l9mokVZhEee55OSk-vC-7w">
+                <styles
+                    xmi:type="notation:ShapeStyle"
+                    xmi:id="_l9n2sVZhEee55OSk-vC-7w"
+                    fontName="Sans Serif"/>
+                <layoutConstraint
+                    xmi:type="notation:Bounds"
+                    xmi:id="_l9n2slZhEee55OSk-vC-7w"/>
+              </children>
+              <styles
+                  xmi:type="notation:ShapeStyle"
+                  xmi:id="_fzr1oVHPEeeDkqQkk8TPzg"
+                  fontName="Sans Serif"
+                  fontHeight="8"/>
+              <layoutConstraint
+                  xmi:type="notation:Bounds"
+                  xmi:id="_fzr1olHPEeeDkqQkk8TPzg"
+                  x="51"
+                  y="119"
+                  width="50"
+                  height="50"/>
+            </children>
+            <styles
+                xmi:type="notation:SortingStyle"
+                xmi:id="_mEIPHPKPEeaTM5lTgIAE1w"/>
+            <styles
+                xmi:type="notation:FilteringStyle"
+                xmi:id="_mEIPHfKPEeaTM5lTgIAE1w"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_P8O1cpRgEeWqz9QSLLDNXg" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P8O1c5RgEeWqz9QSLLDNXg" x="7" y="-3"/>
+          <styles
+              xmi:type="notation:ShapeStyle"
+              xmi:id="_mEIPGPKPEeaTM5lTgIAE1w"
+              fontName="Segoe UI"
+              fontHeight="10"
+              bold="true"
+              italic="true"/>
+          <layoutConstraint
+              xmi:type="notation:Bounds"
+              xmi:id="_mEIPGfKPEeaTM5lTgIAE1w"
+              x="275"
+              y="20"
+              width="553"
+              height="338"/>
+        </children>
+        <styles
+            xmi:type="notation:DiagramStyle"
+            xmi:id="_mDiZMvKPEeaTM5lTgIAE1w"/>
+        <edges
+            xmi:type="notation:Edge"
+            xmi:id="_mIApjvKPEeaTM5lTgIAE1w"
+            type="4001"
+            element="_mDPeX_KPEeaTM5lTgIAE1w"
+            source="_mHtHjPKPEeaTM5lTgIAE1w"
+            target="_mHj9m_KPEeaTM5lTgIAE1w">
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mIApkvKPEeaTM5lTgIAE1w"
+              type="6001">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_mIApk_KPEeaTM5lTgIAE1w"
+                x="-27"
+                y="-32"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_P8O1dJRgEeWqz9QSLLDNXg" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P8O1dZRgEeWqz9QSLLDNXg" x="1" y="-2"/>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mIAplPKPEeaTM5lTgIAE1w"
+              type="6002">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_mIAplfKPEeaTM5lTgIAE1w"
+                x="-28"
+                y="-6"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_P8OOYZRgEeWqz9QSLLDNXg"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_P8OOYpRgEeWqz9QSLLDNXg" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_P8OOY5RgEeWqz9QSLLDNXg" points="[74, -10, -146, -10]$[146, -6, -74, -6]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_P8PcgJRgEeWqz9QSLLDNXg" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_P8PcgZRgEeWqz9QSLLDNXg" id="(0.5,0.5)"/>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mIAplvKPEeaTM5lTgIAE1w"
+              type="6003">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_mIApl_KPEeaTM5lTgIAE1w"
+                x="-76"
+                y="72"/>
+          </children>
+          <styles
+              xmi:type="notation:ConnectorStyle"
+              xmi:id="_mIApj_KPEeaTM5lTgIAE1w"/>
+          <styles
+              xmi:type="notation:FontStyle"
+              xmi:id="_mIApkPKPEeaTM5lTgIAE1w"
+              fontName="Segoe UI"
+              fontHeight="8"/>
+          <bendpoints
+              xmi:type="notation:RelativeBendpoints"
+              xmi:id="_mIApkfKPEeaTM5lTgIAE1w"
+              points="[-56, 44, 165, 136]$[-91, -62, 130, 30]$[-191, -62, 30, 30]$[-221, -99, 0, -7]"/>
+          <sourceAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_mIApmPKPEeaTM5lTgIAE1w"
+              id="(1.0204081632653061,-0.40191387559808606)"/>
+          <targetAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_mIApmfKPEeaTM5lTgIAE1w"
+              id="(0.5,1.0)"/>
+        </edges>
+        <edges
+            xmi:type="notation:Edge"
+            xmi:id="_mIApmvKPEeaTM5lTgIAE1w"
+            type="4001"
+            element="_mDPeYvKPEeaTM5lTgIAE1w"
+            source="_mDrjIPKPEeaTM5lTgIAE1w"
+            target="_mEIPIfKPEeaTM5lTgIAE1w">
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mIApnvKPEeaTM5lTgIAE1w"
+              type="6001">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_1l0agE-FEeeeZ8j7YmiDCQ"
+                x="-3"
+                y="-11"/>
+          </children>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mIApoPKPEeaTM5lTgIAE1w"
+              type="6002">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_1l0agU-FEeeeZ8j7YmiDCQ"
+                x="4"
+                y="9"/>
+          </children>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mIApovKPEeaTM5lTgIAE1w"
+              type="6003">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_1l0agk-FEeeeZ8j7YmiDCQ"
+                x="4"
+                y="10"/>
+          </children>
+          <styles
+              xmi:type="notation:ConnectorStyle"
+              xmi:id="_mIApm_KPEeaTM5lTgIAE1w"/>
+          <styles
+              xmi:type="notation:FontStyle"
+              xmi:id="_mIApnPKPEeaTM5lTgIAE1w"
+              fontName="Segoe UI"
+              fontHeight="8"/>
+          <bendpoints
+              xmi:type="notation:RelativeBendpoints"
+              xmi:id="_mIApnfKPEeaTM5lTgIAE1w"
+              points="[2, -20, -7, 120]$[13, -123, 4, 17]"/>
+          <sourceAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_mIAppPKPEeaTM5lTgIAE1w"
+              id="(0.5,0.5)"/>
+          <targetAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_mIAppfKPEeaTM5lTgIAE1w"
+              id="(0.5,0.5)"/>
+        </edges>
+        <edges
+            xmi:type="notation:Edge"
+            xmi:id="_mIAppvKPEeaTM5lTgIAE1w"
+            type="4001"
+            element="_mDPeZfKPEeaTM5lTgIAE1w"
+            source="_mEIPIfKPEeaTM5lTgIAE1w"
+            target="_mHQbkPKPEeaTM5lTgIAE1w">
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mIApqvKPEeaTM5lTgIAE1w"
+              type="6001">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_mIApq_KPEeaTM5lTgIAE1w"
+                x="-34"
+                y="-19"/>
+          </children>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mIAprPKPEeaTM5lTgIAE1w"
+              type="6002">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_mIAprfKPEeaTM5lTgIAE1w"
+                x="11"
+                y="4"/>
+          </children>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mIAprvKPEeaTM5lTgIAE1w"
+              type="6003">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_mIApr_KPEeaTM5lTgIAE1w"
+                x="11"
+                y="4"/>
+          </children>
+          <styles
+              xmi:type="notation:ConnectorStyle"
+              xmi:id="_mIApp_KPEeaTM5lTgIAE1w"/>
+          <styles
+              xmi:type="notation:FontStyle"
+              xmi:id="_mIApqPKPEeaTM5lTgIAE1w"
+              fontName="Segoe UI"
+              fontHeight="8"/>
+          <bendpoints
+              xmi:type="notation:RelativeBendpoints"
+              xmi:id="_mIApqfKPEeaTM5lTgIAE1w"
+              points="[17, 11, -99, -39]$[86, 38, -30, -12]"/>
+          <sourceAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_mIApsPKPEeaTM5lTgIAE1w"
+              id="(0.5,0.0)"/>
+          <targetAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_mIApsfKPEeaTM5lTgIAE1w"
+              id="(0.5,1.0)"/>
+        </edges>
+        <edges
+            xmi:type="notation:Edge"
+            xmi:id="_mIApvvKPEeaTM5lTgIAE1w"
+            type="4001"
+            element="_mDPea_KPEeaTM5lTgIAE1w"
+            source="_mHj9m_KPEeaTM5lTgIAE1w"
+            target="_mHQbkPKPEeaTM5lTgIAE1w">
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mIApwvKPEeaTM5lTgIAE1w"
+              type="6001">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_mIApw_KPEeaTM5lTgIAE1w"
+                x="-68"
+                y="12"/>
+          </children>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mIApxPKPEeaTM5lTgIAE1w"
+              type="6002">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_mIApxfKPEeaTM5lTgIAE1w"
+                x="-14"
+                y="-10"/>
+          </children>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_mIApxvKPEeaTM5lTgIAE1w"
+              type="6003">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_mIApx_KPEeaTM5lTgIAE1w"
+                x="-46"
+                y="9"/>
+          </children>
+          <styles
+              xmi:type="notation:ConnectorStyle"
+              xmi:id="_mIApv_KPEeaTM5lTgIAE1w"
+              routing="Rectilinear"/>
+          <styles
+              xmi:type="notation:FontStyle"
+              xmi:id="_mIApwPKPEeaTM5lTgIAE1w"
+              fontName="Segoe UI"
+              fontHeight="8"/>
+          <bendpoints
+              xmi:type="notation:RelativeBendpoints"
+              xmi:id="_mIApwfKPEeaTM5lTgIAE1w"
+              points="[-29, -11, 226, -26]$[-152, -11, 103, -26]$[-152, -1, 103, -16]$[-221, -1, 34, -16]"/>
+          <sourceAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_mIApyPKPEeaTM5lTgIAE1w"
+              id="(0.5,0.5)"/>
+          <targetAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_mIApyfKPEeaTM5lTgIAE1w"
+              id="(0.5,0.5)"/>
+        </edges>
+        <edges
+            xmi:type="notation:Edge"
+            xmi:id="_i1mHcFHPEeeDkqQkk8TPzg"
+            type="4001"
+            element="_i1ZTIFHPEeeDkqQkk8TPzg"
+            source="_fzr1oFHPEeeDkqQkk8TPzg"
+            target="_mHQbkPKPEeaTM5lTgIAE1w">
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_i1mHdFHPEeeDkqQkk8TPzg"
+              type="6001">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_i1mHdVHPEeeDkqQkk8TPzg"
+                x="2"
+                y="-10"/>
+          </children>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_i1mHdlHPEeeDkqQkk8TPzg"
+              type="6002">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_i1mHd1HPEeeDkqQkk8TPzg"
+                x="2"
+                y="10"/>
+          </children>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_i1mHeFHPEeeDkqQkk8TPzg"
+              type="6003">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_i1mHeVHPEeeDkqQkk8TPzg"
+                x="1"
+                y="10"/>
+          </children>
+          <styles
+              xmi:type="notation:ConnectorStyle"
+              xmi:id="_i1mHcVHPEeeDkqQkk8TPzg"/>
+          <styles
+              xmi:type="notation:FontStyle"
+              xmi:id="_i1mHclHPEeeDkqQkk8TPzg"
+              fontColor="1345869"
+              fontName="Sans Serif"
+              fontHeight="8"/>
+          <bendpoints
+              xmi:type="notation:RelativeBendpoints"
+              xmi:id="_i1mHc1HPEeeDkqQkk8TPzg"
+              points="[0, 0, 111, 38]$[-112, -38, -1, 0]"/>
+          <sourceAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_i1mugFHPEeeDkqQkk8TPzg"
+              id="(0.0,0.3333333333333333)"/>
+          <targetAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_i1mugVHPEeeDkqQkk8TPzg"
+              id="(1.0,0.8333333333333334)"/>
+        </edges>
+        <edges
+            xmi:type="notation:Edge"
+            xmi:id="_faruIFZhEee55OSk-vC-7w"
+            type="4001"
+            element="_fakZYFZhEee55OSk-vC-7w"
+            source="_mHtHh_KPEeaTM5lTgIAE1w"
+            target="_fzr1oFHPEeeDkqQkk8TPzg">
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_faruJFZhEee55OSk-vC-7w"
+              type="6001">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_faruJVZhEee55OSk-vC-7w"
+                y="-10"/>
+          </children>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_faruJlZhEee55OSk-vC-7w"
+              type="6002">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_faruJ1ZhEee55OSk-vC-7w"
+                y="10"/>
+          </children>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_faruKFZhEee55OSk-vC-7w"
+              type="6003">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_faruKVZhEee55OSk-vC-7w"
+                y="10"/>
+          </children>
+          <styles
+              xmi:type="notation:ConnectorStyle"
+              xmi:id="_faruIVZhEee55OSk-vC-7w"/>
+          <styles
+              xmi:type="notation:FontStyle"
+              xmi:id="_faruIlZhEee55OSk-vC-7w"
+              fontColor="1345869"
+              fontName="Sans Serif"
+              fontHeight="8"/>
+          <bendpoints
+              xmi:type="notation:RelativeBendpoints"
+              xmi:id="_faruI1ZhEee55OSk-vC-7w"
+              points="[375, 254, 375, 254]$[326, 139, 326, 139]"/>
+          <sourceAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_fasVMFZhEee55OSk-vC-7w"
+              id="(0.5,0.5)"/>
+          <targetAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_fasVMVZhEee55OSk-vC-7w"
+              id="(0.5,0.5)"/>
+        </edges>
+        <edges
+            xmi:type="notation:Edge"
+            xmi:id="_fasVMlZhEee55OSk-vC-7w"
+            type="4001"
+            element="_fam1oFZhEee55OSk-vC-7w"
+            source="_mHj9m_KPEeaTM5lTgIAE1w"
+            target="_WQVa0E-EEeeeZ8j7YmiDCQ">
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_fasVNlZhEee55OSk-vC-7w"
+              type="6001">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_fasVN1ZhEee55OSk-vC-7w"
+                y="-10"/>
+          </children>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_fasVOFZhEee55OSk-vC-7w"
+              type="6002">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_fasVOVZhEee55OSk-vC-7w"
+                y="10"/>
+          </children>
+          <children
+              xmi:type="notation:Node"
+              xmi:id="_fasVOlZhEee55OSk-vC-7w"
+              type="6003">
+            <layoutConstraint
+                xmi:type="notation:Bounds"
+                xmi:id="_fasVO1ZhEee55OSk-vC-7w"
+                y="10"/>
+          </children>
+          <styles
+              xmi:type="notation:ConnectorStyle"
+              xmi:id="_fasVM1ZhEee55OSk-vC-7w"/>
+          <styles
+              xmi:type="notation:FontStyle"
+              xmi:id="_fasVNFZhEee55OSk-vC-7w"
+              fontColor="230880"
+              fontName="Sans Serif"
+              fontHeight="8"/>
+          <bendpoints
+              xmi:type="notation:RelativeBendpoints"
+              xmi:id="_fasVNVZhEee55OSk-vC-7w"
+              points="[405, 49, 405, 49]$[645, 49, 645, 49]"/>
+          <sourceAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_fas8QFZhEee55OSk-vC-7w"
+              id="(0.5,0.5)"/>
+          <targetAnchor
+              xmi:type="notation:IdentityAnchor"
+              xmi:id="_fas8QVZhEee55OSk-vC-7w"
+              id="(0.5,0.5)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_NHHCcJRgEeWqz9QSLLDNXg" name="Sensor Unit" outgoingEdges="_2zHKAJRhEeWqz9QSLLDNXg">
-      <target xmi:type="flow:CompositeProcessor" href="Robot.flow#//@elements.1"/>
-      <semanticElements xmi:type="flow:CompositeProcessor" href="Robot.flow#//@elements.1"/>
+    <ownedDiagramElements
+        xmi:type="diagram:DNode"
+        xmi:id="_mDPeRfKPEeaTM5lTgIAE1w"
+        name="Wifi : 4"
+        outgoingEdges="_mDPeYvKPEeaTM5lTgIAE1w"
+        width="4"
+        height="4">
+      <target
+          xmi:type="flow:DataSource"
+          href="Robot.flow#//@elements.2"/>
+      <semanticElements
+          xmi:type="flow:DataSource"
+          href="Robot.flow#//@elements.2"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_NHHCcZRgEeWqz9QSLLDNXg" borderSize="1" borderSizeComputationExpression="1">
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@containerMappings[name='Component']/@style"/>
+      <ownedStyle
+          xmi:type="diagram:WorkspaceImage"
+          xmi:id="_mDPeRvKPEeaTM5lTgIAE1w"
+          showIcon="false"
+          workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/antenna.svg">
+        <description
+            xmi:type="style:WorkspaceImageDescription"
+            href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']/@conditionnalStyles.2/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@containerMappings[name='Component']"/>
+      <actualMapping
+          xmi:type="description_2:NodeMapping"
+          href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_P8JV4JRgEeWqz9QSLLDNXg" name="Robot Central Unit" incomingEdges="_2zHKAJRhEeWqz9QSLLDNXg">
-      <target xmi:type="flow:CompositeProcessor" href="Robot.flow#//@elements.0"/>
-      <semanticElements xmi:type="flow:CompositeProcessor" href="Robot.flow#//@elements.0"/>
+    <ownedDiagramElements
+        xmi:type="diagram:DNodeContainer"
+        xmi:id="_mDPeR_KPEeaTM5lTgIAE1w"
+        name="Robot_Central_Unit">
+      <target
+          xmi:type="flow:CompositeProcessor"
+          href="Robot.flow#//@elements.0"/>
+      <semanticElements
+          xmi:type="flow:CompositeProcessor"
+          href="Robot.flow#//@elements.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_P8J88JRgEeWqz9QSLLDNXg" borderSize="1" borderSizeComputationExpression="1">
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@containerMappings[name='Component']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@containerMappings[name='Component']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2zHKAJRhEeWqz9QSLLDNXg" sourceNode="_NHHCcJRgEeWqz9QSLLDNXg" targetNode="_P8JV4JRgEeWqz9QSLLDNXg">
-      <target xmi:type="flow:CompositeProcessor" href="Robot.flow#//@elements.1"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2zHxEJRhEeWqz9QSLLDNXg" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@edgeMappings[name='Dependency']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2zHxEZRhEeWqz9QSLLDNXg"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer/@edgeMappings[name='Dependency']"/>
-    </ownedDiagramElements>
-    <description xmi:type="description_2:DiagramDescription" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']"/>
-    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_K_mjY5RgEeWqz9QSLLDNXg"/>
-    <activatedLayers xmi:type="description_2:Layer" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Dependencies%20Control']/@defaultLayer"/>
-    <target xmi:type="flow:System" href="Robot.flow#/"/>
-  </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram xmi:id="_mDPeQfKPEeaTM5lTgIAE1w" name="Topography Diagram">
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_mDPeQvKPEeaTM5lTgIAE1w" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_mDPeQ_KPEeaTM5lTgIAE1w">
-        <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_xQ_XAE9_EeeQdthcRQethQ" lineStyle="dash" targetArrow="InputClosedArrow">
-          <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
-          <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_xQ_XAU9_EeeQdthcRQethQ" showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
-            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
-          </centerLabelStyleDescription>
-        </computedStyleDescriptions>
-        <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_xRCaVk9_EeeQdthcRQethQ">
-          <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
-          <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_xRCaV09_EeeQdthcRQethQ" showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
-            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
-          </centerLabelStyleDescription>
-        </computedStyleDescriptions>
-        <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_bju5AE-CEeeeDdTayR14MQ" lineStyle="dash" targetArrow="InputClosedArrow">
-          <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
-          <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_bju5AU-CEeeeDdTayR14MQ" showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
-            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
-          </centerLabelStyleDescription>
-        </computedStyleDescriptions>
-        <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_bjwHIE-CEeeeDdTayR14MQ">
-          <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
-          <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_bjwHIU-CEeeeDdTayR14MQ" showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
-            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
-          </centerLabelStyleDescription>
-        </computedStyleDescriptions>
-        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_N_PNgFHYEeeZptqOXqVxBg" showIcon="false" sizeComputationExpression="aql:self.sizeFromCapacity()" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu_standard.svg">
-          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-        </computedStyleDescriptions>
-        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_6Xjm0FHYEeeWuuwNQX9Okg" showIcon="false" sizeComputationExpression="aql:self.sizeFromCapacity()" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset2_standard.svg">
-          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-        </computedStyleDescriptions>
-        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_6XswwFHYEeeWuuwNQX9Okg" showIcon="false" sizeComputationExpression="aql:self.sizeFromCapacity()" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset_standard.svg">
-          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-        </computedStyleDescriptions>
-      </data>
-    </ownedAnnotationEntries>
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_mDiZMPKPEeaTM5lTgIAE1w" source="GMF_DIAGRAMS">
-      <data xmi:type="notation:Diagram" xmi:id="_mDiZMfKPEeaTM5lTgIAE1w" type="Sirius" element="_mDPeQfKPEeaTM5lTgIAE1w" measurementUnit="Pixel">
-        <children xmi:type="notation:Node" xmi:id="_mDrjIPKPEeaTM5lTgIAE1w" type="2001" element="_mDPeRfKPEeaTM5lTgIAE1w">
-          <children xmi:type="notation:Node" xmi:id="_mD1UIPKPEeaTM5lTgIAE1w" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_mD1UIfKPEeaTM5lTgIAE1w" x="31"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_mEIPHvKPEeaTM5lTgIAE1w" type="3005" element="_mDPeRvKPEeaTM5lTgIAE1w">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_mEIPH_KPEeaTM5lTgIAE1w" fontName="Segoe UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mEIPIPKPEeaTM5lTgIAE1w"/>
-          </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_mDrjIfKPEeaTM5lTgIAE1w" fontName="Segoe UI" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mDrjIvKPEeaTM5lTgIAE1w" x="35" y="215" width="40" height="40"/>
-        </children>
-        <children xmi:type="notation:Node" xmi:id="_mEIPEPKPEeaTM5lTgIAE1w" type="2002" element="_mDPeR_KPEeaTM5lTgIAE1w">
-          <children xmi:type="notation:Node" xmi:id="_mEIPE_KPEeaTM5lTgIAE1w" type="5006"/>
-          <children xmi:type="notation:Node" xmi:id="_mEIPFPKPEeaTM5lTgIAE1w" type="7001">
-            <children xmi:type="notation:Node" xmi:id="_mEIPIfKPEeaTM5lTgIAE1w" type="3007" element="_mDPeSfKPEeaTM5lTgIAE1w">
-              <children xmi:type="notation:Node" xmi:id="_mEIPJPKPEeaTM5lTgIAE1w" type="5003">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_mEIPJfKPEeaTM5lTgIAE1w" x="-5" y="-21"/>
-              </children>
-              <children xmi:type="notation:Node" xmi:id="_6YQKYFHYEeeWuuwNQX9Okg" type="3005" element="_6XnRMFHYEeeWuuwNQX9Okg">
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_6YQKYVHYEeeWuuwNQX9Okg" fontName="Sans Serif"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6YQKYlHYEeeWuuwNQX9Okg"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_mEIPIvKPEeaTM5lTgIAE1w" fontName="Segoe UI" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mEIPI_KPEeaTM5lTgIAE1w" x="19" y="49" width="40" height="40"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_mHQbkPKPEeaTM5lTgIAE1w" type="3007" element="_mDPeS_KPEeaTM5lTgIAE1w">
-              <children xmi:type="notation:Node" xmi:id="_mHQbk_KPEeaTM5lTgIAE1w" type="5003">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_mHQblPKPEeaTM5lTgIAE1w" y="-21"/>
-              </children>
-              <children xmi:type="notation:Node" xmi:id="_27TLwFWQEeeX6M8l3y0qNA" type="3005" element="_27JawFWQEeeX6M8l3y0qNA">
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_27TLwVWQEeeX6M8l3y0qNA" fontName="Sans Serif"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_27TLwlWQEeeX6M8l3y0qNA"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_mHQbkfKPEeaTM5lTgIAE1w" fontName="Segoe UI" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mHQbkvKPEeaTM5lTgIAE1w" x="125" y="39" width="100" height="100"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_UWT-IE-EEeeeZ8j7YmiDCQ" visible="false" type="3007" element="_UV35QE-EEeeeZ8j7YmiDCQ">
-              <children xmi:type="notation:Node" xmi:id="_UWb58E-EEeeeZ8j7YmiDCQ" type="5003">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_UWb58U-EEeeeZ8j7YmiDCQ" y="-21"/>
-              </children>
-              <children xmi:type="notation:Node" xmi:id="_UWqjcE-EEeeeZ8j7YmiDCQ" type="3005" element="_UV35QU-EEeeeZ8j7YmiDCQ">
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_UWqjcU-EEeeeZ8j7YmiDCQ" fontName="Sans Serif"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UWqjck-EEeeeZ8j7YmiDCQ"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_UWT-IU-EEeeeZ8j7YmiDCQ" fontName="Sans Serif" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UWT-Ik-EEeeeZ8j7YmiDCQ" x="195" y="63" width="60" height="60"/>
-            </children>
-            <styles xmi:type="notation:SortingStyle" xmi:id="_mEIPFfKPEeaTM5lTgIAE1w"/>
-            <styles xmi:type="notation:FilteringStyle" xmi:id="_mEIPFvKPEeaTM5lTgIAE1w"/>
-          </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_mEIPEfKPEeaTM5lTgIAE1w" fontName="Segoe UI" fontHeight="10" bold="true" italic="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mEIPEvKPEeaTM5lTgIAE1w" x="20" y="20"/>
-        </children>
-        <children xmi:type="notation:Node" xmi:id="_mEIPF_KPEeaTM5lTgIAE1w" type="2002" element="_mDPeTfKPEeaTM5lTgIAE1w">
-          <children xmi:type="notation:Node" xmi:id="_mEIPGvKPEeaTM5lTgIAE1w" type="5006"/>
-          <children xmi:type="notation:Node" xmi:id="_mEIPG_KPEeaTM5lTgIAE1w" type="7001">
-            <children xmi:type="notation:Node" xmi:id="_mHj9m_KPEeaTM5lTgIAE1w" type="3007" element="_mDPeUfKPEeaTM5lTgIAE1w">
-              <children xmi:type="notation:Node" xmi:id="_mHtHgPKPEeaTM5lTgIAE1w" type="5003">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_mHtHgfKPEeaTM5lTgIAE1w" y="-21"/>
-              </children>
-              <children xmi:type="notation:Node" xmi:id="_OAMPwFHYEeeZptqOXqVxBg" type="3005" element="_N_WiQFHYEeeZptqOXqVxBg">
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_OAMPwVHYEeeZptqOXqVxBg" fontName="Sans Serif"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OAMPwlHYEeeZptqOXqVxBg"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_mHj9nPKPEeaTM5lTgIAE1w" fontName="Segoe UI" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mHj9nfKPEeaTM5lTgIAE1w" x="130" y="29" width="60" height="60"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_mHtHh_KPEeaTM5lTgIAE1w" type="3007" element="_mDPeVfKPEeaTM5lTgIAE1w">
-              <children xmi:type="notation:Node" xmi:id="_mHtHivKPEeaTM5lTgIAE1w" type="5003">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_mHtHi_KPEeaTM5lTgIAE1w" x="-18" y="41"/>
-              </children>
-              <children xmi:type="notation:Node" xmi:id="_mHtHmvKPEeaTM5lTgIAE1w" type="3005" element="_mDPeVvKPEeaTM5lTgIAE1w">
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_mHtHm_KPEeaTM5lTgIAE1w" fontName="Segoe UI"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mHtHnPKPEeaTM5lTgIAE1w"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_mHtHiPKPEeaTM5lTgIAE1w" fontName="Segoe UI" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mHtHifKPEeaTM5lTgIAE1w" x="100" y="234" width="50" height="50"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_mHtHjPKPEeaTM5lTgIAE1w" type="3007" element="_mDPeV_KPEeaTM5lTgIAE1w">
-              <children xmi:type="notation:Node" xmi:id="_mHtHj_KPEeaTM5lTgIAE1w" type="5003">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_mHtHkPKPEeaTM5lTgIAE1w" x="31"/>
-              </children>
-              <children xmi:type="notation:Node" xmi:id="_mHtHnfKPEeaTM5lTgIAE1w" type="3005" element="_mDPeWPKPEeaTM5lTgIAE1w">
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_mHtHnvKPEeaTM5lTgIAE1w" fontName="Segoe UI"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mHtHn_KPEeaTM5lTgIAE1w"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_mHtHjfKPEeaTM5lTgIAE1w" fontName="Segoe UI" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mHtHjvKPEeaTM5lTgIAE1w" x="300" y="214" width="80" height="80"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_WQVa0E-EEeeeZ8j7YmiDCQ" type="3007" element="_WQEVEE-EEeeeZ8j7YmiDCQ">
-              <children xmi:type="notation:Node" xmi:id="_WQWB4E-EEeeeZ8j7YmiDCQ" type="5003">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_WQWB4U-EEeeeZ8j7YmiDCQ" y="-21"/>
-              </children>
-              <children xmi:type="notation:Node" xmi:id="_6YXfIFHYEeeWuuwNQX9Okg" type="3005" element="_6XswwVHYEeeWuuwNQX9Okg">
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_6YXfIVHYEeeWuuwNQX9Okg" fontName="Sans Serif"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6YXfIlHYEeeWuuwNQX9Okg"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_WQVa0U-EEeeeZ8j7YmiDCQ" fontName="Sans Serif" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WQVa0k-EEeeeZ8j7YmiDCQ" x="370" y="29" width="60" height="60"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_Xh6-gE-EEeeeZ8j7YmiDCQ" visible="false" type="3007" element="_Xhx0kE-EEeeeZ8j7YmiDCQ">
-              <children xmi:type="notation:Node" xmi:id="_Xh7lkE-EEeeeZ8j7YmiDCQ" type="5003">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_Xh7lkU-EEeeeZ8j7YmiDCQ" y="-21"/>
-              </children>
-              <children xmi:type="notation:Node" xmi:id="_Xh8MoE-EEeeeZ8j7YmiDCQ" type="3005" element="_Xhx0kU-EEeeeZ8j7YmiDCQ">
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_Xh8MoU-EEeeeZ8j7YmiDCQ" fontName="Sans Serif"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xh8Mok-EEeeeZ8j7YmiDCQ"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_Xh6-gU-EEeeeZ8j7YmiDCQ" fontName="Sans Serif" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xh6-gk-EEeeeZ8j7YmiDCQ" x="465" y="249" width="60" height="60"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_fzr1oFHPEeeDkqQkk8TPzg" type="3007" element="_fzXFgFHPEeeDkqQkk8TPzg">
-              <children xmi:type="notation:Node" xmi:id="_fzzxcFHPEeeDkqQkk8TPzg" type="5003">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_fzzxcVHPEeeDkqQkk8TPzg" y="-21"/>
-              </children>
-              <children xmi:type="notation:Node" xmi:id="_27Ty0FWQEeeX6M8l3y0qNA" type="3005" element="_27KB0FWQEeeX6M8l3y0qNA">
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_27Ty0VWQEeeX6M8l3y0qNA" fontName="Sans Serif"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_27Ty0lWQEeeX6M8l3y0qNA"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_fzr1oVHPEeeDkqQkk8TPzg" fontName="Sans Serif" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fzr1olHPEeeDkqQkk8TPzg" x="51" y="119" width="50" height="50"/>
-            </children>
-            <styles xmi:type="notation:SortingStyle" xmi:id="_mEIPHPKPEeaTM5lTgIAE1w"/>
-            <styles xmi:type="notation:FilteringStyle" xmi:id="_mEIPHfKPEeaTM5lTgIAE1w"/>
-          </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_mEIPGPKPEeaTM5lTgIAE1w" fontName="Segoe UI" fontHeight="10" bold="true" italic="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mEIPGfKPEeaTM5lTgIAE1w" x="275" y="20" width="553" height="338"/>
-        </children>
-        <styles xmi:type="notation:DiagramStyle" xmi:id="_mDiZMvKPEeaTM5lTgIAE1w"/>
-        <edges xmi:type="notation:Edge" xmi:id="_mIApjvKPEeaTM5lTgIAE1w" type="4001" element="_mDPeX_KPEeaTM5lTgIAE1w" source="_mHtHjPKPEeaTM5lTgIAE1w" target="_mHj9m_KPEeaTM5lTgIAE1w">
-          <children xmi:type="notation:Node" xmi:id="_mIApkvKPEeaTM5lTgIAE1w" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mIApk_KPEeaTM5lTgIAE1w" x="-27" y="-32"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_mIAplPKPEeaTM5lTgIAE1w" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mIAplfKPEeaTM5lTgIAE1w" x="-28" y="-6"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_mIAplvKPEeaTM5lTgIAE1w" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mIApl_KPEeaTM5lTgIAE1w" x="-76" y="72"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mIApj_KPEeaTM5lTgIAE1w"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_mIApkPKPEeaTM5lTgIAE1w" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mIApkfKPEeaTM5lTgIAE1w" points="[-56, 44, 165, 136]$[-91, -62, 130, 30]$[-191, -62, 30, 30]$[-221, -99, 0, -7]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mIApmPKPEeaTM5lTgIAE1w" id="(1.0204081632653061,-0.40191387559808606)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mIApmfKPEeaTM5lTgIAE1w" id="(0.5,1.0)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_mIApmvKPEeaTM5lTgIAE1w" type="4001" element="_mDPeYvKPEeaTM5lTgIAE1w" source="_mDrjIPKPEeaTM5lTgIAE1w" target="_mEIPIfKPEeaTM5lTgIAE1w">
-          <children xmi:type="notation:Node" xmi:id="_mIApnvKPEeaTM5lTgIAE1w" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1l0agE-FEeeeZ8j7YmiDCQ" x="-3" y="-11"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_mIApoPKPEeaTM5lTgIAE1w" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1l0agU-FEeeeZ8j7YmiDCQ" x="4" y="9"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_mIApovKPEeaTM5lTgIAE1w" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1l0agk-FEeeeZ8j7YmiDCQ" x="4" y="10"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mIApm_KPEeaTM5lTgIAE1w"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_mIApnPKPEeaTM5lTgIAE1w" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mIApnfKPEeaTM5lTgIAE1w" points="[2, -20, -7, 120]$[13, -123, 4, 17]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mIAppPKPEeaTM5lTgIAE1w" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mIAppfKPEeaTM5lTgIAE1w" id="(0.5,0.5)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_mIAppvKPEeaTM5lTgIAE1w" type="4001" element="_mDPeZfKPEeaTM5lTgIAE1w" source="_mEIPIfKPEeaTM5lTgIAE1w" target="_mHQbkPKPEeaTM5lTgIAE1w">
-          <children xmi:type="notation:Node" xmi:id="_mIApqvKPEeaTM5lTgIAE1w" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mIApq_KPEeaTM5lTgIAE1w" x="-34" y="-19"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_mIAprPKPEeaTM5lTgIAE1w" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mIAprfKPEeaTM5lTgIAE1w" x="11" y="4"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_mIAprvKPEeaTM5lTgIAE1w" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mIApr_KPEeaTM5lTgIAE1w" x="11" y="4"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mIApp_KPEeaTM5lTgIAE1w"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_mIApqPKPEeaTM5lTgIAE1w" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mIApqfKPEeaTM5lTgIAE1w" points="[17, 11, -99, -39]$[86, 38, -30, -12]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mIApsPKPEeaTM5lTgIAE1w" id="(0.5,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mIApsfKPEeaTM5lTgIAE1w" id="(0.5,1.0)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_mIApvvKPEeaTM5lTgIAE1w" type="4001" element="_mDPea_KPEeaTM5lTgIAE1w" source="_mHj9m_KPEeaTM5lTgIAE1w" target="_mHQbkPKPEeaTM5lTgIAE1w">
-          <children xmi:type="notation:Node" xmi:id="_mIApwvKPEeaTM5lTgIAE1w" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mIApw_KPEeaTM5lTgIAE1w" x="-68" y="12"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_mIApxPKPEeaTM5lTgIAE1w" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mIApxfKPEeaTM5lTgIAE1w" x="-14" y="-10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_mIApxvKPEeaTM5lTgIAE1w" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mIApx_KPEeaTM5lTgIAE1w" x="-46" y="9"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mIApv_KPEeaTM5lTgIAE1w" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_mIApwPKPEeaTM5lTgIAE1w" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mIApwfKPEeaTM5lTgIAE1w" points="[-29, -11, 226, -26]$[-152, -11, 103, -26]$[-152, -1, 103, -16]$[-221, -1, 34, -16]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mIApyPKPEeaTM5lTgIAE1w" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mIApyfKPEeaTM5lTgIAE1w" id="(0.5,0.5)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_hF8ScE-EEeeeZ8j7YmiDCQ" type="4001" element="_hFto8E-EEeeeZ8j7YmiDCQ" source="_mHj9m_KPEeaTM5lTgIAE1w" target="_WQVa0E-EEeeeZ8j7YmiDCQ">
-          <children xmi:type="notation:Node" xmi:id="_hF9gkE-EEeeeZ8j7YmiDCQ" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hF9gkU-EEeeeZ8j7YmiDCQ" x="58" y="-11"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_hF-HoE-EEeeeZ8j7YmiDCQ" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hF-HoU-EEeeeZ8j7YmiDCQ" x="192" y="9"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_hF-usE-EEeeeZ8j7YmiDCQ" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hF-usU-EEeeeZ8j7YmiDCQ" x="1" y="6"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_hF8ScU-EEeeeZ8j7YmiDCQ"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_hF8Sck-EEeeeZ8j7YmiDCQ" fontColor="230880" fontName="Sans Serif" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hF8Sc0-EEeeeZ8j7YmiDCQ" points="[-7, 0, -187, -12]$[235, 17, 55, 5]$[180, 12, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hF_VwE-EEeeeZ8j7YmiDCQ" id="(1.0,0.35)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hF_VwU-EEeeeZ8j7YmiDCQ" id="(0.0,0.55)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_i1mHcFHPEeeDkqQkk8TPzg" type="4001" element="_i1ZTIFHPEeeDkqQkk8TPzg" source="_fzr1oFHPEeeDkqQkk8TPzg" target="_mHQbkPKPEeaTM5lTgIAE1w">
-          <children xmi:type="notation:Node" xmi:id="_i1mHdFHPEeeDkqQkk8TPzg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i1mHdVHPEeeDkqQkk8TPzg" x="2" y="-10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_i1mHdlHPEeeDkqQkk8TPzg" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i1mHd1HPEeeDkqQkk8TPzg" x="2" y="10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_i1mHeFHPEeeDkqQkk8TPzg" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i1mHeVHPEeeDkqQkk8TPzg" x="1" y="10"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_i1mHcVHPEeeDkqQkk8TPzg"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_i1mHclHPEeeDkqQkk8TPzg" fontColor="1345869" fontName="Sans Serif" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_i1mHc1HPEeeDkqQkk8TPzg" points="[0, 0, 111, 38]$[-112, -38, -1, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_i1mugFHPEeeDkqQkk8TPzg" id="(0.0,0.3333333333333333)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_i1mugVHPEeeDkqQkk8TPzg" id="(1.0,0.8333333333333334)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_mCaowFHPEeeDkqQkk8TPzg" type="4001" element="_mCSF4FHPEeeDkqQkk8TPzg" source="_mHtHh_KPEeaTM5lTgIAE1w" target="_fzr1oFHPEeeDkqQkk8TPzg">
-          <children xmi:type="notation:Node" xmi:id="_mCaoxFHPEeeDkqQkk8TPzg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mCaoxVHPEeeDkqQkk8TPzg" x="14"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_mCaoxlHPEeeDkqQkk8TPzg" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mCaox1HPEeeDkqQkk8TPzg" x="2" y="-5"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_mCaoyFHPEeeDkqQkk8TPzg" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mCaoyVHPEeeDkqQkk8TPzg" x="-4" y="-1"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mCaowVHPEeeDkqQkk8TPzg"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_mCaowlHPEeeDkqQkk8TPzg" fontColor="1345869" fontName="Sans Serif" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mCaow1HPEeeDkqQkk8TPzg" points="[0, 13, 45, 78]$[-38, -10, 7, 55]$[-45, -65, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mCaoylHPEeeDkqQkk8TPzg" id="(0.6666666666666666,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mCaoy1HPEeeDkqQkk8TPzg" id="(0.75,1.0)"/>
-        </edges>
-      </data>
-    </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mDPeRfKPEeaTM5lTgIAE1w" name="Wifi : 4" outgoingEdges="_mDPeYvKPEeaTM5lTgIAE1w" width="4" height="4">
-      <target xmi:type="flow:DataSource" href="Robot.flow#//@elements.2"/>
-      <semanticElements xmi:type="flow:DataSource" href="Robot.flow#//@elements.2"/>
-      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_mDPeRvKPEeaTM5lTgIAE1w" showIcon="false" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/antenna.svg">
-        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']/@conditionnalStyles.2/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_mDPeR_KPEeaTM5lTgIAE1w" name="Robot_Central_Unit">
-      <target xmi:type="flow:CompositeProcessor" href="Robot.flow#//@elements.0"/>
-      <semanticElements xmi:type="flow:CompositeProcessor" href="Robot.flow#//@elements.0"/>
-      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_kiHeYE-EEeeeZ8j7YmiDCQ" labelSize="10" borderSize="1" borderSizeComputationExpression="1" borderColor="136,136,136" backgroundStyle="Liquid" foregroundColor="243,243,243">
+      <ownedStyle
+          xmi:type="diagram:FlatContainerStyle"
+          xmi:id="_kiHeYE-EEeeeZ8j7YmiDCQ"
+          labelSize="10"
+          borderSize="1"
+          borderSizeComputationExpression="1"
+          borderColor="136,136,136"
+          backgroundStyle="Liquid"
+          foregroundColor="243,243,243">
         <labelFormat>italic</labelFormat>
         <labelFormat>bold</labelFormat>
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style"/>
+        <description
+            xmi:type="style:FlatContainerStyleDescription"
+            href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mDPeSfKPEeaTM5lTgIAE1w" name="DSP" outgoingEdges="_mDPeZfKPEeaTM5lTgIAE1w" incomingEdges="_mDPeYvKPEeaTM5lTgIAE1w" width="4" height="4">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.0"/>
+      <actualMapping
+          xmi:type="description_2:ContainerMapping"
+          href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']"/>
+      <ownedDiagramElements
+          xmi:type="diagram:DNode"
+          xmi:id="_mDPeSfKPEeaTM5lTgIAE1w"
+          name="DSP"
+          outgoingEdges="_mDPeZfKPEeaTM5lTgIAE1w"
+          incomingEdges="_mDPeYvKPEeaTM5lTgIAE1w"
+          width="4"
+          height="4">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6XnRMFHYEeeWuuwNQX9Okg" showIcon="false" description="_6Xjm0FHYEeeWuuwNQX9Okg" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset2_standard.svg"/>
-        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']"/>
+        <ownedStyle
+            xmi:type="diagram:WorkspaceImage"
+            xmi:id="_6XnRMFHYEeeWuuwNQX9Okg"
+            showIcon="false"
+            description="_6Xjm0FHYEeeWuuwNQX9Okg"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset2_standard.svg"/>
+        <actualMapping
+            xmi:type="description_2:NodeMapping"
+            href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mDPeS_KPEeaTM5lTgIAE1w" name="Motion_Engine" incomingEdges="_mDPeZfKPEeaTM5lTgIAE1w _mDPea_KPEeaTM5lTgIAE1w _i1ZTIFHPEeeDkqQkk8TPzg" width="7" height="7">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.0/@elements.1"/>
+      <ownedDiagramElements
+          xmi:type="diagram:DNode"
+          xmi:id="_mDPeS_KPEeaTM5lTgIAE1w"
+          name="Motion_Engine"
+          incomingEdges="_mDPeZfKPEeaTM5lTgIAE1w _mDPea_KPEeaTM5lTgIAE1w _i1ZTIFHPEeeDkqQkk8TPzg"
+          width="7"
+          height="7">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.1"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.0/@elements.1"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_27JawFWQEeeX6M8l3y0qNA" showIcon="false" description="_6XswwFHYEeeWuuwNQX9Okg" borderColor="30,30,30" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset_standard.svg">
+        <ownedStyle
+            xmi:type="diagram:WorkspaceImage"
+            xmi:id="_joZEsVZhEee55OSk-vC-7w"
+            showIcon="false"
+            description="_joZEsFZhEee55OSk-vC-7w"
+            borderColor="30,30,30"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset_high.svg">
           <customFeatures>borderColor</customFeatures>
         </ownedStyle>
-        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']"/>
+        <actualMapping
+            xmi:type="description_2:NodeMapping"
+            href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_UV35QE-EEeeeZ8j7YmiDCQ" name="1000" visible="false" width="6" height="6" resizeKind="NSEW">
-        <target xmi:type="flow:Fan" href="Robot.flow#//@elements.0/@elements.2"/>
-        <semanticElements xmi:type="flow:Fan" href="Robot.flow#//@elements.0/@elements.2"/>
+      <ownedDiagramElements
+          xmi:type="diagram:DNode"
+          xmi:id="_UV35QE-EEeeeZ8j7YmiDCQ"
+          name="1000"
+          visible="false"
+          width="6"
+          height="6"
+          resizeKind="NSEW">
+        <target
+            xmi:type="flow:Fan"
+            href="Robot.flow#//@elements.0/@elements.2"/>
+        <semanticElements
+            xmi:type="flow:Fan"
+            href="Robot.flow#//@elements.0/@elements.2"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_UV35QU-EEeeeZ8j7YmiDCQ" showIcon="false" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/fan.svg">
-          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@containerMappings[name='importSystem']/@subNodeMappings[name='Fan']/@style"/>
+        <ownedStyle
+            xmi:type="diagram:WorkspaceImage"
+            xmi:id="_UV35QU-EEeeeZ8j7YmiDCQ"
+            showIcon="false"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/fan.svg">
+          <description
+              xmi:type="style:WorkspaceImageDescription"
+              href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@containerMappings[name='importSystem']/@subNodeMappings[name='Fan']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@containerMappings[name='importSystem']/@subNodeMappings[name='Fan']"/>
+        <actualMapping
+            xmi:type="description_2:NodeMapping"
+            href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@containerMappings[name='importSystem']/@subNodeMappings[name='Fan']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_mDPeTfKPEeaTM5lTgIAE1w" name="MySubSystem">
-      <target xmi:type="flow:CompositeProcessor" href="Robot.flow#//@elements.1"/>
-      <semanticElements xmi:type="flow:CompositeProcessor" href="Robot.flow#//@elements.1"/>
+    <ownedDiagramElements
+        xmi:type="diagram:DNodeContainer"
+        xmi:id="_mDPeTfKPEeaTM5lTgIAE1w"
+        name="MySubSystem">
+      <target
+          xmi:type="flow:CompositeProcessor"
+          href="Robot.flow#//@elements.1"/>
+      <semanticElements
+          xmi:type="flow:CompositeProcessor"
+          href="Robot.flow#//@elements.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_kiHeYU-EEeeeZ8j7YmiDCQ" labelSize="10" borderSize="1" borderSizeComputationExpression="1" borderColor="136,136,136" backgroundStyle="Liquid" foregroundColor="243,243,243">
+      <ownedStyle
+          xmi:type="diagram:FlatContainerStyle"
+          xmi:id="_kiHeYU-EEeeeZ8j7YmiDCQ"
+          labelSize="10"
+          borderSize="1"
+          borderSizeComputationExpression="1"
+          borderColor="136,136,136"
+          backgroundStyle="Liquid"
+          foregroundColor="243,243,243">
         <labelFormat>italic</labelFormat>
         <labelFormat>bold</labelFormat>
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style"/>
+        <description
+            xmi:type="style:FlatContainerStyleDescription"
+            href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mDPeUfKPEeaTM5lTgIAE1w" name="Radar_Capture" outgoingEdges="_mDPea_KPEeaTM5lTgIAE1w _hFto8E-EEeeeZ8j7YmiDCQ" incomingEdges="_mDPeX_KPEeaTM5lTgIAE1w" width="6" height="6">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.0"/>
+      <actualMapping
+          xmi:type="description_2:ContainerMapping"
+          href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']"/>
+      <ownedDiagramElements
+          xmi:type="diagram:DNode"
+          xmi:id="_mDPeUfKPEeaTM5lTgIAE1w"
+          name="Radar_Capture"
+          outgoingEdges="_mDPea_KPEeaTM5lTgIAE1w _fam1oFZhEee55OSk-vC-7w"
+          incomingEdges="_mDPeX_KPEeaTM5lTgIAE1w"
+          width="6"
+          height="6">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_N_WiQFHYEeeZptqOXqVxBg" showIcon="false" description="_N_PNgFHYEeeZptqOXqVxBg" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu_standard.svg"/>
-        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']"/>
+        <ownedStyle
+            xmi:type="diagram:WorkspaceImage"
+            xmi:id="_N_WiQFHYEeeZptqOXqVxBg"
+            showIcon="false"
+            description="_N_PNgFHYEeeZptqOXqVxBg"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu_standard.svg"/>
+        <actualMapping
+            xmi:type="description_2:NodeMapping"
+            href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_WQEVEE-EEeeeZ8j7YmiDCQ" name="Engine" incomingEdges="_hFto8E-EEeeeZ8j7YmiDCQ" width="6" height="6">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.3"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.3"/>
+      <ownedDiagramElements
+          xmi:type="diagram:DNode"
+          xmi:id="_WQEVEE-EEeeeZ8j7YmiDCQ"
+          name="Engine"
+          incomingEdges="_fam1oFZhEee55OSk-vC-7w"
+          width="6"
+          height="6">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.3"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.3"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6XswwVHYEeeWuuwNQX9Okg" showIcon="false" description="_6XswwFHYEeeWuuwNQX9Okg" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset_standard.svg"/>
-        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']"/>
+        <ownedStyle
+            xmi:type="diagram:WorkspaceImage"
+            xmi:id="_6XswwVHYEeeWuuwNQX9Okg"
+            showIcon="false"
+            description="_6XswwFHYEeeWuuwNQX9Okg"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/chipset_standard.svg"/>
+        <actualMapping
+            xmi:type="description_2:NodeMapping"
+            href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_fzXFgFHPEeeDkqQkk8TPzg" name="Processor4" outgoingEdges="_i1ZTIFHPEeeDkqQkk8TPzg" incomingEdges="_mCSF4FHPEeeDkqQkk8TPzg" width="5" height="5">
-        <target xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.5"/>
-        <semanticElements xmi:type="flow:Processor" href="Robot.flow#//@elements.1/@elements.5"/>
+      <ownedDiagramElements
+          xmi:type="diagram:DNode"
+          xmi:id="_fzXFgFHPEeeDkqQkk8TPzg"
+          name="Processor4"
+          outgoingEdges="_i1ZTIFHPEeeDkqQkk8TPzg"
+          incomingEdges="_fakZYFZhEee55OSk-vC-7w"
+          width="5"
+          height="5">
+        <target
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.5"/>
+        <semanticElements
+            xmi:type="flow:Processor"
+            href="Robot.flow#//@elements.1/@elements.5"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_27KB0FWQEeeX6M8l3y0qNA" showIcon="false" description="_N_PNgFHYEeeZptqOXqVxBg" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu_standard.svg"/>
-        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']"/>
+        <ownedStyle
+            xmi:type="diagram:WorkspaceImage"
+            xmi:id="_l9mokVZhEee55OSk-vC-7w"
+            showIcon="false"
+            description="_l9mokFZhEee55OSk-vC-7w"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu_high.svg"/>
+        <actualMapping
+            xmi:type="description_2:NodeMapping"
+            href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mDPeVfKPEeaTM5lTgIAE1w" name="Back_Camera : 5" outgoingEdges="_mCSF4FHPEeeDkqQkk8TPzg" width="5" height="5">
-        <target xmi:type="flow:DataSource" href="Robot.flow#//@elements.1/@elements.1"/>
-        <semanticElements xmi:type="flow:DataSource" href="Robot.flow#//@elements.1/@elements.1"/>
+      <ownedDiagramElements
+          xmi:type="diagram:DNode"
+          xmi:id="_mDPeVfKPEeaTM5lTgIAE1w"
+          name="Back_Camera : 10"
+          outgoingEdges="_fakZYFZhEee55OSk-vC-7w"
+          width="10"
+          height="10">
+        <target
+            xmi:type="flow:DataSource"
+            href="Robot.flow#//@elements.1/@elements.1"/>
+        <semanticElements
+            xmi:type="flow:DataSource"
+            href="Robot.flow#//@elements.1/@elements.1"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_mDPeVvKPEeaTM5lTgIAE1w" showIcon="false" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/camera.svg">
-          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']/@conditionnalStyles.0/@style"/>
+        <ownedStyle
+            xmi:type="diagram:WorkspaceImage"
+            xmi:id="_mDPeVvKPEeaTM5lTgIAE1w"
+            showIcon="false"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/camera.svg">
+          <description
+              xmi:type="style:WorkspaceImageDescription"
+              href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']/@conditionnalStyles.0/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']"/>
+        <actualMapping
+            xmi:type="description_2:NodeMapping"
+            href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mDPeV_KPEeaTM5lTgIAE1w" name="Radar : 8" outgoingEdges="_mDPeX_KPEeaTM5lTgIAE1w" width="8" height="8">
-        <target xmi:type="flow:DataSource" href="Robot.flow#//@elements.1/@elements.2"/>
-        <semanticElements xmi:type="flow:DataSource" href="Robot.flow#//@elements.1/@elements.2"/>
+      <ownedDiagramElements
+          xmi:type="diagram:DNode"
+          xmi:id="_mDPeV_KPEeaTM5lTgIAE1w"
+          name="Radar : 8"
+          outgoingEdges="_mDPeX_KPEeaTM5lTgIAE1w"
+          width="8"
+          height="8">
+        <target
+            xmi:type="flow:DataSource"
+            href="Robot.flow#//@elements.1/@elements.2"/>
+        <semanticElements
+            xmi:type="flow:DataSource"
+            href="Robot.flow#//@elements.1/@elements.2"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_mDPeWPKPEeaTM5lTgIAE1w" showIcon="false" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/radar.svg">
-          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']/@conditionnalStyles.1/@style"/>
+        <ownedStyle
+            xmi:type="diagram:WorkspaceImage"
+            xmi:id="_mDPeWPKPEeaTM5lTgIAE1w"
+            showIcon="false"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/radar.svg">
+          <description
+              xmi:type="style:WorkspaceImageDescription"
+              href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']/@conditionnalStyles.1/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']"/>
+        <actualMapping
+            xmi:type="description_2:NodeMapping"
+            href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_Xhx0kE-EEeeeZ8j7YmiDCQ" name="200" visible="false" width="6" height="6" resizeKind="NSEW">
-        <target xmi:type="flow:Fan" href="Robot.flow#//@elements.1/@elements.4"/>
-        <semanticElements xmi:type="flow:Fan" href="Robot.flow#//@elements.1/@elements.4"/>
-        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_Xhx0kU-EEeeeZ8j7YmiDCQ" showIcon="false" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/fan.svg">
-          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@containerMappings[name='importSystem']/@subNodeMappings[name='Fan']/@style"/>
+      <ownedDiagramElements
+          xmi:type="diagram:DNode"
+          xmi:id="_Xhx0kE-EEeeeZ8j7YmiDCQ"
+          name="200"
+          visible="false"
+          width="6"
+          height="6"
+          resizeKind="NSEW">
+        <target
+            xmi:type="flow:Fan"
+            href="Robot.flow#//@elements.1/@elements.4"/>
+        <semanticElements
+            xmi:type="flow:Fan"
+            href="Robot.flow#//@elements.1/@elements.4"/>
+        <ownedStyle
+            xmi:type="diagram:WorkspaceImage"
+            xmi:id="_Xhx0kU-EEeeeZ8j7YmiDCQ"
+            showIcon="false"
+            workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/fan.svg">
+          <description
+              xmi:type="style:WorkspaceImageDescription"
+              href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@containerMappings[name='importSystem']/@subNodeMappings[name='Fan']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@containerMappings[name='importSystem']/@subNodeMappings[name='Fan']"/>
+        <actualMapping
+            xmi:type="description_2:NodeMapping"
+            href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@containerMappings[name='importSystem']/@subNodeMappings[name='Fan']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_mDPeX_KPEeaTM5lTgIAE1w" name="8/6" sourceNode="_mDPeV_KPEeaTM5lTgIAE1w" targetNode="_mDPeUfKPEeaTM5lTgIAE1w">
-      <target xmi:type="flow:DataFlow" href="Robot.flow#//@elements.1/@elements.2/@outgoingFlows.0"/>
-      <semanticElements xmi:type="flow:DataFlow" href="Robot.flow#//@elements.1/@elements.2/@outgoingFlows.0"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_bju5Ak-CEeeeDdTayR14MQ" description="_bju5AE-CEeeeDdTayR14MQ" lineStyle="dash" targetArrow="InputClosedArrow" strokeColor="224,133,3">
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_bju5A0-CEeeeDdTayR14MQ" showIcon="false" labelColor="224,133,3"/>
+    <ownedDiagramElements
+        xmi:type="diagram:DEdge"
+        xmi:id="_mDPeX_KPEeaTM5lTgIAE1w"
+        name="8/6"
+        sourceNode="_mDPeV_KPEeaTM5lTgIAE1w"
+        targetNode="_mDPeUfKPEeaTM5lTgIAE1w">
+      <target
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.1/@elements.2/@outgoingFlows.0"/>
+      <semanticElements
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.1/@elements.2/@outgoingFlows.0"/>
+      <ownedStyle
+          xmi:type="diagram:EdgeStyle"
+          xmi:id="_bju5Ak-CEeeeDdTayR14MQ"
+          description="_bju5AE-CEeeeDdTayR14MQ"
+          lineStyle="dash"
+          targetArrow="InputClosedArrow"
+          strokeColor="224,133,3">
+        <centerLabelStyle
+            xmi:type="diagram:CenterLabelStyle"
+            xmi:id="_bju5A0-CEeeeDdTayR14MQ"
+            showIcon="false"
+            labelColor="224,133,3"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Data%20Source%20to%20Processor']"/>
+      <actualMapping
+          xmi:type="description_2:EdgeMapping"
+          href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Data%20Source%20to%20Processor']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_mDPeYvKPEeaTM5lTgIAE1w" name="4/4" sourceNode="_mDPeRfKPEeaTM5lTgIAE1w" targetNode="_mDPeSfKPEeaTM5lTgIAE1w">
-      <target xmi:type="flow:DataFlow" href="Robot.flow#//@elements.2/@outgoingFlows.0"/>
-      <semanticElements xmi:type="flow:DataFlow" href="Robot.flow#//@elements.2/@outgoingFlows.0"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_xRBzQk9_EeeQdthcRQethQ" description="_xQ_XAE9_EeeQdthcRQethQ" lineStyle="dash" targetArrow="InputClosedArrow" strokeColor="77,137,20">
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_xRBzQ09_EeeQdthcRQethQ" showIcon="false" labelColor="77,137,20"/>
+    <ownedDiagramElements
+        xmi:type="diagram:DEdge"
+        xmi:id="_mDPeYvKPEeaTM5lTgIAE1w"
+        name="4/4"
+        sourceNode="_mDPeRfKPEeaTM5lTgIAE1w"
+        targetNode="_mDPeSfKPEeaTM5lTgIAE1w">
+      <target
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.2/@outgoingFlows.0"/>
+      <semanticElements
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.2/@outgoingFlows.0"/>
+      <ownedStyle
+          xmi:type="diagram:EdgeStyle"
+          xmi:id="_xRBzQk9_EeeQdthcRQethQ"
+          description="_xQ_XAE9_EeeQdthcRQethQ"
+          lineStyle="dash"
+          targetArrow="InputClosedArrow"
+          strokeColor="77,137,20">
+        <centerLabelStyle
+            xmi:type="diagram:CenterLabelStyle"
+            xmi:id="_xRBzQ09_EeeQdthcRQethQ"
+            showIcon="false"
+            labelColor="77,137,20"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Data%20Source%20to%20Processor']"/>
+      <actualMapping
+          xmi:type="description_2:EdgeMapping"
+          href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Data%20Source%20to%20Processor']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_mDPeZfKPEeaTM5lTgIAE1w" name="4/10" sourceNode="_mDPeSfKPEeaTM5lTgIAE1w" targetNode="_mDPeS_KPEeaTM5lTgIAE1w">
-      <target xmi:type="flow:DataFlow" href="Robot.flow#//@elements.0/@elements.0/@outgoingFlows.0"/>
-      <semanticElements xmi:type="flow:DataFlow" href="Robot.flow#//@elements.0/@elements.0/@outgoingFlows.0"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_PpAzcE-CEeeeDdTayR14MQ" description="_xRCaVk9_EeeQdthcRQethQ" strokeColor="77,137,20">
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_PpAzcU-CEeeeDdTayR14MQ" showIcon="false" labelColor="77,137,20"/>
+    <ownedDiagramElements
+        xmi:type="diagram:DEdge"
+        xmi:id="_mDPeZfKPEeaTM5lTgIAE1w"
+        name="4/10"
+        sourceNode="_mDPeSfKPEeaTM5lTgIAE1w"
+        targetNode="_mDPeS_KPEeaTM5lTgIAE1w">
+      <target
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.0/@elements.0/@outgoingFlows.0"/>
+      <semanticElements
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.0/@elements.0/@outgoingFlows.0"/>
+      <ownedStyle
+          xmi:type="diagram:EdgeStyle"
+          xmi:id="_PpAzcE-CEeeeDdTayR14MQ"
+          description="_xRCaVk9_EeeQdthcRQethQ"
+          strokeColor="77,137,20">
+        <centerLabelStyle
+            xmi:type="diagram:CenterLabelStyle"
+            xmi:id="_PpAzcU-CEeeeDdTayR14MQ"
+            showIcon="false"
+            labelColor="77,137,20"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Processor%20%20to%20Processor']"/>
+      <actualMapping
+          xmi:type="description_2:EdgeMapping"
+          href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Processor%20%20to%20Processor']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_mDPea_KPEeaTM5lTgIAE1w" name="8/6" sourceNode="_mDPeUfKPEeaTM5lTgIAE1w" targetNode="_mDPeS_KPEeaTM5lTgIAE1w">
-      <target xmi:type="flow:DataFlow" href="Robot.flow#//@elements.1/@elements.0/@outgoingFlows.0"/>
-      <semanticElements xmi:type="flow:DataFlow" href="Robot.flow#//@elements.1/@elements.0/@outgoingFlows.0"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_bjwHIk-CEeeeDdTayR14MQ" description="_bjwHIE-CEeeeDdTayR14MQ" routingStyle="manhattan" strokeColor="224,133,3">
+    <ownedDiagramElements
+        xmi:type="diagram:DEdge"
+        xmi:id="_mDPea_KPEeaTM5lTgIAE1w"
+        name="8/6"
+        sourceNode="_mDPeUfKPEeaTM5lTgIAE1w"
+        targetNode="_mDPeS_KPEeaTM5lTgIAE1w">
+      <target
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.1/@elements.0/@outgoingFlows.0"/>
+      <semanticElements
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.1/@elements.0/@outgoingFlows.0"/>
+      <ownedStyle
+          xmi:type="diagram:EdgeStyle"
+          xmi:id="_bjwHIk-CEeeeDdTayR14MQ"
+          description="_bjwHIE-CEeeeDdTayR14MQ"
+          routingStyle="manhattan"
+          strokeColor="224,133,3">
         <customFeatures>routingStyle</customFeatures>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_bjwHI0-CEeeeDdTayR14MQ" showIcon="false" labelColor="224,133,3"/>
+        <centerLabelStyle
+            xmi:type="diagram:CenterLabelStyle"
+            xmi:id="_bjwHI0-CEeeeDdTayR14MQ"
+            showIcon="false"
+            labelColor="224,133,3"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Processor%20%20to%20Processor']"/>
+      <actualMapping
+          xmi:type="description_2:EdgeMapping"
+          href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Processor%20%20to%20Processor']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_hFto8E-EEeeeZ8j7YmiDCQ" name="8/6" sourceNode="_mDPeUfKPEeaTM5lTgIAE1w" targetNode="_WQEVEE-EEeeeZ8j7YmiDCQ">
-      <target xmi:type="flow:DataFlow" href="Robot.flow#//@elements.1/@elements.0/@outgoingFlows.3"/>
-      <semanticElements xmi:type="flow:DataFlow" href="Robot.flow#//@elements.1/@elements.0/@outgoingFlows.3"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_hF4BAE-EEeeeZ8j7YmiDCQ" description="_bjwHIE-CEeeeDdTayR14MQ" strokeColor="224,133,3">
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_hF4BAU-EEeeeZ8j7YmiDCQ" showIcon="false" labelColor="224,133,3"/>
+    <ownedDiagramElements
+        xmi:type="diagram:DEdge"
+        xmi:id="_i1ZTIFHPEeeDkqQkk8TPzg"
+        name="10/6"
+        sourceNode="_fzXFgFHPEeeDkqQkk8TPzg"
+        targetNode="_mDPeS_KPEeaTM5lTgIAE1w">
+      <target
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.1/@elements.5/@outgoingFlows.0"/>
+      <semanticElements
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.1/@elements.5/@outgoingFlows.0"/>
+      <ownedStyle
+          xmi:type="diagram:EdgeStyle"
+          xmi:id="_kjCIAFZhEee55OSk-vC-7w"
+          description="_kjBg8FZhEee55OSk-vC-7w"
+          strokeColor="156,12,12">
+        <centerLabelStyle
+            xmi:type="diagram:CenterLabelStyle"
+            xmi:id="_kjCIAVZhEee55OSk-vC-7w"
+            showIcon="false"
+            labelColor="156,12,12"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Processor%20%20to%20Processor']"/>
+      <actualMapping
+          xmi:type="description_2:EdgeMapping"
+          href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Processor%20%20to%20Processor']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_i1ZTIFHPEeeDkqQkk8TPzg" name="5/6" sourceNode="_fzXFgFHPEeeDkqQkk8TPzg" targetNode="_mDPeS_KPEeaTM5lTgIAE1w">
-      <target xmi:type="flow:DataFlow" href="Robot.flow#//@elements.1/@elements.5/@outgoingFlows.0"/>
-      <semanticElements xmi:type="flow:DataFlow" href="Robot.flow#//@elements.1/@elements.5/@outgoingFlows.0"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_27L3AFWQEeeX6M8l3y0qNA" description="_xRCaVk9_EeeQdthcRQethQ" strokeColor="77,137,20">
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_27L3AVWQEeeX6M8l3y0qNA" showIcon="false" labelColor="77,137,20"/>
+    <ownedDiagramElements
+        xmi:type="diagram:DEdge"
+        xmi:id="_fakZYFZhEee55OSk-vC-7w"
+        name="10/6"
+        sourceNode="_mDPeVfKPEeaTM5lTgIAE1w"
+        targetNode="_fzXFgFHPEeeDkqQkk8TPzg">
+      <target
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.1/@elements.1/@outgoingFlows.0"/>
+      <semanticElements
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.1/@elements.1/@outgoingFlows.0"/>
+      <ownedStyle
+          xmi:type="diagram:EdgeStyle"
+          xmi:id="_ki_rwlZhEee55OSk-vC-7w"
+          description="_ki_rwFZhEee55OSk-vC-7w"
+          lineStyle="dash"
+          targetArrow="InputClosedArrow"
+          strokeColor="156,12,12">
+        <centerLabelStyle
+            xmi:type="diagram:CenterLabelStyle"
+            xmi:id="_ki_rw1ZhEee55OSk-vC-7w"
+            showIcon="false"
+            labelColor="156,12,12"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Processor%20%20to%20Processor']"/>
+      <actualMapping
+          xmi:type="description_2:EdgeMapping"
+          href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Data%20Source%20to%20Processor']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_mCSF4FHPEeeDkqQkk8TPzg" name="5/6" sourceNode="_mDPeVfKPEeaTM5lTgIAE1w" targetNode="_fzXFgFHPEeeDkqQkk8TPzg">
-      <target xmi:type="flow:DataFlow" href="Robot.flow#//@elements.1/@elements.1/@outgoingFlows.1"/>
-      <semanticElements xmi:type="flow:DataFlow" href="Robot.flow#//@elements.1/@elements.1/@outgoingFlows.1"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_27Ko4FWQEeeX6M8l3y0qNA" description="_xQ_XAE9_EeeQdthcRQethQ" lineStyle="dash" targetArrow="InputClosedArrow" strokeColor="77,137,20">
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_27Ko4VWQEeeX6M8l3y0qNA" showIcon="false" labelColor="77,137,20"/>
+    <ownedDiagramElements
+        xmi:type="diagram:DEdge"
+        xmi:id="_fam1oFZhEee55OSk-vC-7w"
+        name="8/6"
+        sourceNode="_mDPeUfKPEeaTM5lTgIAE1w"
+        targetNode="_WQEVEE-EEeeeZ8j7YmiDCQ">
+      <target
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.1/@elements.0/@outgoingFlows.1"/>
+      <semanticElements
+          xmi:type="flow:DataFlow"
+          href="Robot.flow#//@elements.1/@elements.0/@outgoingFlows.1"/>
+      <ownedStyle
+          xmi:type="diagram:EdgeStyle"
+          xmi:id="_fancsFZhEee55OSk-vC-7w"
+          description="_bjwHIE-CEeeeDdTayR14MQ"
+          strokeColor="224,133,3">
+        <centerLabelStyle
+            xmi:type="diagram:CenterLabelStyle"
+            xmi:id="_fancsVZhEee55OSk-vC-7w"
+            showIcon="false"
+            labelColor="224,133,3"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Data%20Source%20to%20Processor']"/>
+      <actualMapping
+          xmi:type="description_2:EdgeMapping"
+          href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@edgeMappings[name='Processor%20%20to%20Processor']"/>
     </ownedDiagramElements>
-    <description xmi:type="description_2:DiagramDescription" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']"/>
-    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_mDPebvKPEeaTM5lTgIAE1w"/>
-    <activatedLayers xmi:type="description_2:Layer" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer"/>
-    <target xmi:type="flow:System" href="Robot.flow#/"/>
+    <description
+        xmi:type="description_2:DiagramDescription"
+        href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']"/>
+    <filterVariableHistory
+        xmi:type="diagram:FilterVariableHistory"
+        xmi:id="_mDPebvKPEeaTM5lTgIAE1w"/>
+    <activatedLayers
+        xmi:type="description_2:Layer"
+        href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer"/>
+    <target
+        xmi:type="flow:System"
+        href="Robot.flow#/"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>
