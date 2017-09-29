@@ -17,7 +17,7 @@ public class FlowServices {
 		}
 		String name = typedString;
 		if (indexSep != -1) {
-			name = typedString.substring(0, indexSep);
+			name = typedString.substring(0, indexSep - 1);
 			String capacityStr = typedString.substring(indexSep + 1).trim();
 			try {
 				capacity = Integer.valueOf(capacityStr);
