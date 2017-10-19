@@ -5,8 +5,8 @@
     modelName="Flow" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
     copyrightFields="false">
   <foreignModel>flow.ecore</foreignModel>
-  <genPackages prefix="Flow" basePackage="fr.obeo.dsl.designer.sample" disposableProviderFactory="true"
-      ecorePackage="flow.ecore#/">
+  <genPackages prefix="Flow" basePackage="fr.obeo.dsl.designer.sample" resource="XMI"
+      disposableProviderFactory="true" ecorePackage="flow.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="flow.ecore#//PoweredStatus">
       <genEnumLiterals ecoreEnumLiteral="flow.ecore#//PoweredStatus/none"/>
       <genEnumLiterals ecoreEnumLiteral="flow.ecore#//PoweredStatus/low"/>
