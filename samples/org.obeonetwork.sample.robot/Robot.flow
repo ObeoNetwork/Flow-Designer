@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <flow:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flow="http://www.obeo.fr/dsl/designer/sample/flow" xmi:id="_74gncLTZEeeolunnT_MYFg" consumption="500" name="Robot" temperature="50" routingRules="">
-  <elements xsi:type="flow:CompositeProcessor" xmi:id="_74hOgLTZEeeolunnT_MYFg" consumption="200" usage="standard" name="Central_Unit" temperature="25" weight="23" routingRules="Case Robot_Central_Unit.temperature >= 70 °C:&#xA;  /!\ critical /!\;&#xA;">
+  <elements xsi:type="flow:CompositeProcessor" xmi:id="_74hOgLTZEeeolunnT_MYFg" consumption="200" usage="standard" name="Central_Unit" temperature="25" weight="23" routingRules="Case Robot.temperature >= 70 °C:&#xA;  /!\ critical /!\;&#xA;">
     <elements xsi:type="flow:Processor" xmi:id="_74icoLTZEeeolunnT_MYFg" usage="standard" incomingFlows="_74muFrTZEeeolunnT_MYFg" capacity="4" load="4" consumption="40" name="DSP" volume="4">
       <outgoingFlows xmi:id="_74jDsLTZEeeolunnT_MYFg" usage="standard" load="4" target="_74kR0LTZEeeolunnT_MYFg"/>
     </elements>
@@ -10,7 +10,7 @@
       <links xmi:id="_74lf8LTZEeeolunnT_MYFg" target="_74muFLTZEeeolunnT_MYFg"/>
     </powerOutputs>
   </elements>
-  <elements xsi:type="flow:CompositeProcessor" xmi:id="_74lf8bTZEeeolunnT_MYFg" consumption="300" usage="standard" name="CaptureSubSystem" temperature="28" weight="33" routingRules=" Case  Robot_Central_Unit.temperature > 70 °C:&#xA; /!\ critical  /!\;&#xA; &#xA;">
+  <elements xsi:type="flow:CompositeProcessor" xmi:id="_74lf8bTZEeeolunnT_MYFg" consumption="300" usage="standard" name="CaptureSubSystem" temperature="28" weight="33" routingRules=" Case  CaptureSubSystem.temperature > 70 °C:&#xA; /!\ critical  /!\;&#xA; &#xA;">
     <elements xsi:type="flow:Processor" xmi:id="_74lf8rTZEeeolunnT_MYFg" usage="standard" incomingFlows="_74mHA7TZEeeolunnT_MYFg" load="8" consumption="100" name="Radar_Capture" volume="8">
       <outgoingFlows xmi:id="_74lf87TZEeeolunnT_MYFg" usage="high" capacity="6" load="8" target="_74kR0LTZEeeolunnT_MYFg"/>
       <outgoingFlows xmi:id="_74lf9LTZEeeolunnT_MYFg" usage="high" capacity="6" load="8" target="_74muELTZEeeolunnT_MYFg"/>
