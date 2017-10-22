@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="true"
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.flow"
+            id="fr.obeo.dsl.designer.sample.flow.gen.html.ui.popupMenus.contribution.IFile">
+         <menu id="org.eclipse.acceleo.module.menu" label="Generate" path="additionsAcceleo">
+               <groupMarker name="acceleo"/> 
+         </menu>
+         <action
+               class="fr.obeo.dsl.designer.sample.flow.gen.html.ui.popupMenus.AcceleoGenerateHtmlAction"
+               enablesFor="+"
+               id="fr.obeo.dsl.designer.sample.flow.gen.html.ui.popupMenus.acceleoGenerateHtmlAction"
+               icon="icons/html_tag_obj.gif"
+               label="Generate Html"
+               menubarPath="org.eclipse.acceleo.module.menu/acceleo"/>
+      </objectContribution>
+   </extension>
+</plugin>

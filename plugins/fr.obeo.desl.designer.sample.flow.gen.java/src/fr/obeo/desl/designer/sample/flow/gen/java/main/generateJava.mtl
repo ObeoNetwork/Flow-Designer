@@ -1,0 +1,44 @@
+[comment encoding = UTF-8 /]
+[module generateJava('http://www.obeo.fr/dsl/designer/sample/flow')]
+
+[template public generateJava(aCompositeProcessor : CompositeProcessor)]
+[comment @main/]
+[file (aCompositeProcessor.name.concat('.java'), false, 'UTF-8')]
+
+package [eContainer(flow::System).name.toLowerCase()/];
+
+[for (element:FlowElement|self.elements->select(e|e.oclIsKindOf(flow::Processor)))]
+import [eContainer().eContainer().oclAsType(flow::System).name.toLowerCase()/].[self.oclAsType(flow::Processor).name/];
+[/for]
+
+public interface [name/] {
+	
+	final int CONSUMPTION=[consumption/];
+	final int TEMPERATURE=[temperature/];
+	final int WEIGHT=[weight/];
+	final int CAPACITY=[capacity/];
+	final int LOAD=[load/];
+	
+[for (element:FlowElement|self.elements->select(e|e.oclIsKindOf(flow::Processor)))]
+	public [self.oclAsType(flow::Processor).name/] get[self.oclAsType(flow::Processor).name/]();
+[/for]
+
+}[/file]
+[/template]
+
+[template public generateJava(aCompositeProcessor : Processor)]
+[comment @main/]
+[file (aCompositeProcessor.name.concat('.java'), false, 'UTF-8')]
+
+package [eContainer().eContainer().oclAsType(System).name.toLowerCase()/];
+
+public interface [name/] {
+	
+	final int CONSUMPTION=[consumption/];
+	final int VOLUME=[volume/];
+	final int WEIGHT=[weight/];
+	final int CAPACITY=[capacity/];
+	final int LOAD=[load/];
+
+}[/file]
+[/template]

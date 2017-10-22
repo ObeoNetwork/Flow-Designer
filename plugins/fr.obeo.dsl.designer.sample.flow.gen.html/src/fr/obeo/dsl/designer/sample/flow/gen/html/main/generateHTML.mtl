@@ -1,0 +1,215 @@
+[comment encoding = UTF-8 /]
+[module generateHTML('http://www.obeo.fr/dsl/designer/sample/flow')]
+
+
+[template public generateHTML(aSystem : System) ? (self.eContainer()=null)]
+[comment @main/]
+[file (aSystem.name.concat('.html'), false, 'UTF-8')]
+<html>
+<link href="Flow.css" type="text/css" rel="stylesheet" media="all" />
+<h1>System: [name/]</h1>
+<table>
+[poweredProperties()/]
+[flowElementPropeties()/]
+[systemProperties()/]
+</table>
+<p></p>
+[if (self.elements->size()>0)]
+<table>
+<tr>
+<th>Components</th><th>Type</th>
+</tr>
+[for (element:FlowElement|self.elements->select(e|e.oclIsKindOf(Named)))]
+<tr>
+<td><a href="#[element.oclAsType(Named).name/]">[element.oclAsType(Named).name/]</a></td><td>[element.eClass().name/]</td>
+</tr>
+[/for]
+</table>
+[/if]
+
+[for (element:FlowElement|self.elements)]
+[element.generateFlowElement()/]
+[/for]
+
+[/file]
+
+[file ('flow.css', false, 'UTF-8')]
+[cssBody()/]
+[/file]
+
+[/template]
+
+
+[template public generateFlowElement (element : FlowElement) ]
+[/template]
+
+[template public generateFlowElement (element : CompositeProcessor) ]
+<hr>
+<h2><a name="[name/]"></a>[self.eClass().name/]: [name/]<h2>
+<table>
+[poweredProperties()/]
+[flowElementPropeties()/]
+[systemProperties()/]
+[capacityBoundProperties()/]
+</table>
+<p></p>
+[if (self.elements->size()>0)]
+<table>
+<tr>
+<th>Components</th><th>Type</th>
+</tr>
+[for (element:FlowElement|self.elements->select(e|e.oclIsKindOf(Named)))]
+<tr>
+<td><a href="#[element.oclAsType(Named).name/]">[element.oclAsType(Named).name/]</a></td><td>[element.eClass().name/]</td>
+</tr>
+[/for]
+</table>
+[/if]
+[for (element:FlowElement|self.elements)]
+[element.generateFlowElement()/]
+[/for]
+[/template]
+
+[template public generateFlowElement (element : Processor) ]
+<hr>
+<h2><a name="[name/]"></a>[self.eClass().name/]: [name/]<h2>
+<table>
+[poweredProperties()/]
+[flowElementPropeties()/]
+<tr>
+<td class="property">Volume</td><td>[volume/]</td>
+</tr>
+<tr>
+<td class="property">Weight</td><td>[weight/]</td>
+</tr>
+[capacityBoundProperties()/]
+<tr>
+</table>
+<p></p>
+[if (self.outgoingFlows->size()>0)]
+<table>
+<tr>
+<th>Flows to</th><th class="value">Load</th><th class="value">Capacity</th>
+</tr>
+[for (flow:DataFlow|self.outgoingFlows)]
+<tr>
+<td><a href="#[flow.target.oclAsType(flow::Named).name/]">[flow.target.oclAsType(flow::Named).name/]</a></td><td>[flow.load/]</td><td>[flow.capacity/]</td>
+</tr>
+[/for]
+</table>
+[/if]
+[/template]
+
+[template public generateFlowElement (element : DataSource) ]
+<hr>
+<h3><a name="[name/]"></a>[self.eClass().name/]: [name/]<h3>
+<table>
+[flowElementPropeties()/]
+<tr>
+<td class="property">Volume</td>
+<td>[volume/]</td>
+</tr>
+<tr>
+</table>
+<p></p>
+[if (self.outgoingFlows->size()>0)]
+<table>
+<tr>
+<th>Flows to</th><th class="value">Load</th><th class="value">Capacity</th>
+</tr>
+[for (flow:DataFlow|self.outgoingFlows)]
+<tr>
+<td><a href="#[flow.target.oclAsType(flow::Named).name/]">[flow.target.oclAsType(flow::Named).name/]</a></td><td>[flow.load/]</td><td>[flow.capacity/]</td>
+</tr>
+[/for]
+</table>
+[/if]
+
+[/template]
+
+[template public poweredProperties (element : Powered) ]
+<tr>
+<td class="property">Consumption</td><td class="value">[consumption/]</td>
+</tr>
+<tr>
+<td class="property">Power Status</td><td>[powerStatus/]</td>
+</tr>
+[/template]
+
+[template public flowElementPropeties (aFlowElement : FlowElement) ]
+<tr>
+<td class="property">Status</td><td>[status/]</td>
+</tr>
+<tr>
+<td class="property">Usage</td><td>[usage/]</td>
+</tr>
+<tr>
+[/template]
+
+[template public capacityBoundProperties (element : CapacityBound) ]
+<tr>
+<td class="property">Capacity</td><td>[capacity/]</td>
+</tr>
+<tr>
+<td class="property">Load</td><td>[load/]</td>
+</tr>
+[/template]
+
+[template public systemProperties (aSystem : System) ]
+<tr>
+<td class="property">Temperature</td><td>[temperature/]</td>
+</tr>
+<tr>
+<td class="property">Weight</td><td>[weight/]</td>
+</tr>
+[/template]
+
+[template public cssBody (obj: System) ]
+table,p, h1,h2,h3
+{
+    font-family: sans-serif;
+    color: #007788;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+th,td 
+{
+   padding: 10px;
+}
+td
+{
+    border: 1px solid black;
+}
+td.property
+{
+    border: 1px solid black;
+    background-color: #007788;
+    color: white;
+    font-weight:bold;
+    width: 200;
+}
+td.value
+{
+    border: 1px solid black;
+    width: 100;
+}
+th
+{
+    text-align: left;
+    border: 1px solid black;
+    width: 200;
+    background-color: #fbb800;
+    color: white;
+}
+th.value
+{
+    text-align: left;
+    border: 1px solid black;
+    width: 50;
+    background-color: #fbb800;
+    color: white;
+}
+[/template]
