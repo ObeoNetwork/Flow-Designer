@@ -19,9 +19,9 @@
 <tr>
 <th>Components</th><th>Type</th>
 </tr>
-[for (element:FlowElement|self.elements->select(e|e.oclIsKindOf(Named)))]
+[for (element:Named|self.elements->filter(flow::Named))]
 <tr>
-<td><a href="#[element.oclAsType(Named).name/]">[element.oclAsType(Named).name/]</a></td><td>[element.eClass().name/]</td>
+<td><a href="#[element.name/]">[element.name/]</a></td><td>[element.eClass().name/]</td>
 </tr>
 [/for]
 </table>
@@ -58,9 +58,9 @@
 <tr>
 <th>Components</th><th>Type</th>
 </tr>
-[for (element:FlowElement|self.elements->select(e|e.oclIsKindOf(Named)))]
+[for (element:Named|self.elements->filter(flow::Named))]
 <tr>
-<td><a href="#[element.oclAsType(Named).name/]">[element.oclAsType(Named).name/]</a></td><td>[element.eClass().name/]</td>
+<td><a href="#[element.name/]">[element.name/]</a></td><td>[element.eClass().name/]</td>
 </tr>
 [/for]
 </table>

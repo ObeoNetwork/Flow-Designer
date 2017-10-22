@@ -1,17 +1,18 @@
 [comment encoding = UTF-8 /]
 [module generateJava('http://www.obeo.fr/dsl/designer/sample/flow')]
 
+[comment Generate a class for each Composite /]
 [template public generateJava(aCompositeProcessor : CompositeProcessor)]
 [comment @main/]
-[file (aCompositeProcessor.name.concat('.java'), false, 'UTF-8')]
+[file (self.name.toLowerCase() + '/' + aCompositeProcessor.name.concat('Composite.java'), false, 'UTF-8')]
 
-package [eContainer(flow::System).name.toLowerCase()/];
+package [self.name.toLowerCase()/];
 
-[for (element:FlowElement|self.elements->select(e|e.oclIsKindOf(flow::Processor)))]
-import [eContainer().eContainer().oclAsType(flow::System).name.toLowerCase()/].[self.oclAsType(flow::Processor).name/];
+[for (element:Processor|self.elements->filter(flow::Processor))]
+import [eContainer(flow::System).name.toLowerCase()/].[self.name/];
 [/for]
 
-public interface [name/] {
+public class [name/]Composite {
 	
 	final int CONSUMPTION=[consumption/];
 	final int TEMPERATURE=[temperature/];
@@ -19,18 +20,33 @@ public interface [name/] {
 	final int CAPACITY=[capacity/];
 	final int LOAD=[load/];
 	
-[for (element:FlowElement|self.elements->select(e|e.oclIsKindOf(flow::Processor)))]
-	public [self.oclAsType(flow::Processor).name/] get[self.oclAsType(flow::Processor).name/]();
+[for (element:Processor|self.elements->filter(flow::Processor))]
+	public [self.name/] get[self.name/]() {
+		// [protected ('to obtain processor descriptor of ' + self.name + ' from Hardware specific API')]
+		return null; // TODO to implement 		
+ 		// [/protected]
+	}
 [/for]
+
+	public boolean isTemperatureConforms() {
+		int totalRealTemperature = 0;
+		[for (proc:Processor|self.elements->filter(flow::Processor))]
+		totalRealTemperature+= get[proc.name/]().getRealTemperature();
+		[/for]	
+		if (totalRealTemperature <= TEMPERATURE)
+			return true;
+		else
+			return false;
+	}
 
 }[/file]
 [/template]
 
 [template public generateJava(aCompositeProcessor : Processor)]
 [comment @main/]
-[file (aCompositeProcessor.name.concat('.java'), false, 'UTF-8')]
+[file (eContainer(flow::System).name.toLowerCase() + '/' + aCompositeProcessor.name.concat('.java'), false, 'UTF-8')]
 
-package [eContainer().eContainer().oclAsType(System).name.toLowerCase()/];
+package [eContainer(flow::System).name.toLowerCase()/];
 
 public interface [name/] {
 	
@@ -40,5 +56,6 @@ public interface [name/] {
 	final int CAPACITY=[capacity/];
 	final int LOAD=[load/];
 
+	public int getRealTemperature();
 }[/file]
 [/template]
