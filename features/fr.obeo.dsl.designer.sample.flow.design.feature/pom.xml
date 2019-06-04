@@ -9,6 +9,6 @@
         <groupId>fr.obeo.dsl.designer.sample.flow</groupId>
         <artifactId>fr.obeo.dsl.designer.sample.flow.parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-  <relativePath>../releng/fr.obeo.dsl.designer.sample.flow.parent</relativePath>
+  <relativePath>../../releng/fr.obeo.dsl.designer.sample.flow.parent</relativePath>
     </parent>
 </project>

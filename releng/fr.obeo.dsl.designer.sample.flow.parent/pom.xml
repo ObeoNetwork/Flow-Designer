@@ -15,7 +15,7 @@
 		<module>../../plugins/fr.obeo.dsl.designer.sample.flow</module>
 		<module>../../plugins/fr.obeo.dsl.designer.sample.flow.edit</module>
 		<module>../../plugins/fr.obeo.dsl.designer.sample.flow.design</module>
-		<!--<module>../../features/fr.obeo.dsl.designer.sample.flow.design.feature</module> -->
+		<module>../../features/fr.obeo.dsl.designer.sample.flow.design.feature</module>
 	</modules>
 	<build>
 		<plugins>
@@ -25,8 +25,6 @@
 				<version>${tycho.version}</version>
 				<extensions>true</extensions>
 			</plugin>
-			<!--Enable the replacement of the SNAPSHOT version in the final product 
-				configuration -->
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-packaging-plugin</artifactId>
