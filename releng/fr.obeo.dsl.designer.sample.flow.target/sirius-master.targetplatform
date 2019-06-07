@@ -1,0 +1,17 @@
+target "sirius-master" with source requirements
+
+location "https://download.eclipse.org/sirius/updates/releases/6.2.0/photon/" {
+	org.eclipse.sirius.runtime.aql.feature.group lazy
+	org.eclipse.sirius.runtime.feature.group lazy
+	org.eclipse.sirius.runtime.ide.ui.feature.group lazy
+	org.eclipse.sirius.runtime.ide.eef.feature.group lazy
+	org.eclipse.sirius.runtime.ide.ui.acceleo.feature.group lazy
+	org.eclipse.sirius.properties.feature.feature.group lazy
+	org.eclipse.sirius.runtime.acceleo.feature.group lazy
+}
+location "http://download.eclipse.org/releases/photon" {
+		com.google.guava lazy
+	org.eclipse.sdk.feature.group lazy
+	org.eclipse.emf.sdk.feature.group lazy
+	org.eclipse.emf.eef.runtime-feature.feature.group lazy
+}
