@@ -479,15 +479,4 @@
   <userColorsPalettes name="FlowColors">
     <entries xsi:type="description:UserFixedColor" red="243" green="243" blue="243" name="lightgrey"/>
   </userColorsPalettes>
-  <extensions xsi:type="properties:ViewExtensionDescription" name="props">
-    <categories name="flow">
-      <pages name="Page">
-        <extends href="platform:/plugin/org.eclipse.sirius.properties.defaultrules/model/properties.odesign#//@extensions.0/@categories.0/@pages.0"/>
-      </pages>
-      <pages name="Routing" labelExpression="Routing" domainClass="flow::System" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.0" indented="true"/>
-      <groups name="RoutingRules" labelExpression="Rules" domainClass="flow::System" semanticCandidateExpression="var:self">
-        <controls xsi:type="properties:CustomDescription" name="fr.obeo.dsl.designer.sample.flow.design.xtextwidgetViewer" identifier="fr.obeo.dsl.designer.sample.flow.design.xtextwidgetViewer"/>
-      </groups>
-    </categories>
-  </extensions>
 </description:Group>
