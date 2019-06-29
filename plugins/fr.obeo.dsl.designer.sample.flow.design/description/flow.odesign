@@ -473,6 +473,28 @@
         </toolSections>
       </defaultLayer>
     </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Simplified Topography" domainClass="flow::System" enablePopupBars="true">
+      <metamodel href="http://www.obeo.fr/dsl/designer/sample/flow#/"/>
+      <defaultLayer name="Default">
+        <edgeMappings name="ST_Processor to Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Capacity']" semanticCandidatesExpression="aql:self.elements.eAllContents(flow::DataFlow)->select(df|df.source.ancestors()->filter(flow::CompositeProcessor)->first()&lt;>df.target.ancestors()->filter(flow::CompositeProcessor)->first())" semanticElements="var:self" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Simplified%20Topography']/@defaultLayer/@containerMappings[name='ST_Processor']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Simplified%20Topography']/@defaultLayer/@containerMappings[name='ST_Processor']" targetFinderExpression="aql:self.target.ancestors()->filter(flow::CompositeProcessor)->first()" sourceFinderExpression="aql:self.source.ancestors()->filter(flow::CompositeProcessor)->first()" domainClass="flow::DataFlow" useDomainElement="true">
+          <style>
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="ST_Processor" detailDescriptions="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Sub%20Topography']" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Capacity']" semanticCandidatesExpression="aql:self.elements" domainClass="flow::CompositeProcessor">
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="1" labelSize="10" labelExpression="aql:self.name" roundedCorner="true" backgroundStyle="Liquid" foregroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='lightgrey']">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <labelFormat>italic</labelFormat>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+      </defaultLayer>
+    </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="fr.obeo.dsl.designer.sample.flow.design.FlowServices"/>
   </ownedViewpoints>
   <ownedViewpoints name="Performance" modelFileExtension="flow"/>
