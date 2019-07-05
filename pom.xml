@@ -24,7 +24,7 @@
 
   <groupId>fr.obeo.dsl.designer.sample.flow</groupId>
   <artifactId>fr.obeo.dsl.designer.sample.flow.top</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
     <modules>
