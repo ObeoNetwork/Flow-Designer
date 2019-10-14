@@ -34,14 +34,14 @@
         <edgeMappings name="Data Source to Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Capacity']" semanticCandidatesExpression="aql:self.elements.eAllContents(flow::DataFlow)" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='ChangeSourceAndTargetEdge']" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Data%20Source']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="flow::DataFlow" useDomainElement="true">
           <style lineStyle="dash" targetArrow="InputClosedArrow">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
+            <centerLabelStyleDescription showIcon="false">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>
           <conditionnalStyles predicateExpression="aql:self.oclAsType(flow::FlowElement).usage = flow::FlowElementUsage::standard">
             <style lineStyle="dash" targetArrow="InputClosedArrow">
               <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
-              <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
+              <centerLabelStyleDescription showIcon="false">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
               </centerLabelStyleDescription>
             </style>
@@ -49,7 +49,7 @@
           <conditionnalStyles predicateExpression="aql:self.oclAsType(flow::FlowElement).usage = flow::FlowElementUsage::over">
             <style lineStyle="dash" targetArrow="InputClosedArrow">
               <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
-              <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
+              <centerLabelStyleDescription showIcon="false">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
               </centerLabelStyleDescription>
             </style>
@@ -57,7 +57,7 @@
           <conditionnalStyles predicateExpression="aql:self.oclAsType(flow::FlowElement).usage = flow::FlowElementUsage::high">
             <style lineStyle="dash" targetArrow="InputClosedArrow">
               <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
-              <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
+              <centerLabelStyleDescription showIcon="false">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
               </centerLabelStyleDescription>
             </style>
@@ -65,7 +65,7 @@
           <conditionnalStyles predicateExpression="aql:self.oclAsType(flow::FlowElement).usage = flow::FlowElementUsage::low">
             <style lineStyle="dash" targetArrow="InputClosedArrow">
               <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
-              <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
+              <centerLabelStyleDescription showIcon="false">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
               </centerLabelStyleDescription>
             </style>
@@ -74,14 +74,14 @@
         <edgeMappings name="Processor  to Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Capacity']" semanticCandidatesExpression="aql:self.elements.eAllContents(flow::DataFlow)" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='ChangeSourceAndTargetEdge']" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="flow::DataFlow" useDomainElement="true">
           <style>
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
+            <centerLabelStyleDescription showIcon="false">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>
           <conditionnalStyles predicateExpression="aql:self.oclAsType(flow::FlowElement).usage = flow::FlowElementUsage::standard">
             <style>
               <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
-              <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
+              <centerLabelStyleDescription showIcon="false">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
               </centerLabelStyleDescription>
             </style>
@@ -89,7 +89,7 @@
           <conditionnalStyles predicateExpression="aql:self.oclAsType(flow::FlowElement).usage = flow::FlowElementUsage::over">
             <style>
               <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
-              <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
+              <centerLabelStyleDescription showIcon="false">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
               </centerLabelStyleDescription>
             </style>
@@ -97,7 +97,7 @@
           <conditionnalStyles predicateExpression="aql:self.oclAsType(flow::FlowElement).usage = flow::FlowElementUsage::high">
             <style>
               <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
-              <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
+              <centerLabelStyleDescription showIcon="false">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
               </centerLabelStyleDescription>
             </style>
@@ -105,7 +105,7 @@
           <conditionnalStyles predicateExpression="aql:self.oclAsType(flow::FlowElement).usage = flow::FlowElementUsage::low">
             <style>
               <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
-              <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.load + '/' +  self.capacity">
+              <centerLabelStyleDescription labelSize="16" showIcon="false">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
               </centerLabelStyleDescription>
             </style>
@@ -232,7 +232,7 @@
               </style>
             </conditionnalStyles>
           </subNodeMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="1" labelSize="10" labelExpression="aql:self.name" roundedCorner="true" backgroundStyle="Liquid" foregroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='lightgrey']">
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="1" labelSize="10" labelExpression="aql:self.name" backgroundStyle="Liquid" foregroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='lightgrey']">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <labelFormat>italic</labelFormat>
             <labelFormat>bold</labelFormat>
