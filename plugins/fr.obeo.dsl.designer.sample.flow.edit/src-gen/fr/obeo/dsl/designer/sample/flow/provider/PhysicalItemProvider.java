@@ -108,7 +108,6 @@ public class PhysicalItemProvider
     @Override
     public void notifyChanged(Notification notification) {
 		updateChildren(notification);
-		super.notifyChanged(notification);
 	}
 
     /**

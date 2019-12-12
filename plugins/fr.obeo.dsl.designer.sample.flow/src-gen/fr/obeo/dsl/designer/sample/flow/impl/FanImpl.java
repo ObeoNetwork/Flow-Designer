@@ -90,7 +90,7 @@ public class FanImpl extends FlowElementImpl implements Fan {
 	 * @generated
 	 * @ordered
 	 */
-    protected static final int SPEED_EDEFAULT = 1000;
+    protected static final int SPEED_EDEFAULT = 100;
     /**
 	 * The cached value of the '{@link #getSpeed() <em>Speed</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -354,7 +354,7 @@ public class FanImpl extends FlowElementImpl implements Fan {
     public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (consumption: ");
 		result.append(consumption);
 		result.append(", powerStatus: ");

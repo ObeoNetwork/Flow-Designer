@@ -216,7 +216,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link FlowPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -230,7 +230,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 		if (isInited) return (FlowPackage)EPackage.Registry.INSTANCE.getEPackage(FlowPackage.eNS_URI);
 
 		// Obtain or create and register package
-		FlowPackageImpl theFlowPackage = (FlowPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof FlowPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new FlowPackageImpl());
+		Object registeredFlowPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		FlowPackageImpl theFlowPackage = registeredFlowPackage instanceof FlowPackageImpl ? (FlowPackageImpl)registeredFlowPackage : new FlowPackageImpl();
 
 		isInited = true;
 
@@ -243,7 +244,6 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 		// Mark meta-data to indicate it can't be changed
 		theFlowPackage.freeze();
 
-  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(FlowPackage.eNS_URI, theFlowPackage);
 		return theFlowPackage;
@@ -797,7 +797,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(fanEClass, Fan.class, "Fan", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getFan_Speed(), ecorePackage.getEInt(), "speed", "1000", 1, 1, Fan.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFan_Speed(), ecorePackage.getEInt(), "speed", "100", 1, 1, Fan.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFan_Weight(), ecorePackage.getEInt(), "weight", "3", 1, 1, Fan.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(physicalEClass, Physical.class, "Physical", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -808,7 +808,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 		initEReference(getDataFlow_Target(), this.getFlowTarget(), this.getFlowTarget_IncomingFlows(), "target", null, 1, 1, DataFlow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDataFlow_Source(), this.getFlowSource(), this.getFlowSource_OutgoingFlows(), "source", null, 1, 1, DataFlow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(capacityBoundEClass, CapacityBound.class, "CapacityBound", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(capacityBoundEClass, CapacityBound.class, "CapacityBound", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCapacityBound_Capacity(), ecorePackage.getEInt(), "capacity", "10", 1, 1, CapacityBound.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCapacityBound_Load(), ecorePackage.getEInt(), "load", "0", 1, 1, CapacityBound.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
