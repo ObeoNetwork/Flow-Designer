@@ -92,7 +92,6 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
 			case FlowPackage.PHYSICAL: return createPhysical();
 			case FlowPackage.COMPOSITE_PROCESSOR: return createCompositeProcessor();
 			case FlowPackage.DATA_FLOW: return createDataFlow();
-			case FlowPackage.CAPACITY_BOUND: return createCapacityBound();
 			case FlowPackage.SYSTEM: return createSystem();
 			case FlowPackage.POWER_OUTPUT: return createPowerOutput();
 			case FlowPackage.POWER_INPUT: return createPowerInput();
@@ -191,16 +190,6 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
 	public DataFlow createDataFlow() {
 		DataFlowImpl dataFlow = new DataFlowImpl();
 		return dataFlow;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CapacityBound createCapacityBound() {
-		CapacityBoundImpl capacityBound = new CapacityBoundImpl();
-		return capacityBound;
 	}
 
 	/**

@@ -35,7 +35,7 @@ package fr.obeo.dsl.designer.sample.flow;
  * </ul>
  *
  * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getCapacityBound()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface CapacityBound extends FlowElement {

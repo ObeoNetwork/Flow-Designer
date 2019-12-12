@@ -42,7 +42,7 @@ public interface Fan extends FlowElement, Powered {
 
     /**
 	 * Returns the value of the '<em><b>Speed</b></em>' attribute.
-	 * The default value is <code>"1000"</code>.
+	 * The default value is <code>"100"</code>.
 	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Speed</em>' attribute isn't clear,
@@ -52,7 +52,7 @@ public interface Fan extends FlowElement, Powered {
 	 * @return the value of the '<em>Speed</em>' attribute.
 	 * @see #setSpeed(int)
 	 * @see fr.obeo.dsl.designer.sample.flow.FlowPackage#getFan_Speed()
-	 * @model default="1000" required="true"
+	 * @model default="100" required="true"
 	 * @generated
 	 */
     int getSpeed();
