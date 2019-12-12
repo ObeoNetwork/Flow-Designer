@@ -3,12 +3,12 @@
     <groupId>fr.obeo.dsl.designer.sample.flow</groupId>
     <artifactId>fr.obeo.dsl.designer.sample.flow</artifactId>
   <packaging>eclipse-plugin</packaging>
-  <version>1.0.3-SNAPSHOT</version>
+  <version>1.0.4-SNAPSHOT</version>
 
     <parent>
         <groupId>fr.obeo.dsl.designer.sample.flow</groupId>
         <artifactId>fr.obeo.dsl.designer.sample.flow.parent</artifactId>
-        <version>1.0.3-SNAPSHOT</version>
+        <version>1.0.4-SNAPSHOT</version>
   <relativePath>../../releng/fr.obeo.dsl.designer.sample.flow.parent</relativePath>
     </parent>
 </project>
