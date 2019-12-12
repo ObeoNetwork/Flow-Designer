@@ -85,15 +85,6 @@ public interface FlowFactory extends EFactory {
 	DataFlow createDataFlow();
 
 	/**
-	 * Returns a new object of class '<em>Capacity Bound</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Capacity Bound</em>'.
-	 * @generated
-	 */
-	CapacityBound createCapacityBound();
-
-	/**
 	 * Returns a new object of class '<em>System</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

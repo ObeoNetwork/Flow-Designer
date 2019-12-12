@@ -205,29 +205,6 @@ public class FlowItemProviderAdapterFactory extends FlowAdapterFactory implement
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.CapacityBound} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected CapacityBoundItemProvider capacityBoundItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link fr.obeo.dsl.designer.sample.flow.CapacityBound}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createCapacityBoundAdapter() {
-		if (capacityBoundItemProvider == null) {
-			capacityBoundItemProvider = new CapacityBoundItemProvider(this);
-		}
-
-		return capacityBoundItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link fr.obeo.dsl.designer.sample.flow.System} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -468,7 +445,6 @@ public class FlowItemProviderAdapterFactory extends FlowAdapterFactory implement
 		if (physicalItemProvider != null) physicalItemProvider.dispose();
 		if (compositeProcessorItemProvider != null) compositeProcessorItemProvider.dispose();
 		if (dataFlowItemProvider != null) dataFlowItemProvider.dispose();
-		if (capacityBoundItemProvider != null) capacityBoundItemProvider.dispose();
 		if (systemItemProvider != null) systemItemProvider.dispose();
 		if (powerOutputItemProvider != null) powerOutputItemProvider.dispose();
 		if (powerInputItemProvider != null) powerInputItemProvider.dispose();

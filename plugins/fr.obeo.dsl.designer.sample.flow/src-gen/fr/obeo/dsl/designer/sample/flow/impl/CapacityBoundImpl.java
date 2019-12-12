@@ -43,7 +43,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class CapacityBoundImpl extends FlowElementImpl implements CapacityBound {
+public abstract class CapacityBoundImpl extends FlowElementImpl implements CapacityBound {
 	/**
 	 * The default value of the '{@link #getCapacity() <em>Capacity</em>}' attribute.
 	 * <!-- begin-user-doc -->

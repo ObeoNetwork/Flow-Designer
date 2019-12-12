@@ -361,11 +361,6 @@ public class SystemItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(FlowPackage.Literals.SYSTEM__ELEMENTS,
-				 FlowFactory.eINSTANCE.createCapacityBound()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(FlowPackage.Literals.SYSTEM__ELEMENTS,
 				 FlowFactory.eINSTANCE.createDataFlow()));
 
 		newChildDescriptors.add
