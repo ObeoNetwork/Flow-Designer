@@ -18,7 +18,7 @@
       <unit id="org.eclipse.sdk.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.emf.sdk.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.emf.eef.runtime-feature.feature.group" version="0.0.0"/>
-      <repository location="http://download.eclipse.org/releases/photon"/>
+      <repository location="http://download.eclipse.org/releases/2020-03"/>
     </location>
   </locations>
 </target>
