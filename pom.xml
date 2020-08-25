@@ -27,7 +27,15 @@
   <version>1.0.5-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-    <modules>
-        <module>releng/fr.obeo.dsl.designer.sample.flow.parent</module>
-    </modules>
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/ObeoNetwork/Flow-Designer</url>
+    </repository>
+  </distributionManagement>
+
+  <modules>
+    <module>releng/fr.obeo.dsl.designer.sample.flow.parent</module>
+  </modules>
 </project>
