@@ -2,7 +2,9 @@ name: Maven Publish
 on:
   push:
     branches:
-      - master
+      - ocp
+  workflow_dispatch:
+
 jobs:
   build:
     name: Build
@@ -19,4 +21,4 @@ jobs:
       - name: Maven
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: mvn clean deploy
+        run: mvn -B clean deploy
