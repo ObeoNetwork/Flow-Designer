@@ -19,4 +19,4 @@ jobs:
       - name: Maven
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: mvn clean deploy
+        run: mvn -B clean deploy
