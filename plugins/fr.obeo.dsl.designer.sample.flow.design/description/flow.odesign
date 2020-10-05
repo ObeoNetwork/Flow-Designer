@@ -8,21 +8,21 @@
       </filters>
       <defaultLayer name="Main">
         <nodeMappings name="Data Source" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Volume']" semanticCandidatesExpression="feature:elements" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='OpenPropertiesViewInDialog']" domainClass="flow::DataSource">
-          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/sensor.svg">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/sensor.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
           <conditionnalStyles predicateExpression="aql:self.name.contains('Camera')">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/camera.svg">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/camera.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </conditionnalStyles>
           <conditionnalStyles predicateExpression="aql:self.name.contains('Radar')">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/radar.svg">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/radar.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </conditionnalStyles>
           <conditionnalStyles predicateExpression="aql:self.name.contains('Wifi')">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/antenna.svg">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/antenna.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </conditionnalStyles>
@@ -158,21 +158,21 @@
             </conditionnalStyles>
           </subNodeMappings>
           <subNodeMappings name="Data Source" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Volume']" semanticCandidatesExpression="feature:elements" domainClass="flow::DataSource">
-            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+': ' +self.volume" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/sensor.svg">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/sensor.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
             <conditionnalStyles predicateExpression="aql:self.name.contains('Camera')">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/camera.svg">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/camera.svg">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.name.contains('Radar')">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/radar.svg">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/radar.svg">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.name.contains('Wifi')">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name+' : '+self.volume" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/antenna.svg">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.name" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" sizeComputationExpression="aql:self.volume" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/antenna.svg">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               </style>
             </conditionnalStyles>
@@ -183,16 +183,16 @@
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </subNodeMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Gray']" labelSize="10" showIcon="false" labelExpression="aql:self.oclAsType(flow::CompositeProcessor).name +' ('+ self.oclAsType(flow::CompositeProcessor).temperature +'&#xb0;C)'" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" backgroundStyle="Liquid" backgroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']" foregroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']">
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Gray']" labelSize="10" showIcon="false" labelExpression="aql:self.oclAsType(flow::CompositeProcessor).name" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" backgroundStyle="Liquid" backgroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']" foregroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']">
             <labelFormat>bold</labelFormat>
           </style>
           <conditionnalStyles predicateExpression="aql:self.temperature>30 and self.temperature&lt;=40">
-            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Orange']" labelSize="10" showIcon="false" labelExpression="aql:self.oclAsType(flow::CompositeProcessor).name +' ('+ self.oclAsType(flow::CompositeProcessor).temperature +'&#xb0;C)'" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Orange']" backgroundStyle="Liquid" backgroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']" foregroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']">
+            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Orange']" labelSize="10" showIcon="false" labelExpression="aql:self.oclAsType(flow::CompositeProcessor).name" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Orange']" backgroundStyle="Liquid" backgroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']" foregroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']">
               <labelFormat>bold</labelFormat>
             </style>
           </conditionnalStyles>
           <conditionnalStyles predicateExpression="aql:self.temperature>40">
-            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Red']" labelSize="10" showIcon="false" labelExpression="aql:self.oclAsType(flow::CompositeProcessor).name +' ('+ self.oclAsType(flow::CompositeProcessor).temperature +'&#xb0;C)'" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Red']" backgroundStyle="Liquid" backgroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']" foregroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']">
+            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Red']" labelSize="10" showIcon="false" labelExpression="aql:self.oclAsType(flow::CompositeProcessor).name" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Red']" backgroundStyle="Liquid" backgroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']" foregroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']">
               <labelFormat>bold</labelFormat>
             </style>
           </conditionnalStyles>
@@ -273,11 +273,9 @@
             <representationNameVariable name="diagramName"/>
           </ownedTools>
           <ownedTools xsi:type="tool:DirectEditLabel" name="Edit Name and Volume">
-            <mask mask="{0} : {1}"/>
+            <mask mask="{0}"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:0">
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="volume" valueExpression="var:1"/>
-              </firstModelOperations>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:arg0"/>
             </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool_1:SelectionWizardDescription" name="MoveElementsFromProcessorToOther" label="Move Elements" precondition="aql:self.oclIsKindOf(flow::CompositeProcessor)" candidatesExpression="aql:self.eContainer().oclAsType(flow::System).elements->reject(i | i=self)+self.eContainer().oclAsType(flow::System).elements.elements" multiple="true" tree="true" rootExpression="aql:self.eContainer().oclAsType(flow::System).elements" childrenExpression="aql:self.oclAsType(flow::CompositeProcessor).elements" message="This wizard enable to move elements from other processor to click processor">
