@@ -32,6 +32,12 @@
             <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.capacity">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
+            <beginLabelStyleDescription showIcon="false" labelExpression="target">
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </beginLabelStyleDescription>
+            <endLabelStyleDescription showIcon="false" labelExpression="source">
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </endLabelStyleDescription>
           </style>
         </edgeMappings>
         <edgeMappings name="Processor  to Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Capacity']" semanticCandidatesExpression="aql:self.elements.eAllContents(flow::DataFlow)" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@toolSections.0/@ownedTools[name='ChangeSourceAndTargetEdge']" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="flow::DataFlow" useDomainElement="true">
