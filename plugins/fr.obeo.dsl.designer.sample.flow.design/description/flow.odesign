@@ -585,7 +585,7 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="flow::CompositeProcessor" referenceName="elements">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="status" valueExpression="active"/>
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Processor' + self.eContainer().eContents()->filter(flow::Processor)->size()"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Processor' + self.eContainer().eContents()->filter(flow::CompositeProcessor)->size()"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -605,6 +605,25 @@
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="flow::Processor" referenceName="elements">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Processor' + self.eContainer().eContents()->filter(flow::Processor)->size()"/>
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="status" valueExpression="active"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="ProcessorWithConnection" label="Processor with Connection" nodeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography_auto_layout']/@defaultLayer/@containerMappings[name='System']/@subNodeMappings[name='Processor']">
+            <variable name="container">
+              <subVariables xsi:type="tool_1:SelectModelElementVariable" name="selectedProcessor" candidatesExpression="aql:self.getRootElement().eAllContents(flow::Processor)" message="A new Processor will be created. Please select an existing Processor to connect to it:"/>
+            </variable>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="flow::Processor" referenceName="elements">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Processor' + self.eContainer().eContents()->filter(flow::Processor)->size()"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="status" valueExpression="active"/>
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:selectedProcessor &lt;> null">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="flow::DataFlow" referenceName="outgoingFlows" variableName="df">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:selectedProcessor"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="capacity" valueExpression="6"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="load" valueExpression="6"/>
+                  </subModelOperations>
+                </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
