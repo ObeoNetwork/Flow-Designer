@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl -->
-<target name="sirius-master" sequenceNumber="1558711154">
+<target name="sirius-master" sequenceNumber="1625842325">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.sirius.runtime.aql.feature.group" version="0.0.0"/>
@@ -11,14 +11,14 @@
       <unit id="org.eclipse.sirius.runtime.ide.ui.acceleo.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.sirius.properties.feature.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.sirius.runtime.acceleo.feature.group" version="0.0.0"/>
-      <repository location="https://download.eclipse.org/sirius/updates/releases/6.2.0/photon/"/>
+      <repository location="http://download.eclipse.org/sirius/updates/releases/6.5.1/2020-09"/>
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="com.google.guava" version="0.0.0"/>
       <unit id="org.eclipse.sdk.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.emf.sdk.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.emf.eef.runtime-feature.feature.group" version="0.0.0"/>
-      <repository location="http://download.eclipse.org/releases/2020-03"/>
+      <repository location="http://download.eclipse.org/releases/2020-09"/>
     </location>
   </locations>
 </target>
