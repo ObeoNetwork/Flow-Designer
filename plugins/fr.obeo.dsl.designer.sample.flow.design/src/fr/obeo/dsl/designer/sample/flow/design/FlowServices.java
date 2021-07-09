@@ -1,8 +1,11 @@
 package fr.obeo.dsl.designer.sample.flow.design;
 
+import org.eclipse.emf.ecore.EObject;
+
 import fr.obeo.dsl.designer.sample.flow.CapacityBound;
 import fr.obeo.dsl.designer.sample.flow.Named;
 import fr.obeo.dsl.designer.sample.flow.Processor;
+import fr.obeo.dsl.designer.sample.flow.System;
 
 public class FlowServices {
 	public int sizeFromCapacity(Processor s) {
@@ -39,5 +42,18 @@ public class FlowServices {
 			n.setName(name);
 		}
 		return n;
+	}
+
+	public System getRootElement(EObject o) {
+		EObject rootObject = o;
+		EObject container = rootObject.eContainer();
+		while (container != null) {
+			rootObject = container;
+			container = rootObject.eContainer();
+		}
+		if (rootObject instanceof System) {
+			return (System) rootObject;
+		}
+		return null;
 	}
 }
