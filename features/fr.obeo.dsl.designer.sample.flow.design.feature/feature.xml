@@ -2,7 +2,7 @@
 <feature
       id="fr.obeo.dsl.designer.sample.flow.design.feature"
       label="Flow Sample Feature"
-      version="1.0.0.qualifier">
+      version="1.1.0.qualifier">
 
    <description url="https://github.com/ObeoNetwork/Flow-Designer">
       This is the Flow Designer sample for Obeo Designer.
