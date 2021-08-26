@@ -216,7 +216,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link FlowPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -230,7 +230,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 		if (isInited) return (FlowPackage)EPackage.Registry.INSTANCE.getEPackage(FlowPackage.eNS_URI);
 
 		// Obtain or create and register package
-		FlowPackageImpl theFlowPackage = (FlowPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof FlowPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new FlowPackageImpl());
+		Object registeredFlowPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		FlowPackageImpl theFlowPackage = registeredFlowPackage instanceof FlowPackageImpl ? (FlowPackageImpl)registeredFlowPackage : new FlowPackageImpl();
 
 		isInited = true;
 
@@ -243,7 +244,6 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 		// Mark meta-data to indicate it can't be changed
 		theFlowPackage.freeze();
 
-  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(FlowPackage.eNS_URI, theFlowPackage);
 		return theFlowPackage;
