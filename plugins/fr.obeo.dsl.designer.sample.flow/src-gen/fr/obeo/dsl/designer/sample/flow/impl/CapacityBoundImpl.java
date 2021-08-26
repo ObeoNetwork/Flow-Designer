@@ -222,7 +222,7 @@ public class CapacityBoundImpl extends FlowElementImpl implements CapacityBound 
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (capacity: ");
 		result.append(capacity);
 		result.append(", load: ");

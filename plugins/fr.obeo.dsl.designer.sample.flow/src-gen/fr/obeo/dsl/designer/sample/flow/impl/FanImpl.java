@@ -354,7 +354,7 @@ public class FanImpl extends FlowElementImpl implements Fan {
     public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (consumption: ");
 		result.append(consumption);
 		result.append(", powerStatus: ");

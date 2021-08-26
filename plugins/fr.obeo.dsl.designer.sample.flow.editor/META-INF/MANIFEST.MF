@@ -2,6 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: fr.obeo.dsl.designer.sample.flow.editor;singleton:=true
+Automatic-Module-Name: fr.obeo.dsl.designer.sample.flow.editor
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Activator: fr.obeo.dsl.designer.sample.flow.presentation.FlowEditorPlugin$Implementation
