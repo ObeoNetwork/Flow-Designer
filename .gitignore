@@ -7,4 +7,6 @@ target/
 *.xtendbin
 *._trace
 bin
-
+### macOS ###
+.DS_Store
+._*
