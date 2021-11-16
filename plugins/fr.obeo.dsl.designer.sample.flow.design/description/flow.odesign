@@ -760,10 +760,10 @@
         </customization>
       </defaultLayer>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" endUserDocumentation="Topography is used to design internal structure of composite processors, and flows." name="Topography unsynchronized" domainClass="flow::System" enablePopupBars="true">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" dropDescriptions="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Drop%20Element%20Tool']" endUserDocumentation="Topography is used to design internal structure of composite processors, and flows." name="Topography unsynchronized" domainClass="flow::System" enablePopupBars="true">
       <metamodel href="http://www.obeo.fr/dsl/designer/sample/flow#/"/>
       <filters xsi:type="filter:CompositeFilterDescription" name="Hide lightweight elements">
-        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Processor'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Fan']" semanticConditionExpression="aql:self.weight>5"/>
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Unsynchronized%20Processor'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Fan']" semanticConditionExpression="aql:self.weight>5"/>
       </filters>
       <defaultLayer name="Main">
         <nodeMappings name="Unsynchronized Data Source" deletionDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Delete%20View']" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Volume']" semanticCandidatesExpression="feature:elements" createElements="false" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='OpenPropertiesViewInDialog']" domainClass="flow::DataSource">
@@ -786,14 +786,14 @@
             </style>
           </conditionnalStyles>
         </nodeMappings>
-        <edgeMappings name="Data Source to Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Capacity']" semanticCandidatesExpression="aql:self.elements.eAllContents(flow::DataFlow)" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='ChangeSourceAndTargetEdge']" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@nodeMappings[name='Unsynchronized%20Data%20Source'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Data%20Source%20in%20system']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Processor']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="flow::DataFlow" useDomainElement="true">
+        <edgeMappings name="Data Source to Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Capacity']" semanticCandidatesExpression="aql:self.elements.eAllContents(flow::DataFlow)" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='ChangeSourceAndTargetEdge']" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@nodeMappings[name='Unsynchronized%20Data%20Source'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Data%20Source%20in%20system']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Unsynchronized%20Processor']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="flow::DataFlow" useDomainElement="true">
           <style strokeColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Gray']" lineStyle="dash" targetArrow="InputClosedArrow">
             <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.capacity">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="Processor  to Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Capacity']" semanticCandidatesExpression="aql:self.elements.eAllContents(flow::DataFlow)" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='ChangeSourceAndTargetEdge']" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Processor']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Processor']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="flow::DataFlow" useDomainElement="true">
+        <edgeMappings name="Processor  to Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Capacity']" semanticCandidatesExpression="aql:self.elements.eAllContents(flow::DataFlow)" semanticElements="var:self" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='ChangeSourceAndTargetEdge']" sourceMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Unsynchronized%20Processor']" targetMapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Unsynchronized%20Processor']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="flow::DataFlow" useDomainElement="true">
           <style strokeColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Gray']">
             <centerLabelStyleDescription showIcon="false" labelExpression="aql:self.capacity">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -807,7 +807,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <containerMappings name="Unsynchronized System" detailDescriptions="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Sub%20Topography']" deletionDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Delete%20View']" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Capacity']" semanticCandidatesExpression="feature:elements" createElements="false" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='OpenPropertiesViewInDialog']" domainClass="flow::System">
+        <containerMappings name="Unsynchronized System" detailDescriptions="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Sub%20Topography']" deletionDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Delete%20View']" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Capacity']" semanticCandidatesExpression="feature:elements" createElements="false" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='OpenPropertiesViewInDialog']" domainClass="flow::System" dropDescriptions="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Drop%20Element%20Tool']">
           <borderedNodeMappings name="PowerOutputNode" semanticCandidatesExpression="feature:powerOutputs" domainClass="flow::PowerOutput">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="" labelPosition="node" resizeKind="NSEW" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/power_output.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -820,7 +820,7 @@
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
           </borderedNodeMappings>
-          <subNodeMappings name="Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Capacity']" semanticCandidatesExpression="aql:self.elements" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='OpenPropertiesViewInDialog']" domainClass="flow::Processor">
+          <subNodeMappings name="Unsynchronized Processor" labelDirectEdit="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Name%20and%20Capacity']" semanticCandidatesExpression="aql:self.elements" createElements="false" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='OpenPropertiesViewInDialog']" domainClass="flow::Processor">
             <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="aql:self.sizeFromCapacity()" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/cpu.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -936,7 +936,7 @@
               </style>
             </conditionnalStyles>
           </subNodeMappings>
-          <subNodeMappings name="Fan" semanticCandidatesExpression="aql:self.eAllContents(flow::Fan)" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='OpenPropertiesViewInDialog']" domainClass="flow.Fan">
+          <subNodeMappings name="Fan" semanticCandidatesExpression="aql:self.eAllContents(flow::Fan)" doubleClickDescription="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@toolSections.0/@ownedTools[name='OpenPropertiesViewInDialog']" domainClass="flow::Fan">
             <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="feature:speed" sizeComputationExpression="aql:self.speed/30" arcWidth="1" arcHeight="1" workspacePath="/fr.obeo.dsl.designer.sample.flow.design/images/fan.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -988,13 +988,24 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="Processor" nodeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Processor']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Processor" nodeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Unsynchronized%20Processor']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="flow::Processor" referenceName="elements">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Processor' + self.eContainer().eContents()->filter(flow::Processor)->size()"/>
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="status" valueExpression="active"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Add existing Processor" nodeMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Unsynchronized%20Processor']">
+            <variable name="container">
+              <subVariables xsi:type="tool_1:SelectModelElementVariable" name="selected" candidatesExpression="aql:self.oclAsType(flow::System).elements->filter(flow::Processor)" message="Select existing Processor to add"/>
+            </variable>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:selected">
+                <subModelOperations xsi:type="tool:CreateView" mapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Unsynchronized%20Processor']" containerViewExpression="aql:containerView"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -1071,7 +1082,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:DoubleClickDescription" name="OpenPropertiesViewInDialog" mappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@nodeMappings[name='Unsynchronized%20Data%20Source'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Processor'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Fan'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']">
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="OpenPropertiesViewInDialog" mappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@nodeMappings[name='Unsynchronized%20Data%20Source'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Unsynchronized%20Processor'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Fan'] //@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']">
             <element name="element"/>
             <elementView name="elementView"/>
             <initialOperation>
@@ -1129,6 +1140,25 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:elementView">
                 <subModelOperations xsi:type="tool_1:DeleteView"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerDropDescription" name="Drop Element Tool" label="Drop Tool" dragSource="PROJECT_EXPLORER">
+            <oldContainer name="oldSemanticContainer"/>
+            <newContainer name="newSemanticContainer"/>
+            <element name="element"/>
+            <newViewContainer name="newViewContainer"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.oclIsKindOf(flow::DataSource)">
+                  <subModelOperations xsi:type="tool:CreateView" mapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@nodeMappings[name='Unsynchronized%20Data%20Source']" containerViewExpression="var:newViewContainer"/>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.oclIsKindOf(flow::System)">
+                  <subModelOperations xsi:type="tool:CreateView" mapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']" containerViewExpression="var:newViewContainer"/>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.oclIsKindOf(flow::Processor)">
+                  <subModelOperations xsi:type="tool:CreateView" mapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Unsynchronized%20Processor']" containerViewExpression="var:newViewContainer"/>
+                </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
