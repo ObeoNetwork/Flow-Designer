@@ -995,6 +995,7 @@
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="flow::Processor" referenceName="elements">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Processor' + self.eContainer().eContents()->filter(flow::Processor)->size()"/>
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="status" valueExpression="active"/>
+                <subModelOperations xsi:type="tool:CreateView" mapping="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography%20unsynchronized']/@defaultLayer/@containerMappings[name='Unsynchronized%20System']/@subNodeMappings[name='Unsynchronized%20Processor']" containerViewExpression="var:containerView"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
