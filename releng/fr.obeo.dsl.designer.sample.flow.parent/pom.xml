@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>fr.obeo.dsl.designer.sample.flow</groupId>
   <artifactId>fr.obeo.dsl.designer.sample.flow.parent</artifactId>
-  <version>1.0.8-SNAPSHOT</version>
+  <version>1.0.9-SNAPSHOT</version>
   <packaging>pom</packaging>
   <properties>
     <tycho.version>1.7.0</tycho.version>
@@ -68,7 +68,7 @@
 	    <artifact>
 	      <groupId>fr.obeo.dsl.designer.sample.flow</groupId>
 	      <artifactId>fr.obeo.dsl.designer.sample.flow.parent</artifactId>
-	      <version>1.0.8-SNAPSHOT</version>
+	      <version>1.0.9-SNAPSHOT</version>
 	      <classifier>${targetplatformPath}</classifier>
 	    </artifact>
 	  </target>
