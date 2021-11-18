@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright (c) 2019 Obeo
+  Copyright (c) 2019, 2021 Obeo
   All rights reserved.
 
   Contributors:
@@ -24,7 +24,7 @@
 
   <groupId>fr.obeo.dsl.designer.sample.flow</groupId>
   <artifactId>fr.obeo.dsl.designer.sample.flow.top</artifactId>
-  <version>1.0.9-SNAPSHOT</version>
+  <version>1.0.10-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <distributionManagement>
