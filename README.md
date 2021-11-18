@@ -1,22 +1,20 @@
 Flow-Designer
 =============
 
-This is the Flow Designer sample for Obeo Designer. 
+This is the Flow Designer 1.10 sample for Sirius-Web. 
 
-You can find a video of this designer at the home page of https://www.eclipse.org/sirius
-
-To install it, the easiest way is to download Obeo Designer Community Edition 9.1 which provides a ready-to-use bundle with Sirius 4.1. Just check out this source code, and use a runtime workspace to try the sample with these two projects:
-* org.obeonetwork.sample.robot
-* fr.obeo.dsl.designer.sample.flow.design
-
-
-Last change: 
-* Upgrade to Sirius 4.1 (and OD 9.1)
-* Simplify the VSM for the demo purpose
-* Improve the L&F of the sample.
-
-The very next steps for this project are:
-* CDO-ification of the metamodel
-* Propose a scenario of improvement with Power Supply
-
-
+The following diagrams are supported by Sirius-Web :
+- Topography
+- Topography with auto-layout
+- Topography unsynchronized
+    - Root Data Source elements are unsynchronized
+        - tools are available to create or add existing Data Sources
+    - Root Composite Processor elements are unsynchronized
+        - tools are available to create or add existing Composite Processors
+        - Processor sub-nodes are unsynchronized
+            - a specific delete tool is available: it replaces the generic delete tools in sirius-web.
+        - Fan sub-nodes are synchronized
+        - Data Source sub-nodes are synchronized
+        - Power Input bordered-nodes are synchronized
+        - Power Output bordered-nodes are synchronized
+    - No Delete tool for unsynchronized root Data Sources & Composite Processors: sirius-web provides generic delete from model tool & delete from diagram tool.
