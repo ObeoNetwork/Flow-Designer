@@ -18,6 +18,7 @@
 		<module>../../plugins/fr.obeo.dsl.designer.sample.flow.design</module>
 		<module>../../plugins/fr.obeo.dsl.designer.sample.flow.simulation</module>
 		<module>../../features/fr.obeo.dsl.designer.sample.flow.designer</module>
+		<module>../fr.obeo.dsl.designer.sample.flow.update</module>
 	</modules>
 	<build>
 		<plugins>
