@@ -10,11 +10,6 @@ To install it, the easiest way is to download [Obeo Designer Community Edition 1
 * org.obeonetwork.sample.robot
 * fr.obeo.dsl.designer.sample.flow.design
 
-If you want to test the XText integration please install the following feature from Obeo Designer update site:
-
-* Sirius Integration with Xtext
-* Xtext Complete SDK
-
 If you only need the Sirius modeler, close the following projets:
 
 * _fr.obeo.dsl.designer.sample.flow.design.xtextwidget_
