@@ -613,7 +613,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_mDPeR_KPEeaTM5lTgIAE1w" name="Central_Unit (25°C)">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_mDPeR_KPEeaTM5lTgIAE1w" name="Central_Unit">
       <target xmi:type="flow:CompositeProcessor" href="Robot.flow#_74hOgLTZEeeolunnT_MYFg"/>
       <semanticElements xmi:type="flow:CompositeProcessor" href="Robot.flow#_74hOgLTZEeeolunnT_MYFg"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -659,7 +659,7 @@
         <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@containerMappings[name='importSystem']/@subNodeMappings[name='Fan']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_mDPeTfKPEeaTM5lTgIAE1w" name="CaptureSubSystem (28°C)">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_mDPeTfKPEeaTM5lTgIAE1w" name="CaptureSubSystem">
       <target xmi:type="flow:CompositeProcessor" href="Robot.flow#_74lf8bTZEeeolunnT_MYFg"/>
       <semanticElements xmi:type="flow:CompositeProcessor" href="Robot.flow#_74lf8bTZEeeolunnT_MYFg"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1119,7 +1119,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@nodeMappings[name='Data%20Source']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_ezRyt6T_EeezavZXoDtFGQ" name="Central_Unit (25°C)">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_ezRyt6T_EeezavZXoDtFGQ" name="Central_Unit">
       <target xmi:type="flow:CompositeProcessor" href="Robot.flow#_74hOgLTZEeeolunnT_MYFg"/>
       <semanticElements xmi:type="flow:CompositeProcessor" href="Robot.flow#_74hOgLTZEeeolunnT_MYFg"/>
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_FkouMKUmEeerOY55FDaMag" name="1000" visible="false" outgoingEdges="_FkwC8KUmEeerOY55FDaMag" width="3" height="3" resizeKind="NSEW">
@@ -1175,7 +1175,7 @@
         <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/fr.obeo.dsl.designer.sample.flow.design/description/flow.odesign#//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@additionalLayers[name='Temperature']/@containerMappings[name='importSystem']/@subNodeMappings[name='Fan']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_ezSZsKT_EeezavZXoDtFGQ" name="CaptureSubSystem (28°C)">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_ezSZsKT_EeezavZXoDtFGQ" name="CaptureSubSystem">
       <target xmi:type="flow:CompositeProcessor" href="Robot.flow#_74lf8bTZEeeolunnT_MYFg"/>
       <semanticElements xmi:type="flow:CompositeProcessor" href="Robot.flow#_74lf8bTZEeeolunnT_MYFg"/>
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_Fks_oKUmEeerOY55FDaMag" visible="false" incomingEdges="_FkwC8KUmEeerOY55FDaMag" width="3" height="3" resizeKind="NSEW">

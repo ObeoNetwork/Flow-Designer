@@ -138,19 +138,9 @@
               </style>
             </conditionnalStyles>
           </subNodeMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Gray']" labelSize="10" showIcon="false" labelExpression="aql:self.oclAsType(flow::CompositeProcessor).name +' ('+ self.oclAsType(flow::CompositeProcessor).temperature +'&#xb0;C)'" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" backgroundStyle="Liquid" backgroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']" foregroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']">
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Gray']" labelSize="10" showIcon="false" labelExpression="aql:self.name" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Black']" backgroundStyle="Liquid" backgroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']" foregroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']">
             <labelFormat>bold</labelFormat>
           </style>
-          <conditionnalStyles predicateExpression="aql:self.temperature>30 and self.temperature&lt;=40">
-            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Orange']" labelSize="10" showIcon="false" labelExpression="aql:self.oclAsType(flow::CompositeProcessor).name +' ('+ self.oclAsType(flow::CompositeProcessor).temperature +'&#xb0;C)'" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Orange']" backgroundStyle="Liquid" backgroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']" foregroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']">
-              <labelFormat>bold</labelFormat>
-            </style>
-          </conditionnalStyles>
-          <conditionnalStyles predicateExpression="aql:self.temperature>40">
-            <style xsi:type="style:FlatContainerStyleDescription" arcWidth="45" arcHeight="45" borderSizeComputationExpression="1" borderColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Red']" labelSize="10" showIcon="false" labelExpression="aql:self.oclAsType(flow::CompositeProcessor).name +' ('+ self.oclAsType(flow::CompositeProcessor).temperature +'&#xb0;C)'" labelColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_Red']" backgroundStyle="Liquid" backgroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']" foregroundColor="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGray']">
-              <labelFormat>bold</labelFormat>
-            </style>
-          </conditionnalStyles>
         </containerMappings>
         <toolSections name="Creation Tools">
           <ownedTools xsi:type="tool:ContainerCreationDescription" name="Composite Processor" containerMappings="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']">
@@ -335,19 +325,16 @@
         </toolSections>
         <customization>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(flow::System).temperature>=40">
-            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style" referenceName="foregroundColor">
-              <value href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
-            </featureCustomizations>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style" referenceName="foregroundColor" value="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightRed']"/>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style" referenceName="backgroundColor" value="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightRed']"/>
           </vsmElementCustomizations>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(flow::System).temperature&lt;40">
-            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style" referenceName="foregroundColor">
-              <value href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
-            </featureCustomizations>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style" referenceName="foregroundColor" value="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightOrange']"/>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style" referenceName="backgroundColor" value="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightOrange']"/>
           </vsmElementCustomizations>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclAsType(flow::System).temperature&lt;=30">
-            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style" referenceName="foregroundColor">
-              <value href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
-            </featureCustomizations>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style" referenceName="foregroundColor" value="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGreen']"/>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style" referenceName="backgroundColor" value="//@userColorsPalettes[name='FlowColors']/@entries[name='Flow_LightGreen']"/>
           </vsmElementCustomizations>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="aql:self.oclIsTypeOf(flow::CompositeProcessor)">
             <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='Exchanges']/@ownedRepresentations[name='Topography']/@defaultLayer/@containerMappings[name='System']/@style" attributeName="labelExpression" value="aql:self.oclAsType(flow::CompositeProcessor).name +' ('+ self.oclAsType(flow::CompositeProcessor).temperature +'&#xb0;C)'"/>
