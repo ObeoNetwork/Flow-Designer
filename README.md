@@ -10,15 +10,6 @@ To install it, the easiest way is to download [Obeo Designer Community Edition 1
 * org.obeonetwork.sample.robot
 * fr.obeo.dsl.designer.sample.flow.design
 
-If you only need the Sirius modeler, close the following projets:
-
-* _fr.obeo.dsl.designer.sample.flow.design.xtextwidget_
-* _fr.obeo.dsl.designer.sample.flow.routerdsl_
-* _fr.obeo.dsl.designer.sample.flow.routerdsl.ide_
-* _fr.obeo.dsl.designer.sample.flow.routerdsl.ui_
-* _io.typefox.dsl.designer.flow.xtext_
-
-
 Last change: 
 * Update SVGs and icons
 * Upgrade to Sirius 6.5.1 (and OD 11.5.0)
