@@ -8,7 +8,7 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="3"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Physical"/>
-  <eClassifiers xsi:type="ecore:EClass" name="CompositeProcessor" eSuperTypes="#//System #//FlowTarget #//CapacityBound #//FlowSource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CompositeProcessor" eSuperTypes="#//System #//FlowTarget #//CapacityBound"/>
   <eClassifiers xsi:type="ecore:EClass" name="DataFlow" eSuperTypes="#//CapacityBound">
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
         eType="#//FlowTarget" eOpposite="#//FlowTarget/incomingFlows"/>
