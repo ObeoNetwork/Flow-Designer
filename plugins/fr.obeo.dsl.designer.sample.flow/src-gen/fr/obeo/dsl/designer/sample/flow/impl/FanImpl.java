@@ -20,14 +20,14 @@
  */
 package fr.obeo.dsl.designer.sample.flow.impl;
 
-import fr.obeo.dsl.designer.sample.flow.Fan;
-import fr.obeo.dsl.designer.sample.flow.FlowPackage;
-
-import fr.obeo.dsl.designer.sample.flow.Powered;
-import fr.obeo.dsl.designer.sample.flow.PoweredStatus;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import fr.obeo.dsl.designer.sample.flow.Fan;
+import fr.obeo.dsl.designer.sample.flow.FlowPackage;
+import fr.obeo.dsl.designer.sample.flow.Powered;
+import fr.obeo.dsl.designer.sample.flow.PoweredStatus;
 
 /**
  * <!-- begin-user-doc -->
@@ -144,7 +144,8 @@ public class FanImpl extends FlowElementImpl implements Fan {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public int getConsumption() {
+    @Override
+				public int getConsumption() {
 		return consumption;
 	}
 
@@ -153,7 +154,8 @@ public class FanImpl extends FlowElementImpl implements Fan {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setConsumption(int newConsumption) {
+    @Override
+				public void setConsumption(int newConsumption) {
 		int oldConsumption = consumption;
 		consumption = newConsumption;
 		if (eNotificationRequired())
@@ -165,7 +167,8 @@ public class FanImpl extends FlowElementImpl implements Fan {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public PoweredStatus getPowerStatus() {
+    @Override
+				public PoweredStatus getPowerStatus() {
 		return powerStatus;
 	}
 
@@ -174,7 +177,8 @@ public class FanImpl extends FlowElementImpl implements Fan {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setPowerStatus(PoweredStatus newPowerStatus) {
+    @Override
+				public void setPowerStatus(PoweredStatus newPowerStatus) {
 		PoweredStatus oldPowerStatus = powerStatus;
 		powerStatus = newPowerStatus == null ? POWER_STATUS_EDEFAULT : newPowerStatus;
 		if (eNotificationRequired())
@@ -186,7 +190,8 @@ public class FanImpl extends FlowElementImpl implements Fan {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public int getSpeed() {
+    @Override
+				public int getSpeed() {
 		return speed;
 	}
 
@@ -195,7 +200,8 @@ public class FanImpl extends FlowElementImpl implements Fan {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setSpeed(int newSpeed) {
+    @Override
+				public void setSpeed(int newSpeed) {
 		int oldSpeed = speed;
 		speed = newSpeed;
 		if (eNotificationRequired())
@@ -207,7 +213,8 @@ public class FanImpl extends FlowElementImpl implements Fan {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public int getWeight() {
+    @Override
+				public int getWeight() {
 		return weight;
 	}
 
@@ -216,7 +223,8 @@ public class FanImpl extends FlowElementImpl implements Fan {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setWeight(int newWeight) {
+    @Override
+				public void setWeight(int newWeight) {
 		int oldWeight = weight;
 		weight = newWeight;
 		if (eNotificationRequired())

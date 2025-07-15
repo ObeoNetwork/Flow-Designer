@@ -20,17 +20,15 @@
  */
 package fr.obeo.dsl.designer.sample.flow.impl;
 
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.EObjectImpl;
+
 import fr.obeo.dsl.designer.sample.flow.FlowElement;
 import fr.obeo.dsl.designer.sample.flow.FlowElementStatus;
 import fr.obeo.dsl.designer.sample.flow.FlowElementUsage;
 import fr.obeo.dsl.designer.sample.flow.FlowPackage;
-
-import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -111,6 +109,7 @@ public abstract class FlowElementImpl extends EObjectImpl implements FlowElement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FlowElementStatus getStatus() {
 		return status;
 	}
@@ -120,6 +119,7 @@ public abstract class FlowElementImpl extends EObjectImpl implements FlowElement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStatus(FlowElementStatus newStatus) {
 		FlowElementStatus oldStatus = status;
 		status = newStatus == null ? STATUS_EDEFAULT : newStatus;
@@ -132,6 +132,7 @@ public abstract class FlowElementImpl extends EObjectImpl implements FlowElement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FlowElementUsage getUsage() {
 		return usage;
 	}
@@ -141,6 +142,7 @@ public abstract class FlowElementImpl extends EObjectImpl implements FlowElement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUsage(FlowElementUsage newUsage) {
 		FlowElementUsage oldUsage = usage;
 		usage = newUsage == null ? USAGE_EDEFAULT : newUsage;

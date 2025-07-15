@@ -235,6 +235,7 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getCapacity() {
 		return capacity;
 	}
@@ -244,6 +245,7 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCapacity(int newCapacity) {
 		int oldCapacity = capacity;
 		capacity = newCapacity;
@@ -256,6 +258,7 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -265,6 +268,7 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -277,6 +281,7 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getVolume() {
 		return volume;
 	}
@@ -286,6 +291,7 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setVolume(int newVolume) {
 		int oldVolume = volume;
 		volume = newVolume;
@@ -298,7 +304,8 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public int getWeight() {
+    @Override
+				public int getWeight() {
 		return weight;
 	}
 
@@ -307,7 +314,8 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setWeight(int newWeight) {
+    @Override
+				public void setWeight(int newWeight) {
 		int oldWeight = weight;
 		weight = newWeight;
 		if (eNotificationRequired())
@@ -319,7 +327,8 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public int getConsumption() {
+    @Override
+				public int getConsumption() {
 		return consumption;
 	}
 
@@ -328,7 +337,8 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setConsumption(int newConsumption) {
+    @Override
+				public void setConsumption(int newConsumption) {
 		int oldConsumption = consumption;
 		consumption = newConsumption;
 		if (eNotificationRequired())
@@ -340,7 +350,8 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public PoweredStatus getPowerStatus() {
+    @Override
+				public PoweredStatus getPowerStatus() {
 		return powerStatus;
 	}
 
@@ -349,7 +360,8 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setPowerStatus(PoweredStatus newPowerStatus) {
+    @Override
+				public void setPowerStatus(PoweredStatus newPowerStatus) {
 		PoweredStatus oldPowerStatus = powerStatus;
 		powerStatus = newPowerStatus == null ? POWER_STATUS_EDEFAULT : newPowerStatus;
 		if (eNotificationRequired())
@@ -376,6 +388,7 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getLoad() {
 		return load;
 	}
@@ -385,6 +398,7 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLoad(int newLoad) {
 		int oldLoad = load;
 		load = newLoad;
@@ -397,6 +411,7 @@ public class ProcessorImpl extends FlowTargetImpl implements Processor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<DataFlow> getOutgoingFlows() {
 		if (outgoingFlows == null) {
 			outgoingFlows = new EObjectContainmentWithInverseEList<DataFlow>(DataFlow.class, this, FlowPackage.PROCESSOR__OUTGOING_FLOWS, FlowPackage.DATA_FLOW__SOURCE);

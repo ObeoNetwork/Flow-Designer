@@ -14,3 +14,4 @@ Require-Bundle: fr.obeo.dsl.designer.sample.flow,
 Bundle-ClassPath: .
 Bundle-Vendor: Obeo.fr
 Import-Package: org.eclipse.sirius.ext.base
+Automatic-Module-Name: fr.obeo.dsl.designer.sample.flow.simulation

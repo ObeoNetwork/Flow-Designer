@@ -20,8 +20,6 @@
  */
 package fr.obeo.dsl.designer.sample.flow;
 
-import org.eclipse.emf.common.util.EList;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Processor</b></em>'.

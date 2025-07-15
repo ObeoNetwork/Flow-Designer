@@ -27,7 +27,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
-import fr.obeo.dsl.designer.sample.flow.CapacityBound;
 import fr.obeo.dsl.designer.sample.flow.CompositeProcessor;
 import fr.obeo.dsl.designer.sample.flow.DataFlow;
 import fr.obeo.dsl.designer.sample.flow.DataSource;
@@ -147,6 +146,7 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Processor createProcessor() {
 		ProcessorImpl processor = new ProcessorImpl();
 		return processor;
@@ -157,7 +157,8 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public Fan createFan() {
+    @Override
+				public Fan createFan() {
 		FanImpl fan = new FanImpl();
 		return fan;
 	}
@@ -167,7 +168,8 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public Physical createPhysical() {
+    @Override
+				public Physical createPhysical() {
 		PhysicalImpl physical = new PhysicalImpl();
 		return physical;
 	}
@@ -177,7 +179,8 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public CompositeProcessor createCompositeProcessor() {
+    @Override
+				public CompositeProcessor createCompositeProcessor() {
 		CompositeProcessorImpl compositeProcessor = new CompositeProcessorImpl();
 		return compositeProcessor;
 	}
@@ -187,6 +190,7 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataFlow createDataFlow() {
 		DataFlowImpl dataFlow = new DataFlowImpl();
 		return dataFlow;
@@ -197,6 +201,7 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public fr.obeo.dsl.designer.sample.flow.System createSystem() {
 		SystemImpl system = new SystemImpl();
 		return system;
@@ -207,7 +212,8 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public PowerOutput createPowerOutput() {
+    @Override
+				public PowerOutput createPowerOutput() {
 		PowerOutputImpl powerOutput = new PowerOutputImpl();
 		return powerOutput;
 	}
@@ -217,7 +223,8 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public PowerInput createPowerInput() {
+    @Override
+				public PowerInput createPowerInput() {
 		PowerInputImpl powerInput = new PowerInputImpl();
 		return powerInput;
 	}
@@ -227,7 +234,8 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public PowerLink createPowerLink() {
+    @Override
+				public PowerLink createPowerLink() {
 		PowerLinkImpl powerLink = new PowerLinkImpl();
 		return powerLink;
 	}
@@ -237,6 +245,7 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataSource createDataSource() {
 		DataSourceImpl dataSource = new DataSourceImpl();
 		return dataSource;
@@ -247,6 +256,7 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Named createNamed() {
 		NamedImpl named = new NamedImpl();
 		return named;
@@ -317,6 +327,7 @@ public class FlowFactoryImpl extends EFactoryImpl implements FlowFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FlowPackage getFlowPackage() {
 		return (FlowPackage)getEPackage();
 	}

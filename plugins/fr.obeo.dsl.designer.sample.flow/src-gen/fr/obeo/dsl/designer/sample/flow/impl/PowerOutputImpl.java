@@ -105,7 +105,8 @@ public class PowerOutputImpl extends EObjectImpl implements PowerOutput {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public int getPower() {
+    @Override
+				public int getPower() {
 		return power;
 	}
 
@@ -114,7 +115,8 @@ public class PowerOutputImpl extends EObjectImpl implements PowerOutput {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setPower(int newPower) {
+    @Override
+				public void setPower(int newPower) {
 		int oldPower = power;
 		power = newPower;
 		if (eNotificationRequired())
@@ -126,7 +128,8 @@ public class PowerOutputImpl extends EObjectImpl implements PowerOutput {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EList<PowerLink> getLinks() {
+    @Override
+				public EList<PowerLink> getLinks() {
 		if (links == null) {
 			links = new EObjectContainmentWithInverseEList<PowerLink>(PowerLink.class, this, FlowPackage.POWER_OUTPUT__LINKS, FlowPackage.POWER_LINK__SOURCE);
 		}

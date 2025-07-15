@@ -20,15 +20,13 @@
  */
 package fr.obeo.dsl.designer.sample.flow.impl;
 
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import fr.obeo.dsl.designer.sample.flow.DataSource;
 import fr.obeo.dsl.designer.sample.flow.FlowPackage;
-
 import fr.obeo.dsl.designer.sample.flow.Named;
-import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -109,6 +107,7 @@ public class DataSourceImpl extends FlowSourceImpl implements DataSource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getVolume() {
 		return volume;
 	}
@@ -118,6 +117,7 @@ public class DataSourceImpl extends FlowSourceImpl implements DataSource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setVolume(int newVolume) {
 		int oldVolume = volume;
 		volume = newVolume;
@@ -130,6 +130,7 @@ public class DataSourceImpl extends FlowSourceImpl implements DataSource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -139,6 +140,7 @@ public class DataSourceImpl extends FlowSourceImpl implements DataSource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;

@@ -2,15 +2,13 @@
  */
 package fr.obeo.dsl.designer.sample.flow.impl;
 
-import fr.obeo.dsl.designer.sample.flow.FlowPackage;
-import fr.obeo.dsl.designer.sample.flow.Named;
-
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
+
+import fr.obeo.dsl.designer.sample.flow.FlowPackage;
+import fr.obeo.dsl.designer.sample.flow.Named;
 
 /**
  * <!-- begin-user-doc -->
@@ -70,6 +68,7 @@ public class NamedImpl extends EObjectImpl implements Named {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -79,6 +78,7 @@ public class NamedImpl extends EObjectImpl implements Named {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;

@@ -20,14 +20,12 @@
  */
 package fr.obeo.dsl.designer.sample.flow.impl;
 
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import fr.obeo.dsl.designer.sample.flow.CapacityBound;
 import fr.obeo.dsl.designer.sample.flow.FlowPackage;
-
-import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -108,6 +106,7 @@ public abstract class CapacityBoundImpl extends FlowElementImpl implements Capac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getCapacity() {
 		return capacity;
 	}
@@ -117,6 +116,7 @@ public abstract class CapacityBoundImpl extends FlowElementImpl implements Capac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCapacity(int newCapacity) {
 		int oldCapacity = capacity;
 		capacity = newCapacity;
@@ -129,6 +129,7 @@ public abstract class CapacityBoundImpl extends FlowElementImpl implements Capac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getLoad() {
 		return load;
 	}
@@ -138,6 +139,7 @@ public abstract class CapacityBoundImpl extends FlowElementImpl implements Capac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLoad(int newLoad) {
 		int oldLoad = load;
 		load = newLoad;

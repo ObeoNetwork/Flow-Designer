@@ -108,7 +108,8 @@ public abstract class PoweredImpl extends EObjectImpl implements Powered {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public int getConsumption() {
+    @Override
+				public int getConsumption() {
 		return consumption;
 	}
 
@@ -117,7 +118,8 @@ public abstract class PoweredImpl extends EObjectImpl implements Powered {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setConsumption(int newConsumption) {
+    @Override
+				public void setConsumption(int newConsumption) {
 		int oldConsumption = consumption;
 		consumption = newConsumption;
 		if (eNotificationRequired())
@@ -129,7 +131,8 @@ public abstract class PoweredImpl extends EObjectImpl implements Powered {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public PoweredStatus getPowerStatus() {
+    @Override
+				public PoweredStatus getPowerStatus() {
 		return powerStatus;
 	}
 
@@ -138,7 +141,8 @@ public abstract class PoweredImpl extends EObjectImpl implements Powered {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setPowerStatus(PoweredStatus newPowerStatus) {
+    @Override
+				public void setPowerStatus(PoweredStatus newPowerStatus) {
 		PoweredStatus oldPowerStatus = powerStatus;
 		powerStatus = newPowerStatus == null ? POWER_STATUS_EDEFAULT : newPowerStatus;
 		if (eNotificationRequired())
