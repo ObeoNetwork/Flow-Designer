@@ -7,7 +7,7 @@ Bundle-Version: 1.3.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Export-Package: fr.obeo.dsl.designer.sample.flow,
  fr.obeo.dsl.designer.sample.flow.impl,
  fr.obeo.dsl.designer.sample.flow.util

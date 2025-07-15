@@ -1,6 +1,6 @@
 target "sirius-master" with source requirements
 
-location "https://www.obeo.fr/download/release/designer/11.5/community/latest/repository" {
+location "https://www.obeo.fr/download/release/designer/11.9/community/latest/repository" {
 	org.eclipse.sirius.runtime.aql.feature.group lazy
 	org.eclipse.sirius.runtime.feature.group lazy
 	org.eclipse.sirius.runtime.ide.ui.feature.group lazy
