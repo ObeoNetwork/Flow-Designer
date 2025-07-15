@@ -20,31 +20,22 @@
  */
 package fr.obeo.dsl.designer.sample.flow.impl;
 
-import fr.obeo.dsl.designer.sample.flow.CapacityBound;
-import fr.obeo.dsl.designer.sample.flow.CompositeProcessor;
-import fr.obeo.dsl.designer.sample.flow.DataFlow;
-import fr.obeo.dsl.designer.sample.flow.FlowElement;
-import fr.obeo.dsl.designer.sample.flow.FlowElementStatus;
-import fr.obeo.dsl.designer.sample.flow.FlowElementUsage;
-import fr.obeo.dsl.designer.sample.flow.FlowPackage;
-import fr.obeo.dsl.designer.sample.flow.FlowSource;
-import fr.obeo.dsl.designer.sample.flow.FlowTarget;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
+
+import fr.obeo.dsl.designer.sample.flow.CapacityBound;
+import fr.obeo.dsl.designer.sample.flow.CompositeProcessor;
+import fr.obeo.dsl.designer.sample.flow.DataFlow;
+import fr.obeo.dsl.designer.sample.flow.FlowPackage;
+import fr.obeo.dsl.designer.sample.flow.FlowTarget;
 
 /**
  * <!-- begin-user-doc -->
@@ -136,7 +127,8 @@ public class CompositeProcessorImpl extends SystemImpl implements CompositeProce
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EList<DataFlow> getIncomingFlows() {
+    @Override
+				public EList<DataFlow> getIncomingFlows() {
 		if (incomingFlows == null) {
 			incomingFlows = new EObjectWithInverseResolvingEList<DataFlow>(DataFlow.class, this, FlowPackage.COMPOSITE_PROCESSOR__INCOMING_FLOWS, FlowPackage.DATA_FLOW__TARGET);
 		}
@@ -148,7 +140,8 @@ public class CompositeProcessorImpl extends SystemImpl implements CompositeProce
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public int getCapacity() {
+    @Override
+				public int getCapacity() {
 		return capacity;
 	}
 
@@ -157,7 +150,8 @@ public class CompositeProcessorImpl extends SystemImpl implements CompositeProce
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setCapacity(int newCapacity) {
+    @Override
+				public void setCapacity(int newCapacity) {
 		int oldCapacity = capacity;
 		capacity = newCapacity;
 		if (eNotificationRequired())
@@ -169,7 +163,8 @@ public class CompositeProcessorImpl extends SystemImpl implements CompositeProce
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public int getLoad() {
+    @Override
+				public int getLoad() {
 		return load;
 	}
 
@@ -178,7 +173,8 @@ public class CompositeProcessorImpl extends SystemImpl implements CompositeProce
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setLoad(int newLoad) {
+    @Override
+				public void setLoad(int newLoad) {
 		int oldLoad = load;
 		load = newLoad;
 		if (eNotificationRequired())

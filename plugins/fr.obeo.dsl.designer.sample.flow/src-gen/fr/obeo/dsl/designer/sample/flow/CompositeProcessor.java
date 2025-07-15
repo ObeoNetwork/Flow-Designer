@@ -31,5 +31,5 @@ package fr.obeo.dsl.designer.sample.flow;
  * @model
  * @generated
  */
-public interface CompositeProcessor extends fr.obeo.dsl.designer.sample.flow.System, FlowTarget, CapacityBound, FlowSource {
+public interface CompositeProcessor extends fr.obeo.dsl.designer.sample.flow.System, FlowTarget, CapacityBound {
 } // CompositeProcessor

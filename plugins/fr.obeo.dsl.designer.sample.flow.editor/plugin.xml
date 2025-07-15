@@ -10,34 +10,32 @@
 
 <plugin>
 
-
-  <extension
-    point = "org.eclipse.ui.newWizards">
-    <category
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated flow -->
+      <category
           id="fr.obeo.dsl.viewpoint.sample.category"
-          name="%_UI_Wizard_category"
-          parentCategory="org.eclipse.ui.Examples">
-     />
-    </category>
-    <wizard
-      id = "fr.obeo.dsl.designer.sample.flow.presentation.FlowModelWizardID"
-      name = "%_UI_FlowModelWizard_label"
-      class = "fr.obeo.dsl.designer.sample.flow.presentation.FlowModelWizard"
-      category = "org.eclipse.ui.Examples/fr.obeo.dsl.viewpoint.sample.category"
-      icon = "icons/full/obj16/FlowModelFile.gif">
-      <description>%_UI_FlowModelWizard_description</description>
-      <selection class = "org.eclipse.core.resources.IResource" />
-    </wizard>
-  </extension>
+            name="%_UI_Wizard_category"
+            parentCategory="org.eclipse.ui.Examples"/>
+      <wizard
+            id="fr.obeo.dsl.designer.sample.flow.presentation.FlowModelWizardID"
+            name="%_UI_FlowModelWizard_label"
+            class="fr.obeo.dsl.designer.sample.flow.presentation.FlowModelWizard"
+            category = "org.eclipse.ui.Examples/fr.obeo.dsl.viewpoint.sample.category"
+            icon="icons/full/obj16/FlowModelFile.gif">
+         <description>%_UI_FlowModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
 
-  <extension point = "org.eclipse.ui.editors">
-    <editor
-        id = "fr.obeo.dsl.designer.sample.flow.presentation.FlowEditorID"
-        name = "%_UI_FlowEditor_label"
-        icon = "icons/full/obj16/FlowModelFile.gif"
-        extensions = "flow"
-        class = "fr.obeo.dsl.designer.sample.flow.presentation.FlowEditor" 
-        contributorClass="fr.obeo.dsl.designer.sample.flow.presentation.FlowActionBarContributor" >
-    </editor>
-  </extension>    
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated flow -->
+      <editor
+            id="fr.obeo.dsl.designer.sample.flow.presentation.FlowEditorID"
+            name="%_UI_FlowEditor_label"
+            icon="icons/full/obj16/FlowModelFile.gif"
+            extensions="flow"
+            class="fr.obeo.dsl.designer.sample.flow.presentation.FlowEditor"
+            contributorClass="fr.obeo.dsl.designer.sample.flow.presentation.FlowActionBarContributor">
+      </editor>
+   </extension>
 </plugin>

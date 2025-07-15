@@ -20,21 +20,17 @@
  */
 package fr.obeo.dsl.designer.sample.flow.impl;
 
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.util.EcoreUtil;
+
 import fr.obeo.dsl.designer.sample.flow.DataFlow;
-import fr.obeo.dsl.designer.sample.flow.FlowElementStatus;
 import fr.obeo.dsl.designer.sample.flow.FlowPackage;
 import fr.obeo.dsl.designer.sample.flow.FlowSource;
 import fr.obeo.dsl.designer.sample.flow.FlowTarget;
-
-import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -85,6 +81,7 @@ public class DataFlowImpl extends CapacityBoundImpl implements DataFlow {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FlowTarget getTarget() {
 		if (target != null && target.eIsProxy()) {
 			InternalEObject oldTarget = (InternalEObject)target;
@@ -126,6 +123,7 @@ public class DataFlowImpl extends CapacityBoundImpl implements DataFlow {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTarget(FlowTarget newTarget) {
 		if (newTarget != target) {
 			NotificationChain msgs = null;
@@ -145,6 +143,7 @@ public class DataFlowImpl extends CapacityBoundImpl implements DataFlow {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FlowSource getSource() {
 		if (eContainerFeatureID() != FlowPackage.DATA_FLOW__SOURCE) return null;
 		return (FlowSource)eInternalContainer();
@@ -165,6 +164,7 @@ public class DataFlowImpl extends CapacityBoundImpl implements DataFlow {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSource(FlowSource newSource) {
 		if (newSource != eInternalContainer() || (eContainerFeatureID() != FlowPackage.DATA_FLOW__SOURCE && newSource != null)) {
 			if (EcoreUtil.isAncestor(this, newSource))

@@ -82,7 +82,8 @@ public class PowerLinkImpl extends EObjectImpl implements PowerLink {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public PowerInput getTarget() {
+    @Override
+				public PowerInput getTarget() {
 		if (target != null && target.eIsProxy()) {
 			InternalEObject oldTarget = (InternalEObject)target;
 			target = (PowerInput)eResolveProxy(oldTarget);
@@ -108,7 +109,8 @@ public class PowerLinkImpl extends EObjectImpl implements PowerLink {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setTarget(PowerInput newTarget) {
+    @Override
+				public void setTarget(PowerInput newTarget) {
 		PowerInput oldTarget = target;
 		target = newTarget;
 		if (eNotificationRequired())
@@ -120,7 +122,8 @@ public class PowerLinkImpl extends EObjectImpl implements PowerLink {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public PowerOutput getSource() {
+    @Override
+				public PowerOutput getSource() {
 		if (eContainerFeatureID() != FlowPackage.POWER_LINK__SOURCE) return null;
 		return (PowerOutput)eInternalContainer();
 	}
@@ -140,7 +143,8 @@ public class PowerLinkImpl extends EObjectImpl implements PowerLink {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setSource(PowerOutput newSource) {
+    @Override
+				public void setSource(PowerOutput newSource) {
 		if (newSource != eInternalContainer() || (eContainerFeatureID() != FlowPackage.POWER_LINK__SOURCE && newSource != null)) {
 			if (EcoreUtil.isAncestor(this, newSource))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());

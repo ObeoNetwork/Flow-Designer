@@ -81,6 +81,7 @@ public abstract class FlowTargetImpl extends FlowElementImpl implements FlowTarg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<DataFlow> getIncomingFlows() {
 		if (incomingFlows == null) {
 			incomingFlows = new EObjectWithInverseResolvingEList<DataFlow>(DataFlow.class, this, FlowPackage.FLOW_TARGET__INCOMING_FLOWS, FlowPackage.DATA_FLOW__TARGET);

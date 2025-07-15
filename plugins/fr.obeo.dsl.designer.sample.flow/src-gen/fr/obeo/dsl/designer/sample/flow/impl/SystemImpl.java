@@ -20,33 +20,27 @@
  */
 package fr.obeo.dsl.designer.sample.flow.impl;
 
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
 import fr.obeo.dsl.designer.sample.flow.DataFlow;
 import fr.obeo.dsl.designer.sample.flow.FlowElement;
 import fr.obeo.dsl.designer.sample.flow.FlowElementStatus;
 import fr.obeo.dsl.designer.sample.flow.FlowElementUsage;
 import fr.obeo.dsl.designer.sample.flow.FlowPackage;
-
 import fr.obeo.dsl.designer.sample.flow.FlowSource;
 import fr.obeo.dsl.designer.sample.flow.Named;
 import fr.obeo.dsl.designer.sample.flow.PowerInput;
 import fr.obeo.dsl.designer.sample.flow.PowerOutput;
-import fr.obeo.dsl.designer.sample.flow.PowerPlug;
-import java.util.Collection;
-
-import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
-
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -255,6 +249,7 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FlowElementStatus getStatus() {
 		return status;
 	}
@@ -264,6 +259,7 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStatus(FlowElementStatus newStatus) {
 		FlowElementStatus oldStatus = status;
 		status = newStatus == null ? STATUS_EDEFAULT : newStatus;
@@ -276,6 +272,7 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FlowElementUsage getUsage() {
 		return usage;
 	}
@@ -285,6 +282,7 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUsage(FlowElementUsage newUsage) {
 		FlowElementUsage oldUsage = usage;
 		usage = newUsage == null ? USAGE_EDEFAULT : newUsage;
@@ -297,6 +295,7 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<DataFlow> getOutgoingFlows() {
 		if (outgoingFlows == null) {
 			outgoingFlows = new EObjectContainmentWithInverseEList<DataFlow>(DataFlow.class, this, FlowPackage.SYSTEM__OUTGOING_FLOWS, FlowPackage.DATA_FLOW__SOURCE);
@@ -309,6 +308,7 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FlowElement> getElements() {
 		if (elements == null) {
 			elements = new EObjectContainmentEList<FlowElement>(FlowElement.class, this, FlowPackage.SYSTEM__ELEMENTS);
@@ -321,7 +321,8 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public String getName() {
+    @Override
+				public String getName() {
 		return name;
 	}
 
@@ -330,7 +331,8 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setName(String newName) {
+    @Override
+				public void setName(String newName) {
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
@@ -342,7 +344,8 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public int getTemperature() {
+    @Override
+				public int getTemperature() {
 		return temperature;
 	}
 
@@ -351,7 +354,8 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setTemperature(int newTemperature) {
+    @Override
+				public void setTemperature(int newTemperature) {
 		int oldTemperature = temperature;
 		temperature = newTemperature;
 		if (eNotificationRequired())
@@ -363,7 +367,8 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public int getWeight() {
+    @Override
+				public int getWeight() {
 		return weight;
 	}
 
@@ -372,7 +377,8 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public void setWeight(int newWeight) {
+    @Override
+				public void setWeight(int newWeight) {
 		int oldWeight = weight;
 		weight = newWeight;
 		if (eNotificationRequired())
@@ -384,7 +390,8 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EList<PowerOutput> getPowerOutputs() {
+    @Override
+				public EList<PowerOutput> getPowerOutputs() {
 		if (powerOutputs == null) {
 			powerOutputs = new EObjectContainmentEList<PowerOutput>(PowerOutput.class, this, FlowPackage.SYSTEM__POWER_OUTPUTS);
 		}
@@ -396,7 +403,8 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EList<PowerInput> getPowerInputs() {
+    @Override
+				public EList<PowerInput> getPowerInputs() {
 		if (powerInputs == null) {
 			powerInputs = new EObjectContainmentEList<PowerInput>(PowerInput.class, this, FlowPackage.SYSTEM__POWER_INPUTS);
 		}
@@ -408,6 +416,7 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getRoutingRules() {
 		return routingRules;
 	}
@@ -417,6 +426,7 @@ public class SystemImpl extends PoweredImpl implements fr.obeo.dsl.designer.samp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRoutingRules(String newRoutingRules) {
 		String oldRoutingRules = routingRules;
 		routingRules = newRoutingRules;

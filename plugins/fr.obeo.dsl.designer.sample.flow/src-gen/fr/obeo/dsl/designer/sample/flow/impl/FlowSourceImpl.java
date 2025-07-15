@@ -81,6 +81,7 @@ public abstract class FlowSourceImpl extends FlowElementImpl implements FlowSour
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<DataFlow> getOutgoingFlows() {
 		if (outgoingFlows == null) {
 			outgoingFlows = new EObjectContainmentWithInverseEList<DataFlow>(DataFlow.class, this, FlowPackage.FLOW_SOURCE__OUTGOING_FLOWS, FlowPackage.DATA_FLOW__SOURCE);

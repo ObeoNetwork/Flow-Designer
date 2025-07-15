@@ -254,6 +254,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getProcessor() {
 		return processorEClass;
 	}
@@ -263,6 +264,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getProcessor_Volume() {
 		return (EAttribute)processorEClass.getEStructuralFeatures().get(0);
 	}
@@ -272,7 +274,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EAttribute getProcessor_Weight() {
+    @Override
+				public EAttribute getProcessor_Weight() {
 		return (EAttribute)processorEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -281,7 +284,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EClass getFan() {
+    @Override
+				public EClass getFan() {
 		return fanEClass;
 	}
 
@@ -290,7 +294,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EAttribute getFan_Speed() {
+    @Override
+				public EAttribute getFan_Speed() {
 		return (EAttribute)fanEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -299,7 +304,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EAttribute getFan_Weight() {
+    @Override
+				public EAttribute getFan_Weight() {
 		return (EAttribute)fanEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -308,7 +314,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EClass getPhysical() {
+    @Override
+				public EClass getPhysical() {
 		return physicalEClass;
 	}
 
@@ -317,7 +324,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EClass getCompositeProcessor() {
+    @Override
+				public EClass getCompositeProcessor() {
 		return compositeProcessorEClass;
 	}
 
@@ -326,6 +334,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getDataFlow() {
 		return dataFlowEClass;
 	}
@@ -335,6 +344,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getDataFlow_Target() {
 		return (EReference)dataFlowEClass.getEStructuralFeatures().get(0);
 	}
@@ -344,6 +354,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getDataFlow_Source() {
 		return (EReference)dataFlowEClass.getEStructuralFeatures().get(1);
 	}
@@ -353,6 +364,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCapacityBound() {
 		return capacityBoundEClass;
 	}
@@ -362,6 +374,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCapacityBound_Capacity() {
 		return (EAttribute)capacityBoundEClass.getEStructuralFeatures().get(0);
 	}
@@ -371,6 +384,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCapacityBound_Load() {
 		return (EAttribute)capacityBoundEClass.getEStructuralFeatures().get(1);
 	}
@@ -380,6 +394,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getSystem() {
 		return systemEClass;
 	}
@@ -389,6 +404,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSystem_Elements() {
 		return (EReference)systemEClass.getEStructuralFeatures().get(0);
 	}
@@ -398,7 +414,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EAttribute getSystem_Temperature() {
+    @Override
+				public EAttribute getSystem_Temperature() {
 		return (EAttribute)systemEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -407,7 +424,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EAttribute getSystem_Weight() {
+    @Override
+				public EAttribute getSystem_Weight() {
 		return (EAttribute)systemEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -416,7 +434,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EReference getSystem_PowerOutputs() {
+    @Override
+				public EReference getSystem_PowerOutputs() {
 		return (EReference)systemEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -425,7 +444,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EReference getSystem_PowerInputs() {
+    @Override
+				public EReference getSystem_PowerInputs() {
 		return (EReference)systemEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -434,6 +454,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getSystem_RoutingRules() {
 		return (EAttribute)systemEClass.getEStructuralFeatures().get(5);
 	}
@@ -443,7 +464,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EClass getPowerOutput() {
+    @Override
+				public EClass getPowerOutput() {
 		return powerOutputEClass;
 	}
 
@@ -452,7 +474,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EAttribute getPowerOutput_Power() {
+    @Override
+				public EAttribute getPowerOutput_Power() {
 		return (EAttribute)powerOutputEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -461,7 +484,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EReference getPowerOutput_Links() {
+    @Override
+				public EReference getPowerOutput_Links() {
 		return (EReference)powerOutputEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -470,7 +494,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EClass getPowered() {
+    @Override
+				public EClass getPowered() {
 		return poweredEClass;
 	}
 
@@ -479,7 +504,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EAttribute getPowered_Consumption() {
+    @Override
+				public EAttribute getPowered_Consumption() {
 		return (EAttribute)poweredEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -488,7 +514,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EAttribute getPowered_PowerStatus() {
+    @Override
+				public EAttribute getPowered_PowerStatus() {
 		return (EAttribute)poweredEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -497,7 +524,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EClass getPowerInput() {
+    @Override
+				public EClass getPowerInput() {
 		return powerInputEClass;
 	}
 
@@ -506,7 +534,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EClass getPowerLink() {
+    @Override
+				public EClass getPowerLink() {
 		return powerLinkEClass;
 	}
 
@@ -515,7 +544,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EReference getPowerLink_Target() {
+    @Override
+				public EReference getPowerLink_Target() {
 		return (EReference)powerLinkEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -524,7 +554,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EReference getPowerLink_Source() {
+    @Override
+				public EReference getPowerLink_Source() {
 		return (EReference)powerLinkEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -533,6 +564,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFlowSource() {
 		return flowSourceEClass;
 	}
@@ -542,6 +574,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFlowSource_OutgoingFlows() {
 		return (EReference)flowSourceEClass.getEStructuralFeatures().get(0);
 	}
@@ -551,6 +584,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFlowTarget() {
 		return flowTargetEClass;
 	}
@@ -560,6 +594,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFlowTarget_IncomingFlows() {
 		return (EReference)flowTargetEClass.getEStructuralFeatures().get(0);
 	}
@@ -569,6 +604,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getDataSource() {
 		return dataSourceEClass;
 	}
@@ -578,6 +614,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getDataSource_Volume() {
 		return (EAttribute)dataSourceEClass.getEStructuralFeatures().get(0);
 	}
@@ -587,6 +624,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFlowElement() {
 		return flowElementEClass;
 	}
@@ -596,6 +634,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFlowElement_Status() {
 		return (EAttribute)flowElementEClass.getEStructuralFeatures().get(0);
 	}
@@ -605,6 +644,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFlowElement_Usage() {
 		return (EAttribute)flowElementEClass.getEStructuralFeatures().get(1);
 	}
@@ -614,6 +654,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNamed() {
 		return namedEClass;
 	}
@@ -623,6 +664,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getNamed_Name() {
 		return (EAttribute)namedEClass.getEStructuralFeatures().get(0);
 	}
@@ -632,7 +674,8 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
      * <!-- end-user-doc -->
 	 * @generated
 	 */
-    public EEnum getPoweredStatus() {
+    @Override
+				public EEnum getPoweredStatus() {
 		return poweredStatusEEnum;
 	}
 
@@ -641,6 +684,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getFlowElementStatus() {
 		return flowElementStatusEEnum;
 	}
@@ -650,6 +694,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getFlowElementUsage() {
 		return flowElementUsageEEnum;
 	}
@@ -659,6 +704,7 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FlowFactory getFlowFactory() {
 		return (FlowFactory)getEFactoryInstance();
 	}
@@ -779,7 +825,6 @@ public class FlowPackageImpl extends EPackageImpl implements FlowPackage {
 		compositeProcessorEClass.getESuperTypes().add(this.getSystem());
 		compositeProcessorEClass.getESuperTypes().add(this.getFlowTarget());
 		compositeProcessorEClass.getESuperTypes().add(this.getCapacityBound());
-		compositeProcessorEClass.getESuperTypes().add(this.getFlowSource());
 		dataFlowEClass.getESuperTypes().add(this.getCapacityBound());
 		capacityBoundEClass.getESuperTypes().add(this.getFlowElement());
 		systemEClass.getESuperTypes().add(this.getPowered());
