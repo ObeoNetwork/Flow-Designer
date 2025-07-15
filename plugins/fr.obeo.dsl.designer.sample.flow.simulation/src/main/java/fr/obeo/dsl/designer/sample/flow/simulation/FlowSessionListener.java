@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Obeo
+ * Copyright (c) 2014, 2025 Obeo
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -10,18 +10,26 @@
  *******************************************************************************/
 package fr.obeo.dsl.designer.sample.flow.simulation;
 
-import org.eclipse.emf.ecore.resource.ResourceSet;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.eclipse.sirius.business.api.session.Session;
 import org.eclipse.sirius.business.api.session.SessionManagerListener;
 
 public class FlowSessionListener extends SessionManagerListener.Stub {
+	
+	Map<Session, FlowSimulationTrigger> addedTriggers = new HashMap<Session, FlowSimulationTrigger>();
 
-	@SuppressWarnings("unchecked")
 	@Override
 	public void notifyAddSession(Session newSession) {
-		final ResourceSet set = newSession.getTransactionalEditingDomain().getResourceSet();
-		newSession.getEventBroker().addLocalTrigger(FlowSimulationTrigger.IS_FLOW_CHANGE,
-				new FlowSimulationTrigger(newSession));
+		FlowSimulationTrigger trigger = new FlowSimulationTrigger(newSession);
+		addedTriggers.put(newSession, trigger);
+		newSession.getEventBroker().addLocalTrigger(FlowSimulationTrigger.IS_FLOW_CHANGE, trigger);
 	}
 
+	@Override
+	public void notifyRemoveSession(Session removedSession) {
+		FlowSimulationTrigger triggerToRemove = addedTriggers.remove(removedSession);
+		removedSession.getEventBroker().removeLocalTrigger(triggerToRemove);
+	}
 }
