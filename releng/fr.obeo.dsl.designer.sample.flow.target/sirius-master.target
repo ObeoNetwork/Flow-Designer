@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl -->
-<target name="sirius-master" sequenceNumber="1629963700">
+<target name="sirius-master" sequenceNumber="1752592011">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.sirius.runtime.aql.feature.group" version="0.0.0"/>
@@ -16,7 +16,7 @@
       <unit id="org.eclipse.emf.sdk.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.emf.eef.runtime-feature.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.xtext.sdk.feature.group" version="0.0.0"/>
-      <repository location="https://www.obeo.fr/download/release/designer/11.5/community/latest/repository"/>
+      <repository location="https://www.obeo.fr/download/release/designer/11.9/community/latest/repository"/>
     </location>
   </locations>
 </target>

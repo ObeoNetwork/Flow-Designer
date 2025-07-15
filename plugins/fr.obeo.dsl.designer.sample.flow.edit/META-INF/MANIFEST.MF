@@ -8,7 +8,7 @@ Bundle-ClassPath: .
 Bundle-Activator: fr.obeo.dsl.designer.sample.flow.provider.FlowEditPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Export-Package: fr.obeo.dsl.designer.sample.flow.provider
 Require-Bundle: org.eclipse.core.runtime,
  fr.obeo.dsl.designer.sample.flow;visibility:=reexport,
