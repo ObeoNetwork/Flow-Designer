@@ -1,5 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
+Automatic-Module-Name: fr.obeo.desl.designer.sample.flow.gen.java.ui
 Bundle-Name: Acceleo Java Module IDE Plug-in
 Bundle-SymbolicName: fr.obeo.desl.designer.sample.flow.gen.java.ui;singleton:=true
 Bundle-Version: 1.0.0.qualifier
@@ -15,6 +16,6 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.ocl.ecore,
  org.eclipse.acceleo.model,
  org.eclipse.acceleo.engine
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-ActivationPolicy: lazy
 Eclipse-LazyStart: true
