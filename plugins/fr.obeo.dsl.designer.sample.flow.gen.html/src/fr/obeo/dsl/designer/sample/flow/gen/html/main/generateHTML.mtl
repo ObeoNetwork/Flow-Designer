@@ -3,7 +3,7 @@
 [comment encoding = UTF-8 /]
 [comment @main/]
 [template public generateHTML(aSystem : flow::System) ? (self.eContainer() = null)]
-  [file (aSystem.name.concat('.html'), overwrite, 'UTF-8')]
+  [file (aSystem.name.concat('.html'), false, 'UTF-8')]
     <html>
     <link href="Flow.css" type="text/css" rel="stylesheet" media="all" />
     <h1>System: [aSystem.name/]</h1>
@@ -32,7 +32,7 @@
     
   [/file]
   
-  [file ('flow.css', overwrite, 'UTF-8')]
+  [file ('flow.css', false, 'UTF-8')]
     [aSystem.cssBody()/]
   [/file]
   

@@ -4,7 +4,7 @@
 [comment Generate a class for each Composite /]
 [comment @main/]
 [template public generateJava(aCompositeProcessor : flow::CompositeProcessor)]
-  [file (aCompositeProcessor.name.toLower() + '/' + aCompositeProcessor.name.concat('Composite.java'), overwrite, 'UTF-8')]
+  [file (aCompositeProcessor.name.toLower() + '/' + aCompositeProcessor.name.concat('Composite.java'), false, 'UTF-8')]
     
     package [aCompositeProcessor.name.toLower()/];
     
@@ -22,9 +22,9 @@
     	
     [for (element : flow::Processor | aCompositeProcessor.elements->filter(flow::Processor))]
       	public [element.name/] get[element.name/]() {
-      		[protected ('to obtain processor descriptor of ' + element.name + ' from Hardware specific API') startTagPrefix('// ') endTagPrefix('// ')]
+      //		[protected ('to obtain processor descriptor of ' + element.name + ' from Hardware specific API')]
           		return null; // TODO to implement 		
-        [/protected]
+     //   [/protected]
       
       	}
     [/for]
@@ -45,7 +45,7 @@
 
 [comment @main/]
 [template public generateJava(aCompositeProcessor : flow::Processor)]
-  [file (aCompositeProcessor.eContainer(flow::System).name.toLower() + '/' + aCompositeProcessor.name.concat('.java'), overwrite, 'UTF-8')]
+  [file (aCompositeProcessor.eContainer(flow::System).name.toLower() + '/' + aCompositeProcessor.name.concat('.java'), false, 'UTF-8')]
     
     package [aCompositeProcessor.eContainer(flow::System).name.toLower()/];
     
