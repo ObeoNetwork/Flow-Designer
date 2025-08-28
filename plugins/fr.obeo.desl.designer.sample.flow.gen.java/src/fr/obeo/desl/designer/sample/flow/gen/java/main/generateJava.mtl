@@ -1,61 +1,62 @@
+[module generateJava('http://www.obeo.fr/dsl/designer/sample/flow')/]
+
 [comment encoding = UTF-8 /]
-[module generateJava('http://www.obeo.fr/dsl/designer/sample/flow')]
-
 [comment Generate a class for each Composite /]
-[template public generateJava(aCompositeProcessor : CompositeProcessor)]
 [comment @main/]
-[file (self.name.toLowerCase() + '/' + aCompositeProcessor.name.concat('Composite.java'), false, 'UTF-8')]
-
-package [self.name.toLowerCase()/];
-
-[for (element:Processor|self.elements->filter(flow::Processor))]
-import [eContainer(flow::System).name.toLowerCase()/].[self.name/];
-[/for]
-
-public class [name/]Composite {
-	
-	final int CONSUMPTION=[consumption/];
-	final int TEMPERATURE=[temperature/];
-	final int WEIGHT=[weight/];
-	final int CAPACITY=[capacity/];
-	final int LOAD=[load/];
-	
-[for (element:Processor|self.elements->filter(flow::Processor))]
-	public [self.name/] get[self.name/]() {
-		// [protected ('to obtain processor descriptor of ' + self.name + ' from Hardware specific API')]
-		return null; // TODO to implement 		
- 		// [/protected]
-	}
-[/for]
-
-	public boolean isTemperatureConforms() {
-		int totalRealTemperature = 0;
-		[for (proc:Processor|self.elements->filter(flow::Processor))]
-		totalRealTemperature+= get[proc.name/]().getRealTemperature();
-		[/for]	
-		if (totalRealTemperature <= TEMPERATURE)
-			return true;
-		else
-			return false;
-	}
-
-}[/file]
+[template public generateJava(aCompositeProcessor : flow::CompositeProcessor)]
+  [file (aCompositeProcessor.name.toLower() + '/' + aCompositeProcessor.name.concat('Composite.java'), overwrite, 'UTF-8')]
+    
+    package [aCompositeProcessor.name.toLower()/];
+    
+    [for (element : flow::Processor | aCompositeProcessor.elements->filter(flow::Processor))]
+      import [element.eContainer(flow::System).name.toLower()/].[element.name/];
+    [/for]
+    
+    public class [aCompositeProcessor.name/]Composite {
+    	
+    	final int CONSUMPTION=[aCompositeProcessor.consumption/];
+    	final int TEMPERATURE=[aCompositeProcessor.temperature/];
+    	final int WEIGHT=[aCompositeProcessor.weight/];
+    	final int CAPACITY=[aCompositeProcessor.capacity/];
+    	final int LOAD=[aCompositeProcessor.load/];
+    	
+    [for (element : flow::Processor | aCompositeProcessor.elements->filter(flow::Processor))]
+      	public [element.name/] get[element.name/]() {
+      		[protected ('to obtain processor descriptor of ' + element.name + ' from Hardware specific API') startTagPrefix('// ') endTagPrefix('// ')]
+          		return null; // TODO to implement 		
+        [/protected]
+      
+      	}
+    [/for]
+    
+    	public boolean isTemperatureConforms() {
+    		int totalRealTemperature = 0;
+    [for (proc : flow::Processor | aCompositeProcessor.elements->filter(flow::Processor))]
+      		totalRealTemperature+= get[proc.name/]().getRealTemperature();
+    [/for]
+    		if (totalRealTemperature <= TEMPERATURE)
+    			return true;
+    		else
+    			return false;
+    	}
+    
+    }[/file]
 [/template]
 
-[template public generateJava(aCompositeProcessor : Processor)]
 [comment @main/]
-[file (eContainer(flow::System).name.toLowerCase() + '/' + aCompositeProcessor.name.concat('.java'), false, 'UTF-8')]
-
-package [eContainer(flow::System).name.toLowerCase()/];
-
-public interface [name/] {
-	
-	final int CONSUMPTION=[consumption/];
-	final int VOLUME=[volume/];
-	final int WEIGHT=[weight/];
-	final int CAPACITY=[capacity/];
-	final int LOAD=[load/];
-
-	public int getRealTemperature();
-}[/file]
+[template public generateJava(aCompositeProcessor : flow::Processor)]
+  [file (aCompositeProcessor.eContainer(flow::System).name.toLower() + '/' + aCompositeProcessor.name.concat('.java'), overwrite, 'UTF-8')]
+    
+    package [aCompositeProcessor.eContainer(flow::System).name.toLower()/];
+    
+    public interface [aCompositeProcessor.name/] {
+    	
+    	final int CONSUMPTION=[aCompositeProcessor.consumption/];
+    	final int VOLUME=[aCompositeProcessor.volume/];
+    	final int WEIGHT=[aCompositeProcessor.weight/];
+    	final int CAPACITY=[aCompositeProcessor.capacity/];
+    	final int LOAD=[aCompositeProcessor.load/];
+    
+    	public int getRealTemperature();
+    }[/file]
 [/template]
