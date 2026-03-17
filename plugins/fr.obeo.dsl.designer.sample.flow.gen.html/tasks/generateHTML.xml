@@ -24,17 +24,17 @@
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.ecore_2.33.0.v20230226-0921.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.common_2.28.0.v20230223-0922.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.ecore.xmi_2.18.0.v20230211-1150.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl_3.20.0.v20240305-1416.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl_3.22.0.v20240902-1518.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/lpg.runtime.java_2.0.17.v201004271640.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl.common_1.20.0.v20240305-1416.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl.ecore_3.20.0.v20240305-1416.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl.common_1.22.0.v20240902-1518.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl.ecore_3.22.0.v20240902-1518.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.common_3.7.14.202311201319.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.model_3.7.14.202311201319.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.profiler_3.7.14.202311201319.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.engine_3.7.14.202311201319.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.codegen.ecore_2.33.0.v20230211-1150.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.codegen_2.23.0.v20230211-1150.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/com.google.guava_33.0.0.jre.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.google.guava_33.4.8.jre.jar"/>
     </path>
 
     <path id="fr.obeo.dsl.designer.sample.flow.gen.html.classpath">
