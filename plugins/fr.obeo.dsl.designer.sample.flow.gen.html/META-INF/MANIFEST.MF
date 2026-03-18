@@ -6,13 +6,17 @@ Bundle-SymbolicName: fr.obeo.dsl.designer.sample.flow.gen.html
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: fr.obeo.dsl.designer.sample.flow.gen.html.Activator
 Bundle-Vendor: Eclipse Modeling Project
-Require-Bundle: org.eclipse.core.runtime, 
- fr.obeo.dsl.designer.sample.flow, 
+Require-Bundle: org.eclipse.core.runtime,
+ fr.obeo.dsl.designer.sample.flow,
  org.eclipse.emf.ecore,
  org.eclipse.emf.ecore.xmi,
  org.eclipse.ocl,
  org.eclipse.ocl.ecore,
- com.google.guava
+ com.google.guava,
+ org.eclipse.acceleo.query;bundle-version="[8.1.1,9.0.0)",
+ org.eclipse.acceleo.aql;bundle-version="[4.2.2,5.0.0)",
+ org.eclipse.acceleo.aql.profiler;bundle-version="[4.2.2,5.0.0)",
+ org.antlr.antlr4-runtime;bundle-version="[4.13.2,4.13.3)"
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-ActivationPolicy: lazy
 Eclipse-LazyStart: true

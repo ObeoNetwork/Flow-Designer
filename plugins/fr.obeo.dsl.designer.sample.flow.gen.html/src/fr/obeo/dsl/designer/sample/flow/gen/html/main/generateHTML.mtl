@@ -2,7 +2,7 @@
 
 [comment encoding = UTF-8 /]
 [comment @main/]
-[template public generateHTML(aSystem : flow::System) ? (self.eContainer() = null)]
+[template public generateHTML(aSystem : flow::System) ? (aSystem.eContainer() = null)]
   [file (aSystem.name.concat('.html'), overwrite, 'UTF-8')]
     <html>
     <link href="Flow.css" type="text/css" rel="stylesheet" media="all" />
