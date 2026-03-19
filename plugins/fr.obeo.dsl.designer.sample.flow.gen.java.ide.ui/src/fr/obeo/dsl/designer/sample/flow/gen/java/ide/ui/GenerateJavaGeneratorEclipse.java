@@ -203,7 +203,8 @@ public class GenerateJavaGeneratorEclipse extends GenerateJavaGenerator {
 
 	/**
 	 * Gets the target folder for the selected {@link CompositeProcessor} or
-	 * selected {@link IFile}.
+	 * selected {@link IFile}. For {@link IFile}, the "src-gen" folder is directly 
+	 * used as it was done before migration to Acceleo4.
 	 * 
 	 * @param selected the model {@link CompositeProcessor} or selected
 	 *                 {@link IFile}
@@ -212,10 +213,15 @@ public class GenerateJavaGeneratorEclipse extends GenerateJavaGenerator {
 	 * @generated
 	 */
 	private static String getTarget(Object selected) {
-		final SelectTargetRunnable runnable = new SelectTargetRunnable();
-		Display.getDefault().syncExec(runnable);
+		if (selected instanceof IFile semanticModelFile) {
+			IPath location = semanticModelFile.getProject().getLocation().append("src-gen");
+			return location.toFile().getAbsolutePath();
+		} else {
+			final SelectTargetRunnable runnable = new SelectTargetRunnable();
+			Display.getDefault().syncExec(runnable);
 
-		return runnable.getTarget();
+			return runnable.getTarget();
+		}
 	}
 
 	/**

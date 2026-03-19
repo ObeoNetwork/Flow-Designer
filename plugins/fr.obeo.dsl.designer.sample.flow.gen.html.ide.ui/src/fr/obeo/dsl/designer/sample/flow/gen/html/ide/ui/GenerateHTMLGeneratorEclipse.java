@@ -204,7 +204,8 @@ public class GenerateHTMLGeneratorEclipse extends GenerateHTMLGenerator {
 
 	/**
 	 * Gets the target folder for the selected {@link System} or selected
-	 * {@link IFile}.
+	 * {@link IFile}. For {@link IFile}, the "src-gen" folder is directly 
+	 * used as it was done before migration to Acceleo4. 
 	 * 
 	 * @param selected the model {@link System} or selected {@link IFile}
 	 * @return the target folder for the selected {@link System} or selected
@@ -212,10 +213,15 @@ public class GenerateHTMLGeneratorEclipse extends GenerateHTMLGenerator {
 	 * @generated
 	 */
 	private static String getTarget(Object selected) {
-		final SelectTargetRunnable runnable = new SelectTargetRunnable();
-		Display.getDefault().syncExec(runnable);
-
-		return runnable.getTarget();
+		if (selected instanceof IFile semanticModelFile) {
+			IPath location = semanticModelFile.getProject().getLocation().append("src-gen");
+			return location.toFile().getAbsolutePath();
+		} else {
+			final SelectTargetRunnable runnable = new SelectTargetRunnable();
+			Display.getDefault().syncExec(runnable);
+	
+			return runnable.getTarget();
+		}
 	}
 
 	/**
