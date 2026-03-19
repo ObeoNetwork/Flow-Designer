@@ -2,40 +2,41 @@
 
 [comment encoding = UTF-8 /]
 [comment @main/]
-[template public generateHTML(aSystem : flow::System) ? (aSystem.eContainer() = null)]
-  [file (aSystem.name.concat('.html'), overwrite, 'UTF-8')]
-    <html>
-    <link href="Flow.css" type="text/css" rel="stylesheet" media="all" />
-    <h1>System: [aSystem.name/]</h1>
-    <table>
-    [aSystem.poweredProperties()/]
-    [aSystem.flowElementPropeties()/]
-    [aSystem.systemProperties()/]
-    </table>
-    <p></p>
-    [if (aSystem.elements->size() > 0)]
+[template public generateHTML(aSystem : flow::System)]
+  [if (aSystem.eContainer() = null)]
+    [file (aSystem.name.concat('.html'), overwrite, 'UTF-8')]
+      <html>
+      <link href="Flow.css" type="text/css" rel="stylesheet" media="all" />
+      <h1>System: [aSystem.name/]</h1>
       <table>
-      <tr>
-      <th>Components</th><th>Type</th>
-      </tr>
-      [for (element : flow::Named | aSystem.elements->filter(flow::Named))]
-        <tr>
-        <td><a href="#[element.name/]">[element.name/]</a></td><td>[element.eClass().name/]</td>
-        </tr>
-      [/for]
+      [aSystem.poweredProperties()/]
+      [aSystem.flowElementPropeties()/]
+      [aSystem.systemProperties()/]
       </table>
-    [/if]
-    
-    [for (element : flow::FlowElement | aSystem.elements)]
-      [element.generateFlowElement()/]
-    [/for]
-    
-  [/file]
-  
-  [file ('flow.css', overwrite, 'UTF-8')]
-    [aSystem.cssBody()/]
-  [/file]
-  
+      <p></p>
+      [if (aSystem.elements->size() > 0)]
+        <table>
+        <tr>
+        <th>Components</th><th>Type</th>
+        </tr>
+        [for (element : flow::Named | aSystem.elements->filter(flow::Named))]
+          <tr>
+          <td><a href="#[element.name/]">[element.name/]</a></td><td>[element.eClass().name/]</td>
+          </tr>
+        [/for]
+        </table>
+      [/if]
+      
+      [for (element : flow::FlowElement | aSystem.elements)]
+        [element.generateFlowElement()/]
+      [/for]
+      
+    [/file]
+      
+    [file ('flow.css', overwrite, 'UTF-8')]
+      [aSystem.cssBody()/]
+    [/file]
+  [/if]
 [/template]
 
 [template public generateFlowElement(element : flow::FlowElement)]
@@ -56,15 +57,15 @@
     <tr>
     <th>Components</th><th>Type</th>
     </tr>
-    [for (element : flow::Named | element.elements->filter(flow::Named))]
+    [for (subElement : flow::Named | element.elements->filter(flow::Named))]
       <tr>
-      <td><a href="#[element.name/]">[element.name/]</a></td><td>[element.eClass().name/]</td>
+      <td><a href="#[subElement.name/]">[subElement.name/]</a></td><td>[subElement.eClass().name/]</td>
       </tr>
     [/for]
     </table>
   [/if]
-  [for (element : flow::FlowElement | element.elements)]
-    [element.generateFlowElement()/]
+  [for (subElement : flow::FlowElement | element.elements)]
+    [subElement.generateFlowElement()/]
   [/for]
 [/template]
 

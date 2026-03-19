@@ -23,9 +23,8 @@
     [for (element : flow::Processor | aCompositeProcessor.elements->filter(flow::Processor))]
       	public [element.name/] get[element.name/]() {
       		[protected ('to obtain processor descriptor of ' + element.name + ' from Hardware specific API') startTagPrefix('// ') endTagPrefix('// ')]
-          		return null; // TODO to implement 		
-        [/protected]
-      
+      		  return null; // TODO to implement 		
+      		[/protected]
       	}
     [/for]
     
