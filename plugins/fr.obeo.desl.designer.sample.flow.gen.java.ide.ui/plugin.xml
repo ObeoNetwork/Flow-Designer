@@ -18,25 +18,6 @@
             <command
                   commandId="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.commands.generateJavaGeneratorCommand"
                   icon="icons/java_co.gif"
-                  id="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.menus.generateJavaGeneratorCommandOnEObject"
-                  label="Generate Java">
-               <visibleWhen
-                     checkEnabled="false">
-                  <with
-                        variable="selection">
-                     <iterate
-                           ifEmpty="false"
-                           operator="and">
-                        <instanceof
-                              value="fr.obeo.dsl.designer.sample.flow.CompositeProcessor">
-                        </instanceof>
-                     </iterate>
-                  </with>
-               </visibleWhen>
-            </command>
-            <command
-                  commandId="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.commands.generateJavaGeneratorCommand"
-                  icon="icons/java_co.gif"
                   id="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.menus.generateJavaGeneratorCommandOnIFile"
                   label="Generate Java">
                <visibleWhen
