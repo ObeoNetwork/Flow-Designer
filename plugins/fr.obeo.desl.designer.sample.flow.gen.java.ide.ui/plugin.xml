@@ -13,12 +13,13 @@
       <menuContribution
             locationURI="popup:org.eclipse.ui.popup.any?after=additions">
          <menu
-               id="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.menus.generators"
+               id="fr.obeo.dsl.designer.sample.flow.gen.ide.ui.menus.generators"
                label="Generators">
             <command
                   commandId="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.commands.generateJavaGeneratorCommand"
-                  id="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.menus.generateJavaGeneratorCommand"
-                  label="fr::obeo::desl::designer::sample::flow::gen::java::main::generateJava">
+                  icon="icons/java_co.gif"
+                  id="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.menus.generateJavaGeneratorCommandOnEObject"
+                  label="Generate Java">
                <visibleWhen
                      checkEnabled="false">
                   <with
@@ -33,10 +34,11 @@
                   </with>
                </visibleWhen>
             </command>
-            <!--command
+            <command
                   commandId="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.commands.generateJavaGeneratorCommand"
-                  id="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.menus.generateJavaGeneratorCommand"
-                  label="fr::obeo::desl::designer::sample::flow::gen::java::main::generateJava">
+                  icon="icons/java_co.gif"
+                  id="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.menus.generateJavaGeneratorCommandOnIFile"
+                  label="Generate Java">
                <visibleWhen
                      checkEnabled="false">
                   <with
@@ -56,20 +58,20 @@
                      </iterate>
                   </with>
                </visibleWhen>
-            </command-->
+            </command>
          </menu>
       </menuContribution>
    </extension>
    <extension
          point="org.eclipse.ui.commands">
       <category
-            id="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.commands.generatorsCategory"
+            id="fr.obeo.dsl.designer.sample.flow.gen.ide.ui.commands.generatorsCategory"
             name="Generators">
       </category>
       <command
-            categoryId="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.commands.generatorsCategory"
+            categoryId="fr.obeo.dsl.designer.sample.flow.gen.ide.ui.commands.generatorsCategory"
             id="fr.obeo.desl.designer.sample.flow.gen.java.ide.ui.commands.generateJavaGeneratorCommand"
-            name="fr::obeo::desl::designer::sample::flow::gen::java::main::generateJava">
+            name="Generate Java">
       </command>
    </extension>
 

@@ -13,12 +13,13 @@
       <menuContribution
             locationURI="popup:org.eclipse.ui.popup.any?after=additions">
          <menu
-               id="fr.obeo.dsl.designer.sample.flow.gen.html.ide.ui.menus.generators"
+               id="fr.obeo.dsl.designer.sample.flow.gen.ide.ui.menus.generators"
                label="Generators">
             <command
                   commandId="fr.obeo.dsl.designer.sample.flow.gen.html.ide.ui.commands.generateHTMLGeneratorCommand"
-                  id="fr.obeo.dsl.designer.sample.flow.gen.html.ide.ui.menus.generateHTMLGeneratorCommand"
-                  label="fr::obeo::dsl::designer::sample::flow::gen::html::main::generateHTML">
+                  icon="icons/html_tag_obj.gif"
+                  id="fr.obeo.dsl.designer.sample.flow.gen.html.ide.ui.menus.generateHTMLGeneratorCommandOnEObject"
+                  label="Generate HTML">
                <visibleWhen
                      checkEnabled="false">
                   <with
@@ -33,10 +34,11 @@
                   </with>
                </visibleWhen>
             </command>
-            <!--command
+            <command
                   commandId="fr.obeo.dsl.designer.sample.flow.gen.html.ide.ui.commands.generateHTMLGeneratorCommand"
-                  id="fr.obeo.dsl.designer.sample.flow.gen.html.ide.ui.menus.generateHTMLGeneratorCommand"
-                  label="fr::obeo::dsl::designer::sample::flow::gen::html::main::generateHTML">
+                  icon="icons/html_tag_obj.gif"
+                  id="fr.obeo.dsl.designer.sample.flow.gen.html.ide.ui.menus.generateHTMLGeneratorCommandOnIFile"
+                  label="Generate HTML">
                <visibleWhen
                      checkEnabled="false">
                   <with
@@ -56,20 +58,20 @@
                      </iterate>
                   </with>
                </visibleWhen>
-            </command-->
+            </command>
          </menu>
       </menuContribution>
    </extension>
    <extension
          point="org.eclipse.ui.commands">
       <category
-            id="fr.obeo.dsl.designer.sample.flow.gen.html.ide.ui.commands.generatorsCategory"
+            id="fr.obeo.dsl.designer.sample.flow.gen.ide.ui.commands.generatorsCategory"
             name="Generators">
       </category>
       <command
-            categoryId="fr.obeo.dsl.designer.sample.flow.gen.html.ide.ui.commands.generatorsCategory"
+            categoryId="fr.obeo.dsl.designer.sample.flow.gen.ide.ui.commands.generatorsCategory"
             id="fr.obeo.dsl.designer.sample.flow.gen.html.ide.ui.commands.generateHTMLGeneratorCommand"
-            name="fr::obeo::dsl::designer::sample::flow::gen::html::main::generateHTML">
+            name="Generate HTML">
       </command>
    </extension>
 
